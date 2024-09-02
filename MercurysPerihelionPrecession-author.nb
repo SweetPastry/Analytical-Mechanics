@@ -1,0 +1,1228 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='WolframCDFPlayer 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       163,          7]
+NotebookDataLength[     47348,       1219]
+NotebookOptionsPosition[     42608,       1070]
+NotebookOutlinePosition[     44209,       1121]
+CellTagsIndexPosition[     43881,       1109]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Mercury's Perihelion Precession", "DemoTitle",
+ CellChangeTimes->{
+  3.35696210375764*^9, 3.4123650021373053`*^9, {3.413763780366729*^9, 
+   3.413763783020967*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["", "InitializationSection"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"G", "=", 
+   FractionBox["6.67", 
+    SuperscriptBox["10", "11"]]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"c", "=", 
+   RowBox[{"3", " ", 
+    SuperscriptBox["10", "8"]}]}], ";"}], "\n", 
+ RowBox[{}], "\n", 
+ RowBox[{
+  RowBox[{"e", "=", "0.205"}], ";"}]}], "Input",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.412365045519486*^9, 3.4123650719353027`*^9}, {
+   3.412365105926429*^9, 3.412365117020586*^9}, {3.412365540247663*^9, 
+   3.412365546026763*^9}, {3.4123658457369757`*^9, 3.412365848502302*^9}, {
+   3.412365886045168*^9, 3.412365926907645*^9}, 3.412366079531644*^9, {
+   3.412367693401533*^9, 3.412367696413835*^9}, {3.4123677280557823`*^9, 
+   3.412367729630271*^9}},
+ CellID->1855690632]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "ManipulateSection"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", "rad", "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"rad", "[", 
+        RowBox[{"\[Theta]_", ",", "M_", ",", "a_"}], "]"}], ":=", 
+       RowBox[{"With", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"b", "=", 
+           FractionBox[
+            RowBox[{"3", " ", "G", " ", "M"}], 
+            RowBox[{
+             SuperscriptBox["c", "2"], " ", "a"}]]}], "}"}], ",", 
+         RowBox[{"With", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"x", "=", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"1", "-", 
+                RowBox[{
+                 SuperscriptBox["a", "2"], " ", "b"}]}], ")"}], " ", 
+              "\[Theta]"}]}], "}"}], ",", 
+           FractionBox["1", 
+            RowBox[{"1", "-", 
+             RowBox[{"e", " ", 
+              RowBox[{"Sin", "[", "x", "]"}]}], "+", 
+             RowBox[{"b", " ", 
+              SuperscriptBox["a", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"1", "+", 
+                FractionBox[
+                 SuperscriptBox["e", "2"], "2"], "+", 
+                RowBox[{
+                 FractionBox["1", "6"], " ", 
+                 SuperscriptBox["e", "2"], " ", 
+                 RowBox[{"Cos", "[", 
+                  RowBox[{"2", " ", "x"}], "]"}]}]}], ")"}]}]}]]}], "]"}]}], 
+        "]"}]}], ";", 
+      RowBox[{"ParametricPlot", "[", 
+       RowBox[{
+        RowBox[{"Evaluate", "[", 
+         RowBox[{
+          RowBox[{"rad", "[", 
+           RowBox[{"\[Theta]", ",", 
+            RowBox[{"M", " ", 
+             SuperscriptBox["10", "36"]}], ",", 
+            FractionBox["a", 
+             SuperscriptBox["10", "11"]]}], "]"}], 
+          RowBox[{"{", " ", 
+           RowBox[{
+            RowBox[{"Cos", "[", "\[Theta]", "]"}], ",", " ", 
+            RowBox[{"Sin", "[", "\[Theta]", "]"}]}], "}"}]}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\[Theta]", ",", "0", ",", "t"}], "}"}], ",", 
+        RowBox[{"PlotRange", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "1.2"}], ",", "1.2"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "1.2"}], ",", "1.2"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+        RowBox[{"Axes", "\[Rule]", "False"}], ",", 
+        RowBox[{"Epilog", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"RGBColor", "[", 
+            RowBox[{"1", ",", "0.7", ",", "0"}], "]"}], ",", 
+           RowBox[{"PointSize", "[", ".1", "]"}], ",", 
+           RowBox[{"Point", "[", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0"}], "}"}], "]"}]}], "}"}]}], ",", 
+        RowBox[{"ImageSize", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"450", ",", "400"}], "}"}]}]}], "]"}]}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"t", ",", 
+       RowBox[{"7", " ", "3.14"}], ",", "\"\<revolutions\>\""}], "}"}], ",", 
+     "0.1", ",", 
+     RowBox[{"10", " ", "\[Pi]"}], ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "M", ",", "2", ",", 
+       "\"\<mass \[Times] solar mass \[Times] \!\(\*SuperscriptBox[\(10\), \
+\(6\)]\)\>\""}], "}"}], ",", "1", ",", "3", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "a", ",", "2", ",", 
+       "\"\<orbital parameter of Mercury ( \[Times] \!\(\*SuperscriptBox[\(10\
+\), \(-11\)]\))\>\""}], "}"}], ",", "1", ",", "3", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   RowBox[{"ControlPlacement", "\[Rule]", "Top"}], ",", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{
+  3.35696210375764*^9, 3.412365048033375*^9, {3.412365182453486*^9, 
+   3.412365182829056*^9}, {3.412365292539462*^9, 3.412365323124909*^9}, {
+   3.41236543049398*^9, 3.4123654468271923`*^9}, {3.412365984863453*^9, 
+   3.412366032305461*^9}, {3.412366063461494*^9, 3.412366071284444*^9}, {
+   3.412366105591247*^9, 3.412366112498981*^9}, {3.412366213162305*^9, 
+   3.412366215637857*^9}, {3.412367580270378*^9, 3.412367592831252*^9}, {
+   3.41236773616705*^9, 3.412367767740603*^9}, {3.412368010800026*^9, 
+   3.4123680523149633`*^9}, {3.4123681076334267`*^9, 
+   3.4123681394288473`*^9}, {3.4123681760217867`*^9, 3.412368211666223*^9}, {
+   3.412368269384244*^9, 3.412368272663951*^9}, 3.412368502957911*^9, 
+   3.4123686830896378`*^9, {3.412368932939937*^9, 3.412368997660987*^9}, {
+   3.412369062074295*^9, 3.412369068741982*^9}, {3.412369221593462*^9, 
+   3.4123692423543386`*^9}, {3.4123692861918707`*^9, 
+   3.4123694374216347`*^9}, {3.412369634803505*^9, 3.412369636647427*^9}, {
+   3.412369809753282*^9, 3.412369826954316*^9}, {3.412369868229206*^9, 
+   3.41236988054982*^9}, 3.412370050548525*^9, {3.412370094835787*^9, 
+   3.4123701516843157`*^9}, {3.4137633718484087`*^9, 
+   3.4137633773831177`*^9}, {3.4145210876912127`*^9, 3.414521092566181*^9}, {
+   3.4147657751683316`*^9, 3.414765847969454*^9}, 3.414774410508229*^9, {
+   3.41484706133687*^9, 3.414847066618391*^9}, {3.666045798482729*^9, 
+   3.666045813892901*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 2, $CellContext`M$$ = 
+    2, $CellContext`t$$ = 21.98, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`t$$], 21.98, "revolutions"}, 0.1, 10 Pi}, {{
+       Hold[$CellContext`M$$], 2, 
+       "mass \[Times] solar mass \[Times] \!\(\*SuperscriptBox[\(10\), \(6\)]\
+\)"}, 1, 3}, {{
+       Hold[$CellContext`a$$], 2, 
+       "orbital parameter of Mercury ( \[Times] \!\(\*SuperscriptBox[\(10\), \
+\(-11\)]\))"}, 1, 3}}, Typeset`size$$ = {450., {198., 202.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    False, $CellContext`t$1587$$ = 0, $CellContext`M$1588$$ = 
+    0, $CellContext`a$1589$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 2, $CellContext`M$$ = 
+        2, $CellContext`t$$ = 21.98}, "ControllerVariables" :> {
+        Hold[$CellContext`t$$, $CellContext`t$1587$$, 0], 
+        Hold[$CellContext`M$$, $CellContext`M$1588$$, 0], 
+        Hold[$CellContext`a$$, $CellContext`a$1589$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`rad$}, $CellContext`rad$[
+           Pattern[$CellContext`\[Theta], 
+            Blank[]], 
+           Pattern[$CellContext`M, 
+            Blank[]], 
+           Pattern[$CellContext`a, 
+            Blank[]]] := 
+         With[{$CellContext`b = 
+            3 $CellContext`G $CellContext`M/($CellContext`c^2 \
+$CellContext`a)}, 
+           
+           With[{$CellContext`x = (
+               1 - $CellContext`a^2 $CellContext`b) $CellContext`\[Theta]}, 
+            1/(1 - $CellContext`e 
+            Sin[$CellContext`x] + $CellContext`b $CellContext`a^2 (
+              1 + $CellContext`e^2/2 + (1/6) $CellContext`e^2 
+               Cos[2 $CellContext`x]))]]; ParametricPlot[
+          
+          Evaluate[$CellContext`rad$[$CellContext`\[Theta], $CellContext`M$$ 
+             10^36, $CellContext`a$$/10^11] {
+             Cos[$CellContext`\[Theta]], 
+             Sin[$CellContext`\[Theta]]}], {$CellContext`\[Theta], 
+           0, $CellContext`t$$}, PlotRange -> {{-1.2, 1.2}, {-1.2, 1.2}}, 
+          Frame -> True, Axes -> False, Epilog -> {
+            RGBColor[1, 0.7, 0], 
+            PointSize[0.1], 
+            Point[{0, 0}]}, ImageSize -> {450, 400}]], 
+      "Specifications" :> {{{$CellContext`t$$, 21.98, "revolutions"}, 0.1, 10 
+         Pi, Appearance -> 
+         "Labeled"}, {{$CellContext`M$$, 2, 
+          "mass \[Times] solar mass \[Times] \!\(\*SuperscriptBox[\(10\), \(6\
+\)]\)"}, 1, 3, Appearance -> 
+         "Labeled"}, {{$CellContext`a$$, 2, 
+          "orbital parameter of Mercury ( \[Times] \
+\!\(\*SuperscriptBox[\(10\), \(-11\)]\))"}, 1, 3, Appearance -> "Labeled"}}, 
+      "Options" :> {ControlPlacement -> Top}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{493., {269., 274.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`G = 6.67*^-11, $CellContext`c = 
+       300000000, $CellContext`e = 0.205, 
+       Attributes[PlotRange] = {ReadProtected}}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellID->897308225]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "ManipulateCaptionSection"],
+
+Cell["\<\
+The observed precession in the orbit of the planet Mercury is 574.1 seconds \
+of arc per century (relative to the International Celestial Reference Frame). \
+According to Newtonian gravitational theory, taking account of the \
+gravitational perturbations by the other planets (mainly Venus, Earth and \
+Jupiter), a value of 531.6 is predicted. This anomaly of approximately 43 \
+seconds of arc per century was first recognized by Le Verrier in 1859. The \
+discrepancy was resolved by Einstein's general theory of relativity in 1915. \
+\>", "ManipulateCaption",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.412371148885728*^9, 3.412371197062952*^9}, {
+   3.4123750984942017`*^9, 3.412375140153874*^9}, {3.412375312140019*^9, 
+   3.4123753515211287`*^9}, {3.4123753892073307`*^9, 3.412375445671836*^9}, {
+   3.412375532983075*^9, 3.412375533354105*^9}, {3.4123757958810453`*^9, 
+   3.4123757969573507`*^9}, {3.41376345407812*^9, 3.41376347650912*^9}, {
+   3.413763759393168*^9, 3.4137637619885893`*^9}, {3.4147659069241076`*^9, 
+   3.414766020166418*^9}, 3.414766275967008*^9, {3.414778164546703*^9, 
+   3.4147781651716986`*^9}, {3.6660489771992702`*^9, 
+   3.6660490989300327`*^9}, {3.666049188343666*^9, 3.666049262587521*^9}, {
+   3.6660500076328363`*^9, 3.666050088199747*^9}, 3.666050151799999*^9, {
+   3.6660505641793547`*^9, 3.666050570828755*^9}},
+ CellID->1201396932],
+
+Cell[TextData[{
+ "This Demonstration exaggerates the effect by making the mass of the Sun \
+around ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["10", "6"], TraditionalForm]], "InlineMath"],
+ " times greater; also, you can change an orbital parameter."
+}], "ManipulateCaption",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.412371148885728*^9, 3.412371197062952*^9}, {
+   3.4123750984942017`*^9, 3.412375140153874*^9}, {3.412375312140019*^9, 
+   3.4123753515211287`*^9}, {3.4123753892073307`*^9, 3.412375445671836*^9}, {
+   3.412375532983075*^9, 3.412375533354105*^9}, {3.4123757958810453`*^9, 
+   3.4123757969573507`*^9}, {3.41376345407812*^9, 3.41376347650912*^9}, {
+   3.413763759393168*^9, 3.4137637619885893`*^9}, {3.4147659069241076`*^9, 
+   3.414766020166418*^9}, 3.414766275967008*^9, {3.414778164546703*^9, 
+   3.4147781651716986`*^9}, {3.6660489771992702`*^9, 
+   3.6660490989300327`*^9}, {3.666049188343666*^9, 3.666049262587521*^9}, {
+   3.6660500076328363`*^9, 3.6660500881881533`*^9}},
+ CellID->635735109]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "ThumbnailSection"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 2, $CellContext`M$$ = 
+    2, $CellContext`t$$ = 21.98, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`t$$], 21.98, "revolutions"}, 0.1, 10 Pi}, {{
+       Hold[$CellContext`M$$], 2, 
+       "mass \[Times] solar mass \[Times] \!\(\*SuperscriptBox[\(10\), \(6\)]\
+\)"}, 1, 3}, {{
+       Hold[$CellContext`a$$], 2, 
+       "orbital parameter of Mercury ( \[Times] \!\(\*SuperscriptBox[\(10\), \
+\(-11\)]\))"}, 1, 3}}, Typeset`size$$ = {450., {198., 202.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    False, $CellContext`t$1650$$ = 0, $CellContext`M$1651$$ = 
+    0, $CellContext`a$1652$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 2, $CellContext`M$$ = 
+        2, $CellContext`t$$ = 21.98}, "ControllerVariables" :> {
+        Hold[$CellContext`t$$, $CellContext`t$1650$$, 0], 
+        Hold[$CellContext`M$$, $CellContext`M$1651$$, 0], 
+        Hold[$CellContext`a$$, $CellContext`a$1652$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`rad$}, $CellContext`rad$[
+           Pattern[$CellContext`\[Theta], 
+            Blank[]], 
+           Pattern[$CellContext`M, 
+            Blank[]], 
+           Pattern[$CellContext`a, 
+            Blank[]]] := 
+         With[{$CellContext`b = 
+            3 $CellContext`G $CellContext`M/($CellContext`c^2 \
+$CellContext`a)}, 
+           
+           With[{$CellContext`x = (
+               1 - $CellContext`a^2 $CellContext`b) $CellContext`\[Theta]}, 
+            1/(1 - $CellContext`e 
+            Sin[$CellContext`x] + $CellContext`b $CellContext`a^2 (
+              1 + $CellContext`e^2/2 + (1/6) $CellContext`e^2 
+               Cos[2 $CellContext`x]))]]; ParametricPlot[
+          
+          Evaluate[$CellContext`rad$[$CellContext`\[Theta], $CellContext`M$$ 
+             10^36, $CellContext`a$$/10^11] {
+             Cos[$CellContext`\[Theta]], 
+             Sin[$CellContext`\[Theta]]}], {$CellContext`\[Theta], 
+           0, $CellContext`t$$}, PlotRange -> {{-1.2, 1.2}, {-1.2, 1.2}}, 
+          Frame -> True, Axes -> False, Epilog -> {
+            RGBColor[1, 0.7, 0], 
+            PointSize[0.1], 
+            Point[{0, 0}]}, ImageSize -> {450, 400}]], 
+      "Specifications" :> {{{$CellContext`t$$, 21.98, "revolutions"}, 0.1, 10 
+         Pi, Appearance -> 
+         "Labeled"}, {{$CellContext`M$$, 2, 
+          "mass \[Times] solar mass \[Times] \!\(\*SuperscriptBox[\(10\), \(6\
+\)]\)"}, 1, 3, Appearance -> 
+         "Labeled"}, {{$CellContext`a$$, 2, 
+          "orbital parameter of Mercury ( \[Times] \
+\!\(\*SuperscriptBox[\(10\), \(-11\)]\))"}, 1, 3, Appearance -> "Labeled"}}, 
+      "Options" :> {ControlPlacement -> Top}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{493., {269., 274.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`G = 6.67*^-11, $CellContext`c = 
+       300000000, $CellContext`e = 0.205, 
+       Attributes[PlotRange] = {ReadProtected}}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellID->1429168341]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SnapshotsSection"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 2, $CellContext`M$$ = 
+    1.205, $CellContext`t$$ = 15.38217214951819, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`t$$], 15.38217214951819, "revolutions"}, 0.1, 10 
+      Pi}, {{
+       Hold[$CellContext`M$$], 1.205, 
+       "mass \[Times] solar mass \[Times] \!\(\*SuperscriptBox[\(10\), \(6\)]\
+\)"}, 1, 3}, {{
+       Hold[$CellContext`a$$], 2, 
+       "orbital parameter of Mercury ( \[Times] \!\(\*SuperscriptBox[\(10\), \
+\(-11\)]\))"}, 1, 3}}, Typeset`size$$ = {450., {198., 202.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    False, $CellContext`t$1713$$ = 0, $CellContext`M$1714$$ = 
+    0, $CellContext`a$1715$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 2, $CellContext`M$$ = 
+        1.205, $CellContext`t$$ = 15.38217214951819}, "ControllerVariables" :> {
+        Hold[$CellContext`t$$, $CellContext`t$1713$$, 0], 
+        Hold[$CellContext`M$$, $CellContext`M$1714$$, 0], 
+        Hold[$CellContext`a$$, $CellContext`a$1715$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`rad$}, $CellContext`rad$[
+           Pattern[$CellContext`\[Theta], 
+            Blank[]], 
+           Pattern[$CellContext`M, 
+            Blank[]], 
+           Pattern[$CellContext`a, 
+            Blank[]]] := 
+         With[{$CellContext`b = 
+            3 $CellContext`G $CellContext`M/($CellContext`c^2 \
+$CellContext`a)}, 
+           
+           With[{$CellContext`x = (
+               1 - $CellContext`a^2 $CellContext`b) $CellContext`\[Theta]}, 
+            1/(1 - $CellContext`e 
+            Sin[$CellContext`x] + $CellContext`b $CellContext`a^2 (
+              1 + $CellContext`e^2/2 + (1/6) $CellContext`e^2 
+               Cos[2 $CellContext`x]))]]; ParametricPlot[
+          
+          Evaluate[$CellContext`rad$[$CellContext`\[Theta], $CellContext`M$$ 
+             10^36, $CellContext`a$$/10^11] {
+             Cos[$CellContext`\[Theta]], 
+             Sin[$CellContext`\[Theta]]}], {$CellContext`\[Theta], 
+           0, $CellContext`t$$}, PlotRange -> {{-1.2, 1.2}, {-1.2, 1.2}}, 
+          Frame -> True, Axes -> False, Epilog -> {
+            RGBColor[1, 0.7, 0], 
+            PointSize[0.1], 
+            Point[{0, 0}]}, ImageSize -> {450, 400}]], 
+      "Specifications" :> {{{$CellContext`t$$, 15.38217214951819, 
+          "revolutions"}, 0.1, 10 Pi, Appearance -> 
+         "Labeled"}, {{$CellContext`M$$, 1.205, 
+          "mass \[Times] solar mass \[Times] \!\(\*SuperscriptBox[\(10\), \(6\
+\)]\)"}, 1, 3, Appearance -> 
+         "Labeled"}, {{$CellContext`a$$, 2, 
+          "orbital parameter of Mercury ( \[Times] \
+\!\(\*SuperscriptBox[\(10\), \(-11\)]\))"}, 1, 3, Appearance -> "Labeled"}}, 
+      "Options" :> {ControlPlacement -> Top}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{493., {269., 274.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`G = 6.67*^-11, $CellContext`c = 
+       300000000, $CellContext`e = 0.205, 
+       Attributes[PlotRange] = {ReadProtected}}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellID->427715492],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 2.8, $CellContext`M$$ = 
+    3., $CellContext`t$$ = 21.98, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`t$$], 21.98, "revolutions"}, 0.1, 10 Pi}, {{
+       Hold[$CellContext`M$$], 3., 
+       "mass \[Times] solar mass \[Times] \!\(\*SuperscriptBox[\(10\), \(6\)]\
+\)"}, 1, 3}, {{
+       Hold[$CellContext`a$$], 2.8, 
+       "orbital parameter of Mercury ( \[Times] \!\(\*SuperscriptBox[\(10\), \
+\(-11\)]\))"}, 1, 3}}, Typeset`size$$ = {450., {198., 202.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    False, $CellContext`t$1776$$ = 0, $CellContext`M$1777$$ = 
+    0, $CellContext`a$1778$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 2.8, $CellContext`M$$ = 
+        3., $CellContext`t$$ = 21.98}, "ControllerVariables" :> {
+        Hold[$CellContext`t$$, $CellContext`t$1776$$, 0], 
+        Hold[$CellContext`M$$, $CellContext`M$1777$$, 0], 
+        Hold[$CellContext`a$$, $CellContext`a$1778$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`rad$}, $CellContext`rad$[
+           Pattern[$CellContext`\[Theta], 
+            Blank[]], 
+           Pattern[$CellContext`M, 
+            Blank[]], 
+           Pattern[$CellContext`a, 
+            Blank[]]] := 
+         With[{$CellContext`b = 
+            3 $CellContext`G $CellContext`M/($CellContext`c^2 \
+$CellContext`a)}, 
+           
+           With[{$CellContext`x = (
+               1 - $CellContext`a^2 $CellContext`b) $CellContext`\[Theta]}, 
+            1/(1 - $CellContext`e 
+            Sin[$CellContext`x] + $CellContext`b $CellContext`a^2 (
+              1 + $CellContext`e^2/2 + (1/6) $CellContext`e^2 
+               Cos[2 $CellContext`x]))]]; ParametricPlot[
+          
+          Evaluate[$CellContext`rad$[$CellContext`\[Theta], $CellContext`M$$ 
+             10^36, $CellContext`a$$/10^11] {
+             Cos[$CellContext`\[Theta]], 
+             Sin[$CellContext`\[Theta]]}], {$CellContext`\[Theta], 
+           0, $CellContext`t$$}, PlotRange -> {{-1.2, 1.2}, {-1.2, 1.2}}, 
+          Frame -> True, Axes -> False, Epilog -> {
+            RGBColor[1, 0.7, 0], 
+            PointSize[0.1], 
+            Point[{0, 0}]}, ImageSize -> {450, 400}]], 
+      "Specifications" :> {{{$CellContext`t$$, 21.98, "revolutions"}, 0.1, 10 
+         Pi, Appearance -> 
+         "Labeled"}, {{$CellContext`M$$, 3., 
+          "mass \[Times] solar mass \[Times] \!\(\*SuperscriptBox[\(10\), \(6\
+\)]\)"}, 1, 3, Appearance -> 
+         "Labeled"}, {{$CellContext`a$$, 2.8, 
+          "orbital parameter of Mercury ( \[Times] \
+\!\(\*SuperscriptBox[\(10\), \(-11\)]\))"}, 1, 3, Appearance -> "Labeled"}}, 
+      "Options" :> {ControlPlacement -> Top}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{493., {269., 274.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`G = 6.67*^-11, $CellContext`c = 
+       300000000, $CellContext`e = 0.205, 
+       Attributes[PlotRange] = {ReadProtected}}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellID->986507535],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 2.02, $CellContext`M$$ = 
+    2.81, $CellContext`t$$ = 21.98, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`t$$], 21.98, "revolutions"}, 0.1, 10 Pi}, {{
+       Hold[$CellContext`M$$], 2.81, 
+       "mass \[Times] solar mass \[Times] \!\(\*SuperscriptBox[\(10\), \(6\)]\
+\)"}, 1, 3}, {{
+       Hold[$CellContext`a$$], 2.02, 
+       "orbital parameter of Mercury ( \[Times] \!\(\*SuperscriptBox[\(10\), \
+\(-11\)]\))"}, 1, 3}}, Typeset`size$$ = {450., {198., 202.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    False, $CellContext`t$1839$$ = 0, $CellContext`M$1840$$ = 
+    0, $CellContext`a$1841$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 2.02, $CellContext`M$$ = 
+        2.81, $CellContext`t$$ = 21.98}, "ControllerVariables" :> {
+        Hold[$CellContext`t$$, $CellContext`t$1839$$, 0], 
+        Hold[$CellContext`M$$, $CellContext`M$1840$$, 0], 
+        Hold[$CellContext`a$$, $CellContext`a$1841$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`rad$}, $CellContext`rad$[
+           Pattern[$CellContext`\[Theta], 
+            Blank[]], 
+           Pattern[$CellContext`M, 
+            Blank[]], 
+           Pattern[$CellContext`a, 
+            Blank[]]] := 
+         With[{$CellContext`b = 
+            3 $CellContext`G $CellContext`M/($CellContext`c^2 \
+$CellContext`a)}, 
+           
+           With[{$CellContext`x = (
+               1 - $CellContext`a^2 $CellContext`b) $CellContext`\[Theta]}, 
+            1/(1 - $CellContext`e 
+            Sin[$CellContext`x] + $CellContext`b $CellContext`a^2 (
+              1 + $CellContext`e^2/2 + (1/6) $CellContext`e^2 
+               Cos[2 $CellContext`x]))]]; ParametricPlot[
+          
+          Evaluate[$CellContext`rad$[$CellContext`\[Theta], $CellContext`M$$ 
+             10^36, $CellContext`a$$/10^11] {
+             Cos[$CellContext`\[Theta]], 
+             Sin[$CellContext`\[Theta]]}], {$CellContext`\[Theta], 
+           0, $CellContext`t$$}, PlotRange -> {{-1.2, 1.2}, {-1.2, 1.2}}, 
+          Frame -> True, Axes -> False, Epilog -> {
+            RGBColor[1, 0.7, 0], 
+            PointSize[0.1], 
+            Point[{0, 0}]}, ImageSize -> {450, 400}]], 
+      "Specifications" :> {{{$CellContext`t$$, 21.98, "revolutions"}, 0.1, 10 
+         Pi, Appearance -> 
+         "Labeled"}, {{$CellContext`M$$, 2.81, 
+          "mass \[Times] solar mass \[Times] \!\(\*SuperscriptBox[\(10\), \(6\
+\)]\)"}, 1, 3, Appearance -> 
+         "Labeled"}, {{$CellContext`a$$, 2.02, 
+          "orbital parameter of Mercury ( \[Times] \
+\!\(\*SuperscriptBox[\(10\), \(-11\)]\))"}, 1, 3, Appearance -> "Labeled"}}, 
+      "Options" :> {ControlPlacement -> Top}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{493., {269., 274.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`G = 6.67*^-11, $CellContext`c = 
+       300000000, $CellContext`e = 0.205, 
+       Attributes[PlotRange] = {ReadProtected}}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellID->1658385905]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "DetailsSection"],
+
+Cell[TextData[{
+ "The general relativistic contribution can be approximated by the following \
+model: ",
+ Cell[BoxData[
+  FormBox["b", TraditionalForm]], "InlineMath"],
+ " is the perturbation parameter given by"
+}], "DetailNotes",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.412377009293676*^9, 3.41237705346704*^9}, {
+   3.414766041151168*^9, 3.4147660993183203`*^9}, {3.4147781848590727`*^9, 
+   3.414778187030934*^9}, {3.666050256973968*^9, 3.666050333148354*^9}},
+ CellID->200555423],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"b", "=", 
+    FractionBox[
+     RowBox[{"3", " ", "G", " ", "M"}], 
+     RowBox[{
+      SuperscriptBox["c", "2"], " ", "a"}]]}], TraditionalForm]], 
+  "InlineMath"],
+ ","
+}], "DetailNotes",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.4123718681237917`*^9, 3.412371902470311*^9}, {
+   3.4147660815825186`*^9, 3.414766112879146*^9}},
+ CellID->127687409],
+
+Cell[TextData[{
+ "where ",
+ Cell[BoxData[
+  FormBox["G", TraditionalForm]], "InlineMath"],
+ " is the universal constant of gravitation, ",
+ Cell[BoxData[
+  FormBox["c", TraditionalForm]], "InlineMath"],
+ " is the speed of light, and ",
+ Cell[BoxData[
+  FormBox["M", TraditionalForm]], "InlineMath"],
+ " is the mass of the Sun. Here ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"a", "=", 
+    RowBox[{"G", " ", 
+     RowBox[{"M", "/", 
+      SuperscriptBox["h", "2"]}]}]}], TraditionalForm]], "InlineMath"],
+ ", where ",
+ Cell[BoxData[
+  FormBox["h", TraditionalForm]], "InlineMath"],
+ " is the angular momentum per unit mass ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"L", "/", "m"}], TraditionalForm]], "InlineMath"],
+ "."
+}], "DetailNotes",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.412374381104842*^9, 3.4123745054523277`*^9}, {
+   3.412377792419005*^9, 3.412377793187377*^9}, {3.4123787455803757`*^9, 
+   3.4123787946329317`*^9}, {3.412378830096277*^9, 3.412378839945643*^9}, {
+   3.412379066831327*^9, 3.412379071642577*^9}, {3.41476611873353*^9, 
+   3.4147661415546417`*^9}, 3.4147662872218733`*^9},
+ CellID->1755984462],
+
+Cell[TextData[{
+ "The perturbed solution, invoking the substitution ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"r", "=", 
+    RowBox[{"1", "/", "u"}]}], TraditionalForm]], "InlineMath"],
+ " is"
+}], "DetailNotes",
+ CellChangeTimes->{
+  3.35696210375764*^9, 3.413325118106613*^9, {3.413325179676012*^9, 
+   3.413325188907173*^9}, 3.666050423126532*^9},
+ CellID->145732891],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["u", "1"], "(", "x", ")"}], "=", 
+    RowBox[{
+     SuperscriptBox["a", "3"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        FractionBox["1", "6"], " ", 
+        RowBox[{"cos", "(", 
+         RowBox[{"2", " ", "x"}], ")"}], " ", 
+        SuperscriptBox["e", "2"]}], "+", 
+       FractionBox[
+        SuperscriptBox["e", "2"], "2"], "+", "1"}], ")"}]}]}], 
+   TraditionalForm]], "InlineMath"],
+ ","
+}], "DetailNotes",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.412372374567383*^9, 3.4123724162129087`*^9}, 
+   3.412374895903412*^9, {3.412377182710567*^9, 3.4123772158027267`*^9}, {
+   3.412377290423293*^9, 3.412377291227797*^9}, {3.4133251139980993`*^9, 
+   3.413325124808247*^9}, 3.4147661647037287`*^9},
+ CellID->706119710],
+
+Cell[TextData[{
+ "where ",
+ Cell[BoxData[
+  FormBox["e", TraditionalForm]], "InlineMath"],
+ " is the eccentricity of the orbit;"
+}], "DetailNotes",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.412374916173246*^9, 3.412374916558298*^9}, {
+   3.412376657065241*^9, 3.412376664828738*^9}, {3.412377820291095*^9, 
+   3.412377821243091*^9}, {3.412379949211257*^9, 3.412379959197543*^9}, {
+   3.4147661714911337`*^9, 3.4147661803006525`*^9}, {3.4147782011870933`*^9, 
+   3.414778203718327*^9}},
+ CellID->1628725130],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"e", "=", 
+    RowBox[{
+     RowBox[{"A", "/", "a"}], "=", "0.205"}]}], TraditionalForm]], 
+  "InlineMath"],
+ "."
+}], "DetailNotes",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.4123749240073547`*^9, 3.4123749362825623`*^9}, 
+   3.412374971209835*^9, {3.412377384848915*^9, 3.412377405134162*^9}},
+ CellID->9211601],
+
+Cell["\<\
+The relativistic analogue of the orbit trajectory in the two-body problem is\
+\>", "DetailNotes",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.4123746138202467`*^9, 3.4123746487692833`*^9}, {
+   3.412374800179675*^9, 3.412374821363675*^9}, {3.412381490384461*^9, 
+   3.4123814915093718`*^9}, {3.412381652063561*^9, 3.412381660195774*^9}, 
+   3.413325173214231*^9, {3.414766184674061*^9, 3.4147661850032425`*^9}},
+ CellID->2110575760],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"r", "=", 
+    SuperscriptBox[
+     RowBox[{"[", 
+      RowBox[{"a", "-", 
+       RowBox[{"A", " ", 
+        RowBox[{"sin", "(", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"1", "-", 
+            RowBox[{"b", " ", 
+             SuperscriptBox["a", "2"]}]}], ")"}], "\[Theta]"}], ")"}]}], "+", 
+       "b"}], " ", "]"}], 
+     RowBox[{"-", "1"}]]}], TraditionalForm]], "InlineMath"],
+ "."
+}], "DetailNotes",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.4123748324810343`*^9, 3.4123748739534616`*^9}, {
+   3.414766187856147*^9, 3.4147661931073723`*^9}, {3.666050447517901*^9, 
+   3.666050466218774*^9}},
+ CellID->384361091]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "ControlSuggestionsSection"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[True], Cell[" Resize Images"]}],
+  "\"Click inside an image to reveal its orange resize frame.\\nDrag any of \
+the orange resize handles to resize the image.\"",
+  TooltipDelay->0.35]], "ControlSuggestions",
+ CellChangeTimes->{3.35696210375764*^9, 3.414505428913621*^9},
+ FontFamily->"Verdana",
+ CellTags->"ResizeImages"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[False], Cell[" Rotate and Zoom in 3D"]}],
+  RowBox[{
+   "\"Drag a 3D graphic to rotate it. Starting the drag near the center \
+tumbles\\nthe graphic; starting near a corner turns it parallel to the plane \
+of the screen.\\nHold down \"", 
+    FrameBox[
+    "Ctrl", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" (or \"", 
+    FrameBox[
+    "Cmd", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" on Mac) and drag up and down to zoom.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ FontFamily->"Verdana",
+ CellTags->"RotateAndZoomIn3D"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[False], Cell[" Drag Locators"]}],
+  RowBox[{"\"Drag any locator (\"", 
+    GraphicsBox[
+     LocatorBox[
+      Scaled[{0.5, 0.5}]], ImageSize -> 20], 
+    "\", etc.) to move it around.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ FontFamily->"Verdana",
+ CellTags->"DragLocators"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[False], Cell[" Create and Delete Locators"]}],
+  RowBox[{"\"Insert a new locator in the graphic by holding down the \"", 
+    FrameBox[
+    "Alt", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], 
+    "\" key\\nand clicking where you want it to be. Delete a locator by \
+clicking it\\nwhile holding down the \"", 
+    FrameBox[
+    "Alt", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" key.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ FontFamily->"Verdana",
+ CellTags->"CreateAndDeleteLocators"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[False], Cell[" Slider Zoom"]}],
+  RowBox[{"\"Hold down the \"", 
+    FrameBox[
+    "Alt", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], 
+    "\" key while moving a slider to make fine adjustments in the slider \
+value.\\nHold \"", 
+    FrameBox[
+    "Ctrl", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" and/or \"", 
+    FrameBox[
+    "Shift", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" at the same time as \"", 
+    FrameBox[
+    "Alt", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" to make ever finer adjustments.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ FontFamily->"Verdana",
+ CellTags->"SliderZoom"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[False], Cell[" Gamepad Controls"]}],
+  "\"Control this Demonstration with a gamepad or other\\nhuman interface \
+device connected to your computer.\"",
+  TooltipDelay->0.35]], "ControlSuggestions",
+ CellChangeTimes->{3.35696210375764*^9, 3.3895522232313623`*^9},
+ FontFamily->"Verdana",
+ CellTags->"GamepadControls"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[True], Cell[" Automatic Animation"]}],
+  RowBox[{"\"Animate a slider in this Demonstration by clicking the\"", 
+    AdjustmentBox[
+     Cell[
+      GraphicsData[
+      "CompressedBitmap", 
+       "eJzzTSzJSM1NLMlMTlRwL0osyMhMLlZwyy8CCjEzMjAwcIKwAgOI/R/IhBKc\n\
+/4EAyGAG0f+nTZsGwgysIJIRKsWKLAXGIHFmEpUgLADxWUAkI24jZs+eTaEt\n\
+IG+wQKRmzJgBlYf5lhEA30OqWA=="], "Graphics", ImageSize -> {9, 9}, ImageMargins -> 
+      0], BoxBaselineShift -> 0.1839080459770115, 
+     BoxMargins -> {{0., 0.}, {-0.1839080459770115, 0.1839080459770115}}], 
+    "\"button\\nnext to the slider, and then clicking the play button that \
+appears.\\nAnimate all controls by selecting \"", 
+    StyleBox["Autorun", FontWeight -> "Bold"], "\" from the\"", 
+    AdjustmentBox[
+     Cell[
+      GraphicsData[
+      "CompressedBitmap", 
+       "eJyNULENwyAQfEySIlMwTVJlCGRFsosokeNtqBmDBagoaZjAI1C8/8GUUUC6\n\
+57h7cQ8PvU7Pl17nUav7oj/TPH7V7b2QJAUAXBkKmCPRowxICy64bRvGGNF7\n\
+X8CctGoDSN4xhIDGGDhzFXwUh3/ClBKrDQPmnGXtI6u0OOd+tZBVUqy1xSaH\n\
+UqiK6pPe4XdEdAz6563tx/gejuORGMxJaz8mdpJn7hc="], "Graphics", 
+      ImageSize -> {10, 10}, ImageMargins -> 0], BoxBaselineShift -> 
+     0.1839080459770115, 
+     BoxMargins -> {{0., 0.}, {-0.1839080459770115, 0.1839080459770115}}], 
+    "\"menu.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ CellChangeTimes->{3.35696210375764*^9, 3.4123687224694242`*^9},
+ FontFamily->"Verdana",
+ CellTags->"AutomaticAnimation"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[False], Cell[" Bookmark Animation"]}],
+  RowBox[{
+   "\"See a prepared animation of this Demonstration by selecting\\n\"", 
+    StyleBox["Animate Bookmarks", FontWeight -> "Bold"], "\" from the\"", 
+    AdjustmentBox[
+     Cell[
+      GraphicsData[
+      "CompressedBitmap", 
+       "eJyNULENwyAQfEySIlMwTVJlCGRFsosokeNtqBmDBagoaZjAI1C8/8GUUUC6\n\
+57h7cQ8PvU7Pl17nUav7oj/TPH7V7b2QJAUAXBkKmCPRowxICy64bRvGGNF7\n\
+X8CctGoDSN4xhIDGGDhzFXwUh3/ClBKrDQPmnGXtI6u0OOd+tZBVUqy1xSaH\n\
+UqiK6pPe4XdEdAz6563tx/gejuORGMxJaz8mdpJn7hc="], "Graphics", 
+      ImageSize -> {10, 10}, ImageMargins -> 0], BoxBaselineShift -> 
+     0.1839080459770115, 
+     BoxMargins -> {{0., 0.}, {-0.1839080459770115, 0.1839080459770115}}], 
+    "\"menu.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ FontFamily->"Verdana",
+ CellTags->"BookmarkAnimation"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SearchTermsSection"],
+
+Cell["general relativity", "SearchTerms",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.412381680397476*^9, 3.412381690340522*^9}},
+ CellID->1333152218],
+
+Cell["Mercury precession", "SearchTerms",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.412381703739718*^9, 3.412381719157485*^9}, 
+   3.6660501347304296`*^9},
+ CellID->1592438775],
+
+Cell["perihelion", "SearchTerms",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.4123817226009283`*^9, 3.412381727405637*^9}},
+ CellID->29798864],
+
+Cell["two body problem", "SearchTerms",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.412381737594975*^9, 3.4123817432462893`*^9}},
+ CellID->465817497]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "RelatedLinksSection"],
+
+Cell[TextData[ButtonBox["General Relativity",
+ BaseStyle->"Hyperlink",
+ ButtonData->{
+   URL["http://scienceworld.wolfram.com/physics/GeneralRelativity.html"], 
+   None}]], "RelatedLinks",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.414521188674941*^9, 3.4145212021748548`*^9}},
+ CellID->471706642],
+
+Cell[TextData[ButtonBox["Relativistic Precession",
+ BaseStyle->"Hyperlink",
+ ButtonData->{
+   URL["http://scienceworld.wolfram.com/physics/RelativisticPrecession.html"],
+    None}]], "RelatedLinks",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.414521240377735*^9, 3.4145212541588974`*^9}},
+ CellID->90113143],
+
+Cell[TextData[ButtonBox["Two-Body Problem",
+ BaseStyle->"Hyperlink",
+ ButtonData->{
+   URL["http://scienceworld.wolfram.com/physics/Two-BodyProblem.html"], 
+   None}]], "RelatedLinks",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.4145211678156996`*^9, 3.4145211772375145`*^9}},
+ CellID->55771386]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "AuthorSection"],
+
+Cell[TextData[{
+ "Contributed by: ",
+ ButtonBox["Enrique Zeleny",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://demonstrations.wolfram.com/author.html?author=Enrique+Zeleny"]\
+, None},
+  ButtonNote->
+   "http://demonstrations.wolfram.com/author.html?author=Enrique+Zeleny"]
+}], "Author",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.412368728769449*^9, 3.412368731373639*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{806, 866},
+WindowMargins->{{36, Automatic}, {Automatic, 9}},
+FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
+2015)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Demonstration.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "AutomaticAnimation"->{
+  Cell[38076, 935, 1476, 32, 29, "ControlSuggestions",
+   CellTags->"AutomaticAnimation"]},
+ "BookmarkAnimation"->{
+  Cell[39555, 969, 882, 21, 29, "ControlSuggestions",
+   CellTags->"BookmarkAnimation"]},
+ "CreateAndDeleteLocators"->{
+  Cell[36217, 884, 637, 15, 29, "ControlSuggestions",
+   CellTags->"CreateAndDeleteLocators"]},
+ "DragLocators"->{
+  Cell[35874, 871, 340, 11, 29, "ControlSuggestions",
+   CellTags->"DragLocators"]},
+ "GamepadControls"->{
+  Cell[37704, 924, 369, 9, 29, "ControlSuggestions",
+   CellTags->"GamepadControls"]},
+ "ResizeImages"->{
+  Cell[34816, 842, 374, 9, 29, "ControlSuggestions",
+   CellTags->"ResizeImages"]},
+ "RotateAndZoomIn3D"->{
+  Cell[35193, 853, 678, 16, 29, "ControlSuggestions",
+   CellTags->"RotateAndZoomIn3D"]},
+ "SliderZoom"->{
+  Cell[36857, 901, 844, 21, 29, "ControlSuggestions",
+   CellTags->"SliderZoom"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"AutomaticAnimation", 42996, 1082},
+ {"BookmarkAnimation", 43112, 1085},
+ {"CreateAndDeleteLocators", 43232, 1088},
+ {"DragLocators", 43347, 1091},
+ {"GamepadControls", 43454, 1094},
+ {"ResizeImages", 43560, 1097},
+ {"RotateAndZoomIn3D", 43668, 1100},
+ {"SliderZoom", 43775, 1103}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[585, 22, 170, 3, 76, "DemoTitle"],
+Cell[CellGroupData[{
+Cell[780, 29, 33, 0, 275, "InitializationSection"],
+Cell[816, 31, 734, 19, 96, "Input",
+ CellID->1855690632]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1587, 55, 29, 0, 243, "ManipulateSection"],
+Cell[CellGroupData[{
+Cell[1641, 59, 5476, 130, 250, "Input"],
+Cell[7120, 191, 3910, 81, 555, "Output",
+ CellID->897308225]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11079, 278, 36, 0, 181, "ManipulateCaptionSection"],
+Cell[11118, 280, 1385, 21, 87, "ManipulateCaption",
+ CellID->1201396932],
+Cell[12506, 303, 1020, 19, 41, "ManipulateCaption",
+ CellID->635735109]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13563, 327, 28, 0, 179, "ThumbnailSection"],
+Cell[13594, 329, 3911, 81, 555, "Output",
+ CellID->1429168341]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17542, 415, 28, 0, 149, "SnapshotsSection"],
+Cell[17573, 417, 3982, 82, 555, "Output",
+ CellID->427715492],
+Cell[21558, 501, 3922, 81, 555, "Output",
+ CellID->986507535],
+Cell[25483, 584, 3935, 81, 555, "Output",
+ CellID->1658385905]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29455, 670, 26, 0, 357, "DetailsSection"],
+Cell[29484, 672, 489, 11, 39, "DetailNotes",
+ CellID->200555423],
+Cell[29976, 685, 407, 14, 31, "DetailNotes",
+ CellID->127687409],
+Cell[30386, 701, 1122, 32, 43, "DetailNotes",
+ CellID->1755984462],
+Cell[31511, 735, 367, 11, 23, "DetailNotes",
+ CellID->145732891],
+Cell[31881, 748, 830, 25, 35, "DetailNotes",
+ CellID->706119710],
+Cell[32714, 775, 510, 12, 23, "DetailNotes",
+ CellID->1628725130],
+Cell[33227, 789, 369, 12, 23, "DetailNotes",
+ CellID->9211601],
+Cell[33599, 803, 444, 8, 23, "DetailNotes",
+ CellID->2110575760],
+Cell[34046, 813, 693, 22, 27, "DetailNotes",
+ CellID->384361091]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34776, 840, 37, 0, 131, "ControlSuggestionsSection"],
+Cell[34816, 842, 374, 9, 29, "ControlSuggestions",
+ CellTags->"ResizeImages"],
+Cell[35193, 853, 678, 16, 29, "ControlSuggestions",
+ CellTags->"RotateAndZoomIn3D"],
+Cell[35874, 871, 340, 11, 29, "ControlSuggestions",
+ CellTags->"DragLocators"],
+Cell[36217, 884, 637, 15, 29, "ControlSuggestions",
+ CellTags->"CreateAndDeleteLocators"],
+Cell[36857, 901, 844, 21, 29, "ControlSuggestions",
+ CellTags->"SliderZoom"],
+Cell[37704, 924, 369, 9, 29, "ControlSuggestions",
+ CellTags->"GamepadControls"],
+Cell[38076, 935, 1476, 32, 29, "ControlSuggestions",
+ CellTags->"AutomaticAnimation"],
+Cell[39555, 969, 882, 21, 29, "ControlSuggestions",
+ CellTags->"BookmarkAnimation"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[40474, 995, 30, 0, 165, "SearchTermsSection"],
+Cell[40507, 997, 152, 3, 23, "SearchTerms",
+ CellID->1333152218],
+Cell[40662, 1002, 180, 4, 23, "SearchTerms",
+ CellID->1592438775],
+Cell[40845, 1008, 144, 3, 23, "SearchTerms",
+ CellID->29798864],
+Cell[40992, 1013, 151, 3, 23, "SearchTerms",
+ CellID->465817497]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[41180, 1021, 31, 0, 149, "RelatedLinksSection"],
+Cell[41214, 1023, 300, 7, 23, "RelatedLinks",
+ CellID->471706642],
+Cell[41517, 1032, 309, 7, 23, "RelatedLinks",
+ CellID->90113143],
+Cell[41829, 1041, 297, 7, 23, "RelatedLinks",
+ CellID->55771386]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[42163, 1053, 25, 0, 149, "AuthorSection"],
+Cell[42191, 1055, 389, 11, 23, "Author"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

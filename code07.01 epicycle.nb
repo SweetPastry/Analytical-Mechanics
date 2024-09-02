@@ -1,0 +1,826 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     33222,        818]
+NotebookOptionsPosition[     22505,        552]
+NotebookOutlinePosition[     32857,        804]
+CellTagsIndexPosition[     32814,        801]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Epicycle", "Subsection",ExpressionUUID->"e96dd8ec-422d-48c0-97ba-1274d081966b"],
+
+Cell[BoxData["Quit"], "Input",
+ CellChangeTimes->{{3.77183353850274*^9, 3.771833539083773*^9}},
+ ExpressionUUID -> "3d8f4658-f225-4b18-a6fa-c8a196563693"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"A", ",", "B"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"b", ">", "a"}], ",", 
+        RowBox[{"b", "\[Equal]", "a"}]}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"A", "=", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"R", " ", 
+           RowBox[{"Cos", "[", "\[Phi]", "]"}]}], "+", 
+          RowBox[{"b", " ", 
+           RowBox[{"Cos", "[", 
+            RowBox[{"m", " ", "\[Phi]"}], "]"}]}]}], ",", 
+         RowBox[{
+          RowBox[{"R", " ", 
+           RowBox[{"Sin", "[", "\[Phi]", "]"}]}], "+", 
+          RowBox[{"b", " ", 
+           RowBox[{"Sin", "[", 
+            RowBox[{"m", " ", "\[Phi]"}], "]"}]}]}]}], "}"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"B", "=", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"R", " ", 
+           RowBox[{"Cos", "[", "\[Phi]", "]"}]}], "-", 
+          RowBox[{"a", " ", 
+           RowBox[{"Cos", "[", 
+            RowBox[{"m", " ", "\[Phi]"}], "]"}]}]}], ",", 
+         RowBox[{
+          RowBox[{"R", " ", 
+           RowBox[{"Sin", "[", "\[Phi]", "]"}]}], "-", 
+          RowBox[{"a", " ", 
+           RowBox[{"Sin", "[", 
+            RowBox[{"m", " ", "\[Phi]"}], "]"}]}]}]}], "}"}]}], ";", 
+      RowBox[{"Show", "[", 
+       RowBox[{
+        RowBox[{"Graphics", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Black", ",", "Thin", ",", 
+            RowBox[{"Circle", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"0", ",", "0"}], "}"}], ",", "R"}], "]"}], ",", 
+            RowBox[{"Line", "[", 
+             RowBox[{"{", 
+              RowBox[{"A", ",", "B"}], "}"}], "]"}], ",", 
+            RowBox[{"PointSize", "[", ".01", "]"}], ",", 
+            RowBox[{"Point", "[", 
+             RowBox[{"{", 
+              RowBox[{"0", ",", "0"}], "}"}], "]"}], ",", "Blue", ",", 
+            RowBox[{"Thickness", "[", ".002", "]"}], ",", 
+            RowBox[{"Circle", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"R", " ", 
+                 RowBox[{"Cos", "[", "\[Phi]", "]"}]}], ",", 
+                RowBox[{"R", " ", 
+                 RowBox[{"Sin", "[", "\[Phi]", "]"}]}]}], "}"}], ",", "b"}], 
+             "]"}], ",", 
+            RowBox[{"Point", "[", "A", "]"}], ",", "Red", ",", 
+            RowBox[{"Circle", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"R", " ", 
+                 RowBox[{"Cos", "[", "\[Phi]", "]"}]}], ",", 
+                RowBox[{"R", " ", 
+                 RowBox[{"Sin", "[", "\[Phi]", "]"}]}]}], "}"}], ",", "a"}], 
+             "]"}], ",", 
+            RowBox[{"PointSize", "[", ".01", "]"}], ",", 
+            RowBox[{"Point", "[", "B", "]"}]}], "}"}], ",", 
+          RowBox[{"PlotRange", "\[Rule]", "435"}], ",", 
+          RowBox[{"ImageSize", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"575", ",", "380"}], "}"}]}], ",", 
+          RowBox[{"AspectRatio", "\[Rule]", "1"}]}], "]"}], ",", 
+        RowBox[{"ParametricPlot", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"R", " ", 
+              RowBox[{"Cos", "[", "\[Theta]", "]"}]}], "+", 
+             RowBox[{"b", " ", 
+              RowBox[{"Cos", "[", 
+               RowBox[{"m", " ", "\[Theta]"}], "]"}]}]}], ",", 
+            RowBox[{
+             RowBox[{"R", " ", 
+              RowBox[{"Sin", "[", "\[Theta]", "]"}]}], "+", 
+             RowBox[{"b", " ", 
+              RowBox[{"Sin", "[", 
+               RowBox[{"m", " ", "\[Theta]"}], "]"}]}]}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"\[Theta]", ",", ".001", ",", "\[Phi]"}], "}"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Thickness", "[", ".002", "]"}], ",", "Blue"}], 
+            "}"}]}]}], "]"}], ",", 
+        RowBox[{"ParametricPlot", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"R", " ", 
+              RowBox[{"Cos", "[", "\[Theta]", "]"}]}], "-", 
+             RowBox[{"a", " ", 
+              RowBox[{"Cos", "[", 
+               RowBox[{"m", " ", "\[Theta]"}], "]"}]}]}], ",", 
+            RowBox[{
+             RowBox[{"R", " ", 
+              RowBox[{"Sin", "[", "\[Theta]", "]"}]}], "-", 
+             RowBox[{"a", " ", 
+              RowBox[{"Sin", "[", 
+               RowBox[{"m", " ", "\[Theta]"}], "]"}]}]}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"\[Theta]", ",", ".001", ",", "\[Phi]"}], "}"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Thickness", "[", ".002", "]"}], ",", "Red"}], "}"}]}]}],
+          "]"}]}], "]"}]}]}], "\[IndentingNewLine]", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"a", ",", "30", ",", 
+       RowBox[{"Text", "@", 
+        RowBox[{"Style", "[", 
+         RowBox[{"\"\<a\>\"", ",", "Italic"}], "]"}]}], ",", "10"}], "}"}], 
+     ",", "1", ",", "30", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"b", ",", "30", ",", 
+       RowBox[{"Text", "@", 
+        RowBox[{"Style", "[", 
+         RowBox[{"\"\<b\>\"", ",", "Italic", ",", "10"}], "]"}]}]}], "}"}], 
+     ",", "0", ",", "a", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"m", ",", "6", ",", "\"\<lunar months per year, m\>\""}], "}"}],
+      ",", "4", ",", "13", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\[Phi]", ",", "0", ",", " ", "3.14", ",", "\"\<rotate\>\""}], 
+      "}"}], ",", "0", ",", 
+     RowBox[{"2", " ", "3.14"}], ",", ".01", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"R", ",", " ", "400", ",", " ", 
+     RowBox[{"ControlType", "\[Rule]", " ", "None"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"TrackedSymbols", "\[RuleDelayed]", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "b", ",", "m", ",", "\[Phi]"}], "}"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"ControlPlacement", "\[Rule]", "Top"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"AutorunSequencing", "\[Rule]", " ", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "2", ",", "3"}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{3.847737327654789*^9},
+ ExpressionUUID -> "6019bb2f-16ec-4e9a-bc11-329b002a2932"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 30., $CellContext`b$$ = 
+    30., $CellContext`m$$ = 6.000000000000005, $CellContext`R$$ = 
+    400, $CellContext`\[Phi]$$ = 5.36, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a$$], 30, 
+       Text[
+        Style["a", Italic]], 10}, 1, 30}, {{
+       Hold[$CellContext`b$$], 30, 
+       Text[
+        Style["b", Italic, 10]]}, 0, 
+      Dynamic[$CellContext`a$$]}, {{
+       Hold[$CellContext`m$$], 6, "lunar months per year, m"}, 4, 13}, {{
+       Hold[$CellContext`\[Phi]$$], 0, 3.14, "rotate"}, 0, 6.28, 0.01}, {
+      Hold[$CellContext`R$$], 400}}, Typeset`size$$ = {1035., {337., 347.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`a$299$$ = 0, $CellContext`b$304$$ = 
+    0, $CellContext`m$305$$ = 0, $CellContext`\[Phi]$306$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 30, $CellContext`b$$ = 
+        30, $CellContext`m$$ = 6, $CellContext`R$$ = 
+        400, $CellContext`\[Phi]$$ = 0}, "ControllerVariables" :> {
+        Hold[$CellContext`a$$, $CellContext`a$299$$, 0], 
+        Hold[$CellContext`b$$, $CellContext`b$304$$, 0], 
+        Hold[$CellContext`m$$, $CellContext`m$305$$, 0], 
+        Hold[$CellContext`\[Phi]$$, $CellContext`\[Phi]$306$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`A$, $CellContext`B$}, 
+        If[$CellContext`b$$ > $CellContext`a$$, $CellContext`b$$ == \
+$CellContext`a$$]; $CellContext`A$ = {$CellContext`R$$ 
+            Cos[$CellContext`\[Phi]$$] + $CellContext`b$$ 
+            Cos[$CellContext`m$$ $CellContext`\[Phi]$$], $CellContext`R$$ 
+            Sin[$CellContext`\[Phi]$$] + $CellContext`b$$ 
+            Sin[$CellContext`m$$ $CellContext`\[Phi]$$]}; $CellContext`B$ = \
+{$CellContext`R$$ Cos[$CellContext`\[Phi]$$] - $CellContext`a$$ 
+           Cos[$CellContext`m$$ $CellContext`\[Phi]$$], $CellContext`R$$ 
+            Sin[$CellContext`\[Phi]$$] - $CellContext`a$$ 
+           Sin[$CellContext`m$$ $CellContext`\[Phi]$$]}; Show[
+          Graphics[{Black, Thin, 
+            Circle[{0, 0}, $CellContext`R$$], 
+            Line[{$CellContext`A$, $CellContext`B$}], 
+            PointSize[0.01], 
+            Point[{0, 0}], Blue, 
+            Thickness[0.002], 
+            
+            Circle[{$CellContext`R$$ 
+              Cos[$CellContext`\[Phi]$$], $CellContext`R$$ 
+              Sin[$CellContext`\[Phi]$$]}, $CellContext`b$$], 
+            Point[$CellContext`A$], Red, 
+            
+            Circle[{$CellContext`R$$ 
+              Cos[$CellContext`\[Phi]$$], $CellContext`R$$ 
+              Sin[$CellContext`\[Phi]$$]}, $CellContext`a$$], 
+            PointSize[0.01], 
+            Point[$CellContext`B$]}, PlotRange -> 435, 
+           ImageSize -> {575, 380}, AspectRatio -> 1], 
+          
+          ParametricPlot[{$CellContext`R$$ 
+             Cos[$CellContext`\[Theta]] + $CellContext`b$$ 
+             Cos[$CellContext`m$$ $CellContext`\[Theta]], $CellContext`R$$ 
+             Sin[$CellContext`\[Theta]] + $CellContext`b$$ 
+             Sin[$CellContext`m$$ $CellContext`\[Theta]]}, {$CellContext`\
+\[Theta], 0.001, $CellContext`\[Phi]$$}, PlotStyle -> {
+             Thickness[0.002], Blue}], 
+          
+          ParametricPlot[{$CellContext`R$$ 
+             Cos[$CellContext`\[Theta]] - $CellContext`a$$ 
+            Cos[$CellContext`m$$ $CellContext`\[Theta]], $CellContext`R$$ 
+             Sin[$CellContext`\[Theta]] - $CellContext`a$$ 
+            Sin[$CellContext`m$$ $CellContext`\[Theta]]}, {$CellContext`\
+\[Theta], 0.001, $CellContext`\[Phi]$$}, PlotStyle -> {
+             Thickness[0.002], Red}]]], 
+      "Specifications" :> {{{$CellContext`a$$, 30, 
+          Text[
+           Style["a", Italic]], 10}, 1, 30, Appearance -> 
+         "Labeled"}, {{$CellContext`b$$, 30, 
+          Text[
+           Style["b", Italic, 10]]}, 0, 
+         Dynamic[$CellContext`a$$], Appearance -> 
+         "Labeled"}, {{$CellContext`m$$, 6, "lunar months per year, m"}, 4, 
+         13, Appearance -> 
+         "Labeled"}, {{$CellContext`\[Phi]$$, 0, 3.14, "rotate"}, 0, 6.28, 
+         0.01, Appearance -> "Labeled"}, {$CellContext`R$$, 400, ControlType -> 
+         None}}, "Options" :> {
+       TrackedSymbols :> {$CellContext`a$$, $CellContext`b$$, \
+$CellContext`m$$, $CellContext`\[Phi]$$}, ControlPlacement -> Top, 
+        AutorunSequencing -> {1, 2, 3}}, "DefaultOptions" :> {}],
+     ImageSizeCache->{1117., {491., 501.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.8477373465998898`*^9, 3.8477373576701546`*^9}, {
+   3.847737546805725*^9, 3.847737551874402*^9}, 3.879355356649087*^9},
+ ExpressionUUID -> "01216c77-1923-4e99-9406-ae150bc342ea"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Precession", "Subsection",
+ CellChangeTimes->{{3.847742093205654*^9, 
+  3.847742095221205*^9}},ExpressionUUID->"fdf4e98b-982a-46ed-98db-\
+d3f35a3607ea"],
+
+Cell[BoxData["Quit"], "Input",
+ CellChangeTimes->{{3.847742130526595*^9, 3.847742131227471*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"b2309c8b-d8dc-4a43-8aea-3c0b4e6c538b"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"G", "=", 
+   FractionBox["6.67", 
+    SuperscriptBox["10", "11"]]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"c", "=", 
+    RowBox[{"3", " ", 
+     SuperscriptBox["10", "8"]}]}], ";"}], "\n"}], "\n", 
+ RowBox[{
+  RowBox[{"e", "=", "0.205"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.8477421242037573`*^9, 3.847742127288603*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"85c627a3-0a19-43dc-9f3b-91620056f71a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", "rad", "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"rad", "[", 
+        RowBox[{"\[Theta]_", ",", "M_", ",", "a_"}], "]"}], ":=", 
+       RowBox[{"With", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"b", "=", 
+           FractionBox[
+            RowBox[{"3", " ", "G", " ", "M"}], 
+            RowBox[{
+             SuperscriptBox["c", "2"], " ", "a"}]]}], "}"}], ",", 
+         RowBox[{"With", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"x", "=", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"1", "-", 
+                RowBox[{
+                 SuperscriptBox["a", "2"], " ", "b"}]}], ")"}], " ", 
+              "\[Theta]"}]}], "}"}], ",", 
+           FractionBox["1", 
+            RowBox[{"1", "-", 
+             RowBox[{"e", " ", 
+              RowBox[{"Sin", "[", "x", "]"}]}], "+", 
+             RowBox[{"b", " ", 
+              SuperscriptBox["a", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"1", "+", 
+                FractionBox[
+                 SuperscriptBox["e", "2"], "2"], "+", 
+                RowBox[{
+                 FractionBox["1", "6"], " ", 
+                 SuperscriptBox["e", "2"], " ", 
+                 RowBox[{"Cos", "[", 
+                  RowBox[{"2", " ", "x"}], "]"}]}]}], ")"}]}]}]]}], "]"}]}], 
+        "]"}]}], ";", 
+      RowBox[{"ParametricPlot", "[", 
+       RowBox[{
+        RowBox[{"Evaluate", "[", 
+         RowBox[{
+          RowBox[{"rad", "[", 
+           RowBox[{"\[Theta]", ",", 
+            RowBox[{"M", " ", 
+             SuperscriptBox["10", "36"]}], ",", 
+            FractionBox["a", 
+             SuperscriptBox["10", "11"]]}], "]"}], 
+          RowBox[{"{", " ", 
+           RowBox[{
+            RowBox[{"Cos", "[", "\[Theta]", "]"}], ",", " ", 
+            RowBox[{"Sin", "[", "\[Theta]", "]"}]}], "}"}]}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\[Theta]", ",", "0", ",", "t"}], "}"}], ",", 
+        RowBox[{"PlotRange", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "1.2"}], ",", "1.2"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "1.2"}], ",", "1.2"}], "}"}]}], "}"}]}], ",", 
+        RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+        RowBox[{"Axes", "\[Rule]", "False"}], ",", 
+        RowBox[{"Epilog", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"RGBColor", "[", 
+            RowBox[{"1", ",", "0.7", ",", "0"}], "]"}], ",", 
+           RowBox[{"PointSize", "[", ".1", "]"}], ",", 
+           RowBox[{"Point", "[", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0"}], "}"}], "]"}]}], "}"}]}], ",", 
+        RowBox[{"ImageSize", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"450", ",", "400"}], "}"}]}]}], "]"}]}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0.1", ",", "\"\<revolutions\>\""}], "}"}], ",", 
+     "0.1", ",", 
+     RowBox[{"20", " ", "\[Pi]"}], ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "M", ",", "1", ",", 
+       "\"\<mass \[Times] solar mass \[Times] \!\(\*SuperscriptBox[\(10\), \
+\(6\)]\)\>\""}], "}"}], ",", "1", ",", "3", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "a", ",", "2", ",", 
+       "\"\<orbital parameter of Mercury ( \[Times] \!\(\*SuperscriptBox[\(10\
+\), \(-11\)]\))\>\""}], "}"}], ",", "1", ",", "3", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   RowBox[{"ControlPlacement", "\[Rule]", "Top"}], ",", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{
+  3.847742189724709*^9, 3.847742220785248*^9, {3.8477422773491497`*^9, 
+   3.8477423052260017`*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"5f183155-84bb-4bb7-868b-01bd71a707ba"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 2, $CellContext`M$$ = 
+    1, $CellContext`t$$ = 26.038940667374877`, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`t$$], 0.1, "revolutions"}, 0.1, 20 Pi}, {{
+       Hold[$CellContext`M$$], 1, 
+       "mass \[Times] solar mass \[Times] \!\(\*SuperscriptBox[\(10\), \(6\)]\
+\)"}, 1, 3}, {{
+       Hold[$CellContext`a$$], 2, 
+       "orbital parameter of Mercury ( \[Times] \!\(\*SuperscriptBox[\(10\), \
+\(-11\)]\))"}, 1, 3}}, Typeset`size$$ = {810., {355., 365.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    False, $CellContext`t$10063$$ = 0, $CellContext`M$10064$$ = 
+    0, $CellContext`a$10065$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 2, $CellContext`M$$ = 
+        1, $CellContext`t$$ = 0.1}, "ControllerVariables" :> {
+        Hold[$CellContext`t$$, $CellContext`t$10063$$, 0], 
+        Hold[$CellContext`M$$, $CellContext`M$10064$$, 0], 
+        Hold[$CellContext`a$$, $CellContext`a$10065$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`rad$}, $CellContext`rad$[
+           Pattern[$CellContext`\[Theta], 
+            Blank[]], 
+           Pattern[$CellContext`M, 
+            Blank[]], 
+           Pattern[$CellContext`a, 
+            Blank[]]] := 
+         With[{$CellContext`b = 
+            3 $CellContext`G $CellContext`M/($CellContext`c^2 \
+$CellContext`a)}, 
+           
+           With[{$CellContext`x = (
+               1 - $CellContext`a^2 $CellContext`b) $CellContext`\[Theta]}, 
+            1/(1 - $CellContext`e 
+            Sin[$CellContext`x] + $CellContext`b $CellContext`a^2 (
+              1 + $CellContext`e^2/2 + (1/6) $CellContext`e^2 
+               Cos[2 $CellContext`x]))]]; ParametricPlot[
+          
+          Evaluate[$CellContext`rad$[$CellContext`\[Theta], $CellContext`M$$ 
+             10^36, $CellContext`a$$/10^11] {
+             Cos[$CellContext`\[Theta]], 
+             Sin[$CellContext`\[Theta]]}], {$CellContext`\[Theta], 
+           0, $CellContext`t$$}, PlotRange -> {{-1.2, 1.2}, {-1.2, 1.2}}, 
+          Frame -> True, Axes -> False, Epilog -> {
+            RGBColor[1, 0.7, 0], 
+            PointSize[0.1], 
+            Point[{0, 0}]}, ImageSize -> {450, 400}]], 
+      "Specifications" :> {{{$CellContext`t$$, 0.1, "revolutions"}, 0.1, 20 
+         Pi, Appearance -> 
+         "Labeled"}, {{$CellContext`M$$, 1, 
+          "mass \[Times] solar mass \[Times] \!\(\*SuperscriptBox[\(10\), \(6\
+\)]\)"}, 1, 3, Appearance -> 
+         "Labeled"}, {{$CellContext`a$$, 2, 
+          "orbital parameter of Mercury ( \[Times] \
+\!\(\*SuperscriptBox[\(10\), \(-11\)]\))"}, 1, 3, Appearance -> "Labeled"}}, 
+      "Options" :> {ControlPlacement -> Top}, "DefaultOptions" :> {}],
+     ImageSizeCache->{908., {489., 499.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`G = 6.67*^-11, $CellContext`c = 
+       300000000, $CellContext`e = 0.205}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.8477422036225495`*^9, 3.847742239331212*^9}, {
+  3.847742283139815*^9, 3.8477423112270584`*^9}},
+ CellLabel->"Out[8]=",ExpressionUUID->"a14a273a-185c-49fa-8f0b-acbb5cce97af"]
+}, Closed]]
+}, Closed]]
+},
+WindowToolbars->"EditBar",
+WindowSize->{1904, 1022},
+WindowMargins->{{-8, Automatic}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{32000, 32000},
+PrintingOptions->{"Magnification"->1.,
+"PaperOrientation"->"Portrait",
+"PaperSize"->{595.1999999999999, 841.8}},
+ShowSelection->True,
+TooltipBoxOptions->{TooltipDelay->Automatic},
+UnderoverscriptBoxOptions->{LimitsPositioning->False},
+UnderscriptBoxOptions->{LimitsPositioning->False},
+OverscriptBoxOptions->{LimitsPositioning->False},
+FractionBoxOptions->{AllowScriptLevelChange->False},
+GridBoxOptions->{AllowScriptLevelChange->False,
+GridBoxAlignment->{
+ "Columns" -> {{"\[AlignmentMarker]"}}, "Rows" -> {{"\[AlignmentMarker]"}}}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (August 17, 2016)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> 
+     FrontEnd`FileName[{"Book"}, "Textbook.nb", CharacterEncoding -> 
+       "CP936"]]], 
+   Cell[
+    StyleData["BookChapterTitle"]], 
+   Cell[
+    StyleData["inlineEq"], MenuSortingValue -> 10000, FontFamily -> 
+    "Times New Roman", FontSize -> 12, FontWeight -> "Plain", FontSlant -> 
+    "Italic", 
+    FontVariations -> {"StrikeThrough" -> False, "Underline" -> False}, 
+    ItemBoxOptions -> {AllowScriptLevelChange -> False}, 
+    UnderoverscriptBoxOptions -> {LimitsPositioning -> False}, 
+    UnderscriptBoxOptions -> {LimitsPositioning -> False}, 
+    OverscriptBoxOptions -> {LimitsPositioning -> False}, 
+    FractionBoxOptions -> {AllowScriptLevelChange -> False}, 
+    GridBoxOptions -> {AllowScriptLevelChange -> False}], 
+   Cell[
+    StyleData["Input"], CellFrame -> {{3, 3}, {1, 3}}, 
+    CellMargins -> {{70, 50}, {1, 3}}, StyleKeyMapping -> {}, 
+    CellHorizontalScrolling -> True, ShowCellLabel -> False, 
+    CellLabelMargins -> {{20, Inherited}, {Inherited, Inherited}}, 
+    CellFrameColor -> RGBColor[0.8, 0.7, 0.6], Background -> None], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Output"], CellFrame -> {{3, 3}, {3, 1}}, 
+       CellMargins -> {{70, 50}, {1, 3}}, ShowCellLabel -> False, 
+       CellFrameColor -> RGBColor[0.8, 0.7, 0.6], Background -> None], 
+      Cell[
+       StyleData["Theorem", "Presentation"], 
+       CellMargins -> {{125, 15}, {10, 10}}, ParagraphIndent -> 28, FontSize -> 
+       24], 
+      Cell[
+       StyleData["TheoremContinuation", "Presentation"], 
+       CellMargins -> {{205, 15}, {15, 5}}, FontSize -> 24], 
+      Cell[
+       StyleData["Proof", "Presentation"], 
+       CellMargins -> {{125, 15}, {10, 10}}, ParagraphIndent -> 28, FontSize -> 
+       24], 
+      Cell[
+       StyleData["ProofContinuation", "Presentation"], 
+       CellMargins -> {{205, 15}, {15, 5}}, FontSize -> 24], 
+      Cell[
+       StyleData["TheoremContinuation", "Printout"], 
+       CellMargins -> {{50, 2}, {3, 5}}], 
+      Cell[
+       StyleData["Item1Numbered", "Presentation"], 
+       CellMargins -> {{155, 15}, {7, 7}}, CellFrameLabelMargins -> 6, 
+       FontSize -> 24], 
+      Cell[
+       StyleData["Item1", "Presentation"], CellMargins -> {{155, 15}, {7, 7}},
+        CellFrameLabelMargins -> 6, FontSize -> 24], 
+      Cell[
+       StyleData["Item2Numbered", "Presentation"], 
+       CellMargins -> {{195, 15}, {5, 5}}, CellFrameLabelMargins -> 6, 
+       FontSize -> 24], 
+      Cell[
+       StyleData["Item2", "Presentation"], CellDingbat -> 
+       "\[FilledSmallCircle]", CellMargins -> {{195, 12}, {3, 3}}, 
+       CellFrameLabelMargins -> 6, FontSize -> 24]}, Open]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Item1"], CellDingbat -> "\[FilledSquare]", 
+       CellMargins -> {{36, 12}, {10, 10}}], 
+      Cell[
+       StyleData["Item1", "Printout"], CellMargins -> {{30, 12}, {10, 10}}]}, 
+     Open]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Item2"], CellDingbat -> "\[FilledCircle]", 
+       CellMargins -> {{56, 12}, {3, 5}}], 
+      Cell[
+       StyleData["Item2", "Printout"], CellDingbat -> "\[FilledSmallCircle]", 
+       CellMargins -> {{60, 10}, {3, 3}}]}, Open]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Item3"], CellDingbat -> "\[FilledUpTriangle]", 
+       CellMargins -> {{70, 12}, {1, 2}}], 
+      Cell[
+       StyleData["Item3", "Printout"], CellDingbat -> "\[FilledUpTriangle]", 
+       CellMargins -> {{70, 10}, {3, 3}}]}, Open]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Section"], CellFrame -> {{6, 0}, {0, 3}}], 
+      Cell[
+       StyleData["Section", "Printout"], CellFrame -> {{4, 0}, {0, 3}}, 
+       CellMargins -> {{2, 2}, {3, 21}}, CellFrameMargins -> {{6, 6}, {3, 5}},
+        CellFrameColor -> GrayLevel[0.6]]}, Open]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Subsection"], CellFrame -> {{0, 0}, {1.5, 1.5}}, 
+       CellDingbat -> "\[LightBulb]", CellMargins -> {{12, 12}, {10, 18}}], 
+      Cell[
+       StyleData["Subsection", "Printout"], CellFrame -> {{0, 0}, {1, 1}}, 
+       CellMargins -> {{2, 2}, {11, 16}}]}, Open]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Subsubsection"], CellDingbat -> None, 
+       CellMargins -> {{12, 12}, {5, 6}}, 
+       CellElementSpacings -> {"ClosedGroupTopMargin" -> 12}, 
+       CellGroupingRules -> {"SectionGrouping", 50}, 
+       ConversionRules :> {
+        "TeX" -> {"\n\\subsubsection{", "}"}, 
+         "HTML" -> {"<h5 class=\"Subsubsection\">", "</h5>"}}, PageBreakBelow -> 
+       False, CellFrameLabelMargins -> 4, 
+       CounterIncrements -> {
+        "Subsubsection", "SubsubsectionHeader", "SubsubsubsectionHeader"}, 
+       FontFamily -> "Helvetica", FontSize -> 11, FontWeight -> "Bold"], 
+      Cell[
+       StyleData["Subsubsection", "Printout"], 
+       CellMargins -> {{2, 2}, {5, 5}}]}, Open]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["EquationNumbered"], CellMargins -> {{100, 12}, {5, 5}}, 
+       TextAlignment -> Left], 
+      Cell[
+       StyleData["EquationNumbered", "Printout"], 
+       CellMargins -> {{100, 2}, {5, 5}}]}, Open]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Equation"], CellMargins -> {{80, 12}, {7, 7}}, 
+       TextAlignment -> Left, 
+       GridBoxOptions -> {
+        GridBoxAlignment -> {
+          "Columns" -> {{"\[AlignmentMarker]"}}, 
+           "Rows" -> {{"\[AlignmentMarker]"}}}, GridBoxSpacings -> {"Columns" -> {
+             Offset[0.28], {
+              Offset[0.56]}, 
+             Offset[0.28]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.3], {
+              Offset[0.9]}, 
+             Offset[0.5]}, "RowsIndexed" -> {}}}], 
+      Cell[
+       StyleData["Equation", "Printout"], CellMargins -> {{80, 20}, {5, 5}}]},
+      Open]], 
+   Cell[
+    StyleData["EquationContinuation"], CellMargins -> {{100, 12}, {5, 5}}, 
+    DefaultFormatType -> TraditionalForm, MenuSortingValue -> 10000, 
+    GridBoxOptions -> {
+     GridBoxAlignment -> {
+       "Columns" -> {{"\[AlignmentMarker]"}}, 
+        "Rows" -> {{"\[AlignmentMarker]"}}}, GridBoxSpacings -> {"Columns" -> {
+          Offset[0.28], {
+           Offset[0.56]}, 
+          Offset[0.28]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}}], 
+   Cell[
+    StyleData["EqArray"], CellMargins -> {{100, 12}, {5, 5}}, 
+    DefaultFormatType -> TraditionalForm, DefaultInlineFormatType -> 
+    TraditionalForm, SingleLetterItalics -> True, SpanMaxSize -> Infinity, 
+    MenuSortingValue -> 10000, ShowInvisibleCharacters -> All, 
+    FractionBoxOptions -> {AllowScriptLevelChange -> False}, 
+    GridBoxOptions -> {
+     AllowScriptLevelChange -> False, 
+      GridBoxAlignment -> {
+       "Columns" -> {{"\[AlignmentMarker]"}}, 
+        "Rows" -> {{"\[AlignmentMarker]"}}}}], 
+   Cell[
+    StyleData["TheoremContinuation"], CellMargins -> {{55, 20}, {4, 4}}, 
+    FontWeight -> "Plain", FontSlant -> "Plain", FontTracking -> "Plain", 
+    FontVariations -> {
+     "Outline" -> False, "Shadow" -> False, "StrikeThrough" -> False, 
+      "Underline" -> False}, FontVariations -> {"Masked" -> False}], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Example"], CellDingbat -> "\[HappySmiley]", 
+       CellMargins -> {{50, 24}, {4, 8}}], 
+      Cell[
+       StyleData["Example", "Printout"], CellMargins -> {{35, 12}, {5, 8}}, 
+       ParagraphIndent -> 10]}, Open]], 
+   Cell[
+    StyleData["ExampleContinuation"], CellMargins -> {{55, 24}, {4, 4}}], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Proof"], CellMargins -> {{12, 24}, {4, 4}}, 
+       CellGroupingRules -> {"GroupTogetherNestedGrouping", 16000}, 
+       TextJustification -> 0, LineSpacing -> {1, 3}, ParagraphIndent -> 24, 
+       CounterAssignments -> {{"EnunciationItem1Numbered", 0}, {
+         "Item1Numbered", 0}}, MenuSortingValue -> 2600, FontSlant -> 
+       "Plain"], 
+      Cell[
+       StyleData["Proof", "Printout"], CellMargins -> {{2, 12}, {2, 4}}, 
+       TextJustification -> 1, Hyphenation -> True, LineSpacing -> {1, 0}, 
+       ParagraphIndent -> 16]}, Open]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["ProofContinuation"], CellMargins -> {{60, 24}, {4, 4}}, 
+       CellGroupingRules -> {"GroupTogetherNestedGrouping", 16000}, 
+       TextJustification -> 0, LineSpacing -> {1, 3}, CounterIncrements -> 
+       "ProofContinuation", MenuSortingValue -> 2600], 
+      Cell[
+       StyleData["ProofContinuation", "Printout"], 
+       CellMargins -> {{50, 12}, {2, 4}}, TextJustification -> 1, Hyphenation -> 
+       True, LineSpacing -> {1, 0}]}, Open]], 
+   Cell[
+    StyleData["Formula"], CellMargins -> {{40, Inherited}, {5, 3}}, 
+    DefaultFormatType -> TraditionalForm, MenuSortingValue -> 10000], 
+   Cell[
+    StyleData["FormulaContinuation"], 
+    CellMargins -> {{60, Inherited}, {5, 5}}, DefaultFormatType -> 
+    TraditionalForm, SingleLetterItalics -> True, MenuSortingValue -> 10000], 
+   Cell[
+    StyleData["Formula1"], CellMargins -> {{77, Inherited}, {3, 3}}, 
+    DefaultFormatType -> TraditionalForm, MenuSortingValue -> 10000]}, 
+  Visible -> False, FrontEndVersion -> 
+  "11.0 for Microsoft Windows (64-bit) (August 17, 2016)", StyleDefinitions -> 
+  "PrivateStylesheetFormatting.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 85, 0, 111, "Subsection"],
+Cell[667, 24, 154, 2, 69, "Input"],
+Cell[CellGroupData[{
+Cell[846, 30, 7006, 181, 631, "Input"],
+Cell[7855, 213, 5547, 109, 1037, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13451, 328, 158, 3, 111, "Subsection"],
+Cell[13612, 333, 175, 2, 68, "Input"],
+Cell[13790, 337, 447, 13, 201, "Input"],
+Cell[CellGroupData[{
+Cell[14262, 354, 4192, 111, 821, "Input"],
+Cell[18457, 467, 4020, 81, 1032, "Output"]
+}, Closed]]
+}, Closed]]
+}
+]
+*)
+

@@ -1,0 +1,1840 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     78425,       1831]
+NotebookOptionsPosition[     73556,       1682]
+NotebookOutlinePosition[     75181,       1734]
+CellTagsIndexPosition[     74853,       1722]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+Epicycles Revisited; Convexity of Lunar Orbit about the Sun\
+\>", "DemoTitle",
+ CellChangeTimes->{{3.544057151206262*^9, 3.5440572281422167`*^9}, {
+  3.544188868608061*^9, 3.544188871184465*^9}, {3.5454838636903763`*^9, 
+  3.545483864031962*^9}}],
+
+Cell["", "InitializationSection"],
+
+Cell[CellGroupData[{
+
+Cell["", "ManipulateSection"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"A", ",", "B"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"b", ">", "a"}], ",", 
+        RowBox[{"b", "\[Equal]", "a"}]}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"A", "=", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"R", " ", 
+           RowBox[{"Cos", "[", "\[Phi]", "]"}]}], "+", 
+          RowBox[{"b", " ", 
+           RowBox[{"Cos", "[", 
+            RowBox[{"m", " ", "\[Phi]"}], "]"}]}]}], ",", 
+         RowBox[{
+          RowBox[{"R", " ", 
+           RowBox[{"Sin", "[", "\[Phi]", "]"}]}], "+", 
+          RowBox[{"b", " ", 
+           RowBox[{"Sin", "[", 
+            RowBox[{"m", " ", "\[Phi]"}], "]"}]}]}]}], "}"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"B", "=", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"R", " ", 
+           RowBox[{"Cos", "[", "\[Phi]", "]"}]}], "-", 
+          RowBox[{"a", " ", 
+           RowBox[{"Cos", "[", 
+            RowBox[{"m", " ", "\[Phi]"}], "]"}]}]}], ",", 
+         RowBox[{
+          RowBox[{"R", " ", 
+           RowBox[{"Sin", "[", "\[Phi]", "]"}]}], "-", 
+          RowBox[{"a", " ", 
+           RowBox[{"Sin", "[", 
+            RowBox[{"m", " ", "\[Phi]"}], "]"}]}]}]}], "}"}]}], ";", 
+      RowBox[{"Show", "[", 
+       RowBox[{
+        RowBox[{"Graphics", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Black", ",", "Thin", ",", 
+            RowBox[{"Circle", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"0", ",", "0"}], "}"}], ",", "R"}], "]"}], ",", 
+            RowBox[{"Line", "[", 
+             RowBox[{"{", 
+              RowBox[{"A", ",", "B"}], "}"}], "]"}], ",", 
+            RowBox[{"PointSize", "[", ".01", "]"}], ",", 
+            RowBox[{"Point", "[", 
+             RowBox[{"{", 
+              RowBox[{"0", ",", "0"}], "}"}], "]"}], ",", "Blue", ",", 
+            RowBox[{"Thickness", "[", ".002", "]"}], ",", 
+            RowBox[{"Circle", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"R", " ", 
+                 RowBox[{"Cos", "[", "\[Phi]", "]"}]}], ",", 
+                RowBox[{"R", " ", 
+                 RowBox[{"Sin", "[", "\[Phi]", "]"}]}]}], "}"}], ",", "b"}], 
+             "]"}], ",", 
+            RowBox[{"Point", "[", "A", "]"}], ",", "Red", ",", 
+            RowBox[{"Circle", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"R", " ", 
+                 RowBox[{"Cos", "[", "\[Phi]", "]"}]}], ",", 
+                RowBox[{"R", " ", 
+                 RowBox[{"Sin", "[", "\[Phi]", "]"}]}]}], "}"}], ",", "a"}], 
+             "]"}], ",", 
+            RowBox[{"PointSize", "[", ".01", "]"}], ",", 
+            RowBox[{"Point", "[", "B", "]"}]}], "}"}], ",", 
+          RowBox[{"PlotRange", "\[Rule]", "435"}], ",", 
+          RowBox[{"ImageSize", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"575", ",", "380"}], "}"}]}], ",", 
+          RowBox[{"AspectRatio", "\[Rule]", "1"}]}], "]"}], ",", 
+        RowBox[{"ParametricPlot", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"R", " ", 
+              RowBox[{"Cos", "[", "\[Theta]", "]"}]}], "+", 
+             RowBox[{"b", " ", 
+              RowBox[{"Cos", "[", 
+               RowBox[{"m", " ", "\[Theta]"}], "]"}]}]}], ",", 
+            RowBox[{
+             RowBox[{"R", " ", 
+              RowBox[{"Sin", "[", "\[Theta]", "]"}]}], "+", 
+             RowBox[{"b", " ", 
+              RowBox[{"Sin", "[", 
+               RowBox[{"m", " ", "\[Theta]"}], "]"}]}]}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"\[Theta]", ",", ".001", ",", "\[Phi]"}], "}"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Thickness", "[", ".002", "]"}], ",", "Blue"}], 
+            "}"}]}]}], "]"}], ",", 
+        RowBox[{"ParametricPlot", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"R", " ", 
+              RowBox[{"Cos", "[", "\[Theta]", "]"}]}], "-", 
+             RowBox[{"a", " ", 
+              RowBox[{"Cos", "[", 
+               RowBox[{"m", " ", "\[Theta]"}], "]"}]}]}], ",", 
+            RowBox[{
+             RowBox[{"R", " ", 
+              RowBox[{"Sin", "[", "\[Theta]", "]"}]}], "-", 
+             RowBox[{"a", " ", 
+              RowBox[{"Sin", "[", 
+               RowBox[{"m", " ", "\[Theta]"}], "]"}]}]}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"\[Theta]", ",", ".001", ",", "\[Phi]"}], "}"}], ",", 
+          RowBox[{"PlotStyle", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Thickness", "[", ".002", "]"}], ",", "Red"}], "}"}]}]}],
+          "]"}]}], "]"}]}]}], "\[IndentingNewLine]", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"a", ",", "30", ",", 
+       RowBox[{"Text", "@", 
+        RowBox[{"Style", "[", 
+         RowBox[{"\"\<a\>\"", ",", "Italic"}], "]"}]}], ",", "10"}], "}"}], 
+     ",", "1", ",", "30", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"b", ",", "30", ",", 
+       RowBox[{"Text", "@", 
+        RowBox[{"Style", "[", 
+         RowBox[{"\"\<b\>\"", ",", "Italic", ",", "10"}], "]"}]}]}], "}"}], 
+     ",", "0", ",", "a", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"m", ",", "6", ",", "\"\<lunar months per year, m\>\""}], "}"}],
+      ",", "4", ",", "13", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\[Phi]", ",", 
+       RowBox[{"1.45", " ", "3.14"}], ",", "\"\<rotate\>\""}], "}"}], ",", 
+     "0", ",", 
+     RowBox[{"2", " ", "3.14"}], ",", ".01", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"R", ",", " ", "400", ",", " ", 
+     RowBox[{"ControlType", "\[Rule]", " ", "None"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"TrackedSymbols", "\[RuleDelayed]", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "b", ",", "m", ",", "\[Phi]"}], "}"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"ControlPlacement", "\[Rule]", "Top"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"AutorunSequencing", "\[Rule]", " ", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "2", ",", "3"}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5439648353170347`*^9, 3.543964843356077*^9}, {
+   3.543964910383113*^9, 3.543964921607136*^9}, {3.543965188201309*^9, 
+   3.543965320438167*^9}, {3.54396538640956*^9, 3.543965388200156*^9}, {
+   3.543965421169813*^9, 3.543965477485551*^9}, 3.5439656645730352`*^9, {
+   3.5439657590397663`*^9, 3.543965817834132*^9}, 3.543965872501708*^9, 
+   3.543965940792556*^9, 3.543966175722076*^9, 3.543966212488675*^9, {
+   3.544053392104802*^9, 3.5440534421833344`*^9}, {3.5440534795818243`*^9, 
+   3.544053550603416*^9}, {3.5440535922396183`*^9, 3.544053613519833*^9}, {
+   3.544053678380246*^9, 3.5440537314818773`*^9}, {3.544053780326529*^9, 
+   3.5440538561669493`*^9}, {3.544053915332574*^9, 3.544053962929117*^9}, {
+   3.544054464418295*^9, 3.544054465536124*^9}, {3.5440545141644897`*^9, 
+   3.544054529227147*^9}, 3.5440546970127153`*^9, {3.544054728171671*^9, 
+   3.544054731379504*^9}, {3.544054768782329*^9, 3.5440548117107277`*^9}, {
+   3.544054912300589*^9, 3.544054968895604*^9}, {3.544055003762043*^9, 
+   3.544055036329865*^9}, {3.544055238621544*^9, 3.5440552434103327`*^9}, {
+   3.544055298202339*^9, 3.544055351377433*^9}, {3.544055389911827*^9, 
+   3.544055422967231*^9}, {3.544055458290289*^9, 3.544055486475108*^9}, {
+   3.544055906430223*^9, 3.54405592888579*^9}, {3.544056233940929*^9, 
+   3.5440562670949697`*^9}, {3.544056310335085*^9, 3.544056335278625*^9}, {
+   3.5440563737375107`*^9, 3.544056381023828*^9}, {3.544056412122994*^9, 
+   3.5440564398189917`*^9}, {3.5440565157204933`*^9, 3.5440565589310513`*^9}, 
+   3.544056677692193*^9, 3.544056805145484*^9, {3.544057411613332*^9, 
+   3.544057413274087*^9}, 3.544142137623126*^9, {3.544142171388652*^9, 
+   3.544142333801362*^9}, {3.544142410459483*^9, 3.544142487107387*^9}, {
+   3.5441425498771057`*^9, 3.544142591716279*^9}, {3.544142626189837*^9, 
+   3.544142832569298*^9}, {3.544142863130577*^9, 3.544142905252437*^9}, {
+   3.5441429781215477`*^9, 3.544143021256002*^9}, 3.544143084440955*^9, 
+   3.544143516858555*^9, 3.5441435537654753`*^9, {3.5441437408424463`*^9, 
+   3.544143823313692*^9}, {3.544143892301588*^9, 3.5441439018036957`*^9}, {
+   3.544144139057873*^9, 3.5441441463279047`*^9}, {3.544144205978655*^9, 
+   3.544144232648787*^9}, 3.5441878986576843`*^9, 3.544188045018613*^9, {
+   3.5441883027215014`*^9, 3.544188335096788*^9}, {3.5441893789380903`*^9, 
+   3.544189508816998*^9}, {3.544189572247054*^9, 3.544189591421286*^9}, {
+   3.544189664450045*^9, 3.5441896704089737`*^9}, {3.5441897193033257`*^9, 
+   3.544189721252825*^9}, {3.544189817275372*^9, 3.544189825773452*^9}, {
+   3.544191055033824*^9, 3.544191101536839*^9}, {3.544191145115244*^9, 
+   3.5441911630602713`*^9}, {3.544191353044808*^9, 3.5441913532845488`*^9}, {
+   3.544191484695383*^9, 3.544191485100773*^9}, {3.5441915254397373`*^9, 
+   3.544191534845076*^9}, 3.5441916255565968`*^9, {3.544191671962739*^9, 
+   3.5441916724105597`*^9}, {3.544191702654017*^9, 3.54419175724228*^9}, {
+   3.5441917974068832`*^9, 3.544191879856638*^9}, {3.544192088900037*^9, 
+   3.5441921072604437`*^9}, {3.544192243468287*^9, 3.54419226010912*^9}, {
+   3.544192333727254*^9, 3.544192347549652*^9}, 3.544192548453726*^9, {
+   3.54419258274611*^9, 3.544192583343687*^9}, {3.5441926195223494`*^9, 
+   3.544192657176529*^9}, {3.544192699596078*^9, 3.544192717058144*^9}, {
+   3.544192786669838*^9, 3.5441927877309837`*^9}, {3.5441928508021107`*^9, 
+   3.544192911452252*^9}, {3.54419294198848*^9, 3.5441929485924883`*^9}, {
+   3.5441930005639772`*^9, 3.544193037619042*^9}, {3.544193206640828*^9, 
+   3.54419320846239*^9}, {3.54419379675448*^9, 3.544193848822266*^9}, {
+   3.5441938824823523`*^9, 3.544193923498287*^9}, {3.544193993270919*^9, 
+   3.5441939992274714`*^9}, {3.544194029638636*^9, 3.5441940531626472`*^9}, {
+   3.544194146937591*^9, 3.5441941481656027`*^9}, {3.544194196902652*^9, 
+   3.544194234990797*^9}, {3.5441942705119143`*^9, 3.54419435057843*^9}, {
+   3.544216818842724*^9, 3.544217040252071*^9}, {3.5442170731229763`*^9, 
+   3.544217130563408*^9}, {3.544217163431158*^9, 3.544217176843626*^9}, {
+   3.544217208394792*^9, 3.5442172165157843`*^9}, {3.5442172662977257`*^9, 
+   3.544217276532147*^9}, 3.544217347713449*^9, {3.54421750346124*^9, 
+   3.5442175280677223`*^9}, 3.544217628680073*^9, {3.5442183446408567`*^9, 
+   3.544218348161508*^9}, {3.544218406310375*^9, 3.544218412987256*^9}, {
+   3.544218959776572*^9, 3.544219017541401*^9}, {3.544219047896927*^9, 
+   3.544219055927298*^9}, {3.544219087403461*^9, 3.544219095024672*^9}, {
+   3.544219127255966*^9, 3.5442191339800167`*^9}, {3.544219510622218*^9, 
+   3.5442195227386017`*^9}, {3.544219905450203*^9, 3.5442199075068607`*^9}, {
+   3.544220021071622*^9, 3.5442200348699636`*^9}, {3.544220198650484*^9, 
+   3.544220214100524*^9}, {3.544220515451984*^9, 3.544220536271454*^9}, 
+   3.544220629144669*^9, {3.544229250890882*^9, 3.544229282577437*^9}, {
+   3.544275056751894*^9, 3.544275152517376*^9}, {3.5442756188225813`*^9, 
+   3.544275625819387*^9}, {3.544275683492908*^9, 3.54427573537982*^9}, {
+   3.544275785271545*^9, 3.5442758043953743`*^9}, 3.544275852111464*^9, {
+   3.5442759884128942`*^9, 3.5442760544127073`*^9}, {3.544279741944414*^9, 
+   3.544279747781942*^9}, {3.544279800714301*^9, 3.544279808623733*^9}, {
+   3.544279997945427*^9, 3.544280052768132*^9}, {3.544280126175519*^9, 
+   3.54428012987949*^9}, {3.544280162778316*^9, 3.5442801813518867`*^9}, {
+   3.544280236988996*^9, 3.544280242300626*^9}, {3.544280285619225*^9, 
+   3.544280291256897*^9}, {3.544280496922567*^9, 3.544280501511972*^9}, {
+   3.544286650854578*^9, 3.544286657550571*^9}, {3.544286779241022*^9, 
+   3.544286780166559*^9}, {3.5442886868040943`*^9, 3.5442887093307867`*^9}, {
+   3.544292472452198*^9, 3.5442924882192707`*^9}, 3.544292606210306*^9, {
+   3.544309601567453*^9, 3.544309676584985*^9}, {3.544309834337817*^9, 
+   3.544309870392579*^9}, {3.544309908285083*^9, 3.5443099415862513`*^9}, {
+   3.544310004921176*^9, 3.5443100151184673`*^9}, {3.544310064085659*^9, 
+   3.544310064538219*^9}, {3.5443101333792267`*^9, 3.544310144511653*^9}, {
+   3.544310175523871*^9, 3.544310182081779*^9}, {3.544310266331674*^9, 
+   3.544310300586979*^9}, {3.544310351799535*^9, 3.544310357228417*^9}, {
+   3.544310417899561*^9, 3.544310447655436*^9}, {3.54431050383219*^9, 
+   3.544310529454585*^9}, {3.544310565100562*^9, 3.544310565839354*^9}, 
+   3.544310629262622*^9, {3.544313887915914*^9, 3.544313948648306*^9}, {
+   3.5443140155488358`*^9, 3.5443140372702503`*^9}, {3.5443141041621428`*^9, 
+   3.5443141239335318`*^9}, {3.544314517895706*^9, 3.544314541992941*^9}, {
+   3.544314662340633*^9, 3.544314668733995*^9}, {3.5443147334217873`*^9, 
+   3.544314737603793*^9}, {3.544314886785453*^9, 3.544314900671855*^9}, {
+   3.544314939773972*^9, 3.54431494563621*^9}, {3.544315137093029*^9, 
+   3.544315203989602*^9}, 3.544315243620165*^9, 3.5443154508022957`*^9, {
+   3.544315488620133*^9, 3.544315494584319*^9}, {3.5443155328849897`*^9, 
+   3.544315562276713*^9}, {3.5443156869988213`*^9, 3.544315715859791*^9}, 
+   3.544315907563588*^9, 3.5443167749938383`*^9, {3.544359473254917*^9, 
+   3.5443595264462223`*^9}, {3.54435961661416*^9, 3.544359714140418*^9}, {
+   3.544359839431492*^9, 3.54435984361273*^9}, 3.54435987682952*^9, {
+   3.544359926222011*^9, 3.544359993402153*^9}, {3.544360068729898*^9, 
+   3.544360075500369*^9}, {3.544360113243556*^9, 3.544360148573654*^9}, {
+   3.544360296470253*^9, 3.5443603570995207`*^9}, {3.544360389822668*^9, 
+   3.544360401875033*^9}, 3.544360437214623*^9, {3.5443604922296333`*^9, 
+   3.544360492692183*^9}, {3.544360622886096*^9, 3.5443606250435457`*^9}, {
+   3.544360762952571*^9, 3.544360766541215*^9}, {3.544360843022916*^9, 
+   3.544360855570397*^9}, {3.5443609788933496`*^9, 3.54436107584389*^9}, {
+   3.544361175682952*^9, 3.544361225763476*^9}, 3.544361466831766*^9, {
+   3.5443615387523937`*^9, 3.5443615811102467`*^9}, {3.544361749396858*^9, 
+   3.544361846673771*^9}, {3.5443618925998363`*^9, 3.5443619090884037`*^9}, {
+   3.5443619812272987`*^9, 3.5443619825452127`*^9}, 3.5443620483083487`*^9, 
+   3.544362101452286*^9, {3.544362138269292*^9, 3.5443621552510653`*^9}, {
+   3.544362186051684*^9, 3.544362187554758*^9}, {3.544362951119928*^9, 
+   3.54436295874859*^9}, {3.5443630291577578`*^9, 3.5443630409741*^9}, {
+   3.544363090172936*^9, 3.544363094271234*^9}, 3.544363130376328*^9, {
+   3.544363710406682*^9, 3.5443637312774553`*^9}, {3.544363787767428*^9, 
+   3.544363788389092*^9}, {3.544363836982957*^9, 3.5443638444210243`*^9}, {
+   3.544364713997476*^9, 3.5443647550224323`*^9}, 3.5443648152658587`*^9, {
+   3.544464456707342*^9, 3.5444645198626575`*^9}, {3.544464587449415*^9, 
+   3.5444646192065907`*^9}, 3.544465210215309*^9, {3.544465249625229*^9, 
+   3.5444652711677*^9}, 3.544465321409192*^9, 3.544465363941551*^9, {
+   3.5445404319203176`*^9, 3.5445405777393513`*^9}, {3.5445408918266478`*^9, 
+   3.5445409561157293`*^9}, {3.5445409999528227`*^9, 3.544541055016451*^9}, {
+   3.5445411301838703`*^9, 3.544541253130965*^9}, {3.544541311316599*^9, 
+   3.54454133159936*^9}, 3.544568574097641*^9},
+ CellID->1886403059],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 30, $CellContext`b$$ = 
+    30, $CellContext`m$$ = 6, $CellContext`R$$ = 400, $CellContext`\[Phi]$$ = 
+    4.553, Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a$$], 30, 
+       Text[
+        Style["a", Italic]], 10}, 1, 30}, {{
+       Hold[$CellContext`b$$], 30, 
+       Text[
+        Style["b", Italic, 10]]}, 0, 
+      Dynamic[$CellContext`a$$]}, {{
+       Hold[$CellContext`m$$], 6, "lunar months per year, m"}, 4, 13}, {{
+       Hold[$CellContext`\[Phi]$$], 4.553, "rotate"}, 0, 6.28, 0.01}, {
+      Hold[$CellContext`R$$], 400}}, Typeset`size$$ = {575., {188., 192.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`a$12349$$ = 0, $CellContext`b$12350$$ = 
+    0, $CellContext`m$12351$$ = 0, $CellContext`\[Phi]$12352$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 30, $CellContext`b$$ = 
+        30, $CellContext`m$$ = 6, $CellContext`R$$ = 
+        400, $CellContext`\[Phi]$$ = 4.553}, "ControllerVariables" :> {
+        Hold[$CellContext`a$$, $CellContext`a$12349$$, 0], 
+        Hold[$CellContext`b$$, $CellContext`b$12350$$, 0], 
+        Hold[$CellContext`m$$, $CellContext`m$12351$$, 0], 
+        Hold[$CellContext`\[Phi]$$, $CellContext`\[Phi]$12352$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`A$, $CellContext`B$}, 
+        If[$CellContext`b$$ > $CellContext`a$$, $CellContext`b$$ == \
+$CellContext`a$$]; $CellContext`A$ = {$CellContext`R$$ 
+            Cos[$CellContext`\[Phi]$$] + $CellContext`b$$ 
+            Cos[$CellContext`m$$ $CellContext`\[Phi]$$], $CellContext`R$$ 
+            Sin[$CellContext`\[Phi]$$] + $CellContext`b$$ 
+            Sin[$CellContext`m$$ $CellContext`\[Phi]$$]}; $CellContext`B$ = \
+{$CellContext`R$$ Cos[$CellContext`\[Phi]$$] - $CellContext`a$$ 
+           Cos[$CellContext`m$$ $CellContext`\[Phi]$$], $CellContext`R$$ 
+            Sin[$CellContext`\[Phi]$$] - $CellContext`a$$ 
+           Sin[$CellContext`m$$ $CellContext`\[Phi]$$]}; Show[
+          Graphics[{Black, Thin, 
+            Circle[{0, 0}, $CellContext`R$$], 
+            Line[{$CellContext`A$, $CellContext`B$}], 
+            PointSize[0.01], 
+            Point[{0, 0}], Blue, 
+            Thickness[0.002], 
+            
+            Circle[{$CellContext`R$$ 
+              Cos[$CellContext`\[Phi]$$], $CellContext`R$$ 
+              Sin[$CellContext`\[Phi]$$]}, $CellContext`b$$], 
+            Point[$CellContext`A$], Red, 
+            
+            Circle[{$CellContext`R$$ 
+              Cos[$CellContext`\[Phi]$$], $CellContext`R$$ 
+              Sin[$CellContext`\[Phi]$$]}, $CellContext`a$$], 
+            PointSize[0.01], 
+            Point[$CellContext`B$]}, PlotRange -> 435, 
+           ImageSize -> {575, 380}, AspectRatio -> 1], 
+          
+          ParametricPlot[{$CellContext`R$$ 
+             Cos[$CellContext`\[Theta]] + $CellContext`b$$ 
+             Cos[$CellContext`m$$ $CellContext`\[Theta]], $CellContext`R$$ 
+             Sin[$CellContext`\[Theta]] + $CellContext`b$$ 
+             Sin[$CellContext`m$$ $CellContext`\[Theta]]}, {$CellContext`\
+\[Theta], 0.001, $CellContext`\[Phi]$$}, PlotStyle -> {
+             Thickness[0.002], Blue}], 
+          
+          ParametricPlot[{$CellContext`R$$ 
+             Cos[$CellContext`\[Theta]] - $CellContext`a$$ 
+            Cos[$CellContext`m$$ $CellContext`\[Theta]], $CellContext`R$$ 
+             Sin[$CellContext`\[Theta]] - $CellContext`a$$ 
+            Sin[$CellContext`m$$ $CellContext`\[Theta]]}, {$CellContext`\
+\[Theta], 0.001, $CellContext`\[Phi]$$}, PlotStyle -> {
+             Thickness[0.002], Red}]]], 
+      "Specifications" :> {{{$CellContext`a$$, 30, 
+          Text[
+           Style["a", Italic]], 10}, 1, 30, Appearance -> 
+         "Labeled"}, {{$CellContext`b$$, 30, 
+          Text[
+           Style["b", Italic, 10]]}, 0, 
+         Dynamic[$CellContext`a$$], Appearance -> 
+         "Labeled"}, {{$CellContext`m$$, 6, "lunar months per year, m"}, 4, 
+         13, Appearance -> 
+         "Labeled"}, {{$CellContext`\[Phi]$$, 4.553, "rotate"}, 0, 6.28, 0.01,
+          Appearance -> "Labeled"}, {$CellContext`R$$, 400, ControlType -> 
+         None}}, "Options" :> {
+       TrackedSymbols :> {$CellContext`a$$, $CellContext`b$$, \
+$CellContext`m$$, $CellContext`\[Phi]$$}, ControlPlacement -> Top, 
+        AutorunSequencing -> {1, 2, 3}}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{618., {272., 278.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.5445685224138412`*^9, 3.544568575336811*^9},
+ CellID->1038641945]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "ManipulateCaptionSection"],
+
+Cell["\<\
+Kepler's laws of planetary motion in the 17th century superseded the \
+Ptolemaic system of epicycles to account for the detailed motions of the \
+planets. Generalizations of epicycloids, called epitroichoids, still do \
+occur, however, in the description of relative planet-moon motions as their \
+barycenters (centers of gravity) follow Keplerian orbits around the Sun.\
+\>", "ManipulateCaption",
+ CellChangeTimes->{{3.5441136299137363`*^9, 3.544113708958335*^9}, {
+   3.544113745715774*^9, 3.54411379011644*^9}, {3.544113897262569*^9, 
+   3.544113908519519*^9}, {3.5441139652756147`*^9, 3.544113967520008*^9}, {
+   3.544114053904351*^9, 3.544114191198769*^9}, {3.544114227597472*^9, 
+   3.5441143428810883`*^9}, {3.544114391867889*^9, 3.5441143924598217`*^9}, {
+   3.544114598418475*^9, 3.54411462460247*^9}, {3.544114677946836*^9, 
+   3.5441146808526793`*^9}, {3.544123584380638*^9, 3.5441235898865213`*^9}, {
+   3.5441236328171673`*^9, 3.5441236389269743`*^9}, 3.5444643795346255`*^9, 
+   3.544464426160288*^9, 3.5445406010025*^9},
+ CellID->1899771866],
+
+Cell[TextData[{
+ "We consider a simplified idealized case, which is justified in the Details: \
+a moon (red point ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["A",
+    FontSlant->"Plain"], TraditionalForm]], "InlineMath"],
+ ") with mass ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["m", "A"], TraditionalForm]], "InlineMath"],
+ " is in a circular orbit about its planet (blue point ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["B",
+    FontSlant->"Plain"], TraditionalForm]], "InlineMath"],
+ ") with mass ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["m", "B"], TraditionalForm]], "InlineMath"],
+ ", with the moon-planet distance equal to ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"r", "=", 
+    RowBox[{"a", "+", "b"}]}], TraditionalForm]], "InlineMath"],
+ ", where ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"a", "=", 
+    RowBox[{
+     FractionBox[
+      SubscriptBox["m", "B"], 
+      RowBox[{
+       SubscriptBox["m", "A"], "+", 
+       SubscriptBox["m", "B"]}]], "r"}]}], TraditionalForm]], "InlineMath"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"b", "=", 
+    RowBox[{
+     FractionBox[
+      SubscriptBox["m", "A"], 
+      RowBox[{
+       SubscriptBox["m", "A"], "+", 
+       SubscriptBox["m", "B"]}]], "r"}]}], TraditionalForm]], "InlineMath"],
+ " are the respective distances of the moon and planet from their barycenter. \
+The barycenter of this pair is in a circular orbit of radius ",
+ Cell[BoxData[
+  FormBox["R", TraditionalForm]], "InlineMath"],
+ " about the Sun. With the Sun at the origin, the parametric equations for ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["A",
+    FontSlant->"Plain"], TraditionalForm]], "InlineMath"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox["B",
+    FontSlant->"Plain"], TraditionalForm]], "InlineMath"],
+ " can be written"
+}], "ManipulateCaption",
+ CellChangeTimes->{{3.544114980729862*^9, 3.544115013529612*^9}, {
+   3.54412305787002*^9, 3.544123226311203*^9}, {3.5441232698319063`*^9, 
+   3.544123270875518*^9}, {3.544123348258202*^9, 3.544123373449902*^9}, {
+   3.54412341038148*^9, 3.5441234720041018`*^9}, {3.544123622659403*^9, 
+   3.5441236262401648`*^9}, {3.544137396598805*^9, 3.5441374048850594`*^9}, {
+   3.544138004282653*^9, 3.544138070965762*^9}, {3.5441383460489283`*^9, 
+   3.5441384159860153`*^9}, {3.544138473264208*^9, 3.544138556436364*^9}, {
+   3.544138597889597*^9, 3.544138599148176*^9}, {3.544138631023561*^9, 
+   3.5441386339810467`*^9}, {3.544187330171711*^9, 3.544187372121204*^9}, {
+   3.544187407763957*^9, 3.544187408698011*^9}, {3.544540673084791*^9, 
+   3.544540693782629*^9}, {3.544540799152666*^9, 3.544540873929901*^9}, {
+   3.544542224120768*^9, 3.544542225103031*^9}, {3.5445430980972*^9, 
+   3.544543180202785*^9}, 3.545483905455419*^9},
+ CellID->129930574],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["x", "A"], "=", 
+    RowBox[{
+     RowBox[{"R", " ", "cos", " ", "\[Phi]"}], "-", 
+     RowBox[{"a", " ", 
+      RowBox[{"cos", "(", 
+       RowBox[{"m", " ", "\[Phi]"}], ")"}], " "}]}]}], TraditionalForm]], 
+  "InlineMath"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["y", "A"], "=", 
+    RowBox[{
+     RowBox[{"R", " ", "sin", " ", "\[Phi]"}], "-", 
+     RowBox[{"a", " ", 
+      RowBox[{"sin", "(", 
+       RowBox[{"m", " ", "\[Phi]"}], ")"}], " "}]}]}], TraditionalForm]], 
+  "InlineMath"],
+ ","
+}], "ManipulateCaption",
+ CellChangeTimes->{{3.5441374760524282`*^9, 3.544137593569433*^9}, {
+  3.544137628781681*^9, 3.5441378537220507`*^9}, {3.5441378853012257`*^9, 
+  3.5441379724733963`*^9}, {3.5441381323965673`*^9, 3.54413818119878*^9}, {
+  3.544138214330649*^9, 3.544138248394665*^9}, {3.544138666424518*^9, 
+  3.5441389301305857`*^9}, {3.544138986888008*^9, 3.544139002557199*^9}, {
+  3.544139044813114*^9, 3.544139129305778*^9}, {3.544139178800358*^9, 
+  3.544139197588026*^9}, {3.544139229980057*^9, 3.5441393111478167`*^9}, {
+  3.544139353848302*^9, 3.5441393835182*^9}, {3.544139413871212*^9, 
+  3.544139419779499*^9}, {3.5441394731764183`*^9, 3.544139473184369*^9}, {
+  3.544139661577588*^9, 3.5441396705741253`*^9}, {3.544140356467063*^9, 
+  3.544140356474601*^9}, {3.544464352867959*^9, 3.544464352922965*^9}, {
+  3.544540766327261*^9, 3.544540774494528*^9}, {3.544541430609407*^9, 
+  3.544541445330605*^9}},
+ CellID->2073089276],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["x", "B"], "=", 
+     RowBox[{
+      RowBox[{"R", " ", "cos", " ", "\[Phi]"}], "+", 
+      RowBox[{"b", " ", 
+       RowBox[{"cos", "(", 
+        RowBox[{"m", " ", "\[Phi]"}], ")"}]}]}]}], " ", ",", 
+    RowBox[{
+     SubscriptBox["y", "B"], "=", 
+     RowBox[{
+      RowBox[{"R", " ", "sin", " ", "\[Phi]"}], "+", 
+      RowBox[{"b", " ", 
+       RowBox[{"sin", "(", 
+        RowBox[{"m", " ", "\[Phi]"}], ")"}], " "}]}]}]}], TraditionalForm]], 
+  "InlineMath"],
+ ","
+}], "ManipulateCaption",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQAWIQXbe28cHz9FeOZyyM3oPoDuaZn0E0l/R2/hdAesni
+lcIgWkCtXw5Er9vQYwSiM2KWWYDotVNO2YBoiYU8jiB6+VTfUhB9SNdlGoie
+kBUzF0RPvhI4H0RzsM5aAqLfn9BcD6I75kRuBdEyFzdtB9ELYvbvBtGvdj05
+CqK9VK1Pg82f+uEciP7xYPclEL3iY8VlEG2xVPUWiI56BqFnVW/6CKJt4i99
+AtF6n/o8XgLpd/r9YDromHRNewaQ3yELpt9UnDq9BkirHNl7FkTnbZ8uvxZI
+F/WyKoFoE7adUeuAdAY7hI69yJ4Iork87ZJANACr17Lk
+  "],
+ CellID->1305404242],
+
+Cell[TextData[{
+ "where ",
+ Cell[BoxData[
+  FormBox["m", TraditionalForm]], "InlineMath"],
+ " equals the number of lunar cycles per revolution about the Sun. (For the \
+Sun-Earth-Moon system, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"m", "\[TildeTilde]", "13"}], TraditionalForm]], "InlineMath"],
+ ".) These represent parametric equations for epitroichoids, which reduce to \
+the more familiar epicycloids when ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"m", "=", 
+    RowBox[{"R", "/", "a", " "}]}], TraditionalForm]], "InlineMath"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"m", "=", 
+    RowBox[{"R", "/", "b", " "}]}], TraditionalForm]], "InlineMath"],
+ " in the first and second set of equations, respectively. In most cases \
+these curves exhibit a looped or cuspoid structure as they traverse the \
+larger circle. All rotations and revolutions shown are counterclockwise."
+}], "ManipulateCaption",
+ CellChangeTimes->{{3.5441374760524282`*^9, 3.544137593569433*^9}, {
+   3.544137628781681*^9, 3.5441378537220507`*^9}, {3.5441378853012257`*^9, 
+   3.5441379724733963`*^9}, {3.5441381323965673`*^9, 3.54413818119878*^9}, {
+   3.544138214330649*^9, 3.544138248394665*^9}, {3.544138666424518*^9, 
+   3.5441389301305857`*^9}, {3.544138986888008*^9, 3.544139002557199*^9}, {
+   3.544139044813114*^9, 3.544139129305778*^9}, {3.544139178800358*^9, 
+   3.544139197588026*^9}, {3.544139229980057*^9, 3.5441393111478167`*^9}, {
+   3.544139353848302*^9, 3.5441393835182*^9}, {3.544139413871212*^9, 
+   3.544139419779499*^9}, {3.5441394731764183`*^9, 3.544139473184369*^9}, {
+   3.544139661577588*^9, 3.5441396705741253`*^9}, 3.544140356467063*^9, 
+   3.544187475190153*^9, {3.544311123214304*^9, 3.544311197306535*^9}, {
+   3.544311332424597*^9, 3.544311332434905*^9}, {3.54431138989717*^9, 
+   3.54431142102205*^9}, {3.544464352939966*^9, 3.544464352939966*^9}, 
+   3.544541469092579*^9, {3.545483923177352*^9, 3.545483923653322*^9}},
+ CellID->2122482405],
+
+Cell[TextData[{
+ "This brings us to the remarkable fact that the Moon's orbit around the Sun \
+is a convex curve. This can be explained by the following physical argument. \
+The gravitational force of the Sun on the Moon is always more than twice the \
+gravitational force of the Earth on the Moon: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"|", 
+    FractionBox[
+     RowBox[{"G", " ", "M", " ", 
+      RowBox[{
+       SubscriptBox["m", 
+        RowBox[{"a", " "}]], "/", 
+       SuperscriptBox["R", "2"]}]}], 
+     RowBox[{"G", " ", 
+      SubscriptBox["m", "a"], 
+      RowBox[{
+       SubscriptBox["m", "b"], "/", 
+       SuperscriptBox["r", "2"], " "}]}]], "|", 
+    RowBox[{"\[TildeTilde]", "2.21"}]}], TraditionalForm]], "InlineMath"],
+ ". Thus the net force on the Moon is always directed toward the Sun. But, by \
+Newton's second law, this force is proportional to the second derivative of \
+",
+ Cell[BoxData[
+  FormBox["r", TraditionalForm]], "InlineMath"],
+ " with respect to time, hence the radial curvature of the orbit is always \
+positive. This implies that the Moon\[CloseCurlyQuote]s orbit is always \
+convex with respect to the Sun. In terms of the epitrochoid parameters, the \
+condition for convexity can be expressed as ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"R", "/", "a"}], " ", "\[GreaterEqual]", " ", 
+    SuperscriptBox["m", "2"]}], TraditionalForm]], "InlineMath"],
+ ", which is easily fulfilled for the Sun and Moon. Remarkably, no other \
+known planet-moon couple in the Solar System obeys the convexity condition."
+}], "ManipulateCaption",
+ CellChangeTimes->{{3.544121670183551*^9, 3.544122003943324*^9}, {
+   3.544122062966428*^9, 3.544122088369425*^9}, {3.544122130645185*^9, 
+   3.544122211129424*^9}, {3.544122272741274*^9, 3.54412242052143*^9}, {
+   3.544122460927*^9, 3.544122463961659*^9}, {3.544123519526031*^9, 
+   3.544123528600963*^9}, {3.5441397006257963`*^9, 3.544139784394923*^9}, {
+   3.544140164353137*^9, 3.5441401867888517`*^9}, {3.5441402223296967`*^9, 
+   3.544140224197147*^9}, {3.544140266148797*^9, 3.5441402936147013`*^9}, {
+   3.544141584877289*^9, 3.5441417719392433`*^9}, {3.544141802505686*^9, 
+   3.544141888100189*^9}, {3.544141953832283*^9, 3.54414202975811*^9}, {
+   3.544187527831769*^9, 3.544187531363111*^9}, 3.544311449125689*^9, {
+   3.544363303459394*^9, 3.544363307894496*^9}, {3.544363372502658*^9, 
+   3.5443634078542337`*^9}, 3.544363442828672*^9, {3.544544708248746*^9, 
+   3.544544734350195*^9}, {3.54454477508326*^9, 3.5445448037198057`*^9}, {
+   3.544545164204335*^9, 3.544545190767572*^9}, {3.544545223243228*^9, 
+   3.54454525389039*^9}, {3.5445452864598503`*^9, 3.544545300350151*^9}, {
+   3.544545332296081*^9, 3.544545341944545*^9}, 3.54463793925471*^9},
+ CellID->678888266]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "ThumbnailSection"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 30, $CellContext`b$$ = 
+    30, $CellContext`m$$ = 6, $CellContext`R$$ = 400, $CellContext`\[Phi]$$ = 
+    4.553, Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a$$], 30, 
+       Text[
+        Style["a", Italic]], 10}, 1, 30}, {{
+       Hold[$CellContext`b$$], 30, 
+       Text[
+        Style["b", Italic, 10]]}, 0, 
+      Dynamic[$CellContext`a$$]}, {{
+       Hold[$CellContext`m$$], 6, "lunar months per year, m"}, 4, 13}, {{
+       Hold[$CellContext`\[Phi]$$], 4.553, "rotate"}, 0, 6.28, 0.01}, {
+      Hold[$CellContext`R$$], 400}}, Typeset`size$$ = {575., {188., 192.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`a$12349$$ = 0, $CellContext`b$12350$$ = 
+    0, $CellContext`m$12351$$ = 0, $CellContext`\[Phi]$12352$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 30, $CellContext`b$$ = 
+        30, $CellContext`m$$ = 6, $CellContext`R$$ = 
+        400, $CellContext`\[Phi]$$ = 4.553}, "ControllerVariables" :> {
+        Hold[$CellContext`a$$, $CellContext`a$12349$$, 0], 
+        Hold[$CellContext`b$$, $CellContext`b$12350$$, 0], 
+        Hold[$CellContext`m$$, $CellContext`m$12351$$, 0], 
+        Hold[$CellContext`\[Phi]$$, $CellContext`\[Phi]$12352$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`A$, $CellContext`B$}, 
+        If[$CellContext`b$$ > $CellContext`a$$, $CellContext`b$$ == \
+$CellContext`a$$]; $CellContext`A$ = {$CellContext`R$$ 
+            Cos[$CellContext`\[Phi]$$] + $CellContext`b$$ 
+            Cos[$CellContext`m$$ $CellContext`\[Phi]$$], $CellContext`R$$ 
+            Sin[$CellContext`\[Phi]$$] + $CellContext`b$$ 
+            Sin[$CellContext`m$$ $CellContext`\[Phi]$$]}; $CellContext`B$ = \
+{$CellContext`R$$ Cos[$CellContext`\[Phi]$$] - $CellContext`a$$ 
+           Cos[$CellContext`m$$ $CellContext`\[Phi]$$], $CellContext`R$$ 
+            Sin[$CellContext`\[Phi]$$] - $CellContext`a$$ 
+           Sin[$CellContext`m$$ $CellContext`\[Phi]$$]}; Show[
+          Graphics[{Black, Thin, 
+            Circle[{0, 0}, $CellContext`R$$], 
+            Line[{$CellContext`A$, $CellContext`B$}], 
+            PointSize[0.01], 
+            Point[{0, 0}], Blue, 
+            Thickness[0.002], 
+            
+            Circle[{$CellContext`R$$ 
+              Cos[$CellContext`\[Phi]$$], $CellContext`R$$ 
+              Sin[$CellContext`\[Phi]$$]}, $CellContext`b$$], 
+            Point[$CellContext`A$], Red, 
+            
+            Circle[{$CellContext`R$$ 
+              Cos[$CellContext`\[Phi]$$], $CellContext`R$$ 
+              Sin[$CellContext`\[Phi]$$]}, $CellContext`a$$], 
+            PointSize[0.01], 
+            Point[$CellContext`B$]}, PlotRange -> 435, 
+           ImageSize -> {575, 380}, AspectRatio -> 1], 
+          
+          ParametricPlot[{$CellContext`R$$ 
+             Cos[$CellContext`\[Theta]] + $CellContext`b$$ 
+             Cos[$CellContext`m$$ $CellContext`\[Theta]], $CellContext`R$$ 
+             Sin[$CellContext`\[Theta]] + $CellContext`b$$ 
+             Sin[$CellContext`m$$ $CellContext`\[Theta]]}, {$CellContext`\
+\[Theta], 0.001, $CellContext`\[Phi]$$}, PlotStyle -> {
+             Thickness[0.002], Blue}], 
+          
+          ParametricPlot[{$CellContext`R$$ 
+             Cos[$CellContext`\[Theta]] - $CellContext`a$$ 
+            Cos[$CellContext`m$$ $CellContext`\[Theta]], $CellContext`R$$ 
+             Sin[$CellContext`\[Theta]] - $CellContext`a$$ 
+            Sin[$CellContext`m$$ $CellContext`\[Theta]]}, {$CellContext`\
+\[Theta], 0.001, $CellContext`\[Phi]$$}, PlotStyle -> {
+             Thickness[0.002], Red}]]], 
+      "Specifications" :> {{{$CellContext`a$$, 30, 
+          Text[
+           Style["a", Italic]], 10}, 1, 30, Appearance -> 
+         "Labeled"}, {{$CellContext`b$$, 30, 
+          Text[
+           Style["b", Italic, 10]]}, 0, 
+         Dynamic[$CellContext`a$$], Appearance -> 
+         "Labeled"}, {{$CellContext`m$$, 6, "lunar months per year, m"}, 4, 
+         13, Appearance -> 
+         "Labeled"}, {{$CellContext`\[Phi]$$, 4.553, "rotate"}, 0, 6.28, 0.01,
+          Appearance -> "Labeled"}, {$CellContext`R$$, 400, ControlType -> 
+         None}}, "Options" :> {
+       TrackedSymbols :> {$CellContext`a$$, $CellContext`b$$, \
+$CellContext`m$$, $CellContext`\[Phi]$$}, ControlPlacement -> Top, 
+        AutorunSequencing -> {1, 2, 3}}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{618., {272., 278.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.5445685224138412`*^9, 3.544568575336811*^9},
+ CellID->1708086799]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SnapshotsSection"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 30, $CellContext`b$$ = 
+    10, $CellContext`m$$ = 6, $CellContext`R$$ = 400, $CellContext`\[Phi]$$ = 
+    4.19, Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a$$], 30, 
+       Text[
+        Style["a", Italic]], 10}, 1, 30}, {{
+       Hold[$CellContext`b$$], 10, 
+       Text[
+        Style["b", Italic, 10]]}, 0, 
+      Dynamic[$CellContext`a$$]}, {{
+       Hold[$CellContext`m$$], 6, "lunar months per year, m"}, 4, 13}, {{
+       Hold[$CellContext`\[Phi]$$], 4.19, "rotate"}, 0, 6.28, 0.01}, {
+      Hold[$CellContext`R$$], 400}}, Typeset`size$$ = {575., {188., 192.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`a$22628$$ = 0, $CellContext`b$22629$$ = 
+    0, $CellContext`m$22630$$ = 0, $CellContext`\[Phi]$22631$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 30, $CellContext`b$$ = 
+        10, $CellContext`m$$ = 6, $CellContext`R$$ = 
+        400, $CellContext`\[Phi]$$ = 4.19}, "ControllerVariables" :> {
+        Hold[$CellContext`a$$, $CellContext`a$22628$$, 0], 
+        Hold[$CellContext`b$$, $CellContext`b$22629$$, 0], 
+        Hold[$CellContext`m$$, $CellContext`m$22630$$, 0], 
+        Hold[$CellContext`\[Phi]$$, $CellContext`\[Phi]$22631$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`A$, $CellContext`B$}, 
+        If[$CellContext`b$$ > $CellContext`a$$, $CellContext`b$$ == \
+$CellContext`a$$]; $CellContext`A$ = {$CellContext`R$$ 
+            Cos[$CellContext`\[Phi]$$] + $CellContext`b$$ 
+            Cos[$CellContext`m$$ $CellContext`\[Phi]$$], $CellContext`R$$ 
+            Sin[$CellContext`\[Phi]$$] + $CellContext`b$$ 
+            Sin[$CellContext`m$$ $CellContext`\[Phi]$$]}; $CellContext`B$ = \
+{$CellContext`R$$ Cos[$CellContext`\[Phi]$$] - $CellContext`a$$ 
+           Cos[$CellContext`m$$ $CellContext`\[Phi]$$], $CellContext`R$$ 
+            Sin[$CellContext`\[Phi]$$] - $CellContext`a$$ 
+           Sin[$CellContext`m$$ $CellContext`\[Phi]$$]}; Show[
+          Graphics[{Black, Thin, 
+            Circle[{0, 0}, $CellContext`R$$], 
+            Line[{$CellContext`A$, $CellContext`B$}], 
+            PointSize[0.01], 
+            Point[{0, 0}], Blue, 
+            Thickness[0.002], 
+            
+            Circle[{$CellContext`R$$ 
+              Cos[$CellContext`\[Phi]$$], $CellContext`R$$ 
+              Sin[$CellContext`\[Phi]$$]}, $CellContext`b$$], 
+            Point[$CellContext`A$], Red, 
+            
+            Circle[{$CellContext`R$$ 
+              Cos[$CellContext`\[Phi]$$], $CellContext`R$$ 
+              Sin[$CellContext`\[Phi]$$]}, $CellContext`a$$], 
+            PointSize[0.01], 
+            Point[$CellContext`B$]}, PlotRange -> 435, 
+           ImageSize -> {575, 380}, AspectRatio -> 1], 
+          
+          ParametricPlot[{$CellContext`R$$ 
+             Cos[$CellContext`\[Theta]] + $CellContext`b$$ 
+             Cos[$CellContext`m$$ $CellContext`\[Theta]], $CellContext`R$$ 
+             Sin[$CellContext`\[Theta]] + $CellContext`b$$ 
+             Sin[$CellContext`m$$ $CellContext`\[Theta]]}, {$CellContext`\
+\[Theta], 0.001, $CellContext`\[Phi]$$}, PlotStyle -> {
+             Thickness[0.002], Blue}], 
+          
+          ParametricPlot[{$CellContext`R$$ 
+             Cos[$CellContext`\[Theta]] - $CellContext`a$$ 
+            Cos[$CellContext`m$$ $CellContext`\[Theta]], $CellContext`R$$ 
+             Sin[$CellContext`\[Theta]] - $CellContext`a$$ 
+            Sin[$CellContext`m$$ $CellContext`\[Theta]]}, {$CellContext`\
+\[Theta], 0.001, $CellContext`\[Phi]$$}, PlotStyle -> {
+             Thickness[0.002], Red}]]], 
+      "Specifications" :> {{{$CellContext`a$$, 30, 
+          Text[
+           Style["a", Italic]], 10}, 1, 30, Appearance -> 
+         "Labeled"}, {{$CellContext`b$$, 10, 
+          Text[
+           Style["b", Italic, 10]]}, 0, 
+         Dynamic[$CellContext`a$$], Appearance -> 
+         "Labeled"}, {{$CellContext`m$$, 6, "lunar months per year, m"}, 4, 
+         13, Appearance -> 
+         "Labeled"}, {{$CellContext`\[Phi]$$, 4.19, "rotate"}, 0, 6.28, 0.01, 
+         Appearance -> "Labeled"}, {$CellContext`R$$, 400, ControlType -> 
+         None}}, "Options" :> {
+       TrackedSymbols :> {$CellContext`a$$, $CellContext`b$$, \
+$CellContext`m$$, $CellContext`\[Phi]$$}, ControlPlacement -> Top, 
+        AutorunSequencing -> {1, 2, 3}}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{618., {272., 278.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellID->351482184],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 1., $CellContext`b$$ = 
+    0., $CellContext`m$$ = 13., $CellContext`R$$ = 
+    400, $CellContext`\[Phi]$$ = 4.19, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a$$], 1., 
+       Text[
+        Style["a", Italic]], 10}, 1, 30}, {{
+       Hold[$CellContext`b$$], 0., 
+       Text[
+        Style["b", Italic, 10]]}, 0, 
+      Dynamic[$CellContext`a$$]}, {{
+       Hold[$CellContext`m$$], 13., "lunar months per year, m"}, 4, 13}, {{
+       Hold[$CellContext`\[Phi]$$], 4.19, "rotate"}, 0, 6.28, 0.01}, {
+      Hold[$CellContext`R$$], 400}}, Typeset`size$$ = {575., {188., 192.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`a$22700$$ = 0, $CellContext`b$22701$$ = 
+    0, $CellContext`m$22702$$ = 0, $CellContext`\[Phi]$22703$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 1., $CellContext`b$$ = 
+        0., $CellContext`m$$ = 13., $CellContext`R$$ = 
+        400, $CellContext`\[Phi]$$ = 4.19}, "ControllerVariables" :> {
+        Hold[$CellContext`a$$, $CellContext`a$22700$$, 0], 
+        Hold[$CellContext`b$$, $CellContext`b$22701$$, 0], 
+        Hold[$CellContext`m$$, $CellContext`m$22702$$, 0], 
+        Hold[$CellContext`\[Phi]$$, $CellContext`\[Phi]$22703$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`A$, $CellContext`B$}, 
+        If[$CellContext`b$$ > $CellContext`a$$, $CellContext`b$$ == \
+$CellContext`a$$]; $CellContext`A$ = {$CellContext`R$$ 
+            Cos[$CellContext`\[Phi]$$] + $CellContext`b$$ 
+            Cos[$CellContext`m$$ $CellContext`\[Phi]$$], $CellContext`R$$ 
+            Sin[$CellContext`\[Phi]$$] + $CellContext`b$$ 
+            Sin[$CellContext`m$$ $CellContext`\[Phi]$$]}; $CellContext`B$ = \
+{$CellContext`R$$ Cos[$CellContext`\[Phi]$$] - $CellContext`a$$ 
+           Cos[$CellContext`m$$ $CellContext`\[Phi]$$], $CellContext`R$$ 
+            Sin[$CellContext`\[Phi]$$] - $CellContext`a$$ 
+           Sin[$CellContext`m$$ $CellContext`\[Phi]$$]}; Show[
+          Graphics[{Black, Thin, 
+            Circle[{0, 0}, $CellContext`R$$], 
+            Line[{$CellContext`A$, $CellContext`B$}], 
+            PointSize[0.01], 
+            Point[{0, 0}], Blue, 
+            Thickness[0.002], 
+            
+            Circle[{$CellContext`R$$ 
+              Cos[$CellContext`\[Phi]$$], $CellContext`R$$ 
+              Sin[$CellContext`\[Phi]$$]}, $CellContext`b$$], 
+            Point[$CellContext`A$], Red, 
+            
+            Circle[{$CellContext`R$$ 
+              Cos[$CellContext`\[Phi]$$], $CellContext`R$$ 
+              Sin[$CellContext`\[Phi]$$]}, $CellContext`a$$], 
+            PointSize[0.01], 
+            Point[$CellContext`B$]}, PlotRange -> 435, 
+           ImageSize -> {575, 380}, AspectRatio -> 1], 
+          
+          ParametricPlot[{$CellContext`R$$ 
+             Cos[$CellContext`\[Theta]] + $CellContext`b$$ 
+             Cos[$CellContext`m$$ $CellContext`\[Theta]], $CellContext`R$$ 
+             Sin[$CellContext`\[Theta]] + $CellContext`b$$ 
+             Sin[$CellContext`m$$ $CellContext`\[Theta]]}, {$CellContext`\
+\[Theta], 0.001, $CellContext`\[Phi]$$}, PlotStyle -> {
+             Thickness[0.002], Blue}], 
+          
+          ParametricPlot[{$CellContext`R$$ 
+             Cos[$CellContext`\[Theta]] - $CellContext`a$$ 
+            Cos[$CellContext`m$$ $CellContext`\[Theta]], $CellContext`R$$ 
+             Sin[$CellContext`\[Theta]] - $CellContext`a$$ 
+            Sin[$CellContext`m$$ $CellContext`\[Theta]]}, {$CellContext`\
+\[Theta], 0.001, $CellContext`\[Phi]$$}, PlotStyle -> {
+             Thickness[0.002], Red}]]], 
+      "Specifications" :> {{{$CellContext`a$$, 1., 
+          Text[
+           Style["a", Italic]], 10}, 1, 30, Appearance -> 
+         "Labeled"}, {{$CellContext`b$$, 0., 
+          Text[
+           Style["b", Italic, 10]]}, 0, 
+         Dynamic[$CellContext`a$$], Appearance -> 
+         "Labeled"}, {{$CellContext`m$$, 13., "lunar months per year, m"}, 4, 
+         13, Appearance -> 
+         "Labeled"}, {{$CellContext`\[Phi]$$, 4.19, "rotate"}, 0, 6.28, 0.01, 
+         Appearance -> "Labeled"}, {$CellContext`R$$, 400, ControlType -> 
+         None}}, "Options" :> {
+       TrackedSymbols :> {$CellContext`a$$, $CellContext`b$$, \
+$CellContext`m$$, $CellContext`\[Phi]$$}, ControlPlacement -> Top, 
+        AutorunSequencing -> {1, 2, 3}}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{618., {272., 278.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellID->1781037238],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 20, $CellContext`b$$ = 
+    0., $CellContext`m$$ = 4., $CellContext`R$$ = 400, $CellContext`\[Phi]$$ =
+     6.28, Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a$$], 20, 
+       Text[
+        Style["a", Italic]], 10}, 1, 30}, {{
+       Hold[$CellContext`b$$], 0., 
+       Text[
+        Style["b", Italic, 10]]}, 0, 
+      Dynamic[$CellContext`a$$]}, {{
+       Hold[$CellContext`m$$], 4., "lunar months per year, m"}, 4, 13}, {{
+       Hold[$CellContext`\[Phi]$$], 6.28, "rotate"}, 0, 6.28, 0.01}, {
+      Hold[$CellContext`R$$], 400}}, Typeset`size$$ = {575., {188., 192.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`a$22772$$ = 0, $CellContext`b$22773$$ = 
+    0, $CellContext`m$22774$$ = 0, $CellContext`\[Phi]$22775$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 20, $CellContext`b$$ = 
+        0., $CellContext`m$$ = 4., $CellContext`R$$ = 
+        400, $CellContext`\[Phi]$$ = 6.28}, "ControllerVariables" :> {
+        Hold[$CellContext`a$$, $CellContext`a$22772$$, 0], 
+        Hold[$CellContext`b$$, $CellContext`b$22773$$, 0], 
+        Hold[$CellContext`m$$, $CellContext`m$22774$$, 0], 
+        Hold[$CellContext`\[Phi]$$, $CellContext`\[Phi]$22775$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`A$, $CellContext`B$}, 
+        If[$CellContext`b$$ > $CellContext`a$$, $CellContext`b$$ == \
+$CellContext`a$$]; $CellContext`A$ = {$CellContext`R$$ 
+            Cos[$CellContext`\[Phi]$$] + $CellContext`b$$ 
+            Cos[$CellContext`m$$ $CellContext`\[Phi]$$], $CellContext`R$$ 
+            Sin[$CellContext`\[Phi]$$] + $CellContext`b$$ 
+            Sin[$CellContext`m$$ $CellContext`\[Phi]$$]}; $CellContext`B$ = \
+{$CellContext`R$$ Cos[$CellContext`\[Phi]$$] - $CellContext`a$$ 
+           Cos[$CellContext`m$$ $CellContext`\[Phi]$$], $CellContext`R$$ 
+            Sin[$CellContext`\[Phi]$$] - $CellContext`a$$ 
+           Sin[$CellContext`m$$ $CellContext`\[Phi]$$]}; Show[
+          Graphics[{Black, Thin, 
+            Circle[{0, 0}, $CellContext`R$$], 
+            Line[{$CellContext`A$, $CellContext`B$}], 
+            PointSize[0.01], 
+            Point[{0, 0}], Blue, 
+            Thickness[0.002], 
+            
+            Circle[{$CellContext`R$$ 
+              Cos[$CellContext`\[Phi]$$], $CellContext`R$$ 
+              Sin[$CellContext`\[Phi]$$]}, $CellContext`b$$], 
+            Point[$CellContext`A$], Red, 
+            
+            Circle[{$CellContext`R$$ 
+              Cos[$CellContext`\[Phi]$$], $CellContext`R$$ 
+              Sin[$CellContext`\[Phi]$$]}, $CellContext`a$$], 
+            PointSize[0.01], 
+            Point[$CellContext`B$]}, PlotRange -> 435, 
+           ImageSize -> {575, 380}, AspectRatio -> 1], 
+          
+          ParametricPlot[{$CellContext`R$$ 
+             Cos[$CellContext`\[Theta]] + $CellContext`b$$ 
+             Cos[$CellContext`m$$ $CellContext`\[Theta]], $CellContext`R$$ 
+             Sin[$CellContext`\[Theta]] + $CellContext`b$$ 
+             Sin[$CellContext`m$$ $CellContext`\[Theta]]}, {$CellContext`\
+\[Theta], 0.001, $CellContext`\[Phi]$$}, PlotStyle -> {
+             Thickness[0.002], Blue}], 
+          
+          ParametricPlot[{$CellContext`R$$ 
+             Cos[$CellContext`\[Theta]] - $CellContext`a$$ 
+            Cos[$CellContext`m$$ $CellContext`\[Theta]], $CellContext`R$$ 
+             Sin[$CellContext`\[Theta]] - $CellContext`a$$ 
+            Sin[$CellContext`m$$ $CellContext`\[Theta]]}, {$CellContext`\
+\[Theta], 0.001, $CellContext`\[Phi]$$}, PlotStyle -> {
+             Thickness[0.002], Red}]]], 
+      "Specifications" :> {{{$CellContext`a$$, 20, 
+          Text[
+           Style["a", Italic]], 10}, 1, 30, Appearance -> 
+         "Labeled"}, {{$CellContext`b$$, 0., 
+          Text[
+           Style["b", Italic, 10]]}, 0, 
+         Dynamic[$CellContext`a$$], Appearance -> 
+         "Labeled"}, {{$CellContext`m$$, 4., "lunar months per year, m"}, 4, 
+         13, Appearance -> 
+         "Labeled"}, {{$CellContext`\[Phi]$$, 6.28, "rotate"}, 0, 6.28, 0.01, 
+         Appearance -> "Labeled"}, {$CellContext`R$$, 400, ControlType -> 
+         None}}, "Options" :> {
+       TrackedSymbols :> {$CellContext`a$$, $CellContext`b$$, \
+$CellContext`m$$, $CellContext`\[Phi]$$}, ControlPlacement -> Top, 
+        AutorunSequencing -> {1, 2, 3}}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{618., {272., 278.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellID->118303533]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "DetailsSection"],
+
+Cell["\<\
+The three-body Sun-Earth-Moon problem can be described by the Lagrangian\
+\>", "DetailNotes",
+ CellChangeTimes->{{3.544107586377842*^9, 3.5441076927047043`*^9}, {
+  3.544107847021144*^9, 3.544107847372932*^9}},
+ CellID->1491454447],
+
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{"L", "=", 
+   RowBox[{
+    RowBox[{
+     FractionBox["1", "2"], 
+     SubscriptBox["m", "A"], " ", 
+     SubsuperscriptBox[
+      OverscriptBox["R", "."], "A", "2"]}], "+", 
+    RowBox[{
+     FractionBox["1", "2"], 
+     SubscriptBox["m", "B"], " ", 
+     SubsuperscriptBox[
+      OverscriptBox["R", "."], "B", "2"]}], "+", 
+    FractionBox[
+     RowBox[{"G", " ", "M", " ", 
+      SubscriptBox["m", "A"]}], 
+     SubscriptBox["R", "A"]], "+", 
+    FractionBox[
+     RowBox[{"G", " ", "M", " ", 
+      SubscriptBox["m", "B"]}], 
+     SubscriptBox["R", "B"]], "+", 
+    FractionBox[
+     RowBox[{"G", " ", 
+      SubscriptBox["m", "A"], 
+      SubscriptBox["m", "B"]}], 
+     SubscriptBox["R", 
+      RowBox[{"A", ",", "B"}]]]}]}], 
+  TraditionalForm]], "InlineMath"]], "DetailNotes",
+ CellChangeTimes->{{3.544107697043874*^9, 3.544107741986587*^9}, {
+  3.5441079308271627`*^9, 3.544107984021792*^9}, {3.544108018525404*^9, 
+  3.544108153341899*^9}, {3.544108245336008*^9, 3.544108312534161*^9}, {
+  3.5441084421801863`*^9, 3.54410847539463*^9}, {3.544541766281829*^9, 
+  3.544541812663319*^9}},
+ CellID->1445762945],
+
+Cell[TextData[{
+ "where the Sun is taken as the origin of the coordinate system and is thus \
+considered stationary. Here ",
+ Cell[BoxData[
+  FormBox["G", TraditionalForm]], "InlineMath"],
+ " represents the gravitational constant, ",
+ Cell[BoxData[
+  FormBox["M", TraditionalForm]], "InlineMath"],
+ " the solar mass, ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["m", "A"], TraditionalForm]], "InlineMath"],
+ " the lunar (or other moon) mass, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["m", "B"], Cell["", "InlineMath"]}], TraditionalForm]], 
+  "InlineMath"],
+ "the Earth (or other planetary mass), and ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["R", "A"], TraditionalForm]], "InlineMath"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["R", "B"], TraditionalForm]], "InlineMath"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["R", 
+    RowBox[{"A", ",", "B"}]], TraditionalForm]], "InlineMath"],
+ " the three interbody distances. Because of the great disparity in masses \
+and in distances, an accurate simplification of the problem is possible. For \
+the Sun-Earth-Moon system, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"M", "/", 
+     SubscriptBox["m", "B"]}], "\[TildeTilde]", 
+    RowBox[{"330", " ", "000"}]}], TraditionalForm]], "InlineMath"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["m", "B"], "/", 
+     SubscriptBox["m", "A"]}], "\[TildeTilde]", "81.3"}], TraditionalForm]], 
+  "InlineMath"],
+ ", and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["R", "A"], ",", 
+    RowBox[{
+     SubscriptBox["R", "B"], "\[TildeTilde]", 
+     RowBox[{"400", " ", 
+      SubscriptBox["R", 
+       RowBox[{"A", ",", "B"}]]}]}]}], TraditionalForm]], "InlineMath"],
+ ". The Lagrangian is well approximated by "
+}], "DetailNotes",
+ CellChangeTimes->{{3.544108594352319*^9, 3.544108675943429*^9}, {
+  3.5441087110287247`*^9, 3.544108818195812*^9}, {3.5441088633200207`*^9, 
+  3.544109005185624*^9}, {3.544109056261991*^9, 3.544109058773924*^9}, {
+  3.544109089475065*^9, 3.544109195955595*^9}, {3.544109250680457*^9, 
+  3.544109338784007*^9}, {3.5441093804869556`*^9, 3.544109434623397*^9}, {
+  3.544109528942045*^9, 3.544109890445073*^9}, {3.544109939077009*^9, 
+  3.5441099412391853`*^9}, {3.5441099806589537`*^9, 3.544110062109779*^9}, {
+  3.5441237620392523`*^9, 3.54412376355303*^9}, {3.544541702355816*^9, 
+  3.544541746313653*^9}, {3.544541847599628*^9, 3.544541902070685*^9}, {
+  3.544541964120784*^9, 3.544541964411618*^9}, {3.544543020783093*^9, 
+  3.544543033661269*^9}},
+ CellID->160350810],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"L", "\[TildeTilde]", 
+    RowBox[{
+     RowBox[{
+      FractionBox["1", "2"], 
+      RowBox[{"(", 
+       RowBox[{
+        SubscriptBox["m", "A"], "+", 
+        SubscriptBox["m", "B"]}], ")"}], " ", 
+      SuperscriptBox["R", "2"], 
+      SuperscriptBox["\[CapitalOmega]", "2"]}], "+", 
+     RowBox[{
+      FractionBox["1", "2"], 
+      FractionBox[
+       RowBox[{
+        SubscriptBox["m", "A"], 
+        SubscriptBox["m", "B"]}], 
+       RowBox[{
+        SubscriptBox["m", "A"], "+", 
+        SubscriptBox["m", "B"]}]], " ", 
+      SuperscriptBox["r", "2"], 
+      SuperscriptBox["\[Omega]", "2"]}], "+", 
+     FractionBox[
+      RowBox[{"G", " ", 
+       RowBox[{"M", "(", 
+        RowBox[{
+         SubscriptBox["m", "A"], "+", 
+         SubscriptBox["m", "B"]}], ")"}]}], "R"], "+", 
+     RowBox[{
+      FractionBox[
+       RowBox[{"G", " ", 
+        SubscriptBox["m", "A"], " ", 
+        SubscriptBox["m", "B"]}], "r"], "[", 
+      RowBox[{"1", "+", 
+       RowBox[{
+        StyleBox["O",
+         FontSlant->"Plain"], "(", 
+        RowBox[{
+         SuperscriptBox["r", "2"], "/", 
+         SuperscriptBox["R", "2"]}], ")"}]}]}]}]}], TraditionalForm]], 
+  "InlineMath"],
+ "]"
+}], "DetailNotes",
+ CellChangeTimes->{{3.544110099905652*^9, 3.544110133645259*^9}, {
+  3.5441102067567472`*^9, 3.544110352977934*^9}, {3.544110393075755*^9, 
+  3.544110616507471*^9}, {3.544110711644965*^9, 3.544110719588717*^9}, {
+  3.544465075024055*^9, 3.544465153480303*^9}, {3.544541983632844*^9, 
+  3.5445419952677593`*^9}, {3.544542027355895*^9, 3.544542031058962*^9}, {
+  3.5445421375184107`*^9, 3.544542142823688*^9}},
+ CellID->2071570332],
+
+Cell[TextData[{
+ "where ",
+ Cell[BoxData[
+  FormBox["R", TraditionalForm]], "InlineMath"],
+ " is the distance from the Sun to the Earth-Moon barycenter (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"R", "\[TildeTilde]", 
+    SubscriptBox["R", "A"], "\[TildeTilde]", 
+    SubscriptBox["R", "B"]}], TraditionalForm]], "InlineMath"],
+ ") and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"r", "=", 
+    RowBox[{
+     SubscriptBox["R", 
+      RowBox[{"A", ",", "B"}]], "=", 
+     RowBox[{"a", "+", "b"}]}]}], TraditionalForm]], "InlineMath"],
+ ". The simplest case is when both orbital motions are circular, with angular \
+velocities ",
+ Cell[BoxData[
+  FormBox["\[CapitalOmega]", TraditionalForm]], "InlineMath"],
+ " (\"annual\") and ",
+ Cell[BoxData[
+  FormBox["\[Omega]", TraditionalForm]], "InlineMath"],
+ " (\"monthly\"). To a fair approximation, there are 13 lunar months per \
+solar year: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[Omega]", "/", "\[CapitalOmega]"}], "\[TildeTilde]", "13"}], 
+   TraditionalForm]], "InlineMath"],
+ "."
+}], "DetailNotes",
+ CellChangeTimes->{{3.544110927645385*^9, 3.5441110096960297`*^9}, {
+   3.544111796025601*^9, 3.544111874980754*^9}, {3.544111908047695*^9, 
+   3.544111953079789*^9}, {3.5441120123885508`*^9, 3.544112062883758*^9}, {
+   3.54411211126849*^9, 3.5441122411094923`*^9}, {3.544112299336526*^9, 
+   3.544112382044223*^9}, {3.5441124434354963`*^9, 3.544112529659617*^9}, 
+   3.5441126612257137`*^9, {3.544112772471552*^9, 3.544112820535611*^9}, {
+   3.544112857028013*^9, 3.5441128682197037`*^9}, 3.54411290141492*^9, 
+   3.5441129473255444`*^9, {3.5441129842676*^9, 3.544113195517231*^9}, {
+   3.544113366783065*^9, 3.5441134140878057`*^9}, {3.544113486570942*^9, 
+   3.5441135476128683`*^9}, {3.544123710876025*^9, 3.54412371226501*^9}, 
+   3.544187667218019*^9, {3.544374348160721*^9, 3.544374348169284*^9}, {
+   3.544542032864785*^9, 3.544542059257992*^9}, {3.544542148058114*^9, 
+   3.544542176102943*^9}, {3.544543233939412*^9, 3.544543241211499*^9}},
+ CellID->1877684760],
+
+Cell["\<\
+The thumbnail graphic for this Demonstration shows epichoroidal orbits for a \
+hypothetical twin planet around some other star, in which a planet and its \
+moon are of equal mass.\
+\>", "DetailNotes",
+ CellChangeTimes->{{3.544374348624517*^9, 3.544374537638686*^9}, {
+   3.5443755984899597`*^9, 3.544375634326932*^9}, {3.544375932084765*^9, 
+   3.5443759325207977`*^9}, 3.544543275817294*^9},
+ CellID->545765304],
+
+Cell["\<\
+Snapshot 1: a qualitative representation for a planet with a very massive \
+moon; for example Pluto's moon Charon has approximately 11.6% of the mass of \
+the planet\
+\>", "DetailNotes",
+ CellChangeTimes->{{3.5443745393805943`*^9, 3.544374550214698*^9}, {
+   3.544374583389083*^9, 3.544374871457337*^9}, 3.5443759598348923`*^9},
+ CellID->2004552976],
+
+Cell[TextData[{
+ "Snapshot 2: the Sun-Earth-Moon system drawn to scale, with ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"R", "\[TildeTilde]", " ", 
+    RowBox[{"400", " ", "r"}]}], TraditionalForm]], "InlineMath"],
+ " (average Sun-Earth distance is about 400 times average Earth-Moon \
+distance) and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"m", "\[TildeTilde]", "13"}], TraditionalForm]], "InlineMath"],
+ " (lunar months per year); with higher magnification, it can be seen that \
+the Moon's orbit around the Sun is a distorted 13-sided polygon that is a \
+convex figure"
+}], "DetailNotes",
+ CellChangeTimes->{
+  3.54437457646375*^9, {3.5443749105379066`*^9, 3.544375283464904*^9}, {
+   3.544375694256815*^9, 3.544375723589514*^9}, {3.544543306651245*^9, 
+   3.544543307089381*^9}, {3.545427154037784*^9, 3.545427259287733*^9}, {
+   3.545427302993701*^9, 3.545427312100822*^9}},
+ CellID->1457800816],
+
+Cell[TextData[{
+ "Snapshot 3: a toy model of the Sun-Earth-Moon system, with ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"r", "\[TildeTilde]", "20"}], TraditionalForm]], "InlineMath"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"m", "=", "4"}], TraditionalForm]], "InlineMath"],
+ ", in which the requisite inequality for convexity is fulfilled and much \
+easier to verify"
+}], "DetailNotes",
+ CellChangeTimes->{
+  3.5443745805016127`*^9, {3.544375292504231*^9, 3.544375452450367*^9}, {
+   3.544375485723068*^9, 3.544375520157586*^9}, {3.544375555038156*^9, 
+   3.544375567997987*^9}, {3.5443757970886383`*^9, 3.544375799184379*^9}, 
+   3.54437596740956*^9, {3.544465750262575*^9, 3.5444657502628098`*^9}, {
+   3.544465793672902*^9, 3.544465793673109*^9}, {3.545484020896097*^9, 
+   3.5454840215882463`*^9}},
+ CellID->617385889],
+
+Cell["References", "DetailNotes",
+ CellChangeTimes->{{3.544057539297461*^9, 3.544057546428981*^9}, 
+   3.544543321408806*^9},
+ CellID->1991496296],
+
+Cell[TextData[{
+ "[1] N. S. Brannen, \"The Sun, the Moon, and Convexity,\" ",
+ StyleBox["The College Mathematics Journal,",
+  FontSlant->"Italic"],
+ " ",
+ StyleBox["32",
+  FontWeight->"Bold"],
+ "(4), 2001 pp. 268\[Dash]272."
+}], "DetailNotes",
+ CellChangeTimes->{{3.544057700293634*^9, 3.54405774300338*^9}, {
+   3.544057777188393*^9, 3.5440577771920023`*^9}, {3.544057834255125*^9, 
+   3.54405784808766*^9}, {3.544057927074806*^9, 3.5440579302511177`*^9}, {
+   3.5440587385821533`*^9, 3.544058740787648*^9}, {3.544543323929495*^9, 
+   3.5445433331535673`*^9}, 3.545484032195315*^9},
+ CellID->398124730],
+
+Cell[TextData[{
+ "[2] L. Hodges, \"Why the Moon's Orbit is Convex,\"",
+ StyleBox[" The College Mathematics Journal, ",
+  FontSlant->"Italic"],
+ StyleBox["33",
+  FontWeight->"Bold"],
+ "(2), 2002 pp. 169\[Dash]170."
+}], "DetailNotes",
+ CellChangeTimes->{{3.544057700293634*^9, 3.54405774300338*^9}, {
+   3.544057777188393*^9, 3.5440578107743*^9}, {3.54405786993089*^9, 
+   3.544057942739339*^9}, {3.544059135413597*^9, 3.544059136987722*^9}, {
+   3.544543337046102*^9, 3.54454334738328*^9}, 3.545484038163156*^9},
+ CellID->836005208]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "ControlSuggestionsSection"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[True], Cell[" Resize Images"]}],
+  "\"Click inside an image to reveal its orange resize frame.\\nDrag any of \
+the orange resize handles to resize the image.\"",
+  TooltipDelay->0.35]], "ControlSuggestions",
+ CellChangeTimes->{3.544464127914466*^9},
+ FontFamily->"Verdana",
+ CellTags->"ResizeImages"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[False], Cell[" Rotate and Zoom in 3D"]}],
+  RowBox[{
+   "\"Drag a 3D graphic to rotate it. Starting the drag near the center \
+tumbles\\nthe graphic; starting near a corner turns it parallel to the plane \
+of the screen.\\nHold down \"", 
+    FrameBox[
+    "Ctrl", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" (or \"", 
+    FrameBox[
+    "Cmd", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" on Mac) and drag up and down to zoom.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ FontFamily->"Verdana",
+ CellTags->"RotateAndZoomIn3D"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[False], Cell[" Drag Locators"]}],
+  RowBox[{"\"Drag any locator (\"", 
+    GraphicsBox[
+     LocatorBox[
+      Scaled[{0.5, 0.5}]], ImageSize -> 20], 
+    "\", etc.) to move it around.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ FontFamily->"Verdana",
+ CellTags->"DragLocators"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[False], Cell[" Create and Delete Locators"]}],
+  RowBox[{"\"Insert a new locator in the graphic by holding down the \"", 
+    FrameBox[
+    "Alt", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], 
+    "\" key\\nand clicking where you want it to be. Delete a locator by \
+clicking it\\nwhile holding down the \"", 
+    FrameBox[
+    "Alt", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" key.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ FontFamily->"Verdana",
+ CellTags->"CreateAndDeleteLocators"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[True], Cell[" Slider Zoom"]}],
+  RowBox[{"\"Hold down the \"", 
+    FrameBox[
+    "Alt", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], 
+    "\" key while moving a slider to make fine adjustments in the slider \
+value.\\nHold \"", 
+    FrameBox[
+    "Ctrl", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" and/or \"", 
+    FrameBox[
+    "Shift", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" at the same time as \"", 
+    FrameBox[
+    "Alt", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" to make ever finer adjustments.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ CellChangeTimes->{3.5444641223469095`*^9},
+ FontFamily->"Verdana",
+ CellTags->"SliderZoom"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[True], Cell[" Gamepad Controls"]}],
+  "\"Control this Demonstration with a gamepad or other\\nhuman interface \
+device connected to your computer.\"",
+  TooltipDelay->0.35]], "ControlSuggestions",
+ CellChangeTimes->{3.35696210375764*^9, 3.3895522232313623`*^9, 
+  3.544542107416926*^9},
+ FontFamily->"Verdana",
+ CellTags->"GamepadControls"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[True], Cell[" Automatic Animation"]}],
+  RowBox[{"\"Animate a slider in this Demonstration by clicking the\"", 
+    AdjustmentBox[
+     Cell[
+      GraphicsData[
+      "CompressedBitmap", 
+       "eJzzTSzJSM1NLMlMTlRwL0osyMhMLlZwyy8CCjEzMjAwcIKwAgOI/R/IhBKc\n\
+/4EAyGAG0f+nTZsGwgysIJIRKsWKLAXGIHFmEpUgLADxWUAkI24jZs+eTaEt\n\
+IG+wQKRmzJgBlYf5lhEA30OqWA=="], "Graphics", ImageSize -> {9, 9}, ImageMargins -> 
+      0, CellBaseline -> Baseline], BoxBaselineShift -> 0.1839080459770115, 
+     BoxMargins -> {{0., 0.}, {-0.1839080459770115, 0.1839080459770115}}], 
+    "\"button\\nnext to the slider, and then clicking the play button that \
+appears.\\nAnimate all controls by selecting \"", 
+    StyleBox["Autorun", FontWeight -> "Bold"], "\" from the\"", 
+    AdjustmentBox[
+     Cell[
+      GraphicsData[
+      "CompressedBitmap", 
+       "eJyNULENwyAQfEySIlMwTVJlCGRFsosokeNtqBmDBagoaZjAI1C8/8GUUUC6\n\
+57h7cQ8PvU7Pl17nUav7oj/TPH7V7b2QJAUAXBkKmCPRowxICy64bRvGGNF7\n\
+X8CctGoDSN4xhIDGGDhzFXwUh3/ClBKrDQPmnGXtI6u0OOd+tZBVUqy1xSaH\n\
+UqiK6pPe4XdEdAz6563tx/gejuORGMxJaz8mdpJn7hc="], "Graphics", 
+      ImageSize -> {10, 10}, ImageMargins -> 0, CellBaseline -> Baseline], 
+     BoxBaselineShift -> 0.1839080459770115, 
+     BoxMargins -> {{0., 0.}, {-0.1839080459770115, 0.1839080459770115}}], 
+    "\"menu.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ CellChangeTimes->{3.544542106370986*^9},
+ FontFamily->"Verdana",
+ CellTags->"AutomaticAnimation"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[False], Cell[" Bookmark Animation"]}],
+  RowBox[{
+   "\"See a prepared animation of this Demonstration by selecting\\n\"", 
+    StyleBox["Animate Bookmarks", FontWeight -> "Bold"], "\" from the\"", 
+    AdjustmentBox[
+     Cell[
+      GraphicsData[
+      "CompressedBitmap", 
+       "eJyNULENwyAQfEySIlMwTVJlCGRFsosokeNtqBmDBagoaZjAI1C8/8GUUUC6\n\
+57h7cQ8PvU7Pl17nUav7oj/TPH7V7b2QJAUAXBkKmCPRowxICy64bRvGGNF7\n\
+X8CctGoDSN4xhIDGGDhzFXwUh3/ClBKrDQPmnGXtI6u0OOd+tZBVUqy1xSaH\n\
+UqiK6pPe4XdEdAz6563tx/gejuORGMxJaz8mdpJn7hc="], "Graphics", 
+      ImageSize -> {10, 10}, ImageMargins -> 0, CellBaseline -> Baseline], 
+     BoxBaselineShift -> 0.1839080459770115, 
+     BoxMargins -> {{0., 0.}, {-0.1839080459770115, 0.1839080459770115}}], 
+    "\"menu.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ FontFamily->"Verdana",
+ CellTags->"BookmarkAnimation"]
+}, Open  ]],
+
+Cell["", "SearchTermsSection"],
+
+Cell[CellGroupData[{
+
+Cell["", "RelatedLinksSection"],
+
+Cell[TextData[ButtonBox["Epicycloid",
+ BaseStyle->"Hyperlink",
+ ButtonData->{
+   URL["http://mathworld.wolfram.com/Epicycloid.html"], None},
+ ButtonNote->"http://mathworld.wolfram.com/Epicycloid.html"]], "RelatedLinks",\
+
+ CellID->1036545365],
+
+Cell[TextData[ButtonBox["Epitriochoid",
+ BaseStyle->"Hyperlink",
+ ButtonData->{
+   URL["http://mathworld.wolfram.com/Epitrochoid.html"], None},
+ ButtonNote->"http://mathworld.wolfram.com/Epitrochoid.html"]], "RelatedLinks",\
+
+ CellID->830605091]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "AuthorSection"],
+
+Cell[TextData[{
+ "Contributed by: ",
+ ButtonBox["S. M. Blinder",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://demonstrations.wolfram.com/search.html?query=S.+M.+Blinder"], 
+    None},
+  ButtonNote->
+   "http://demonstrations.wolfram.com/search.html?query=S.+M.+Blinder"]
+}], "Author",
+ CellChangeTimes->{{3.544057496041986*^9, 3.5440575198262167`*^9}, {
+  3.5444640768313584`*^9, 3.5444640979354687`*^9}, {3.544542089062977*^9, 
+  3.544542090021194*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{917, 756},
+WindowMargins->{{4, Automatic}, {Automatic, 0}},
+Magnification->1.,
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (October 5, \
+2011)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Demonstration.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "ResizeImages"->{
+  Cell[66680, 1486, 353, 9, 29, "ControlSuggestions",
+   CellTags->"ResizeImages"]},
+ "RotateAndZoomIn3D"->{
+  Cell[67036, 1497, 678, 16, 29, "ControlSuggestions",
+   CellTags->"RotateAndZoomIn3D"]},
+ "DragLocators"->{
+  Cell[67717, 1515, 340, 11, 29, "ControlSuggestions",
+   CellTags->"DragLocators"]},
+ "CreateAndDeleteLocators"->{
+  Cell[68060, 1528, 637, 15, 29, "ControlSuggestions",
+   CellTags->"CreateAndDeleteLocators"]},
+ "SliderZoom"->{
+  Cell[68700, 1545, 887, 22, 29, "ControlSuggestions",
+   CellTags->"SliderZoom"]},
+ "GamepadControls"->{
+  Cell[69590, 1569, 393, 10, 29, "ControlSuggestions",
+   CellTags->"GamepadControls"]},
+ "AutomaticAnimation"->{
+  Cell[69986, 1581, 1505, 32, 29, "ControlSuggestions",
+   CellTags->"AutomaticAnimation"]},
+ "BookmarkAnimation"->{
+  Cell[71494, 1615, 908, 21, 29, "ControlSuggestions",
+   CellTags->"BookmarkAnimation"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"ResizeImages", 73953, 1695},
+ {"RotateAndZoomIn3D", 74062, 1698},
+ {"DragLocators", 74172, 1701},
+ {"CreateAndDeleteLocators", 74288, 1704},
+ {"SliderZoom", 74402, 1707},
+ {"GamepadControls", 74508, 1710},
+ {"AutomaticAnimation", 74622, 1713},
+ {"BookmarkAnimation", 74739, 1716}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 256, 5, 74, "DemoTitle"],
+Cell[838, 29, 33, 0, 261, "InitializationSection"],
+Cell[CellGroupData[{
+Cell[896, 33, 29, 0, 189, "ManipulateSection"],
+Cell[CellGroupData[{
+Cell[950, 37, 16029, 304, 279, "Input",
+ CellID->1886403059],
+Cell[16982, 343, 5389, 107, 562, "Output",
+ CellID->1038641945]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22420, 456, 36, 0, 171, "ManipulateCaptionSection"],
+Cell[22459, 458, 1066, 16, 49, "ManipulateCaption",
+ CellID->1899771866],
+Cell[23528, 476, 2738, 74, 77, "ManipulateCaption",
+ CellID->129930574],
+Cell[26269, 552, 1534, 37, 22, "ManipulateCaption",
+ CellID->2073089276],
+Cell[27806, 591, 992, 29, 22, "ManipulateCaption",
+ CellID->1305404242],
+Cell[28801, 622, 1952, 38, 65, "ManipulateCaption",
+ CellID->2122482405],
+Cell[30756, 662, 2767, 53, 134, "ManipulateCaption",
+ CellID->678888266]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[33560, 720, 28, 0, 173, "ThumbnailSection"],
+Cell[33591, 722, 5389, 107, 562, "Output",
+ CellID->1708086799]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39017, 834, 28, 0, 143, "SnapshotsSection"],
+Cell[39048, 836, 5318, 106, 562, "Output",
+ CellID->351482184],
+Cell[44369, 944, 5332, 107, 562, "Output",
+ CellID->1781037238],
+Cell[49704, 1053, 5322, 106, 562, "Output",
+ CellID->118303533]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[55063, 1164, 26, 0, 337, "DetailsSection"],
+Cell[55092, 1166, 241, 5, 21, "DetailNotes",
+ CellID->1491454447],
+Cell[55336, 1173, 1163, 34, 37, "DetailNotes",
+ CellID->1445762945],
+Cell[56502, 1209, 2574, 71, 72, "DetailNotes",
+ CellID->160350810],
+Cell[59079, 1282, 1686, 51, 38, "DetailNotes",
+ CellID->2071570332],
+Cell[60768, 1335, 2030, 47, 55, "DetailNotes",
+ CellID->1877684760],
+Cell[62801, 1384, 422, 8, 35, "DetailNotes",
+ CellID->545765304],
+Cell[63226, 1394, 359, 7, 35, "DetailNotes",
+ CellID->2004552976],
+Cell[63588, 1403, 896, 20, 51, "DetailNotes",
+ CellID->1457800816],
+Cell[64487, 1425, 827, 19, 37, "DetailNotes",
+ CellID->617385889],
+Cell[65317, 1446, 146, 3, 21, "DetailNotes",
+ CellID->1991496296],
+Cell[65466, 1451, 603, 14, 22, "DetailNotes",
+ CellID->398124730],
+Cell[66072, 1467, 531, 12, 22, "DetailNotes",
+ CellID->836005208]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[66640, 1484, 37, 0, 127, "ControlSuggestionsSection"],
+Cell[66680, 1486, 353, 9, 29, "ControlSuggestions",
+ CellTags->"ResizeImages"],
+Cell[67036, 1497, 678, 16, 29, "ControlSuggestions",
+ CellTags->"RotateAndZoomIn3D"],
+Cell[67717, 1515, 340, 11, 29, "ControlSuggestions",
+ CellTags->"DragLocators"],
+Cell[68060, 1528, 637, 15, 29, "ControlSuggestions",
+ CellTags->"CreateAndDeleteLocators"],
+Cell[68700, 1545, 887, 22, 29, "ControlSuggestions",
+ CellTags->"SliderZoom"],
+Cell[69590, 1569, 393, 10, 29, "ControlSuggestions",
+ CellTags->"GamepadControls"],
+Cell[69986, 1581, 1505, 32, 29, "ControlSuggestions",
+ CellTags->"AutomaticAnimation"],
+Cell[71494, 1615, 908, 21, 29, "ControlSuggestions",
+ CellTags->"BookmarkAnimation"]
+}, Open  ]],
+Cell[72417, 1639, 30, 0, 155, "SearchTermsSection"],
+Cell[CellGroupData[{
+Cell[72472, 1643, 31, 0, 129, "RelatedLinksSection"],
+Cell[72506, 1645, 242, 6, 22, "RelatedLinks",
+ CellID->1036545365],
+Cell[72751, 1653, 245, 6, 22, "RelatedLinks",
+ CellID->830605091]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[73033, 1664, 25, 0, 141, "AuthorSection"],
+Cell[73061, 1666, 467, 12, 21, "Author"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

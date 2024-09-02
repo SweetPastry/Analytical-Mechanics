@@ -1,0 +1,207 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7012,        197]
+NotebookOptionsPosition[      6695,        181]
+NotebookOutlinePosition[      7038,        196]
+CellTagsIndexPosition[      6995,        193]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"Black", ",", 
+     RowBox[{"Text", "[", 
+      RowBox[{
+       RowBox[{"Style", "[", 
+        RowBox[{"O", ",", "Large", ",", 
+         RowBox[{"FontWeight", "\[Rule]", "Bold"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"-", "0.1"}], ",", 
+         RowBox[{"-", "0.1"}], ",", 
+         RowBox[{"-", "0.15"}]}], "}"}]}], "]"}], ",", 
+     RowBox[{"Opacity", "[", "0.7", "]"}], ",", 
+     RowBox[{"Sphere", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "0.04"}], "]"}], ",", 
+     "\[IndentingNewLine]", " ", 
+     RowBox[{"Darker", "[", "Red", "]"}], ",", 
+     RowBox[{"Arrow", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "0", ",", "0"}], "}"}]}], "}"}], "]"}], ",", 
+     RowBox[{"Text", "[", 
+      RowBox[{
+       RowBox[{"Style", "[", 
+        RowBox[{"x", ",", "Large", ",", 
+         RowBox[{"FontWeight", "\[Rule]", "Bold"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1.15", ",", "0", ",", "0"}], "}"}]}], "]"}], ",", 
+     RowBox[{"Sphere", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0.2", ",", "0", ",", "0"}], "}"}], ",", "0.03"}], "]"}], ",",
+      "\[IndentingNewLine]", " ", 
+     RowBox[{"Darker", "[", "Green", "]"}], ",", 
+     RowBox[{"Arrow", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1", ",", "0"}], "}"}]}], "}"}], "]"}], ",", 
+     RowBox[{"Text", "[", 
+      RowBox[{
+       RowBox[{"Style", "[", 
+        RowBox[{"y", ",", "Large", ",", 
+         RowBox[{"FontWeight", "\[Rule]", "Bold"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1.15", ",", "0"}], "}"}]}], "]"}], ",", 
+     RowBox[{"Sphere", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0.5", ",", "0"}], "}"}], ",", "0.03"}], "]"}], ",",
+      "\[IndentingNewLine]", " ", 
+     RowBox[{"Darker", "[", "Blue", "]"}], ",", 
+     RowBox[{"Arrow", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "}"}], "]"}], ",", 
+     RowBox[{"Text", "[", 
+      RowBox[{
+       RowBox[{"Style", "[", 
+        RowBox[{"z", ",", "Large", ",", 
+         RowBox[{"FontWeight", "\[Rule]", "Bold"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0", ",", "1.2"}], "}"}]}], "]"}], ",", 
+     RowBox[{"Sphere", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0", ",", "0.7"}], "}"}], ",", "0.03"}], "]"}], ",",
+      "\[IndentingNewLine]", "                        ", "Yellow", ",", 
+     RowBox[{"Cuboid", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0.2", ",", "0.5", ",", "0.7"}], "}"}]}], "]"}]}], "}"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "}"}]}], 
+   "\[IndentingNewLine]", "                           ", ",", 
+   RowBox[{"Boxed", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8805303341791663`*^9, 3.8805303625318832`*^9}, {
+  3.8805304445060444`*^9, 3.880530483247861*^9}, {3.88053051919516*^9, 
+  3.880530589995298*^9}, {3.880530625475075*^9, 3.8805308260503187`*^9}, {
+  3.8805308668914757`*^9, 3.8805310110170217`*^9}, {3.880531071594273*^9, 
+  3.8805313095614505`*^9}, {3.8805313776009464`*^9, 3.8805315922584715`*^9}, {
+  3.8805321954737267`*^9, 3.880532226815801*^9}, {3.8805324914399953`*^9, 
+  3.880532779729267*^9}, {3.880532867841155*^9, 3.8805330321917734`*^9}, {
+  3.8805330818641267`*^9, 3.880533175776698*^9}, {3.8805332384647026`*^9, 
+  3.880533264423979*^9}, {3.8805333078967447`*^9, 3.8805333307048497`*^9}}],
+
+Cell[BoxData[
+ Graphics3DBox[
+  {GrayLevel[0], Text3DBox[
+    StyleBox["O",
+     StripOnInput->False,
+     FontSize->Large,
+     FontWeight->Bold], {-0.1, -0.1, -0.15}], 
+   {Opacity[0.7], SphereBox[{0, 0, 0}, 0.04], 
+    {RGBColor[
+      NCache[
+       Rational[2, 3], 0.6666666666666666], 0, 0], 
+     Arrow3DBox[{{0, 0, 0}, {1, 0, 0}}], Text3DBox[
+      StyleBox["x",
+       StripOnInput->False,
+       FontSize->Large,
+       FontWeight->Bold], {1.15, 0, 0}], SphereBox[{0.2, 0, 0}, 0.03]}, 
+    {RGBColor[0, 
+      NCache[
+       Rational[2, 3], 0.6666666666666666], 0], 
+     Arrow3DBox[{{0, 0, 0}, {0, 1, 0}}], Text3DBox[
+      StyleBox["y",
+       StripOnInput->False,
+       FontSize->Large,
+       FontWeight->Bold], {0, 1.15, 0}], SphereBox[{0, 0.5, 0}, 0.03]}, 
+    {RGBColor[0, 0, 
+      NCache[
+       Rational[2, 3], 0.6666666666666666]], 
+     Arrow3DBox[{{0, 0, 0}, {0, 0, 1}}], Text3DBox[
+      StyleBox["z",
+       StripOnInput->False,
+       FontSize->Large,
+       FontWeight->Bold], {0, 0, 1.2}], SphereBox[{0, 0, 0.7}, 0.03]}, 
+    {RGBColor[1, 1, 0], CuboidBox[{0, 0, 0}, {0.2, 0.5, 0.7}]}}},
+  Boxed->False,
+  ImageSize->{417.3610026374653, 389.9901121301697},
+  PlotRange->{{-1, 1}, {-1, 1}, {-1, 1}},
+  ViewPoint->{2.7297989789376023`, -1.7467042380609146`, 0.9732532246703706},
+  ViewVertical->{0.18618738282070577`, -0.34051287124972773`, 
+   0.9216209866271722}]], "Output",
+ CellChangeTimes->{
+  3.8805321973091803`*^9, 3.8805322276259313`*^9, {3.8805324924058895`*^9, 
+   3.880532567889397*^9}, {3.880532644112918*^9, 3.880532780618185*^9}, {
+   3.8805329156085777`*^9, 3.8805330331494994`*^9}, {3.880533085025632*^9, 
+   3.880533109252002*^9}, {3.880533142337453*^9, 3.880533176777755*^9}, 
+   3.880533264816786*^9, {3.8805333082842946`*^9, 3.880533331528264*^9}, 
+   3.880533379168659*^9}]
+}, Open  ]]
+},
+WindowSize->{1904, 997},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (August 17, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 4273, 109, 355, "Input"],
+Cell[4856, 133, 1823, 45, 814, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

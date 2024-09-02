@@ -1,0 +1,710 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     30047,        702]
+NotebookOptionsPosition[     18905,        441]
+NotebookOutlinePosition[     29308,        694]
+CellTagsIndexPosition[     29265,        691]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData["Quit"], "Input",
+ CellChangeTimes->{{3.77183353850274*^9, 
+  3.771833539083773*^9}},ExpressionUUID->"2296cf48-8461-4178-9e7e-\
+1d688a0f4e2b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Graphics", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Arrowheads", "[", 
+      RowBox[{"{", ".05", "}"}], "]"}], ",", 
+     RowBox[{"Arrow", "[", 
+      RowBox[{"BezierCurve", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "2"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"4", ",", "2"}], "}"}]}], "}"}], "]"}], "]"}]}], "}"}], 
+   "]"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Graphics", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Arrowheads", "[", 
+      RowBox[{"{", ".05", "}"}], "]"}], ",", 
+     RowBox[{"Arrow", "[", 
+      RowBox[{"BezierCurve", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"4", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"2", ",", "2"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "2"}], "}"}]}], "}"}], "]"}], "]"}]}], "}"}], 
+   "]"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"Arrowheads", "[", 
+     RowBox[{"{", "0.1", "}"}], "]"}], ",", 
+    RowBox[{"Arrow", "[", 
+     RowBox[{"BezierCurve", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "4"}], ",", "0"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "3"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"4", ",", 
+          RowBox[{"-", "1"}]}], "}"}]}], "}"}], "]"}], "]"}]}], "}"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.772167866218977*^9, 3.772167877638197*^9}, {
+   3.77216791947747*^9, 3.7721680461496925`*^9}, {3.7721681111082063`*^9, 
+   3.7721681286270375`*^9}, {3.772168192431149*^9, 3.7721682704156866`*^9}, 
+   3.772168842297091*^9, {3.7721688976459885`*^9, 3.772168916787222*^9}, {
+   3.77216915465644*^9, 3.7721691572928443`*^9}, {3.77216931419792*^9, 
+   3.772169357503597*^9}, {3.772169424318513*^9, 3.772169451431361*^9}, {
+   3.772169484082218*^9, 3.7721694948930373`*^9}, 3.7721695450159254`*^9, {
+   3.772169601909225*^9, 3.772169602252426*^9}, {3.929992921693459*^9, 
+   3.92999292789709*^9}},ExpressionUUID->"f43ae72f-1c2e-4724-a45a-\
+62b844e0d312"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {Arrowheads[{0.05}], ArrowBox[BezierCurveBox[{{0, 0}, {1, 2}, {4, 2}}]]},
+  ImageSize->{139.47368421051948`, Automatic}]], "Output",
+ CellChangeTimes->{{3.772167926060681*^9, 3.772167945950717*^9}, {
+   3.7721679779931726`*^9, 3.772168046836094*^9}, {3.772168125335431*^9, 
+   3.772168128783038*^9}, {3.772168202274767*^9, 3.772168270805687*^9}, 
+   3.772168398429511*^9, 3.7721688430302925`*^9, {3.772168899174791*^9, 
+   3.7721689175828233`*^9}, 3.772169157620445*^9, {3.772169315867123*^9, 
+   3.772169357815597*^9}, {3.772169431120125*^9, 3.772169452382963*^9}, 
+   3.7721694956262383`*^9, 3.772169545733526*^9, 
+   3.772169605029231*^9},ExpressionUUID->"4750ea27-9390-4ec6-8714-\
+fbe4d2c323a0"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {Arrowheads[{0.05}], ArrowBox[BezierCurveBox[{{4, 0}, {2, 2}, {0, 2}}]]},
+  ImageSize->{139.47368421051948`, Automatic}]], "Output",
+ CellChangeTimes->{{3.772167926060681*^9, 3.772167945950717*^9}, {
+   3.7721679779931726`*^9, 3.772168046836094*^9}, {3.772168125335431*^9, 
+   3.772168128783038*^9}, {3.772168202274767*^9, 3.772168270805687*^9}, 
+   3.772168398429511*^9, 3.7721688430302925`*^9, {3.772168899174791*^9, 
+   3.7721689175828233`*^9}, 3.772169157620445*^9, {3.772169315867123*^9, 
+   3.772169357815597*^9}, {3.772169431120125*^9, 3.772169452382963*^9}, 
+   3.7721694956262383`*^9, 3.772169545733526*^9, 
+   3.772169605029231*^9},ExpressionUUID->"c47004b0-ba74-4d75-9388-\
+97cf7b227f8c"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {Arrowheads[{0.1}], ArrowBox[BezierCurveBox[{{-4, 0}, {0, 3}, {4, -1}}]]},
+  ImageSize->{139.47368421051948`, Automatic}]], "Output",
+ CellChangeTimes->{{3.772167926060681*^9, 3.772167945950717*^9}, {
+   3.7721679779931726`*^9, 3.772168046836094*^9}, {3.772168125335431*^9, 
+   3.772168128783038*^9}, {3.772168202274767*^9, 3.772168270805687*^9}, 
+   3.772168398429511*^9, 3.7721688430302925`*^9, {3.772168899174791*^9, 
+   3.7721689175828233`*^9}, 3.772169157620445*^9, {3.772169315867123*^9, 
+   3.772169357815597*^9}, {3.772169431120125*^9, 3.772169452382963*^9}, 
+   3.7721694956262383`*^9, 3.772169545733526*^9, 
+   3.772169605029231*^9},ExpressionUUID->"28fe4b73-35c0-4e34-b81f-\
+e61268bb2d95"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{"x", ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"Axes", "\[Rule]", "False"}], ",", 
+   RowBox[{"AspectRatio", "\[Rule]", "1"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.772168297341334*^9, 3.7721683188069715`*^9}, {
+  3.7721683547494345`*^9, 3.7721683791166773`*^9}, {3.772168419551948*^9, 
+  3.772168426883961*^9}},ExpressionUUID->"63b2c4c5-85f6-4397-8dfe-\
+03635f7e5610"],
+
+Cell[" ", "Text",
+ CellChangeTimes->{
+  3.772168493496078*^9},ExpressionUUID->"e6ad043b-4de9-45b0-b8fc-\
+355c2d1b33df"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   StyleBox[GeometricTransformationBox[InsetBox[
+      StyleBox[Cell["\:6784\:578b\:7a7a\:95f4",
+        GeneratedCell->False,
+        CellAutoOverwrite->False,
+        CellBaseline->Baseline,
+        TextAlignment->Left,ExpressionUUID->
+        "a31083cb-3331-40b9-a41b-8ea3a5e79821"],
+       FontFamily->"Arial",
+       FontSize->14,
+       Background->GrayLevel[
+        1.]], {-0.7137628109353416, -0.2684236111305318}, {Left, Baseline},
+      Alignment->{Left, Top}], {{{{0.9749067511497428, 
+       0.2087002830655858}, {-0.23745452490391109`, 0.974906751149744}}, {
+       1.0773269812672177`, -0.14200404911456396`}}}],
+    FontColor->RGBColor[0, 0, 1]], InsetBox[
+    GraphicsBox[
+     {Arrowheads[{-0.05, 0.05}], 
+      ArrowBox[BezierCurveBox[{{-4, 0}, {0, -3}, {4, 0}}]]}], 
+    Scaled[{0.49304538784322877, 0.052708637952016524}], 
+    Center, {1.6364690096211625, 0.6718724304290405}, {{1., 0.}, {0., 1.}}], 
+   {EdgeForm[Opacity[1.]], FaceForm[None], 
+    StyleBox[RectangleBox[{-1.0172645192634047, -0.47665526047244544}, {-0.44686432371216983, -0.678379670772423}],
+     RectangleBoxOptions->{RoundingRadius->0}]}, 
+   {EdgeForm[Opacity[1.]], FaceForm[None], 
+    StyleBox[RectangleBox[{0.4483894591449823, -0.4734016409514781}, {1.0187896546962165, -0.6751260512514556}],
+     RectangleBoxOptions->{RoundingRadius->0}]}, 
+   {EdgeForm[Opacity[1.]], FaceForm[None], 
+    StyleBox[RectangleBox[{-0.2897754998036749, -0.36928581628052193}, {0.28062469574755905, -0.5710102265804995}],
+     RectangleBoxOptions->{RoundingRadius->0}]}, 
+   {EdgeForm[Opacity[1.]], FaceForm[None], 
+    StyleBox[RectangleBox[{-0.3080771103561204, 0.3009598050387612}, {0.2623230851951127, 0.09923539473878229}],
+     RectangleBoxOptions->{RoundingRadius->0}]}, 
+   {EdgeForm[Opacity[1.]], FaceForm[None], 
+    StyleBox[RectangleBox[{-0.45143972635028085, 1.0135024801306152}, {0.4910932171006881, 0.8117780698306376}],
+     RectangleBoxOptions->{RoundingRadius->0}]}, 
+   StyleBox[InsetBox[
+     StyleBox[Cell["\:54c8\:5bc6\:987f\:529b\:5b66",
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left,ExpressionUUID->
+       "cff9ee2f-07ff-4cf0-ba1f-4d53e170394d"],
+      FontFamily->"Arial",
+      Background->GrayLevel[
+       1.]], {-0.9593094191806589, -0.6100536608321083}, {Left, Baseline},
+     Alignment->{Left, Top}],
+    FontSize->14,
+    FontColor->RGBColor[1, 0, 0]], 
+   StyleBox[InsetBox[
+     StyleBox[Cell["\:62c9\:683c\:6717\:65e5\:529b\:5b66",
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left,ExpressionUUID->
+       "2bbf0254-4721-4db5-8bb0-0892d8b635af"],
+      FontFamily->"Arial",
+      Background->GrayLevel[1.]], {0.48194241182446634, -0.606800041311141}, {
+     Left, Baseline},
+     Alignment->{Left, Top}],
+    FontSize->14,
+    FontColor->RGBColor[1, 0, 0]], 
+   StyleBox[InsetBox[
+     StyleBox[Cell["\:7ecf\:5178\:529b\:5b66",
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left,ExpressionUUID->
+       "5f3d00dd-0459-4107-9f9c-4f72744e5acb"],
+      FontFamily->"Arial",
+      Background->GrayLevel[
+       1.]], {-0.1738652996381831, -0.5059378361611522}, {Left, Baseline},
+     Alignment->{Left, Top}],
+    FontSize->14,
+    FontColor->RGBColor[1, 0, 0]], 
+   StyleBox[InsetBox[
+     StyleBox[Cell["\:725b\:987f\:529b\:5b66",
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left,ExpressionUUID->
+       "c1f6d36c-2bf6-4dc3-9228-ab3b3abd298d"],
+      FontFamily->"Arial",
+      Background->GrayLevel[
+       1.]], {-0.18606637333981374, 0.16756140467909653}, {Left, Baseline},
+     Alignment->{Left, Top}],
+    FontSize->14,
+    FontColor->RGBColor[1, 0, 0]], 
+   StyleBox[InsetBox[
+     StyleBox[Cell["\:8fd0\:52a8\:65b9\:7a0b",
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left,ExpressionUUID->
+       "898b8215-49df-47f1-9fc0-6918b1bf0a30"],
+      FontFamily->"Arial",
+      Background->GrayLevel[
+       1.]], {-0.19216691019062915, 0.8801040797709527}, {Left, Baseline},
+     Alignment->{Left, Top}],
+    FontSize->14,
+    FontColor->RGBColor[1, 0, 0]], GeometricTransformationBox[InsetBox[
+     GraphicsBox[{}], Scaled[{0.28623718904025613, 0.4344802340758298}], 
+     Center, {0.9044045875233213, 1.1111110657596373}, {{1., 0.}, {0., 
+     1.}}], {{{{0.8179955861664869, 
+      0.09846386197648976}, {-0.10850467132930315`, 
+      0.8445722388248096}}, {-0.031075988654738457`, -0.0918064854013978}}}], 
+   GeometricTransformationBox[InsetBox[
+     GraphicsBox[
+      {Arrowheads[{0.1}], 
+       ArrowBox[
+        BezierCurveBox[{{3.871040394380456, 
+         2.031526294807719}, {-0.12895960561954303`, 
+         3.0315262948077186`}, {-4.128959605619542, 0.03152629480771907}}]]},
+      ImagePadding->{{0., 0.526316}, {0.526316, 0.}},
+      ImageSize->{139.47368421051948`, Automatic},
+      PlotRange->{{-4.166666666666667, 4.166666666666667}, {-0.16, 3.16}},
+      PlotRangePadding->Automatic], 
+     Scaled[{0.2415812592922877, 0.3546852120671651}], 
+     Center, {0.608528550258777, 0.33349600024843284}, {{1., 0.}, {0., 
+     1.}}], {{{{0.99664097297671, 0.07677645092332509}, {-0.08735453258622276,
+       0.9966409729767102}}, {0.04122353782923382, -0.08715467215159833}}}], 
+   GeometricTransformationBox[InsetBox[
+     GraphicsBox[
+      {Arrowheads[{0.1}], 
+       ArrowBox[BezierCurveBox[{{-4, 0}, {0, 3}, {4, -1}}]]},
+      ImageSize->{139.47368421051948`, Automatic}], 
+     Scaled[{0.7093704250128086, 0.3810395312626873}], 
+     Center, {0.568875060728477, 0.4441190639613239}, {{1., 0.}, {0., 
+     1.}}], {{{{0.9981456200797033, 
+      0.05706689191375794}, {-0.06492943616595767, 0.9981456200797036}}, {
+      0.01584844925662198, -0.004703438465249565}}}], 
+   GeometricTransformationBox[InsetBox[
+     GraphicsBox[
+      {Arrowheads[{0.05}], ArrowBox[BezierCurveBox[{{4, 0}, {2, 2}, {0, 2}}]]},
+      ImageSize->{139.47368421051948`, Automatic}], 
+     Scaled[{0.6691068817974273, 0.424963396588556}], 
+     Center, {1.0416666666666665, 1.355132529832191}, {{1., 0.}, {0., 
+     1.}}], {{{{0.7403090518421103, 0.7157037510166671}, {-0.8578362505006342,
+       0.7027475981646348}}, {0.451221898699505, 0.5880192146668118}}}], 
+   GeometricTransformationBox[InsetBox[
+     GraphicsBox[
+      {Arrowheads[{0.05}], ArrowBox[BezierCurveBox[{{0, 0}, {1, 2}, {4, 2}}]]},
+      ImageSize->{139.47368421051948`, Automatic}], 
+     Scaled[{0.5139092243126846, 0.41691068794548225}], 
+     Center, {1.0965714983240047, 0.7467056794112904}, {{1., 0.}, {0., 
+     1.}}], {{{{0.8334045290917738, -0.6108935634278857}, {0.7636547058079414,
+       0.758545759740302}}, {-0.7344375205409748, 0.2866947536036955}}}], 
+   {Arrowheads[0.02741574171927882], EdgeForm[{GrayLevel[0.], Opacity[1.]}], 
+    EdgeForm[None], 
+    ArrowBox[{{-0.013726207304280754`, -0.3465104796337492}, \
+{-0.01372620730428075, 0.062439305929492074`}}]}, 
+   {Arrowheads[0.02741574171927882], EdgeForm[{GrayLevel[0.], Opacity[1.]}], 
+    EdgeForm[None], 
+    ArrowBox[{{-0.017148144068687348`, 
+     0.3553007016901771}, {-0.017148144068687345`, 0.7936336903499898}}]}, 
+   StyleBox[InsetBox[
+     StyleBox[Cell["\:7269\:7406\:7a7a\:95f4",
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left,ExpressionUUID->
+       "393862b2-28bd-4a73-890b-3d56b9a2b47c"],
+      FontFamily->"Arial",
+      FontSize->14,
+      Background->GrayLevel[
+       1.]], {-0.18149097070170267, -0.16756140598054348}, {Left, Baseline},
+     Alignment->{Left, Top}],
+    FontColor->RGBColor[0, 0, 1]], 
+   StyleBox[InsetBox[
+     StyleBox[Cell["\:725b\:987f\:7b2c\:4e8c\:5b9a\:5f8b",
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left,ExpressionUUID->
+       "b7014a52-5162-4eea-b58f-d24041d0543d"],
+      FontFamily->"Arial",
+      FontSize->14,
+      Background->GrayLevel[1.]], {-0.2684236208258213, 0.5352204105484124}, {
+     Left, Baseline},
+     Alignment->{Left, Top}],
+    FontColor->RGBColor[0, 0, 1]], 
+   StyleBox[GeometricTransformationBox[InsetBox[
+      StyleBox[Cell["\:54c8\:5bc6\:987f\:65b9\:7a0b",
+        GeneratedCell->False,
+        CellAutoOverwrite->False,
+        CellBaseline->Baseline,
+        TextAlignment->Left,ExpressionUUID->
+        "7389d383-098d-4aec-89b6-d396c7adf43e"],
+       FontFamily->"Arial",
+       FontSize->14,
+       Background->GrayLevel[
+        1.]], {-0.9150805270122477, 0.16105416563716224}, {Left, Baseline},
+      Alignment->{Left, Top}], {{{{0.4331356492656649, -0.8449957343687091}, {
+       0.9614172903986828, 0.4331356492656652}}, {-0.3674545760492337, 
+       0.8185565829968648}}}],
+    FontColor->RGBColor[0, 0, 1]], 
+   StyleBox[GeometricTransformationBox[InsetBox[
+      StyleBox[Cell["\:62c9\:683c\:6717\:65e5\:65b9\:7a0b",
+        GeneratedCell->False,
+        CellAutoOverwrite->False,
+        CellBaseline->Baseline,
+        TextAlignment->Left,ExpressionUUID->
+        "767bcafa-489a-4d3f-b58d-99be4abafe8c"],
+       FontFamily->"Arial",
+       FontSize->14,
+       Background->GrayLevel[1.]], {0.39653489591305185, 0.346510478332303}, {
+      Left, Baseline},
+      Alignment->{Left, Top}], {{{{0.308780768403964, 
+       0.8916874473335971}, {-1.0145420794797935`, 0.3087807684039645}}, {
+       0.2088198611517635, 0.8347002109471194}}}],
+    FontColor->RGBColor[0, 0, 1]], 
+   StyleBox[GeometricTransformationBox[InsetBox[
+      StyleBox[Cell["\:76f8\:7a7a\:95f4",
+        GeneratedCell->False,
+        CellAutoOverwrite->False,
+        CellBaseline->Baseline,
+        TextAlignment->Left,ExpressionUUID->
+        "9ff3c996-6da4-49ed-9538-5b7b801a5fe3"],
+       FontFamily->"Arial",
+       FontSize->14,
+       Background->GrayLevel[
+        1.]], {-0.7137628109353416, -0.2684236111305318}, {Left, Baseline},
+      Alignment->{Left, Top}], {{{{0.9646743610614437, -0.24697989167787}, {
+       0.28100820936959614`, 0.9646743610614438}}, {-0.08499462368487307, 
+       0.12002162609632272`}}}],
+    FontColor->RGBColor[0, 0, 1]], 
+   StyleBox[InsetBox[
+     StyleBox[Cell["\:52d2\:8ba9\:5fb7\:53d8\:6362",
+       GeneratedCell->False,
+       CellAutoOverwrite->False,
+       CellBaseline->Baseline,
+       TextAlignment->Left,ExpressionUUID->
+       "00ad30f2-fc6e-4ab2-b744-b760bd3cc3ca"],
+      FontFamily->"Arial",
+      FontSize->14,
+      Background->GrayLevel[
+       1.]], {-0.2333455339336329, -0.9386692324498127}, {Left, Baseline},
+     Alignment->{Left, Top}],
+    FontColor->RGBColor[0, 0, 1]]},
+  AspectRatio->1,
+  Axes->{False, False},
+  AxesLabel->{None, None},
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImagePadding->{{0., 0.526316}, {0.526316, 0.}},
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, "DefaultMeshStyle" -> 
+    AbsolutePointSize[6], "ScalingFunctions" -> None, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
+         Part[#, 1]], 
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
+         Part[#, 1]], 
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{-1.0416666666666667`, 
+   1.0416666666666667`}, {-1.1111110657596373`, 1.1111110657596373`}},
+  PlotRangeClipping->True,
+  PlotRangePadding->Automatic,
+  Ticks->{Automatic, Automatic}]], "Input",
+ CellChangeTimes->{{3.772168432312771*^9, 3.772168451734805*^9}, {
+   3.77216857436662*^9, 3.772168621556703*^9}, {3.772168683878813*^9, 
+   3.772168822297857*^9}, 3.772168854496312*^9, 3.77216889326238*^9, 
+   3.772168923807234*^9, 3.7721690388886366`*^9, 3.772169071867094*^9, {
+   3.77216914890003*^9, 3.772169176636878*^9}, 3.772169251251809*^9, {
+   3.772169373103623*^9, 3.77216938268204*^9}, 3.772169502349851*^9, 
+   3.7721695552183437`*^9, 3.7721696102396398`*^9, 3.7721696737473516`*^9, {
+   3.7721697452110777`*^9, 3.772169889838931*^9}, {3.772169965655064*^9, 
+   3.772170009877142*^9}, {3.7721701590201936`*^9, 3.77217017410542*^9}, 
+   3.772170210297484*^9, {3.772170266363982*^9, 3.772170278282403*^9}, {
+   3.772170313179664*^9, 
+   3.772170409541034*^9}},ExpressionUUID->"e405febb-2911-41cf-8cc7-\
+961d348b2e60"],
+
+Cell[BoxData[
+ FormBox["", TraditionalForm]], "Text",
+ CellChangeTimes->{{3.7721704125830393`*^9, 3.772170434750678*^9}, 
+   3.772170567257311*^9},ExpressionUUID->"0fbf70c9-c2cd-4689-ab18-\
+efb21a9253a8"]
+},
+WindowToolbars->"EditBar",
+WindowSize->{2560, 1358},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+PrintingCopies->1,
+PrintingPageRange->{32000, 32000},
+PrintingOptions->{"Magnification"->1.,
+"PaperOrientation"->"Portrait",
+"PaperSize"->{595.1999999999999, 841.8}},
+ShowSelection->True,
+TooltipBoxOptions->{TooltipDelay->Automatic},
+UnderoverscriptBoxOptions->{LimitsPositioning->False},
+UnderscriptBoxOptions->{LimitsPositioning->False},
+OverscriptBoxOptions->{LimitsPositioning->False},
+FractionBoxOptions->{AllowScriptLevelChange->False},
+GridBoxOptions->{AllowScriptLevelChange->False,
+GridBoxAlignment->{
+ "Columns" -> {{"\[AlignmentMarker]"}}, "Rows" -> {{"\[AlignmentMarker]"}}}},
+FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> 
+     FrontEnd`FileName[{"Book"}, "Textbook.nb", CharacterEncoding -> 
+       "CP936"]]], 
+   Cell[
+    StyleData["BookChapterTitle"]], 
+   Cell[
+    StyleData["inlineEq"], MenuSortingValue -> 10000, FontFamily -> 
+    "Times New Roman", FontSize -> 12, FontWeight -> "Plain", FontSlant -> 
+    "Italic", 
+    FontVariations -> {"StrikeThrough" -> False, "Underline" -> False}, 
+    ItemBoxOptions -> {AllowScriptLevelChange -> False}, 
+    UnderoverscriptBoxOptions -> {LimitsPositioning -> False}, 
+    UnderscriptBoxOptions -> {LimitsPositioning -> False}, 
+    OverscriptBoxOptions -> {LimitsPositioning -> False}, 
+    FractionBoxOptions -> {AllowScriptLevelChange -> False}, 
+    GridBoxOptions -> {AllowScriptLevelChange -> False}], 
+   Cell[
+    StyleData["Input"], CellFrame -> {{3, 3}, {1, 3}}, 
+    CellMargins -> {{70, 50}, {1, 3}}, StyleKeyMapping -> {}, 
+    CellHorizontalScrolling -> True, ShowCellLabel -> False, 
+    CellLabelMargins -> {{20, Inherited}, {Inherited, Inherited}}, 
+    CellFrameColor -> RGBColor[0.8, 0.7, 0.6], Background -> None], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Output"], CellFrame -> {{3, 3}, {3, 1}}, 
+       CellMargins -> {{70, 50}, {1, 3}}, ShowCellLabel -> False, 
+       CellFrameColor -> RGBColor[0.8, 0.7, 0.6], Background -> None], 
+      Cell[
+       StyleData["Theorem", "Presentation"], 
+       CellMargins -> {{125, 15}, {10, 10}}, ParagraphIndent -> 28, FontSize -> 
+       24], 
+      Cell[
+       StyleData["TheoremContinuation", "Presentation"], 
+       CellMargins -> {{205, 15}, {15, 5}}, FontSize -> 24], 
+      Cell[
+       StyleData["Proof", "Presentation"], 
+       CellMargins -> {{125, 15}, {10, 10}}, ParagraphIndent -> 28, FontSize -> 
+       24], 
+      Cell[
+       StyleData["ProofContinuation", "Presentation"], 
+       CellMargins -> {{205, 15}, {15, 5}}, FontSize -> 24], 
+      Cell[
+       StyleData["TheoremContinuation", "Printout"], 
+       CellMargins -> {{50, 2}, {3, 5}}], 
+      Cell[
+       StyleData["Item1Numbered", "Presentation"], 
+       CellMargins -> {{155, 15}, {7, 7}}, CellFrameLabelMargins -> 6, 
+       FontSize -> 24], 
+      Cell[
+       StyleData["Item1", "Presentation"], CellMargins -> {{155, 15}, {7, 7}},
+        CellFrameLabelMargins -> 6, FontSize -> 24], 
+      Cell[
+       StyleData["Item2Numbered", "Presentation"], 
+       CellMargins -> {{195, 15}, {5, 5}}, CellFrameLabelMargins -> 6, 
+       FontSize -> 24], 
+      Cell[
+       StyleData["Item2", "Presentation"], CellDingbat -> 
+       "\[FilledSmallCircle]", CellMargins -> {{195, 12}, {3, 3}}, 
+       CellFrameLabelMargins -> 6, FontSize -> 24]}, Open]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Item1"], CellDingbat -> "\[FilledSquare]", 
+       CellMargins -> {{36, 12}, {10, 10}}], 
+      Cell[
+       StyleData["Item1", "Printout"], CellMargins -> {{30, 12}, {10, 10}}]}, 
+     Open]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Item2"], CellDingbat -> "\[FilledCircle]", 
+       CellMargins -> {{56, 12}, {3, 5}}], 
+      Cell[
+       StyleData["Item2", "Printout"], CellDingbat -> "\[FilledSmallCircle]", 
+       CellMargins -> {{60, 10}, {3, 3}}]}, Open]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Item3"], CellDingbat -> "\[FilledUpTriangle]", 
+       CellMargins -> {{70, 12}, {1, 2}}], 
+      Cell[
+       StyleData["Item3", "Printout"], CellDingbat -> "\[FilledUpTriangle]", 
+       CellMargins -> {{70, 10}, {3, 3}}]}, Open]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Section"], CellFrame -> {{6, 0}, {0, 3}}], 
+      Cell[
+       StyleData["Section", "Printout"], CellFrame -> {{4, 0}, {0, 3}}, 
+       CellMargins -> {{2, 2}, {3, 21}}, CellFrameMargins -> {{6, 6}, {3, 5}},
+        CellFrameColor -> GrayLevel[0.6]]}, Open]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Subsection"], CellFrame -> {{0, 0}, {1.5, 1.5}}, 
+       CellDingbat -> "\[LightBulb]", CellMargins -> {{12, 12}, {10, 18}}], 
+      Cell[
+       StyleData["Subsection", "Printout"], CellFrame -> {{0, 0}, {1, 1}}, 
+       CellMargins -> {{2, 2}, {11, 16}}]}, Open]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Subsubsection"], CellDingbat -> None, 
+       CellMargins -> {{12, 12}, {5, 6}}, 
+       CellElementSpacings -> {"ClosedGroupTopMargin" -> 12}, 
+       CellGroupingRules -> {"SectionGrouping", 50}, 
+       ConversionRules :> {
+        "TeX" -> {"\n\\subsubsection{", "}"}, 
+         "HTML" -> {"<h5 class=\"Subsubsection\">", "</h5>"}}, PageBreakBelow -> 
+       False, CellFrameLabelMargins -> 4, 
+       CounterIncrements -> {
+        "Subsubsection", "SubsubsectionHeader", "SubsubsubsectionHeader"}, 
+       FontFamily -> "Helvetica", FontSize -> 11, FontWeight -> "Bold"], 
+      Cell[
+       StyleData["Subsubsection", "Printout"], 
+       CellMargins -> {{2, 2}, {5, 5}}]}, Open]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["EquationNumbered"], CellMargins -> {{100, 12}, {5, 5}}, 
+       TextAlignment -> Left], 
+      Cell[
+       StyleData["EquationNumbered", "Printout"], 
+       CellMargins -> {{100, 2}, {5, 5}}]}, Open]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Equation"], CellMargins -> {{80, 12}, {7, 7}}, 
+       TextAlignment -> Left, 
+       GridBoxOptions -> {
+        GridBoxAlignment -> {
+          "Columns" -> {{"\[AlignmentMarker]"}}, 
+           "Rows" -> {{"\[AlignmentMarker]"}}}, GridBoxSpacings -> {"Columns" -> {
+             Offset[0.28], {
+              Offset[0.56]}, 
+             Offset[0.28]}, "ColumnsIndexed" -> {}, "Rows" -> {
+             Offset[0.3], {
+              Offset[0.9]}, 
+             Offset[0.5]}, "RowsIndexed" -> {}}}], 
+      Cell[
+       StyleData["Equation", "Printout"], CellMargins -> {{80, 20}, {5, 5}}]},
+      Open]], 
+   Cell[
+    StyleData["EquationContinuation"], CellMargins -> {{100, 12}, {5, 5}}, 
+    DefaultFormatType -> TraditionalForm, MenuSortingValue -> 10000, 
+    GridBoxOptions -> {
+     GridBoxAlignment -> {
+       "Columns" -> {{"\[AlignmentMarker]"}}, 
+        "Rows" -> {{"\[AlignmentMarker]"}}}, GridBoxSpacings -> {"Columns" -> {
+          Offset[0.28], {
+           Offset[0.56]}, 
+          Offset[0.28]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}}}], 
+   Cell[
+    StyleData["EqArray"], CellMargins -> {{100, 12}, {5, 5}}, 
+    DefaultFormatType -> TraditionalForm, DefaultInlineFormatType -> 
+    TraditionalForm, SingleLetterItalics -> True, SpanMaxSize -> Infinity, 
+    MenuSortingValue -> 10000, ShowInvisibleCharacters -> All, 
+    FractionBoxOptions -> {AllowScriptLevelChange -> False}, 
+    GridBoxOptions -> {
+     AllowScriptLevelChange -> False, 
+      GridBoxAlignment -> {
+       "Columns" -> {{"\[AlignmentMarker]"}}, 
+        "Rows" -> {{"\[AlignmentMarker]"}}}}], 
+   Cell[
+    StyleData["TheoremContinuation"], CellMargins -> {{55, 20}, {4, 4}}, 
+    FontWeight -> "Plain", FontSlant -> "Plain", FontTracking -> "Plain", 
+    FontVariations -> {
+     "Outline" -> False, "Shadow" -> False, "StrikeThrough" -> False, 
+      "Underline" -> False}, FontVariations -> {"Masked" -> False}], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Example"], CellDingbat -> "\[HappySmiley]", 
+       CellMargins -> {{50, 24}, {4, 8}}], 
+      Cell[
+       StyleData["Example", "Printout"], CellMargins -> {{35, 12}, {5, 8}}, 
+       ParagraphIndent -> 10]}, Open]], 
+   Cell[
+    StyleData["ExampleContinuation"], CellMargins -> {{55, 24}, {4, 4}}], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["Proof"], CellMargins -> {{12, 24}, {4, 4}}, 
+       CellGroupingRules -> {"GroupTogetherNestedGrouping", 16000}, 
+       TextJustification -> 0, LineSpacing -> {1, 3}, ParagraphIndent -> 24, 
+       CounterAssignments -> {{"EnunciationItem1Numbered", 0}, {
+         "Item1Numbered", 0}}, MenuSortingValue -> 2600, FontSlant -> 
+       "Plain"], 
+      Cell[
+       StyleData["Proof", "Printout"], CellMargins -> {{2, 12}, {2, 4}}, 
+       TextJustification -> 1, Hyphenation -> True, LineSpacing -> {1, 0}, 
+       ParagraphIndent -> 16]}, Open]], 
+   Cell[
+    CellGroupData[{
+      Cell[
+       StyleData["ProofContinuation"], CellMargins -> {{60, 24}, {4, 4}}, 
+       CellGroupingRules -> {"GroupTogetherNestedGrouping", 16000}, 
+       TextJustification -> 0, LineSpacing -> {1, 3}, CounterIncrements -> 
+       "ProofContinuation", MenuSortingValue -> 2600], 
+      Cell[
+       StyleData["ProofContinuation", "Printout"], 
+       CellMargins -> {{50, 12}, {2, 4}}, TextJustification -> 1, Hyphenation -> 
+       True, LineSpacing -> {1, 0}]}, Open]], 
+   Cell[
+    StyleData["Formula"], CellMargins -> {{40, Inherited}, {5, 3}}, 
+    DefaultFormatType -> TraditionalForm, MenuSortingValue -> 10000], 
+   Cell[
+    StyleData["FormulaContinuation"], 
+    CellMargins -> {{60, Inherited}, {5, 5}}, DefaultFormatType -> 
+    TraditionalForm, SingleLetterItalics -> True, MenuSortingValue -> 10000], 
+   Cell[
+    StyleData["Formula1"], CellMargins -> {{77, Inherited}, {3, 3}}, 
+    DefaultFormatType -> TraditionalForm, MenuSortingValue -> 10000]}, 
+  Visible -> False, FrontEndVersion -> 
+  "14.0 for Mac OS X ARM (64-bit) (December 12, 2023)", StyleDefinitions -> 
+  "PrivateStylesheetFormatting.nb"],
+ExpressionUUID->"d45ab857-2685-4d7b-99d6-26634186c501"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 155, 3, 40, "Input",ExpressionUUID->"2296cf48-8461-4178-9e7e-1d688a0f4e2b"],
+Cell[CellGroupData[{
+Cell[737, 27, 2314, 62, 117, "Input",ExpressionUUID->"f43ae72f-1c2e-4724-a45a-62b844e0d312"],
+Cell[3054, 91, 729, 12, 97, "Output",ExpressionUUID->"4750ea27-9390-4ec6-8714-fbe4d2c323a0"],
+Cell[3786, 105, 729, 12, 97, "Output",ExpressionUUID->"c47004b0-ba74-4d75-9388-97cf7b227f8c"],
+Cell[4518, 119, 730, 12, 97, "Output",ExpressionUUID->"28fe4b73-35c0-4e34-b81f-e61268bb2d95"]
+}, Open  ]],
+Cell[5263, 134, 484, 11, 40, "Input",ExpressionUUID->"63b2c4c5-85f6-4397-8dfe-03635f7e5610"],
+Cell[5750, 147, 119, 3, 20, "Text",ExpressionUUID->"e6ad043b-4de9-45b0-b8fc-355c2d1b33df"],
+Cell[5872, 152, 12822, 281, 384, "Input",ExpressionUUID->"e405febb-2911-41cf-8cc7-961d348b2e60"],
+Cell[18697, 435, 204, 4, 20, "Text",ExpressionUUID->"0fbf70c9-c2cd-4689-ab18-efb21a9253a8"]
+}
+]
+*)
+
