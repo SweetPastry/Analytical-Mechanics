@@ -1,0 +1,94 @@
+<div style="text-align: center;">
+    <svg id="physicsSVG" width="400" height="400"></svg>
+</div>
+
+<script>
+    const svgNS = "http://www.w3.org/2000/svg";
+    const svg = document.getElementById('physicsSVG');
+
+    // Define center and radius
+    const centerX = 200;
+    const centerY = 200;
+    const radius = 150;
+    const pegDistance = 100; // Distance of peg 'a'
+    const omegaAngle = Math.PI / 4; // ωt angle for rotating table
+    const massRadius = 10; // Radius of mass point
+
+    // Draw circular table (using <circle>)
+    const tableCircle = document.createElementNS(svgNS, 'circle');
+    tableCircle.setAttribute('cx', centerX);
+    tableCircle.setAttribute('cy', centerY);
+    tableCircle.setAttribute('r', radius);
+    tableCircle.setAttribute('stroke', 'black');
+    tableCircle.setAttribute('stroke-width', 2);
+    tableCircle.setAttribute('fill', 'none');
+    svg.appendChild(tableCircle);
+
+    // Draw Cartesian axes (using <line>)
+    const xAxis = document.createElementNS(svgNS, 'line');
+    xAxis.setAttribute('x1', centerX);
+    xAxis.setAttribute('y1', 0);
+    xAxis.setAttribute('x2', centerX);
+    xAxis.setAttribute('y2', 400);
+    xAxis.setAttribute('stroke', '#888');
+    xAxis.setAttribute('stroke-width', 1);
+    svg.appendChild(xAxis);
+
+    const yAxis = document.createElementNS(svgNS, 'line');
+    yAxis.setAttribute('x1', 0);
+    yAxis.setAttribute('y1', centerY);
+    yAxis.setAttribute('x2', 400);
+    yAxis.setAttribute('y2', centerY);
+    yAxis.setAttribute('stroke', '#888');
+    yAxis.setAttribute('stroke-width', 1);
+    svg.appendChild(yAxis);
+
+    // Draw the peg (using <circle>)
+    const pegX = centerX + pegDistance * Math.cos(omegaAngle);
+    const pegY = centerY + pegDistance * Math.sin(omegaAngle);
+    const peg = document.createElementNS(svgNS, 'circle');
+    peg.setAttribute('cx', pegX);
+    peg.setAttribute('cy', pegY);
+    peg.setAttribute('r', 5);
+    peg.setAttribute('fill', 'green');
+    svg.appendChild(peg);
+
+    // Label the peg (using <text>)
+    const pegLabel = document.createElementNS(svgNS, 'text');
+    pegLabel.setAttribute('x', pegX + 10);
+    pegLabel.setAttribute('y', pegY - 10);
+    pegLabel.textContent = 'Peg';
+    pegLabel.setAttribute('fill', 'black');
+    pegLabel.setAttribute('font-size', '14px');
+    svg.appendChild(pegLabel);
+
+    // Draw the mass m (using <circle>)
+    const massX = pegX + 50;
+    const massY = pegY + 50;
+    const mass = document.createElementNS(svgNS, 'circle');
+    mass.setAttribute('cx', massX);
+    mass.setAttribute('cy', massY);
+    mass.setAttribute('r', massRadius);
+    mass.setAttribute('fill', 'red');
+    svg.appendChild(mass);
+
+    // Label the mass (using <text>)
+    const massLabel = document.createElementNS(svgNS, 'text');
+    massLabel.setAttribute('x', massX + 10);
+    massLabel.setAttribute('y', massY);
+    massLabel.textContent = 'm';
+    massLabel.setAttribute('fill', 'black');
+    massLabel.setAttribute('font-size', '14px');
+    svg.appendChild(massLabel);
+
+    // Draw spring connection (using <line>)
+    const springLine = document.createElementNS(svgNS, 'line');
+    springLine.setAttribute('x1', pegX);
+    springLine.setAttribute('y1', pegY);
+    springLine.setAttribute('x2', massX);
+    springLine.setAttribute('y2', massY);
+    springLine.setAttribute('stroke', 'gray');
+    springLine.setAttribute('stroke-dasharray', '5,5');
+    springLine.setAttribute('stroke-width', 2);
+    svg.appendChild(springLine);
+</script>
