@@ -1,0 +1,61 @@
+{
+	"license": "MIT",
+	"version": "2.6.6",
+	"galleryBanner.color": "#22263a",
+	"name": "one-monokai-80s",
+	"author": "Marcelo Delgado",
+	"publisher": "axiomaticstudios",
+	"icon": "./media/icon.png",
+	"displayName": "One Monokai 80s Theme",
+	"homepage": "https://github.com/marcelo-mason/one-monokai-80s/blob/master/README.md",
+	"description": "Pleasing, subtle yet colorful theme with a flat interface made with eye comfort in mind.",
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"eye",
+		"eye comfort",
+		"eye strain",
+		"low contrast",
+		"monokai",
+		"pastel",
+		"theme"
+	],
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"uiTheme": "vs-dark",
+				"label": "One Monokai 80s",
+				"path": "./themes/OneMonokai80s.json"
+			},
+			{
+				"uiTheme": "vs",
+				"label": "One Monokai 80s Original",
+				"path": "./themes/OneMonokai80sOG.json"
+			}
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/marcelo-mason/one-monokai-80s.git"
+	},
+	"bugs": {
+		"url": "https://github.com/marcelo-mason/one-monokai-80s/issues"
+	},
+	"__metadata": {
+		"id": "96c4f594-dc9b-4f16-be37-99a4680493b6",
+		"publisherId": "d6eab1f5-80cc-4aea-9690-b4de488e234c",
+		"publisherDisplayName": "Axiomatic Studios",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1726744986838,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery"
+	}
+}

@@ -1,0 +1,131 @@
+{
+    "bibitems": [
+        "Hagstrum1961",
+        "Perdew1981",
+        "Kitagawa1976",
+        "Wirth2015",
+        "Miyamoto2008_1",
+        "Miyamoto2008_2",
+        "Bader1990",
+        "Nordlund2006",
+        "Runge1984",
+        "Morrison1993",
+        "Curchod2013",
+        "Ozaki2004",
+        "Kajita2022",
+        "Ito2024",
+        "Horiguchi1978",
+        "Ozaki2003",
+        "Henkelman2006",
+        "Trubnikov1967",
+        "Souda1985",
+        "Verbeek1980"
+    ],
+    "bibtexfiles": [
+    ],
+    "childdocs": [
+    ],
+    "filename": "/Users/pastrysweet/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/d2b397ecf9c2175fa4a6e6ba1a458ff0/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/File/OldMachine/Arxiv/arXiv-2407.02849v1/main.tex",
+    "labels": [
+        "eq:eta_up_s",
+        "eq:Slater_det",
+        "fig:figure3",
+        "eq:p",
+        "table:table1",
+        "eq:P_mn",
+        "eq:P_m",
+        "eq:eta_s",
+        "fig:figure5",
+        "eq:Newton_eq",
+        "eq:KS_eq",
+        "eq:eta_dw_s",
+        "eq:div_Vbar",
+        "fig:figure1",
+        "eq:P_up_m",
+        "eq:q_ij",
+        "eq:P_m_approx",
+        "eq:P_dw_n",
+        "fig:figure2",
+        "fig:figure6",
+        "fig:figure4"
+    ],
+    "modified": "Wed Jul 3 15:02:22 2024",
+    "packages": [
+        "#ascmac",
+        "#breqn",
+        "a4paper, margin=1in#geometry",
+        "#authblk",
+        "#subcaption",
+        "#ulem",
+        "#booktabs",
+        "utf8#inputenc",
+        "#bm",
+        "#setspace",
+        "#xcolor",
+        "#amsmath",
+        "#braket",
+        "#ifthen",
+        "#fancybox",
+        "#hyperref",
+        "#nameref",
+        "#graphicx",
+        "#upgreek",
+        "[]#latex-document",
+        "[]#tex",
+        "#cite",
+        "#xparse"
+    ],
+    "refs": [
+        "fig:figure6",
+        "fig:figure2",
+        "eq:P_mn",
+        "table:table1",
+        "fig:figure4",
+        "fig:figure5",
+        "fig:figure3",
+        "eq:P_m",
+        "eq:div_Vbar",
+        "eq:P_m_approx",
+        "fig:figure1"
+    ],
+    "toc": [
+        "2#Introduction#70",
+        "2#Simulation Method#86",
+        "2#Analysis method for detection probabilities of electrons#122",
+        "2#Results and Discussion#199",
+        "2#Conclusion#252",
+        "2#Acknowledgments#261",
+        "2#Figures#403",
+        "2#Tables#465"
+    ],
+    "usercommands": [
+        [
+            "\\deleted",
+            "\\deleted{}"
+        ],
+        [
+            "\\url",
+            "\\url{}"
+        ],
+        [
+            "\\path",
+            "\\path{}"
+        ],
+        [
+            "\\href",
+            "\\href{}{}"
+        ],
+        [
+            "\\added",
+            "\\added{}"
+        ],
+        [
+            "\\urlprefix",
+            "\\urlprefix"
+        ],
+        [
+            "\\keywords",
+            "\\keywords{}"
+        ]
+    ]
+}

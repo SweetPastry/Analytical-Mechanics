@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=AxMath
+Exec=env WINEPREFIX="/Users/pastrysweet/.wine" wine C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\AxMath\\\\AxMath.lnk
+Type=Application
+StartupNotify=true
+Path=/Users/pastrysweet/.wine/dosdevices/c:/ProgramData/AxMath
+Icon=D3D0_AxMath.0
+StartupWMClass=axmath.exe

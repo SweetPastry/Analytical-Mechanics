@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Help
+Exec=env WINEPREFIX="/Users/pastrysweet/.wine" wine C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\AxMath\\\\Help.lnk
+Type=Application
+StartupNotify=true
+Path=/Users/pastrysweet/.wine/dosdevices/c:/ProgramData/AxMath
+StartupWMClass=help.pdf

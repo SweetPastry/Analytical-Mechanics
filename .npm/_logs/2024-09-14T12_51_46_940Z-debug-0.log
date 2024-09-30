@@ -1,0 +1,37 @@
+0 verbose cli /opt/homebrew/Cellar/node/22.8.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@10.8.2
+2 info using node@v22.8.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/pastrysweet/.npmrc
+5 silly config load:file:/opt/homebrew/etc/npmrc
+6 verbose title npm i playwright-chromium
+7 verbose argv "i" "--save-dev" "playwright-chromium"
+8 verbose logfile logs-max:10 dir:/Users/pastrysweet/.npm/_logs/2024-09-14T12_51_46_940Z-
+9 verbose logfile /Users/pastrysweet/.npm/_logs/2024-09-14T12_51_46_940Z-debug-0.log
+10 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files
+13 silly idealTree buildDeps
+14 silly fetch manifest playwright-chromium@^1.47.1
+15 silly packumentCache full:https://registry.npmjs.org/playwright-chromium cache-miss
+16 http fetch GET https://registry.npmjs.org/playwright-chromium attempt 1 failed with ETIMEDOUT
+17 http fetch GET 200 https://registry.npmjs.org/playwright-chromium 22536ms (cache revalidated)
+18 silly packumentCache full:https://registry.npmjs.org/playwright-chromium set size:12475384 disposed:false
+19 silly placeDep ROOT playwright-chromium@1.47.1 REPLACE for:  want: ^1.47.1
+20 silly reify moves {}
+21 silly audit bulk request {
+21 silly audit   '@slidev/theme-default': [ '0.25.0' ],
+21 silly audit   '@slidev/types': [ '0.47.5' ],
+21 silly audit   'codemirror-theme-vars': [ '0.1.2' ],
+21 silly audit   'playwright-core': [ '1.47.1' ],
+21 silly audit   'prism-theme-vars': [ '0.2.5' ],
+21 silly audit   'playwright-chromium': [ '1.47.1' ]
+21 silly audit }
+22 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 251ms
+23 silly audit report {}
+24 verbose cwd /Users/pastrysweet/Documents/Manim-code-repository/Draft
+25 verbose os Darwin 23.6.0
+26 verbose node v22.8.0
+27 verbose npm  v10.8.2
+28 verbose exit 0
+29 info ok

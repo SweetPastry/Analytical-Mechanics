@@ -1,0 +1,16 @@
+<example>
+  <main>paralleldemo_radar_seq</main>
+  <product>matlab</product>
+  <product>distcomp_client</product>
+  <product>simulink</product>
+  <file component="distcomp" timestamp="0">pctdemo_plot_radar.m</file>
+  <file component="distcomp" timestamp="0">paralleldemoconfig.m</file>
+  <file component="distcomp" timestamp="0">pctdemo_task_radar.m</file>
+  <file component="distcomp" timestamp="0">pctdemo_helper_getDefaults.m</file>
+  <file component="distcomp" timestamp="0">pctdemo_setup_radar.m</file>
+  <file component="distcomp" timestamp="0">pctdemo_model_radar.slx</file>
+  <file component="distcomp" timestamp="0">pTypeChecker.m</file>
+  <file component="distcomp" timestamp="0">convertToPVArrays.m</file>
+  <file component="distcomp" timestamp="0">pDemoFigure.m</file>
+  <sandboxPublished reasons="other" other=""/>
+</example>

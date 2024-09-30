@@ -1,0 +1,17 @@
+0 verbose cli /opt/homebrew/Cellar/node/22.8.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@10.8.2
+2 info using node@v22.8.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/pastrysweet/.npmrc
+5 silly config load:file:/opt/homebrew/etc/npmrc
+6 verbose title npm exec slidev --port 3030 main.md
+7 verbose argv "exec" "slidev" "--" "--port" "3030" "main.md"
+8 verbose logfile logs-max:10 dir:/Users/pastrysweet/.npm/_logs/2024-09-14T12_35_18_467Z-
+9 verbose logfile /Users/pastrysweet/.npm/_logs/2024-09-14T12_35_18_467Z-debug-0.log
+10 silly logfile done cleaning log files
+11 verbose cwd /Users/pastrysweet/Documents/Manim-code-repository/Draft
+12 verbose os Darwin 23.6.0
+13 verbose node v22.8.0
+14 verbose npm  v10.8.2
+15 verbose exit 0
+16 info ok

@@ -1,0 +1,52 @@
+0 verbose cli /opt/homebrew/Cellar/node/22.8.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@10.8.2
+2 info using node@v22.8.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/pastrysweet/.npmrc
+5 silly config load:file:/opt/homebrew/etc/npmrc
+6 verbose title npm install @slidev/theme-default
+7 verbose argv "install" "--save-dev" "@slidev/theme-default"
+8 verbose logfile logs-max:10 dir:/Users/pastrysweet/.npm/_logs/2024-09-14T08_34_12_709Z-
+9 verbose logfile /Users/pastrysweet/.npm/_logs/2024-09-14T08_34_12_709Z-debug-0.log
+10 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+11 silly logfile done cleaning log files
+12 silly idealTree buildDeps
+13 silly fetch manifest @slidev/theme-default@*
+14 silly packumentCache full:https://registry.npmjs.org/@slidev%2ftheme-default cache-miss
+15 http fetch GET 200 https://registry.npmjs.org/@slidev%2ftheme-default 1974ms (cache miss)
+16 silly packumentCache full:https://registry.npmjs.org/@slidev%2ftheme-default set size:undefined disposed:false
+17 silly placeDep ROOT @slidev/theme-default@0.25.0 OK for:  want: *
+18 silly fetch manifest @slidev/types@^0.47.0
+19 silly packumentCache full:https://registry.npmjs.org/@slidev%2ftypes cache-miss
+20 silly fetch manifest codemirror-theme-vars@^0.1.2
+21 silly packumentCache full:https://registry.npmjs.org/codemirror-theme-vars cache-miss
+22 silly fetch manifest prism-theme-vars@^0.2.4
+23 silly packumentCache full:https://registry.npmjs.org/prism-theme-vars cache-miss
+24 http fetch GET 200 https://registry.npmjs.org/@slidev%2ftypes 16ms (cache hit)
+25 silly packumentCache full:https://registry.npmjs.org/@slidev%2ftypes set size:894766 disposed:false
+26 http fetch GET 200 https://registry.npmjs.org/codemirror-theme-vars 605ms (cache miss)
+27 silly packumentCache full:https://registry.npmjs.org/codemirror-theme-vars set size:undefined disposed:false
+28 http fetch GET 200 https://registry.npmjs.org/prism-theme-vars 1281ms (cache miss)
+29 silly packumentCache full:https://registry.npmjs.org/prism-theme-vars set size:undefined disposed:false
+30 silly placeDep ROOT @slidev/types@0.47.5 OK for: @slidev/theme-default@0.25.0 want: ^0.47.0
+31 silly placeDep ROOT codemirror-theme-vars@0.1.2 OK for: @slidev/theme-default@0.25.0 want: ^0.1.2
+32 silly placeDep ROOT prism-theme-vars@0.2.5 OK for: @slidev/theme-default@0.25.0 want: ^0.2.4
+33 silly reify moves {}
+34 silly tarball no local data for prism-theme-vars@https://registry.npmjs.org/prism-theme-vars/-/prism-theme-vars-0.2.5.tgz. Extracting by manifest.
+35 silly tarball no local data for codemirror-theme-vars@https://registry.npmjs.org/codemirror-theme-vars/-/codemirror-theme-vars-0.1.2.tgz. Extracting by manifest.
+36 silly tarball no local data for @slidev/theme-default@https://registry.npmjs.org/@slidev/theme-default/-/theme-default-0.25.0.tgz. Extracting by manifest.
+37 silly tarball no local data for @slidev/types@https://registry.npmjs.org/@slidev/types/-/types-0.47.5.tgz. Extracting by manifest.
+38 http fetch GET 200 https://registry.npmjs.org/prism-theme-vars/-/prism-theme-vars-0.2.5.tgz 120ms (cache miss)
+39 http fetch GET 200 https://registry.npmjs.org/codemirror-theme-vars/-/codemirror-theme-vars-0.1.2.tgz 118ms (cache miss)
+40 http fetch GET 200 https://registry.npmjs.org/@slidev/types/-/types-0.47.5.tgz 1244ms (cache miss)
+41 http fetch GET 200 https://registry.npmjs.org/@slidev/theme-default/-/theme-default-0.25.0.tgz 1246ms (cache miss)
+42 silly ADD node_modules/prism-theme-vars
+43 silly ADD node_modules/codemirror-theme-vars
+44 silly ADD node_modules/@slidev/types
+45 silly ADD node_modules/@slidev/theme-default
+46 verbose cwd /Users/pastrysweet
+47 verbose os Darwin 23.6.0
+48 verbose node v22.8.0
+49 verbose npm  v10.8.2
+50 verbose exit 0
+51 info ok

@@ -1,0 +1,6 @@
+<example>
+  <main type="mlx">UpdateAUIAsynchronouslyUsingAfterEachAndAfterAllExample</main>
+  <product>matlab</product>
+  <product>distcomp_client</product>
+  <sandboxPublished reasons="other not-runnable" other="BaT settings different from user defaults"/>
+</example>

@@ -1,0 +1,194 @@
+{
+	"name": "mdmath",
+	"displayName": "Markdown+Math",
+	"description": "LaTeX Math for Markdown ... with macros and more",
+	"icon": "img/icon.png",
+	"version": "2.7.4",
+	"author": "Stefan Goessner",
+	"publisher": "goessner",
+	"keywords": [
+		"TeX",
+		"LaTeX",
+		"KaTeX",
+		"markdown",
+		"markdown-it",
+		"math",
+		"multi-root ready"
+	],
+	"galleryBanner": {
+		"color": "#efefef",
+		"theme": "light"
+	},
+	"homepage": "https://github.com/goessner/mdmath/blob/master/readme.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/goessner/mdmath.git"
+	},
+	"bugs": {
+		"url": "https://github.com/goessner/mdmath/issues"
+	},
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.45.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:markdown"
+	],
+	"contributes": {
+		"configuration": {
+			"title": "mdmath",
+			"properties": {
+				"mdmath.delimiters": {
+					"type": "string",
+					"default": "dollars",
+					"description": "Math formula delimiters."
+				},
+				"mdmath.theme": {
+					"type": "string",
+					"default": "default",
+					"enum": [
+						"default",
+						"minimal",
+						"publication"
+					],
+					"description": "Choose from available themes ['default','minimal','publication']."
+				},
+				"mdmath.macros": {
+					"type": "object",
+					"default": {},
+					"description": "TeX macros definition."
+				},
+				"mdmath.macroFile": {
+					"type": "string",
+					"default": "",
+					"description": "Absolute path of JSON file containing TeX macro definitions."
+				},
+				"mdmath.outerspace": {
+					"type": "boolean",
+					"default": false,
+					"description": "Enclose inline math `$` pair with space characters, as a guard against misinterpretation of single `$`'s in normal markdown (default: `false` for backward compatibility)."
+				},
+				"mdmath.katexoptions": {
+					"type": "object",
+					"default": {},
+					"description": "Katex options definition. (see https://katex.org/docs/options.html)"
+				},
+				"mdmath.silent": {
+					"type": "boolean",
+					"default": false,
+					"description": "Supress user notification while saving HTML file."
+				},
+				"mdmath.savePath": {
+					"type": "string",
+					"default": "./${file.name}.html",
+					"description": "Relative path to save generated HTML files. \nPaths are interpreted relative to the source file with the workspace folder as the root directory. \nYou can use the variables ${file.name} and ${file.ext}."
+				},
+				"mdmath.autosave": {
+					"type": "boolean",
+					"default": false,
+					"description": "Automatically run the 'Save Markdown+Math to HTML' command when a markdown file is changed."
+				},
+				"mdmath.style": {
+					"type": "string",
+					"default": "",
+					"description": "Absolute path to a css file for styling exported HTML code. Note: On windows use a 'file://' before the volume letter as in 'file://c:/myfolder/mystyle.css' for local files."
+				}
+			}
+		},
+		"markdown.previewStyles": [
+			"./node_modules/katex/dist/katex.min.css",
+			"./node_modules/markdown-it-texmath/css/texmath.css",
+			"./css/vscode-mdmath.css"
+		],
+		"markdown.markdownItPlugins": true,
+		"commands": [
+			{
+				"command": "extension.clipToHtml",
+				"title": "Clip Markdown+Math to HTML",
+				"category": "Markdown"
+			},
+			{
+				"command": "extension.saveToHtml",
+				"title": "Save Markdown+Math to HTML",
+				"category": "Markdown"
+			},
+			{
+				"command": "extension.insertToc",
+				"title": "Insert Table of Content",
+				"category": "Markdown"
+			}
+		],
+		"keybindings": [
+			{
+				"key": "ctrl+K .",
+				"command": "extension.clipToHtml",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "ctrl+K ,",
+				"command": "extension.saveToHtml",
+				"when": "editorTextFocus"
+			},
+			{
+				"key": "ctrl+K T",
+				"command": "extension.insertToc",
+				"when": "editorTextFocus"
+			}
+		],
+		"languages": [
+			{
+				"id": "source.markdown.math",
+				"extensions": [
+					"md"
+				]
+			}
+		],
+		"grammars": [
+			{
+				"injectTo": [
+					"text.html.markdown"
+				],
+				"scopeName": "markdown.math",
+				"path": "./syntaxes/dollars.json"
+			}
+		]
+	},
+	"main": "./extension",
+	"scripts": {
+		"esbuild-base": "esbuild ./extension.js --bundle --outfile=out/extension.js --external:vscode --format=cjs --platform=node",
+		"esbuild": "npm run -S esbuild-base -- --sourcemap",
+		"esbuild-watch": "npm run -S esbuild-base -- --sourcemap --watch"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.45.0",
+		"esbuild": "^0.12.6"
+	},
+	"dependencies": {
+		"argparse": "^1.0.9",
+		"commander": "^2.20.3",
+		"entities": "^2.0.3",
+		"katex": "^0.13.11",
+		"linkify-it": "^2.2.0",
+		"markdown-it": "^12.0.6",
+		"markdown-it-texmath": "^0.9.0",
+		"mdurl": "^1.0.1",
+		"uc.micro": "^1.0.6"
+	},
+	"__metadata": {
+		"id": "1d66faf4-3266-4fce-b7c9-df60aecf496d",
+		"publisherDisplayName": "goessner",
+		"publisherId": "b49843a2-25e3-49f0-a037-519a07c3178d",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1725543716107,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery"
+	}
+}

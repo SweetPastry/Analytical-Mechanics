@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Uninstall
+Exec=env WINEPREFIX="/Users/pastrysweet/.wine" wine C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\AxMath\\\\Uninstall.lnk
+Type=Application
+StartupNotify=true
+Path=/Users/pastrysweet/.wine/dosdevices/c:/ProgramData/AxMath
+Icon=E92D_uninstall.0
+StartupWMClass=uninstall.exe

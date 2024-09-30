@@ -1,0 +1,6 @@
+<example>
+  <main type="mlx">ProcessBigDataInTheCloudExample</main>
+  <product>matlab</product>
+  <product>distcomp_client</product>
+  <sandboxPublished reasons="hardware not-runnable"/>
+</example>

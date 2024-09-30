@@ -1,0 +1,122 @@
+{
+	"name": "matlab-formatter",
+	"displayName": "matlab-formatter",
+	"description": "format matlab code",
+	"version": "2.11.0",
+	"publisher": "AffenWiesel",
+	"engines": {
+		"vscode": "^1.20.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/affenwiesel/matlab-formatter-vscode"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"matlab"
+	],
+	"activationEvents": [
+		"onLanguage:matlab"
+	],
+	"main": "./extension",
+	"icon": "images/icon.png",
+	"contributes": {
+		"configuration": {
+			"title": "Matlab-formatter configuration",
+			"type": "object",
+			"properties": {
+				"matlab-formatter.indentwidth": {
+					"type": "integer",
+					"default": 4,
+					"description": "number of spaces used for indentation"
+				},
+				"matlab-formatter.separateBlocks": {
+					"type": "boolean",
+					"default": true,
+					"description": "add newlines before and after blocks (for, if, etc.)"
+				},
+				"matlab-formatter.indentMode": {
+					"type": "string",
+					"enum": [
+						"all_functions",
+						"only_nested_functions",
+						"classic"
+					],
+					"enumDescriptions": [
+						"Add indentation inside all functions and classdefs",
+						"Only add indentation inside nested functions and class-methods",
+						"No indentation of functions and classes (not recommended)"
+					],
+					"default": "all_functions",
+					"description": "indentation mode"
+				},
+				"matlab-formatter.addSpaces": {
+					"type": "string",
+					"enum": [
+						"all_operators",
+						"exclude_pow",
+						"no_spaces"
+					],
+					"enumDescriptions": [
+						"Wrap all operators with spaces.",
+						"Wrap all operators with spaces, except ^ and .^",
+						"Don't wrap any operators with spaces. (not recommended)"
+					],
+					"default": "all_operators",
+					"description": "Wrapping of operators with spaces."
+				},
+				"matlab-formatter.matrixIndent": {
+					"type": "string",
+					"enum": [
+						"aligned",
+						"simple"
+					],
+					"enumDescriptions": [
+						"Keep rows of a matrix aligned.",
+						"Use simpe indentation for matrices"
+					],
+					"default": "aligned",
+					"description": "Indentation of matrices"
+				}
+			}
+		},
+		"languages": [
+			{
+				"id": "matlab",
+				"aliases": [
+					"MATLAB"
+				]
+			}
+		],
+		"capabilities": {
+			"documentFormattingProvider": "true",
+			"documentRangeFormattingProvider": "true"
+		}
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.6",
+		"eslint": "^4.11.0",
+		"@types/node": "^7.0.43",
+		"@types/mocha": "^2.2.42"
+	},
+	"__metadata": {
+		"id": "16f49f82-0071-4930-b6b5-b3e3ccd5fb0d",
+		"publisherDisplayName": "AffenWiesel",
+		"publisherId": "c3404b57-de97-47d7-8f81-b4955a94cc2e",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1720080074071,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery"
+	}
+}

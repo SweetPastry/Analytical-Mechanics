@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=winhlp32
+MimeType=application/x-wine-extension-hlp;
+Exec=env WINEPREFIX="/Users/pastrysweet/.wine" wine start /ProgIDOpen hlpfile %f
+NoDisplay=true
+StartupNotify=true
+Icon=C06E_winhlp32.0

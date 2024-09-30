@@ -1,0 +1,49 @@
+0 verbose cli /opt/homebrew/Cellar/node/22.8.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@10.8.2
+2 info using node@v22.8.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/pastrysweet/.npmrc
+5 silly config load:file:/opt/homebrew/etc/npmrc
+6 verbose title npm i playwright-chromium
+7 verbose argv "i" "--save-dev" "playwright-chromium"
+8 verbose logfile logs-max:10 dir:/Users/pastrysweet/.npm/_logs/2024-09-14T11_31_02_283Z-
+9 verbose logfile /Users/pastrysweet/.npm/_logs/2024-09-14T11_31_02_283Z-debug-0.log
+10 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+11 silly logfile done cleaning log files
+12 silly idealTree buildDeps
+13 silly fetch manifest playwright-chromium@*
+14 silly packumentCache full:https://registry.npmjs.org/playwright-chromium cache-miss
+15 http fetch GET https://registry.npmjs.org/playwright-chromium attempt 1 failed with ETIMEDOUT
+16 http fetch GET 200 https://registry.npmjs.org/playwright-chromium 23169ms attempt #2 (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/playwright-chromium set size:undefined disposed:false
+18 silly placeDep ROOT playwright-chromium@1.47.1 OK for:  want: *
+19 silly fetch manifest playwright-core@1.47.1
+20 silly packumentCache full:https://registry.npmjs.org/playwright-core cache-miss
+21 http fetch GET 200 https://registry.npmjs.org/playwright-core 967ms (cache miss)
+22 silly packumentCache full:https://registry.npmjs.org/playwright-core set size:undefined disposed:false
+23 silly placeDep ROOT playwright-core@1.47.1 OK for: playwright-chromium@1.47.1 want: 1.47.1
+24 silly reify moves {}
+25 silly audit bulk request {
+25 silly audit   '@slidev/theme-default': [ '0.25.0' ],
+25 silly audit   '@slidev/types': [ '0.47.5' ],
+25 silly audit   'codemirror-theme-vars': [ '0.1.2' ],
+25 silly audit   'prism-theme-vars': [ '0.2.5' ],
+25 silly audit   'playwright-chromium': [ '1.47.1' ],
+25 silly audit   'playwright-core': [ '1.47.1' ]
+25 silly audit }
+26 silly tarball no local data for playwright-chromium@https://registry.npmjs.org/playwright-chromium/-/playwright-chromium-1.47.1.tgz. Extracting by manifest.
+27 silly tarball no local data for playwright-core@https://registry.npmjs.org/playwright-core/-/playwright-core-1.47.1.tgz. Extracting by manifest.
+28 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 239ms
+29 silly audit report {}
+30 http fetch GET 200 https://registry.npmjs.org/playwright-chromium/-/playwright-chromium-1.47.1.tgz 722ms (cache miss)
+31 http fetch GET 200 https://registry.npmjs.org/playwright-core/-/playwright-core-1.47.1.tgz 1104ms (cache miss)
+32 info run playwright-chromium@1.47.1 install node_modules/playwright-chromium node install.js
+33 info run playwright-chromium@1.47.1 install { code: 0, signal: null }
+34 silly ADD node_modules/playwright-core
+35 silly ADD node_modules/playwright-chromium
+36 verbose cwd /Users/pastrysweet/Documents/Manim-code-repository/Draft
+37 verbose os Darwin 23.6.0
+38 verbose node v22.8.0
+39 verbose npm  v10.8.2
+40 verbose exit 0
+41 info ok

@@ -1,0 +1,44 @@
+0 verbose cli /opt/homebrew/Cellar/node/22.8.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@10.8.2
+2 info using node@v22.8.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/pastrysweet/.npmrc
+5 silly config load:file:/opt/homebrew/etc/npmrc
+6 verbose title npm i playwright-chromium
+7 verbose argv "i" "--save-dev" "playwright-chromium"
+8 verbose logfile logs-max:10 dir:/Users/pastrysweet/.npm/_logs/2024-09-14T09_09_04_931Z-
+9 verbose logfile /Users/pastrysweet/.npm/_logs/2024-09-14T09_09_04_931Z-debug-0.log
+10 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+11 silly logfile done cleaning log files
+12 silly idealTree buildDeps
+13 silly fetch manifest playwright-chromium@*
+14 silly packumentCache full:https://registry.npmjs.org/playwright-chromium cache-miss
+15 http fetch GET https://registry.npmjs.org/playwright-chromium attempt 1 failed with ETIMEDOUT
+16 http fetch GET https://registry.npmjs.org/playwright-chromium attempt 2 failed with ETIMEDOUT
+17 http fetch GET https://registry.npmjs.org/playwright-chromium attempt 3 failed with ETIMEDOUT
+18 silly placeDep ROOT playwright-chromium@ OK for:  want: *
+19 verbose type system
+20 verbose stack FetchError: request to https://registry.npmjs.org/playwright-chromium failed, reason: 
+20 verbose stack     at ClientRequest.<anonymous> (/opt/homebrew/lib/node_modules/npm/node_modules/minipass-fetch/lib/index.js:130:14)
+20 verbose stack     at ClientRequest.emit (node:events:520:28)
+20 verbose stack     at emitErrorEvent (node:_http_client:103:11)
+20 verbose stack     at _destroy (node:_http_client:886:9)
+20 verbose stack     at onSocketNT (node:_http_client:906:5)
+20 verbose stack     at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+21 error code ETIMEDOUT
+22 error errno ETIMEDOUT
+23 error network request to https://registry.npmjs.org/playwright-chromium failed, reason: 
+24 error network This is a problem related to network connectivity.
+24 error network In most cases you are behind a proxy or have bad network settings.
+24 error network
+24 error network If you are behind a proxy, please make sure that the
+24 error network 'proxy' config is set properly.  See: 'npm help config'
+25 silly unfinished npm timer reify 1726304945236
+26 silly unfinished npm timer reify:loadTrees 1726304945237
+27 verbose cwd /Users/pastrysweet/Documents/Manim-code-repository/Draft
+28 verbose os Darwin 23.6.0
+29 verbose node v22.8.0
+30 verbose npm  v10.8.2
+31 verbose exit 1
+32 verbose code 1
+33 error A complete log of this run can be found in: /Users/pastrysweet/.npm/_logs/2024-09-14T09_09_04_931Z-debug-0.log

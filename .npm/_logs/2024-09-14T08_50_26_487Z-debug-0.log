@@ -1,0 +1,47 @@
+0 verbose cli /opt/homebrew/Cellar/node/22.8.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@10.8.2
+2 info using node@v22.8.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/pastrysweet/.npmrc
+5 silly config load:file:/opt/homebrew/etc/npmrc
+6 verbose title npm i @slidev/theme-seriph
+7 verbose argv "i" "--global" "@slidev/theme-seriph"
+8 verbose logfile logs-max:10 dir:/Users/pastrysweet/.npm/_logs/2024-09-14T08_50_26_487Z-
+9 verbose logfile /Users/pastrysweet/.npm/_logs/2024-09-14T08_50_26_487Z-debug-0.log
+10 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+11 silly logfile done cleaning log files
+12 silly idealTree buildDeps
+13 silly fetch manifest @slidev/theme-seriph@*
+14 silly packumentCache full:https://registry.npmjs.org/@slidev%2ftheme-seriph cache-miss
+15 http fetch GET https://registry.npmjs.org/@slidev%2ftheme-seriph attempt 1 failed with ETIMEDOUT
+16 http fetch GET 200 https://registry.npmjs.org/@slidev%2ftheme-seriph 23312ms attempt #2 (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/@slidev%2ftheme-seriph set size:undefined disposed:false
+18 silly placeDep ROOT @slidev/theme-seriph@0.25.0 OK for:  want: *
+19 silly fetch manifest @slidev/types@^0.47.0
+20 silly packumentCache full:https://registry.npmjs.org/@slidev%2ftypes cache-miss
+21 silly fetch manifest codemirror-theme-vars@^0.1.2
+22 silly packumentCache full:https://registry.npmjs.org/codemirror-theme-vars cache-miss
+23 silly fetch manifest prism-theme-vars@^0.2.4
+24 silly packumentCache full:https://registry.npmjs.org/prism-theme-vars cache-miss
+25 http fetch GET 200 https://registry.npmjs.org/prism-theme-vars 609ms (cache revalidated)
+26 silly packumentCache full:https://registry.npmjs.org/prism-theme-vars set size:46259 disposed:false
+27 http fetch GET 200 https://registry.npmjs.org/codemirror-theme-vars 1303ms (cache revalidated)
+28 silly packumentCache full:https://registry.npmjs.org/codemirror-theme-vars set size:11931 disposed:false
+29 http fetch GET 200 https://registry.npmjs.org/@slidev%2ftypes 2036ms (cache revalidated)
+30 silly packumentCache full:https://registry.npmjs.org/@slidev%2ftypes set size:894766 disposed:false
+31 silly placeDep node_modules/@slidev/theme-seriph @slidev/types@0.47.5 OK for: @slidev/theme-seriph@0.25.0 want: ^0.47.0
+32 silly placeDep node_modules/@slidev/theme-seriph codemirror-theme-vars@0.1.2 OK for: @slidev/theme-seriph@0.25.0 want: ^0.1.2
+33 silly placeDep node_modules/@slidev/theme-seriph prism-theme-vars@0.2.5 OK for: @slidev/theme-seriph@0.25.0 want: ^0.2.4
+34 silly reify moves {}
+35 silly tarball no local data for @slidev/theme-seriph@https://registry.npmjs.org/@slidev/theme-seriph/-/theme-seriph-0.25.0.tgz. Extracting by manifest.
+36 http fetch GET 200 https://registry.npmjs.org/@slidev/theme-seriph/-/theme-seriph-0.25.0.tgz 650ms (cache miss)
+37 silly ADD node_modules/@slidev/theme-seriph
+38 silly ADD node_modules/@slidev/theme-seriph/node_modules/prism-theme-vars
+39 silly ADD node_modules/@slidev/theme-seriph/node_modules/codemirror-theme-vars
+40 silly ADD node_modules/@slidev/theme-seriph/node_modules/@slidev/types
+41 verbose cwd /Users/pastrysweet/Documents/Manim-code-repository/Draft
+42 verbose os Darwin 23.6.0
+43 verbose node v22.8.0
+44 verbose npm  v10.8.2
+45 verbose exit 0
+46 info ok

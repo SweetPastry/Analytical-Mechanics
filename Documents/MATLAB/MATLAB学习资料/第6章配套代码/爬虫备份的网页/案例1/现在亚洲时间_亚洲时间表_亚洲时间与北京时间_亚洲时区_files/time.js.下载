@@ -1,0 +1,36 @@
+/**
+ * Created by Administrator on 2019/7/22.
+ */
+$(function(){
+    for(var i = 0; i < $(".time1 li").length; i++){
+        if(i > 59){
+            $($(".time1 li")[i]).css("display","none");
+            $($(".time2 li")[i]).css("display","none");
+            // $($(".time1:last-child li")[i]).css("display","none");
+        }
+    }
+    
+    if($("#timebox li").length<=59){
+    	$("#timebox>img").css("display","none")
+    }
+    
+    $("#timebox>img").click(function () {
+        for (var i = 0; i < $(".time1 li").length; i++) {
+            $($(".time1 li")[i]).css("display", "block");
+            $($(".time2 li")[i]).css("display", "block");
+            $("#timebox>img").css("display","none")
+        }
+    })
+
+    $("#timebox li").each(function(i,e){
+    	if((i-2)%4===0||(i-3)%4===0){
+    		$(e).css("background","#f5f5f5");
+    	}
+    })
+    
+    
+});
+
+
+
+

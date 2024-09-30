@@ -1,0 +1,55 @@
+{
+	"name": "matlab-extension-pack",
+	"displayName": "Matlab Extension Pack",
+	"description": "Popular and useful Visual Studio Code extensions for Matlab",
+	"version": "0.1.0",
+	"publisher": "bat67",
+	"icon": "icon.png",
+	"engines": {
+		"vscode": "^1.30.0"
+	},
+	"galleryBanner": {
+		"color": "#333333",
+		"theme": "dark"
+	},
+	"keywords": [
+		"matlab",
+		"snippets",
+		"runner",
+		"linter",
+		"extension pack"
+	],
+	"categories": [
+		"Extension Packs"
+	],
+	"license": "SEE LICENSE IN LICENSE.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bat67/matlab-extension-pack"
+	},
+	"homepage": "https://github.com/bat67/matlab-extension-pack",
+	"bugs": {
+		"url": "https://github.com/bat67/matlab-extension-pack/issues"
+	},
+	"extensionPack": [
+		"Gimly81.matlab",
+		"eamonbell.matlab-runner",
+		"AffenWiesel.matlab-formatter",
+		"bramvanbilsen.matlab-code-run",
+		"apommel.matlab-interactive-terminal",
+		"slaier.matlab-complete"
+	],
+	"__metadata": {
+		"id": "e0e70cd2-23a8-4e2a-a07c-2a627eed624c",
+		"publisherId": "b9c6862b-0a99-4440-bf22-3d14292d4818",
+		"publisherDisplayName": "bat67",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1720080074066,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery"
+	}
+}

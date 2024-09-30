@@ -1,0 +1,7 @@
+<example>
+  <main>paralleltutorial_taskfunctions</main>
+  <product>matlab</product>
+  <product>distcomp_client</product>
+  <file component="distcomp" timestamp="0">pctdemo_task_tutorial_taskfunction.m</file>
+  <sandboxPublished reasons="other" other=""/>
+</example>

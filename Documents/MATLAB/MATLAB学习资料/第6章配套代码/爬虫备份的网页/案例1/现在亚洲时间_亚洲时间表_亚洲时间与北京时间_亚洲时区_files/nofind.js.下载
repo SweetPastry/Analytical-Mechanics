@@ -1,0 +1,8 @@
+/**
+ * Created by Administrator on 2019/8/2.
+ */
+//图片加载失败
+function nofind(_this){
+    _this.src="../images/default.jpg";
+    _this.onerror=null;
+}

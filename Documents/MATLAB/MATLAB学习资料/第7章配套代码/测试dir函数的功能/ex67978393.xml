@@ -1,0 +1,6 @@
+<example>
+  <main>paralleldemo_gpu_pagefun</main>
+  <product>matlab</product>
+  <product>distcomp_client</product>
+  <sandboxPublished reasons="other" other=""/>
+</example>

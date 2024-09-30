@@ -1,0 +1,7 @@
+[user]
+	name = Sweet Pastry
+	email = SweetPastryLHX@gmail.com
+[gui]
+	recentrepo = /Applications/Github/KalmanFilters
+[http]
+	postBuffer = 524288000

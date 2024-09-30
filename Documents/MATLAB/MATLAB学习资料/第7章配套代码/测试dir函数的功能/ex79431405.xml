@@ -1,0 +1,12 @@
+<example>
+  <main>paralleldemo_gpu_mandelbrot</main>
+  <product>matlab</product>
+  <product>distcomp_client</product>
+  <file component="distcomp" timestamp="0">paralleldemo_gpu_mandelbrot_location.png</file>
+  <file component="distcomp" timestamp="0">pctdemo_processMandelbrotElement.m</file>
+  <file timestamp="1469020759" component="distcomp">pctdemo_processMandelbrotElement.cu</file>
+  <file timestamp="1469020759" component="distcomp">pctdemo_processMandelbrotElement.ptxa64</file>
+  <file timestamp="1469020759" component="distcomp">pctdemo_processMandelbrotElement.ptxmaci64</file>
+  <file timestamp="1469020759" component="distcomp">pctdemo_processMandelbrotElement.ptxw64</file>
+  <sandboxPublished reasons="hardware not-runnable"/>
+</example>

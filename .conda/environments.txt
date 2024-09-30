@@ -1,0 +1,6 @@
+/opt/anaconda3
+/opt/anaconda3/envs/MyEnv
+/opt/anaconda3/envs/ManimPy3.8
+/opt/anaconda3/envs/Pytorch
+/opt/anaconda3/envs/PyMatlab
+/opt/anaconda3/envs/cling

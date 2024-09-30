@@ -1,0 +1,575 @@
+<!DOCTYPE html> <html style><!--
+ Page saved with SingleFile 
+ url: https://pvp.qq.com/web201605/herodetail/pangu.shtml 
+ saved date: Fri Dec 08 2023 20:23:39 GMT+0800 (中国标准时间)
+--><head><meta charset="utf-8">
+
+<meta name="author" content="Tencent-TGideas">
+<meta name="Copyright" content="Copyright (c) 2006-2015 TENCENT">
+<meta name="keywords" content="王者荣耀盘古,盘古王者荣耀,王者荣耀盘古出装,王者荣耀盘古铭文">
+<meta name="description" content="《王者荣耀》官方英雄资料、盘古技能介绍、盘古技能加点建议、盘古铭文搭配建议、盘古出装建议、盘古英雄关系、盘古攻略">
+<title>王者荣耀盘古-王者荣耀官网网站-腾讯游戏</title>
+<style>ul,h1,h2,h3,h4,p{margin:0}h1{font-size:100%}em,i,b{font-style:normal}ul{list-style:none}a{text-decoration:none;color:#363636}a:hover{text-decoration:none}img{display:block;border:0;border-radius:2px 2px 2px 2px}input,select{font-size:100%;outline:none}ul{padding:0}body{max-width:1920px;margin:0 auto}.pr{position:relative}.pa{position:absolute}.clearfix:after{content:" ";display:block;height:0;line-height:0;visibility:hidden;clear:both}.ht{overflow:hidden;text-indent:-9999px;text-decoration:none}.fn{font-weight:normal}.f12{font-size:12px}.tc{text-align:center}.main-nav li:hover,.download_btn,.freshman_btn,.tiyan_btn,.item_title,.more_btn,.mask-play-ico,.icon_arrow,.icon_watch,.ico-play{background:url(data:,)no-repeat;display:inline-block}body{background:#fff;font:14px/1.5"Microsoft YaHei",Tahoma,"simsun",sans-serif;color:#323235}.wrapper{position:relative}.logo{left:0;top:16px;z-index:100;background:url(data:,)no-repeat center center;width:200px;height:54px;text-indent:-999px;overflow:hidden}.header{position:absolute;left:0;top:42px;width:100%;min-width:1300px;height:84px;z-index:99;background:rgba(0,0,0,0.8)}.header-inner{width:1300px;height:84px;margin:0 auto;position:relative}.header-dialog{position:absolute;left:0;top:0;z-index:9999}.sub-nav{transition:all .3s ease;position:absolute;top:83px;left:0;width:100%;background:rgba(0,0,0,0.7);z-index:3;overflow:hidden;height:0;box-sizing:border-box}.header-nav:hover .sub-nav{height:285px}.sub-nav-inner{width:890px;height:240px;margin:0 auto;overflow:hidden;zoom:1;padding-top:15px;padding-bottom:30px;padding:15px 0 30px 50px}.main-nav{width:890px;padding-left:230px}.main-nav li{float:left;width:115px;height:84px;text-align:center}.main-nav li:hover{}.main-nav li:hover a{color:#e4b653}.main-nav li:hover em{color:#91763f}.main-nav a{display:block;width:110px;height:64px;padding:20px 0 0;color:#c9c9dd;font-size:18px;line-height:30px}.main-nav a:hover{text-decoration:none}.main-nav em{display:block;padding-top:5px;-webkit-transform:scale(0.95);-o-transform:scale(0.95);font-size:12px;line-height:16px;color:#858792}.login_pannel{right:0px;top:21px;width:182px}.user_pic{float:left;margin-right:7px}.user_pic img{border:1px solid #d9ad50;border-radius:42px}.per-infor{float:left;width:130px}.down-nav{float:left;display:inline;width:110px;padding:2px 2.5px 0;text-align:center;white-space:nowrap}.down-nav a{height:30px;line-height:30px;display:block;padding:0;font-size:14px;color:#c9c9dd}.down-nav a:hover{color:#f3c258;text-decoration:underline}.down-nav .icon-guard,.down-nav .icon-fans,.down-nav .icon-hot{overflow:hidden;display:inline-block;width:24px;height:24px;vertical-align:middle;background:url(data:,)no-repeat -136px -5px}.down-nav .icon-fans{background-position:-137px -68px;padding-right:2px}.down-nav .icon-hot{background-position:-163px -68px;padding-right:2px}.unlogin_info{color:#858792}.unlogin_info a{color:#ffffff;font-size:16px}.login_pannel .user-name{color:#858792;white-space:nowrap}.login_pannel .user-name a{color:#8ea0b0;margin-left:10px}.personal_link a{color:#8ea0b0}.userinfo-list{display:none}.userinfo-list li{float:left;display:inline;width:68px;height:46px;margin-right:2px;background:#0b3b61;border:1px solid #0c3253;border-radius:5px;overflow:hidden}.userinfo-list em{display:block;color:#b3bbc5;margin-top:3px;height:20px;overflow:hidden}.userinfo-list i{color:#406380;font-size:12px}.zkcontent{width:100%;min-width:1200px;min-height:620px;height:auto;margin:0 auto}.pop{width:530px;height:254px;background:url(data:,)no-repeat}.close{right:0;top:0;width:40px;height:40px;background:url(data:,)}.wx-login{top:143px;left:60px;width:197px;height:46px;background:url(data:,)}.qq-login{top:143px;left:272px;width:197px;height:46px;background:url(data:,)}.pop3{width:530px;height:420px;background:url(data:,)no-repeat}.se-input{padding:117px 0 0 50px}.se-input select{display:block;width:430px;height:37px;line-height:37px;margin-bottom:10px}.se-checkbox{position:relative;width:404px;padding-left:26px;padding-top:10px;font-size:14px;color:#fff;line-height:24px}.se-checkbox input{position:absolute;left:0;top:14px;margin:0;width:16px;height:16px;-webkit-appearance:auto;appearance:auto}.se-btn{padding:16px 0 0 146px;position:absolute;bottom:45px;left:0;right:0}.se-btn a{width:116px;height:34px;margin-right:13px;opacity:0}.dia-zhushou{width:306px;height:297px;background:url(data:,)}.dia-weixin{width:306px;height:297px;background:url(data:,)}.dia-story{width:306px;height:297px;background:url(data:,)}.dia-skin{width:306px;height:297px;background:url(data:,)}.dia-version{width:306px;height:297px;background:url(data:,)}.dia-kefu{width:368px;height:358px;background:url(data:,);overflow:hidden}.dia-kefu p{margin:266px 0 0 76px;color:#b7bde1;font-size:18px}.dia-kefu a{color:#7b96e4}.dia-close{position:absolute;top:0;right:0;width:45px;height:45px;background:url(data:,)}.dia-qq{width:306px;height:297px;background:url(data:,)}.dia-qgc{width:306px;height:297px;background:url(data:,)}.dia-applets{width:306px;height:297px;background:url(data:,)}.dia-applets2{width:306px;height:297px;background:url(data:,)}.dia-weiquan{width:306px;height:297px;background:url(data:,)}.dia-hero-pop{width:306px;height:297px;background:url(data:,)}.dia-wgc{width:306px;height:297px;background:url(data:,)}</style>
+<style>.ls{width:772px}.rs{width:408px;margin-left:20px}.fl{float:left}.hidden{display:none}.icon,.skill-u1 li,.equip-list li{background:url(data:,)no-repeat;text-indent:-9999px;display:block}.more{display:block;position:absolute;width:50px;height:30px;text-align:right;line-height:30px;color:#999;font-size:14px}.zkcontent{background:#fafafa}.zk-con-box{width:1200px;margin:0 auto}.tb1,.tb2,.tb3,.tb4,.tb5,.tb6,.tb7{width:30px;height:30px}.tb1{background-position:0 0;margin-right:6px;margin-top:-5px;margin-left:-4px}.tb2{background-position:-30px 0;margin:-4px 5px 0 0}.tb3{background-position:-60px 0;margin:-2px 8px 0 0}.tb4{background-position:-90px 0;margin:-1px 8px 0 0}.tb5{background-position:-150px 0;width:40px;margin:-3px 8px 0 0}.tb6{background-position:-120px 0;margin:-2px 0px 0 0px}.tb7{background-position:-190px 0;margin:1px 10px 0 0}.tb8{background-position:-220px 0;margin:5px 0 0 1px;width:20px;height:20px}.wrapper{min-width:1200px;width:100%}.zk-con{clear:both}.zk-con1{padding-top:84px;overflow:hidden;background-position:center 0}.con1-pic{width:100%;height:798px;overflow:hidden;background:url(data:,)0 bottom repeat-x}.pic-show-box{width:1200px;height:548px;position:relative;margin:127px auto 0}.cover{width:357px;height:548px;position:absolute;left:0;top:0;padding-left:23px;overflow:hidden;background:url(data:,)repeat}.hero-video{overflow:hidden;position:relative;display:block;width:140px;height:80px;border:solid 1px #727189;border-radius:2px;background:#000;margin:20px 0}.hero-video span{position:absolute;top:0;left:0;width:100%;height:100%;background:#000;opacity:.4;z-index:2}.hero-video img{width:100%;position:absolute;right:0;z-index:1;top:0}.ico-play{position:absolute;top:50%;left:50%;width:36px;height:36px;margin-left:-18px;margin-top:-18px;background-position:-200px -70px;z-index:5}.cover-title{font-size:24px;color:#f3c258;line-height:30px;padding-top:30px}.cover-name{font-size:50px;font-weight:bold;color:#FFF;line-height:74px}.cover-list{height:136px}.cover-list li{height:24px;vertical-align:top;margin-bottom:12px}.cover-list-text{height:21px;line-height:19px;text-align:center;font-size:16px;color:#fff;border-radius:4px}.cover-list-bar{position:relative;width:205px;height:8px;margin:8px 0 0 45px;background:#000;border-radius:0 4px 4px 0}.cover-list-bar b{position:absolute;top:-8px;left:-27px;width:27px;height:26px}.data-bar1 b{background-position:0-170px}.data-bar2 b{background-position:-30px -170px}.data-bar3 b{background-position:-60px -170px}.data-bar4 b{background-position:-90px -170px}.ibar{height:8px;float:left;border-radius:0 4px 4px 0}.data-bar1 i{background:#1c8fea}.data-bar2 i{background:#e7ca63}.data-bar3 i{background:#5dd473}.data-bar4 i{background:#e84a33}.cover-btn{overflow:hidden;margin-top:25px}.cover-btn a{float:left;margin-right:16px;width:150px;height:40px;border:solid 2px #fff;border-radius:4px;line-height:40px;text-align:center;color:#fff;font-size:16px}.pic-pf{position:absolute;right:0;top:550px}.pic-pf-list{float:right;height:110px;overflow:hidden}.pic-pf-list li{width:89px;height:88px;float:right;display:inline;cursor:pointer}.pic-pf-list li i{float:left;width:65px;height:67px;margin-right:25px;border:solid 4px #7a7a7a;border-radius:0 12px;overflow:hidden}.pic-pf-list li i img{width:67px;height:69px;margin-left:-1px;margin-top:-1px}.pic-pf-list li i.curr{border-color:#f3c258}.pic-pf-list li p{font-size:14px;color:#FFF;text-align:center;text-shadow:0 1px 2px #000}.pic-pf .pf{display:block;width:25px;height:62px;float:right;border-radius:5px;background:#f3c258;line-height:26px;text-align:center;font-size:16px;padding-top:15px;color:#000}.herodetail-sort{width:290px;height:70px;margin-bottom:20px;overflow:hidden;display:block}.herodetail-sort i{display:block;width:100%;height:100%;overflow:hidden;text-indent:-9999em;background-image:url(data:,);background-repeat:no-repeat}.herodetail-sort-1{background-position:0-140px}.crumb{height:20px;line-height:20px;color:#464547;font-size:16px;padding:35px 0}.crumb a,.crumb span{margin-right:8px}.crumb a{text-decoration:underline}.tlt{color:#000;font-size:24px;line-height:24px;height:24px;position:relative;margin-bottom:20px}.skill-info,.sugg-info{position:relative;min-height:280px;background:#fff;border:solid 1px #e5e5e5;margin-bottom:50px}.skill-u1{height:100px;padding:20px 0 0 20px}.skill-u1 li{width:92px;height:88px;float:left;display:inline;margin-right:29px;cursor:pointer;background-position:-100px -70px}.skill-u1 .no5{display:none}.skill-u1 li img{width:71px;height:71px;background:#000;margin:8px 0 0 11px;border-radius:50%}.skill-u1 li.curr{background-position:0-70px}.show-list{display:none;padding-left:21px;position:relative;min-height:150px}.skill-name b{font-size:16px;color:#424242;margin-right:50px}.skill-name span{margin:0 6px;color:#424242;font-size:14px}.skill-desc{font-size:14px;color:#535252;margin:20px 15px 0 0;min-height:70px;line-height:20px}.sugg-tlt .tlt{line-height:28px}.sugg-u1{padding-top:20px;height:187px}.sugg-u1 li{width:33.3%;height:75px;border-radius:5px;float:left;display:inline;position:relative;text-align:center}.sugg-u1 li .sugg-pic1{width:45px;height:53px;margin:0 auto}.sugg-u1 li p{font-size:14px;line-height:20px;color:#535252}.sugg-u1 li p em{display:block;font-size:16px;color:#424242;font-weight:700;margin:12px 0}.sugg-tips{position:absolute;bottom:12px;left:10px;width:365px;padding:10px;background:#f5f5f5;line-height:20px;color:#484848;margin:0 auto}.sugg-info2{position:relative;overflow:hidden;height:104px;background:#fff;border:solid 1px #e5e5e5;margin-bottom:36px}.sugg-info2{padding-left:20px;padding-top:16px}.sugg-info2 p{display:inline-block;float:left;color:#6d6d6f}.sugg-info2 p.sugg-name{line-height:24px;font-size:16px;margin-right:10px;margin-top:20px}.sugg-name3{margin-left:20px}.sugg-name span{display:block;font-size:14px}.sugg-skill{width:92px;height:88px;margin-right:22px;cursor:pointer;background-position:0-70px}.sugg-skill:last-child{margin-right:0}.sugg-skill img{width:71px;height:71px;background:#000;margin:8px 0 0 11px;border-radius:50%}.hero-info-box{position:relative;height:152px;background:#fff}.hero-hd{width:100%;height:32px;line-height:30px;text-align:center;background:#f1f1f1}.hero-hd li{position:relative;float:left;width:257px;height:29px;border-bottom:solid 3px transparent;cursor:pointer}.hero-hd li span{position:absolute;top:6px;right:0;height:20px;border-right:solid 1px #e1e1e1}.hero-hd .curr{border-bottom-color:#f3c258}.hero-info{position:relative;display:none;height:118px;border:solid 1px #e1e1e1;overflow:hidden}.hero-f1{padding:45px 0 0 22px;width:136px;line-height:22px;color:#333;font-size:18px}.hero-f1 i{width:30px;height:30px;margin:-3px 12px 0 0}.hero-f1 i.hr1{background-position:0-30px}.hero-f1 i.hr2{background-position:-30px -30px}.hero-f1 i.hr3{background-position:-60px -30px}.hero-list{padding-top:20px;position:relative;z-index:10}.hero-list li{float:left;width:65px;height:67px;margin-right:25px;border:solid 4px #7a7a7a;border-radius:0 16px;overflow:hidden}.hero-list .cur{border:solid 4px #f3c258}.hero-list li img{width:67px;height:69px;border-radius:0 15px;margin-left:-1px;margin-top:-1px}.hero-list-desc{position:absolute;top:50%;left:340px;font-size:14px;color:#333;line-height:20px;width:410px}.equip-hd{width:100%;height:32px;line-height:30px;text-align:center;background:#f1f1f1}.equip-hd li{position:relative;float:left;width:50%;height:29px;border-bottom:solid 3px transparent;cursor:pointer}.equip-hd li span{position:absolute;top:6px;right:0;height:20px;border-right:solid 1px #e1e1e1}.equip-hd .curr{border-bottom-color:#f3c258}.equip-bd{position:relative;height:320px;background:#fff;border:solid 1px #e1e1e1}.equip-info{display:none}.equip-list{width:120%;padding:27px 0 0 20px}.equip-list li{width:92px;height:88px;float:left;margin:0 44px 14px 0;display:inline;cursor:pointer;background-position:0-70px;position:relative}.equip-list li img{width:71px;height:71px;background:#000;margin:8px 0 0 11px;border-radius:50%}.equip-tips{position:absolute;bottom:12px;left:10px;width:365px;padding:10px;background:#f5f5f5;line-height:20px;color:#484848;margin:0 auto}.equip-list li a:hover .itemFromTop{display:block}.itemFromTop{display:none;position:absolute;top:50px;right:100px;background:rgba(0,0,0,.9);opacity:0.9;border:1px solid #459ef4;width:213px;padding:24px 15px 24px 33px;z-index:100;font-family:"microsoft yahei"}.itemFromTop .item-title{height:74px}.itemFromTop .item-title img{float:left;width:74px;height:74px;margin-right:15px;border-radius:0}.itemFromTop .item-title .cons{float:left;margin-left:6px}.itemFromTop .item-title h4{font-size:18px;font-weight:bold;color:#23ff28;line-height:26px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-indent:0}.itemFromTop .item-title .cons p{text-indent:0;font-size:14px;color:#da951c;line-height:30px}.itemFromTop .item-desc{text-indent:0;padding:12px 0;color:#369ff9;font-size:14px;line-height:22px}.itemFromTop .item-desc p{margin-bottom:10px}.itemFromTop .clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}.clearfix{zoom:1}.zk-con5{padding:50px 0 92px 0}.strategy-box{overflow:hidden;height:428px;border:solid 1px #e1e1e1;background:#fff}.video{width:732px}.video-info{overflow:hidden}.video-u1{padding-left:20px}.video-u1 li{width:209px;float:left;display:inline;margin-right:28px;position:relative;font-size:0;margin-top:24px}.video-u1 li img{width:100%;height:125px}.video-u1 li .p1{line-height:22px;font-size:14px;color:#545353;height:44px;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;margin-top:3px}.video-u1 li .video-play{width:100%;height:22px;line-height:22px;color:#fff;font-size:12px;position:absolute;top:103px;left:0;background:rgba(0,0,0,.5);border-radius:0 0 2px 2px}.video-u1 li .play-num{padding-left:10px}.video-u1 li .play-time{float:right;padding-right:6px;display:none}.video-u1 li .play{background-position:-100px -40px;width:12px;height:14px;float:left;margin-right:5px;margin-top:6px}.strategy{width:465px}.strategy-tlt{position:relative}.strategy-tlt .tlt{line-height:27px}.strategy-tlt .more{top:4px;right:0}.strategy-info{overflow:hidden;margin-top:24px;margin-right:20px}.pop-story{display:none;width:1259px;border:solid 2px #3338a4}.pop-hd{position:relative;height:129px;width:100%;background:url(data:,);text-align:center;font-size:50px;color:#fff;font-weight:800;line-height:129px}.pop-hd .close{position:absolute;width:56px;height:56px;top:35px;right:20px;background:url(data:,);background-position:-1260px 0}.pop-bd{padding:40px 0;background:#fff}.pop-bd p{width:90%;margin:0 auto;font-size:20px;line-height:60px;color:#070707;text-indent:0}#hero-story .pop-bd p{text-indent:40px}.down_detail{position:fixed;z-index:99;top:50%;right:2px;width:128px;height:247px;display:flex;align-items:center;justify-content:flex-end}.down_detail img{display:block}.down_detail .d_open{width:128px;height:247px;background:url(data:,)no-repeat center;background-size:100%auto}.down_detail .d_open .d_qrcode{width:90px;height:90px;position:relative;top:124px;left:50%;transform:translateX(-50%)}</style>
+
+<style>.ost_box{min-width:980px;text-align:left}.ost_big,.ost_h40,.ost_hdn{overflow:hidden}.ost_czsh a{text-decoration:none}.ost_bg{background:#fff}.ost_title{padding:0}.ost_hdn{text-indent:-500px}.ost_fl{float:left}.ost_fr{float:right}.ost_ml10{margin-left:10px}.ost_h40{height:41px}.ost_lsn{list-style:none}.ost_box{width:100%;background-repeat:repeat-x;color:#333;left:0;top:0!important;font-size:14px;z-index:8000;background:#fff;border-bottom:1px solid #f5f5f5;font-family:"Microsoft YaHei",Tahoma,"simsun",sans-serif}.ost_inner{width:980px;padding:0 5px;margin:0 auto;position:relative;line-height:41px}.ost_inner:after{visibility:hidden;display:block;font-size:0;content:"";clear:both;height:0}.ost_czsh,.ost_title{font-size:14px;font-weight:400;margin:0;line-height:41px;cursor:pointer;display:inline-block;vertical-align:top}.ost_logo{width:150px;background:url(data:,)top center no-repeat;position:relative;z-index:10001;background-size:112px auto}.ost_blnk{display:block;height:100%}.ost_ad{width:230px}.ost_total{width:300px;text-align:right}.ost_czsh{width:88px;position:relative;padding-left:30px;margin-right:20px}.ost_czsh:after{content:"";background:url(data:,);background-position:-30px 0;width:30px;height:30px;top:5px;left:5px;position:absolute}.ost_czsh a{color:#464646}.ost_czsh a:hover,.ost_title_hover{color:#ff4e00}.ost_title{position:relative;padding-right:25px}.ost_title:after{content:"";background:url(data:,);background-position:0 0;width:30px;height:30px;top:5px;right:3px;position:absolute;opacity:.1;transform:rotate(90deg)}.ost_icon_reddot{display:inline-block;vertical-align:middle;font-size:.1em}.ost_icon_reddot{width:7px;height:7px;background-position:-190px -134px;margin-left:-3px;margin-top:-8px}.ost_big{width:970px;height:185px;padding:0 3px 3px;border-bottom:1px solid #eee;background:#fff;position:absolute;top:0;left:50%;margin:0 0 0-488px;display:none}.ost_nb{border:0}.ost_pop{width:1020px;height:658px;top:41px;right:20px;position:absolute;display:none;z-index:9000;animation:rankSlideDown .3s ease}.ost_log{padding-right:12px;background-position:100% -80px;line-height:41px;position:relative}@keyframes rankSlideDown{0%{opacity:0;height:0}100%{opacity:1;height:658px}}</style><style></style><meta name="referrer" content="no-referrer"><link type="image/x-icon" rel="shortcut icon" href="data:,"><link rel="canonical" href="https://pvp.qq.com/web201605/herodetail/pangu.shtml"><meta http-equiv="content-security-policy" content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:; object-src 'self' data:; frame-src 'self' data:;"><style>img[src="data:,"],source[src="data:,"]{display:none!important}</style></head>
+<body style="padding-top:42px"><div id="header" class="header tganime-header-fix"><div class="header-nav">    <div class="header-inner">      <h1><a href="https://pvp.qq.com/" class="logo pa" title="王者荣耀">王者荣耀</a></h1>      <!--=========主导航==========-->      <ul class="main-nav clearfix">        <li>          <a href="https://pvp.qq.com/web201605/herolist.shtml" target="_blank" title="游戏资料">游戏资料<em>DATA</em></a>        </li>        <li>          <a href="https://pvp.qq.com/raiders/" target="_blank" title="内容中心">内容中心<em>CONTENTS</em></a>        </li>        <li>          <a href="https://kpl.qq.com/?ADTAG=pvp.index.nav.matchcenter" target="_blank" title="赛事中心">赛事中心<em>MATCH</em></a>        </li>        <li>          <a href="https://pvp.qq.com/cp/a20171023pvppc/" target="_blank" title="百态王者">百态王者<em>CULTURE</em></a>        </li>        <li>          <a href="javascript:void(0)" title="社区互动">社区互动<em>COMMUNITY</em></a>        </li>        <li>          <a href="javascript:void(0)" title="玩家支持">玩家支持<em>PLAYER</em></a>        </li>        <li>          <a href="javascript:void(0)" title="IP新游">IP新游<em>NEW GAMES</em></a>        </li>      </ul>      <!--=====登录模块=====-->      <div class="login_pannel clearfix pa">        <a class="avatar user_pic " href="https://pvp.qq.com/web201605/personal.shtml">          <img alt="avatar" src="data:," width="42" height="42">        </a>        <!--=====登录后已选择大区=====-->        <div id="logined_selected" class="per-infor" style="display:none">          <p class="user-name f12">            <i id="nickname">--</i>            <a class="logout_btn" href="javascript:void(0)">注销</a>            <!--<a class="select_role" style="color:#2d84d3" href="javascript:void(0)">切换大区&gt;</a>-->          </p>          <p class="personal_link"><a href="https://pvp.qq.com/web201605/personal.shtml">点击查看游戏战绩</a></p>          <ul class="userinfo-list tc">            <li><em class="grade_level">倔强青铜III</em><i>段位</i></li>            <li><em class="win_count">-</em><i>胜场</i></li>            <li><em class="hero_count">-</em><i>英雄数</i></li>            <li><em class="skin_count">-</em><i>皮肤数</i></li>          </ul>        </div>        <div id="unlogin" class="per-infor unlogin_pannel" style="display:block">          <span class="unlogin_user_pic"></span>          <div class="unlogin_info">            <a href="javascript:void(0)">欢迎登录</a>            <p>登录后查看游戏战绩</p>          </div>        </div>        <!--=====登录后未选择大区=====-->        <div id="logined_not_selected" class="per-infor" style="display:none">          <div class="user-name">            您已登录            <p>请<a class="select_role" href="javascript:void(0)">选择大区</a>，或者<a class="logout_btn" href="javascript:void(0)">注销</a></p>            <!--您已登录，个人中心暂未开放<a class="logout_btn" href="javascript:void(0)">注销</a>-->          </div>        </div>      </div><!--=====登录模块=====-->    </div>    <!--=====二级导航=====-->      <div id="J_subNav" class="sub-nav">        <ul class="sub-nav-inner">          <li class="down-nav">             <a href="https://pvp.qq.com/cp/a20170829bbgxsm/index.html" target="_blank" title="版本介绍">版本介绍</a>             <a href="https://pvp.qq.com/web201605/introduce.shtml" target="_blank" title="游戏介绍">游戏介绍</a>             <a href="https://pvp.qq.com/web201605/herolist.shtml" target="_blank" title="英雄资料">英雄资料</a>             <a href="https://pvp.qq.com/coming/v2/" target="_blank" title="爆料站"><i class="icon-hot"></i>爆料站</a>             <a href="https://pvp.qq.com/ip/index.html?adtag=pvp.pc" target="_blank" title="世界观体验站"><i class="icon-fans"></i>世界观体验站</a>             <a href="https://pvp.qq.com/web201605/wallpaper.shtml" target="_blank" title="游戏壁纸">游戏壁纸</a>          </li>          <li class="down-nav">             <a href="https://pvp.qq.com/raiders/" target="_blank" title="攻略中心">攻略中心</a>             <a href="https://pvp.icreate.qq.com/" target="_blank" title="开放素材库">开放素材库</a>             <a href="https://yyds.qq.com/creation" target="_blank" title="内容共创平台"><i class="icon-fans"></i>内容共创平台</a>             <a href="https://pvp.qq.com/cp/a20220914wza/" target="_blank" title="手语打法参考"><i class="icon-fans"></i>手语打法参考</a>          </li>          <li class="down-nav">             <a href="https://pvp.qq.com/cp/kic2023/index.html" target="_blank" title="王者世冠KIC"><i class="icon-hot"></i>王者世冠KIC</a>            <a href="https://pvp.qq.com/match/kpl/kingproleague/index.html" target="_blank" title="KPL职业联赛">KPL</a>            <a href="https://pvp.qq.com/match/kgl/index.html" target="_blank" title="K甲联赛">K甲联赛</a>             <a href="https://pvp.qq.com/match/WCC/KCC2023S1/index.html" target="_blank" title="挑战者杯">挑战者杯</a>             <a href="https://pvp.qq.com/cp/a20220328qgds/index.shtml" target="_blank" title="全国大赛"><i class="icon-hot"></i>全国大赛</a>             <a href="https://pvp.qq.com/cp/a20220315open/index.shtml" target="_blank" title="王者高校联赛">高校联赛</a>             <a href="https://pvp.qq.com/saibao/index.shtml" target="_blank" title="王者赛宝"><i class="icon-fans"></i>王者赛宝</a>             <a href="https://pvp.qq.com/matchdata/index.html" target="_blank" title="赛事数据">赛事数据</a>          </li>          <li class="down-nav">             <a href="https://pvp.qq.com/memory/index.html" target="_blank" title="荣耀·传承">荣耀·传承</a>             <a href="https://pvp.qq.com/history/" target="_blank" title="王者文化站">王者文化站</a>             <a href="https://pvp.qq.com/wonder/" target="_blank" title="万千世界">万千世界</a>             <a href="https://pvp.qq.com/cp/a20221020wzjwhb/" target="_blank" title="王者绝悟"><i class="icon-fans"></i>王者绝悟</a>             <a href="https://pvp.qq.com/cp/a20190102starlight/index.html" target="_blank" title="星光殿堂">星光殿堂</a>             <a href="https://pvp.qq.com/cp/a20210427ipgzzt/" target="_blank" title="IP共创计划"><i class="icon-fans"></i>IP共创计划</a>             <a href="https://igame.qq.com/newcss/pvp/privilegePC/index.html" target="_blank" title="商户特权">商户特权</a>             <a href="https://wangzhe.recogame.com/wangzhe.html" target="_blank" title="龙翼王者卡"><i class="icon-fans"></i>龙翼王者卡</a>          </li>          <li class="down-nav">            <a href="https://pvp.qq.com/hdy/p1/index.html" title="创意互动营"><i class="icon-hot"></i>创意互动营</a>            <a href="javascript:void(0)" title="王者营地"><i class="icon-hot"></i>王者营地</a>            <a href="javascript:void(0)" title="微信圈子">微信圈子</a>            <a href="https://weibo.com/heromoba" target="_blank" title="官方微博">官方微博</a>            <a href="javascript:void(0)" title="微信公众号">微信公众号</a>            <a href="javascript:void(0)" title="手Q订阅号">手Q订阅号</a>          </li>          <li class="down-nav">             <a href="https://game.qq.com/act/a20210705protect/index.html" target="_blank" title="腾讯游戏防沉迷">腾讯游戏防沉迷</a>             <a href="https://jiazhang.qq.com/jz/home.html" target="_blank" title="成长守护平台"><i class="icon-guard"></i>成长守护平台</a>             <a href="https://pvp.qq.com/cp/a20190909talk/index.html" target="_blank" title="对局环境情报站">对局环境情报站</a>             <a href="javascript:void(0)" title="客服专区">客服专区</a>             <a href="https://pvp.qq.com/webplat/info/news_version3/15592/24091/24092/24095/m15241/201508/370256.shtml" title="礼包兑换" target="_blank">礼包兑换</a>             <a href="https://tool.helper.qq.com/v3/wzry/official_website/index.html" title="自助服务" target="_blank">自助服务</a>          </li>          <li class="down-nav">             <a href="https://world.qq.com/?ADTAG=pvp.nav.hokpc" target="_blank" title="世界"><i class="icon-fans"></i>王者荣耀·世界</a>             <a href="https://poxiao.qq.com/?ADTAG=pvp.nav.hokpc" target="_blank" title="破晓"><i class="icon-fans"></i>王者荣耀 星之破晓</a>             <a href="https://pvp.qq.com/web201605/newsDetail.shtml?G_Biz=18&amp;tid=488378" target="_blank" title="启程"><i class="icon-fans"></i>代号:启程</a>             <a href="https://wxq.qq.com/?ADTAG=pvp.qqpc" target="_blank" title="王者万象棋"><i class="icon-fans"></i>王者万象棋</a>          </li>        </ul>      </div>      </div></div><div class="header-dialog">  <div class="pop pr tganime-fadein on" style="display:none" id="login_select">    <a href="javascript:void(0)" class="close pa db ht">关闭</a>    <a href="javascript:void(0)" id="wxlogin" class="wx-login pa db ht">微信用户登录</a>    <a href="javascript:void(0)" id="qqlogin" class="qq-login pa db ht">QQ用户登录</a>  </div>  <div class="pop3 pr" style="display:none" id="area_select">    <a href="javascript:void(0)" class="close pa db ht">关闭</a>    <div class="se-input">      <select name="channelContentId" id="channelContentId"><option selected>选择渠道</option></select>      <select name="areaContentId" id="areaContentId"><option selected>选择大区</option></select>      <select name="roleContentId" id="roleContentId"><option selected>选择角色</option></select>    	 <div class="se-checkbox">    		 <input type="checkbox" id="se-checkbox"><label for="se-checkbox" id="se-checkbox-txt">我同意授权“本页面获取并存储我的游戏区服和角色相关信息用于正常的抽奖、领取、发货、签到等操作”</label>    	 </div>    </div>    <div class="se-btn clearfix">      <a id="RoleSelectBtn" href="javascript:void(0)" class="fl ht">确定</a>      <a href="javascript:void(0)" class="fl ht">取消</a>    </div>  </div>  <div class="zhushou pr" id="zhushou" style="display:none">    <div class="dia-zhushou pr">       <a class="dia-close" href="javascript:void(0)" title="关闭"></a>    </div>  </div>  <div class="weixin pr" id="weixin" style="display:none">    <div class="dia-weixin pr">       <a class="dia-close" href="javascript:void(0)" title="关闭"></a>    </div>  </div>  <div class="story pr" id="story" style="display:none">    <div class="dia-story">      <a class="dia-close" href="javascript:void(0)" title="关闭"></a>    </div>  </div>  <div class="skin pr" id="skin" style="display:none">    <div class="dia-skin">      <a class="dia-close" href="javascript:void(0)" title="关闭"></a>    </div>  </div>  <div class="version pr" id="version" style="display:none">    <div class="dia-version">      <a class="dia-close" href="javascript:void(0)" title="关闭"></a>    </div>  </div>   <div class="weiquan pr" id="weiquan" style="display:none">    <div class="dia-weiquan">      <a class="dia-close" href="javascript:void(0)" title="关闭"></a>    </div>  </div>  <div class="hero_pop pr" id="hero_pop" style="display:none">    <div class="dia-hero-pop">      <a class="dia-close" href="javascript:void(0)" title="关闭"></a>    </div>  </div>  <div class="kefu pr" id="kefu" style="display:none">    <div class="dia-kefu">      <a class="dia-close" href="javascript:void(0)" title="关闭"></a>      <p>微信扫一扫，联系客服</p>    </div>   </div>  <div class="qq pr" id="qq" style="display:none">    <div class="dia-qq">      <a class="dia-close" href="javascript:void(0)" title="关闭"></a>    </div>  </div>  <div class="wgc pr" id="wgc" style="display:none">    <div class="dia-wgc">      <a class="dia-close" href="javascript:void(0)" title="关闭"></a>    </div>  </div>  <div class="qgc pr" id="qgc" style="display:none">    <div class="dia-qgc">      <a class="dia-close" href="javascript:void(0)" title="关闭"></a>    </div>  </div>  <div class="applets pr" id="applets" style="display:none">    <div class="dia-applets">      <a class="dia-close" href="javascript:void(0)" title="关闭"></a>    </div>  </div>  <div class="applets2 pr" id="applets2" style="display:none">    <div class="dia-applets2">      <a class="dia-close" href="javascript:void(0)" title="关闭"></a>    </div>  </div></div>
+<div class="wrapper">
+
+    <!-- 位置信息 S -->
+    <div class="zk-con1 zk-con" style="background:url(data:,)center 0">
+        <div class="con1-pic">
+            <div class="pic-show-box">
+                <!--<div class="pic-show">
+                    <div class="pic-show1 pic-show3">
+                        <img src="//game.gtimg.cn/images/yxzj/web201605/page/pf_img1.png" style="display:block" width="1200" height="530" alt="" />
+                        <img src="//game.gtimg.cn/images/yxzj/web201605/page/pf_img2.png" width="1200" height="530" alt="" />
+                        <img src="//game.gtimg.cn/images/yxzj/web201605/page/pf_img3.png" width="1200" height="530" alt="" />
+                        <img src="//game.gtimg.cn/images/yxzj/web201605/page/pf_img4.png" width="1200" height="530" alt="" />
+                    </div>
+                </div>-->
+                <div class="cover">
+                    <div class="cover-bg"></div>
+                    <h3 class="cover-title">破晓之神</h3>
+                    <h2 class="cover-name">盘古</h2>
+                    <span class="herodetail-sort"><i class="herodetail-sort-1"></i></span>                           
+                    <a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=832345" target="_blank" class="hero-video">
+                        <span></span>
+                        <img src="data:," alt>
+                        <i class="icon ico-play"></i>
+                    </a>
+                    <ul class="cover-list">
+                        <li>
+                            <em class="cover-list-text fl">生存能力</em>
+                            <span class="cover-list-bar data-bar1 fl"><b class="icon"></b><i class="ibar" style="width:50%"></i></span>
+                        </li>
+                        <li>
+                            <em class="cover-list-text fl">攻击伤害</em>
+                            <span class="cover-list-bar data-bar2 fl"><b class="icon"></b><i class="ibar" style="width:70%"></i></span>
+                        </li>
+                        <li>
+                            <em class="cover-list-text fl">技能效果</em>
+                            <span class="cover-list-bar data-bar3 fl"><b class="icon"></b><i class="ibar" style="width:50%"></i></span>
+                        </li>
+                        <li>
+                            <em class="cover-list-text fl">上手难度</em>
+                            <span class="cover-list-bar data-bar4 fl"><b class="icon"></b><i class="ibar" style="width:30%"></i></span>
+                        </li>
+                    </ul>
+                    <div class="cover-btn">
+                        <a href="javascript:void(0)" class="story">英雄故事</a>
+                        <a href="javascript:void(0)" class="history" style="display:none">历史上的ta</a>
+                    </div>
+                </div>
+                <div class="pic-pf">
+                    <a href="javascript:void(0)" class="pf" title="更多">皮<br>肤</a>
+                    <ul class="pic-pf-list pic-pf-list3" data-imgname="破晓之神&amp;0|创世神祝&amp;0|重装意志&amp;1|冰霜神祇&amp;5"><li><i class="curr"><img src="data:," alt data-imgname="//game.gtimg.cn/images/yxzj/img201606/skin/hero-info/529/529-bigskin-1.jpg" data-title="破晓之神" data-icon="0"></i><p>破晓之神</p></li><li><i><img src="data:," alt data-imgname="//game.gtimg.cn/images/yxzj/img201606/skin/hero-info/529/529-bigskin-2.jpg" data-title="创世神祝" data-icon="0"></i><p>创世神祝</p></li><li><i><img src="data:," alt data-imgname="//game.gtimg.cn/images/yxzj/img201606/skin/hero-info/529/529-bigskin-3.jpg" data-title="重装意志" data-icon="1"></i><p>重装意志</p></li><li><i><img src="data:," alt data-imgname="//game.gtimg.cn/images/yxzj/img201606/skin/hero-info/529/529-bigskin-4.jpg" data-title="冰霜神祇" data-icon="5"></i><p>冰霜神祇</p></li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 位置信息 E -->
+    <!-- 内容区域1 S -->
+    <div class="zkcontent">
+        <div class="zk-con-box">
+            <!-- 技能说明 S -->
+            <div class="zk-con3 zk-con">
+                <div class="crumb">
+                    <i class="tb1 icon fl"></i>
+                    <a href="https://pvp.qq.com/" target="_blank" title="王者荣耀首页">王者荣耀首页</a>
+                    <span>&gt;</span>
+                    <a href="https://pvp.qq.com/web201605/herolist.shtml" target="_blank" title="英雄介绍">英雄介绍</a>
+                    <span>&gt;</span>
+                    <label>盘古</label>
+                    <span class="hidden">529</span>
+                </div>
+                <div class="skill ls fl">
+                    <h3 class="tlt fn"><i class="tb2 icon fl"></i>技能介绍</h3>
+                    <div class="skill-info l info">
+                        <ul class="skill-u1">
+                            <li class="curr"><img src="data:," alt></li>
+                            <li><img src="data:," alt></li>
+                            <li><img src="data:," alt></li>
+                            <li><img src="data:," alt></li>
+                            <li class="no5" data-img="//game.gtimg.cn/images/yxzj/img201606/heroimg/529/52940.png"><img src="data:," alt style></li>
+                        </ul>
+                        <div class="skill-show">
+                            <div class="show-list" style="display:block">
+                                <p class="skill-name"><b>盘古斧</b><span>冷却值：0</span><span>消耗：0</span></p>
+                                <p class="skill-desc">盘古每次使用盘古斧攻击敌方英雄会积攒1格能量，满4格后斧头碎裂，化成能量臂进行攻击，并刷 新1技能50%最大冷却时间。 盘古斧:普攻使敌人流血，每0.5秒造成目标1%~1.7%最大生命的物理伤害，持续2秒。 能量臂:普攻获得更大的攻击范围，额外造成目标4%~6.8%最大生命的物理伤害。</p>
+                            </div>
+                            <div class="show-list">
+                                <p class="skill-name"><b>狂怒突袭</b><span>冷却值：12/11.2/10.4/9.6/8.8/8</span><span>消耗：0</span></p>
+                                <p class="skill-desc">盘古跃向指定位置，落地时造成200/240/280/320/360/400(+100%物理攻击)物理伤害并强化下一次普攻，释放强化普攻 后会冲向目标，击退路径上敌人并造成100/120/140/160/180/200(+50%物理攻击)物理伤害，同时增加10/20/30/40/50/60%攻速，持续3秒。能量臂状态下只能朝指定方向冲锋，获得相同的攻速效果，冷却时间减半。</p>
+                            </div>
+                            <div class="show-list">
+                                <p class="skill-name"><b>压制之握</b><span>冷却值：10/9.6/9.2/8.8/8.4/8</span><span>消耗：0</span></p>
+                                <p class="skill-desc">盘古召唤正义之手对指定敌人进行攻击，标记被命中的敌人并造成200/240/280/320/360/400(+50%物理攻击)物理伤害和30%减速，持续2秒，盘古普攻命中标记目标会回复6%最大生命。<br>【压制之握】会缴械敌人，使其无法普攻，持续2秒。</p>
+                            </div>
+                            <div class="show-list">
+                                <p class="skill-name"><b>开天辟地</b><span>冷却值：60/55/50</span><span>消耗：0</span></p>
+                                <p class="skill-desc">盘古跃到空中，使用盘古斧劈出5道裂隙，每道造成200/400/600(+90%物理攻击)物理伤害，并造成缴械和 90%减速，持续2秒，减速效果持续衰减。裂隙重复命中相同单位时只造成25%伤害。 释放技能后，盘古立即进入能量臂状态。技能释放过程获得霸体效果。 1技能跃起期间使用3技能可以立即劈出裂隙。</p>
+                            </div>
+                            <div class="show-list">
+                                <p class="skill-name"><b></b><span>冷却值：</span><span>消耗：</span></p>
+                                <p class="skill-desc"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sugg rs fl">
+                    <div class="story-tlt">
+                        <h3 class="tlt fn"><i class="tb3 icon fl"></i>铭文搭配建议</h3>
+                    </div>
+                    <div class="sugg-info info">
+                        <ul class="sugg-u1" data-ming="1504|3514|2520"><li><img src="data:," class="sugg-pic1" width="45" height="53" alt><p><em>异变</em></p><p>物理攻击力+2</p><p>物理穿透+3.6</p></li><li><img src="data:," class="sugg-pic1" width="45" height="53" alt><p><em>鹰眼</em></p><p>物理攻击力+0.9</p><p>物理穿透+6.4</p></li><li><img src="data:," class="sugg-pic1" width="45" height="53" alt><p><em>狩猎</em></p><p>攻速加成+1%</p><p>移速+1%</p></li></ul>
+                        <p class="sugg-tips">Tips：提升输出能力</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 技能说明 E -->
+            <!-- 英雄关系 S -->
+            <div class="zk-con4 zk-con">
+                <div class="hero ls fl">
+                    <div class="sugg-tlt">
+                        <h3 class="tlt fn"><i class="tb4 icon fl"></i>技能加点建议</h3>
+                    </div>
+                    <div class="sugg-info2 info">
+                        <p class="sugg-name"><b>主升</b><span>狂怒突袭</span></p>
+                        <p class="icon sugg-skill"><img src="data:," class="jn-pic1" width="47" height="47" alt="技能1"></p>
+                        <p class="sugg-name"><b>副升</b><span>压制之握</span></p>
+                        <p class="icon sugg-skill"><img src="data:," class="jn-pic1" width="47" height="47" alt="技能2"></p>
+                        <p class="sugg-name sugg-name3"><b>召唤师技能</b><span>惩击/闪现</span></p>
+                        <p id="skill3" data-skill="80104|80115"></p><p class="icon sugg-skill"><img src="data:," alt class="jn-pic1" width="47" height="47"></p><p class="icon sugg-skill"><img src="data:," alt class="jn-pic1" width="47" height="47"></p><p></p>
+                    </div>
+                    <h3 class="tlt fn"><i class="tb5 icon fl"></i>英雄关系</h3>
+                    <div class="hero-info-box">
+                        <ul class="hero-hd">
+                            <li class="curr">最佳搭档<span></span></li>
+                            <li>压制英雄<span></span></li>
+                            <li>被压制英雄</li>
+                        </ul>
+                        <div>
+                            <div class="hero-info l info" style="display:block">
+                                <div class="hero-f1 fl"><i class="hr1 icon fl"></i>最佳搭档</div>
+                                <div class="hero-list hero-relate-list fl" data-relatename>
+                                    <ul>
+                                        <li class="cur"><a href="https://pvp.qq.com/web201605/herodetail/189.shtml"><img src="data:," alt></a></li>
+                                        <li><a href="https://pvp.qq.com/web201605/herodetail/197.shtml"><img src="data:," alt></a></li>
+                                    </ul>
+                                </div>
+                                <div class="hero-list-desc" style="margin-top:-10px">
+                                    <p>将敌人聚拢后快速打出aoe爆发</p>
+                                    <p style="display:none">将敌人圈起来后，盘古可以通过拳头形态进行持续的aoe输出</p>
+                                </div>
+                            </div>
+                            <div class="hero-info l info">
+                                <div class="hero-f1 fl"><i class="hr2 icon fl"></i>压制英雄</div>
+                                <div class="hero-list hero-relate-list fl" data-relatename>
+                                    <ul>
+                                        <li class="cur"><a href="https://pvp.qq.com/web201605/herodetail/518.shtml"><img src="data:," alt></a></li>
+                                        <li><a href="https://pvp.qq.com/web201605/herodetail/195.shtml"><img src="data:," alt></a></li>
+                                    </ul>                    
+                                </div>
+                                <div class="hero-list-desc">
+                                    <p>被缴械和减速使得马超的机动性大幅降低，很难逃走</p>
+                                    <p style="display:none">输出过于依赖普攻，同时自身又较脆，容易被盘古缴械后迅速击杀</p>
+                                </div>
+                            </div>
+                            <div class="hero-info l info">
+                                <div class="hero-f1 fl"><i class="hr3 icon fl"></i>被压制英雄</div>
+                                <div class="hero-list hero-relate-list fl" data-relatename>
+                                    <ul>
+                                        <li class="cur"><a href="https://pvp.qq.com/web201605/herodetail/524.shtml"><img src="data:," alt></a></li>
+                                        <li><a href="https://pvp.qq.com/web201605/herodetail/170.shtml"><img src="data:," alt></a></li>
+                                    </ul>
+                                </div>
+                                <div class="hero-list-desc">
+                                    <p>不依赖普攻，爆发高</p>
+                                    <p style="display:none">刘备大招能移除缴械效果，同时贴脸输出容易被高爆发迅速击杀</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="equip rs fl">
+                    <h3 class="tlt fn"><i class="tb6 icon fl"></i>出装建议</h3>
+                    <div class="equip-box">
+                        <ul class="equip-hd">
+                            <li class="curr">推荐出装一<span></span></li>
+                            <li>推荐出装二</li>                            
+                        </ul>
+                    </div>
+                    <div class="equip-bd">
+                        <div class="equip-info l" style="display:block">
+                            <ul class="equip-list fl" data-item="1532|1422|1137|1135|1328|1333"><li><a href="javascript:void(0)"><img src="data:," alt><div class="itemFromTop"><div class="item-title clearfix"><img src="data:," alt id="Jpic"><div class="cons"><h4 id="Jname">巨人之握</h4><p id="Jprice">售价：1960</p><p id="Jtprice">总价：2160</p></div></div><div class="item-desc"><p>+1200最大生命<br>+5%冷却缩减<br>+6%移速</p><p>被动-狩猎：击杀野怪额外获得30%经验和20%金币。对野怪每0.5秒造成(75+5%额外生命)点真实伤害(对英雄伤害生效20%)，受到野怪(远古生物除外)伤害降低25%<br>被动-奖赏：自己击杀或700范围内友方击杀野怪增加自身30点最大生命和0.2%冷却，最多叠25层<br>4分钟前：不参与兵线分配，单独获得50%金币/经验<br>10分钟前：对兵线伤害降低25%</p></div></div></a></li><li><a href="javascript:void(0)"><img src="data:," alt><div class="itemFromTop"><div class="item-title clearfix"><img src="data:," alt id="Jpic"><div class="cons"><h4 id="Jname">抵抗之靴</h4><p id="Jprice">售价：426</p><p id="Jtprice">总价：710</p></div></div><div class="item-desc"><p>+110法术防御</p><p>唯一被动：+60移动速度（所有鞋类装备的移速加成效果不叠加）<br>唯一被动：+35%韧性</p></div></div></a></li><li><a href="javascript:void(0)"><img src="data:," alt><div class="itemFromTop"><div class="item-title clearfix"><img src="data:," alt id="Jpic"><div class="cons"><h4 id="Jname">暗影战斧</h4><p id="Jprice">售价：1254</p><p id="Jtprice">总价：2090</p></div></div><div class="item-desc"><p>+85物理攻击<br>+15%冷却缩减<br>+500最大生命</p><p>唯一被动-切割：增加(50+英雄等级*8)点护甲穿透<br>唯一被动-残废：技能对首个命中的敌方英雄造成10%减速，持续3秒，该效果有8秒冷却时间</p></div></div></a></li><li><a href="javascript:void(0)"><img src="data:," alt><div class="itemFromTop"><div class="item-title clearfix"><img src="data:," alt id="Jpic"><div class="cons"><h4 id="Jname">闪电匕首</h4><p id="Jprice">售价：1104</p><p id="Jtprice">总价：1840</p></div></div><div class="item-desc"><p>+35%攻击速度<br>+8%移速</p><p>唯一被动-电弧：普攻额外造成40(+3*英雄等级)法术伤害，每3次普攻会释放一次连锁闪电，造成140(+20*英雄等级)法术伤害</p></div></div></a></li><li><a href="javascript:void(0)"><img src="data:," alt><div class="itemFromTop"><div class="item-title clearfix"><img src="data:," alt id="Jpic"><div class="cons"><h4 id="Jname">血魔之怒</h4><p id="Jprice">售价：1260</p><p id="Jtprice">总价：2100</p></div></div><div class="item-desc"><p>+40物理攻击<br>+1000最大生命</p><p>唯一主动-血怒：逐渐扣除30%当前生命值，逐渐获得40%最大生命值的护盾，并增加80点物理攻击，持续4秒。<br>冷却时间：60秒<br>被动-狂怒：普攻额外造成(4%额外生命)物理伤害，当自己生命低于50%时，该伤害提升100%。</p></div></div></a></li><li><a href="javascript:void(0)"><img src="data:," alt><div class="itemFromTop"><div class="item-title clearfix"><img src="data:," alt id="Jpic"><div class="cons"><h4 id="Jname">不祥征兆</h4><p id="Jprice">售价：1308</p><p id="Jtprice">总价：2180</p></div></div><div class="item-desc"><p>+270物理防御<br>+1200最大生命</p><p>唯一被动-寒铁：受到攻击会减少攻击者40%攻击速度与10%移动速度，持续3秒</p></div></div></a></li></ul>
+                            <p class="equip-tips">Tips：法球流，肉装提升生存，攻速结合被动百分比伤害进行输出</p>
+                        </div>
+                        <div class="equip-info l">
+                            <ul class="equip-list fl" data-item="1533|1422|1137|1134|1338|1138"><li><a href="javascript:void(0)"><img src="data:," alt><div class="itemFromTop"><div class="item-title clearfix"><img src="data:," alt id="Jpic"><div class="cons"><h4 id="Jname">贪婪之噬</h4><p id="Jprice">售价：1296</p><p id="Jtprice">总价：2160</p></div></div><div class="item-desc"><p>+90物理攻击<br>+8%移速<br>+5%冷却</p><p>被动-狩猎：对野怪每0.5秒造成(90+60%额外攻击)点物理伤害(仅近战生效，对英雄伤害生效20%)，受到野怪（远古生物除外）伤害降低25%，自己击杀或700范围内友方击杀野怪时，自己会额外获得30%经验和20%金币<br>被动-奖赏：自己击杀或700范围内友方击杀野怪增加自身3点物理攻击和0.2%冷却缩减，最多叠加25层<br>4分钟前：不参与兵线分配，单独获得50%金币/经验<br>10分钟前：对兵线伤害降低25%</p></div></div></a></li><li><a href="javascript:void(0)"><img src="data:," alt><div class="itemFromTop"><div class="item-title clearfix"><img src="data:," alt id="Jpic"><div class="cons"><h4 id="Jname">抵抗之靴</h4><p id="Jprice">售价：426</p><p id="Jtprice">总价：710</p></div></div><div class="item-desc"><p>+110法术防御</p><p>唯一被动：+60移动速度（所有鞋类装备的移速加成效果不叠加）<br>唯一被动：+35%韧性</p></div></div></a></li><li><a href="javascript:void(0)"><img src="data:," alt><div class="itemFromTop"><div class="item-title clearfix"><img src="data:," alt id="Jpic"><div class="cons"><h4 id="Jname">暗影战斧</h4><p id="Jprice">售价：1254</p><p id="Jtprice">总价：2090</p></div></div><div class="item-desc"><p>+85物理攻击<br>+15%冷却缩减<br>+500最大生命</p><p>唯一被动-切割：增加(50+英雄等级*8)点护甲穿透<br>唯一被动-残废：技能对首个命中的敌方英雄造成10%减速，持续3秒，该效果有8秒冷却时间</p></div></div></a></li><li><a href="javascript:void(0)"><img src="data:," alt><div class="itemFromTop"><div class="item-title clearfix"><img src="data:," alt id="Jpic"><div class="cons"><h4 id="Jname">宗师之力</h4><p id="Jprice">售价：1260</p><p id="Jtprice">总价：2100</p></div></div><div class="item-desc"><p>+80物理攻击<br>+20%暴击率<br>+500 最大法力<br>+500最大生命</p><p>唯一被动-强击：使用技能后，2秒内提升自身12%移动速度，并使得下次普通攻击造成额外0.8*物理攻击的物理伤害，冷却时间：3秒</p></div></div></a></li><li><a href="javascript:void(0)"><img src="data:," alt><div class="itemFromTop"><div class="item-title clearfix"><img src="data:," alt id="Jpic"><div class="cons"><h4 id="Jname">暴烈之甲</h4><p id="Jprice">售价：1230</p><p id="Jtprice">总价：2050</p></div></div><div class="item-desc"><p>+220物理防御<br>+900最大生命<br>+5%移速<br>+30物理攻击</p><p>唯一被动-无畏：每次受到伤害后，自身造成的所有伤害提升2%并增加2%的移速，这个效果最高可以叠加5层，最多提升10%的伤害输出和10%移速，持续3秒</p></div></div></a></li><li><a href="javascript:void(0)"><img src="data:," alt><div class="itemFromTop"><div class="item-title clearfix"><img src="data:," alt id="Jpic"><div class="cons"><h4 id="Jname">破军</h4><p id="Jprice">售价：1770</p><p id="Jtprice">总价：2950</p></div></div><div class="item-desc"><p>+180物理攻击 </p><p>唯一被动-破军：对生命值低于50%的敌人造成额外30%的伤害</p></div></div></a></li></ul>
+                            <p class="equip-tips">Tips：暴力输出装，容错率很低</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 英雄关系 E -->
+            <!-- 英雄视频 S -->
+            <div class="zk-con5 zk-con">
+                <div class="strategy-tlt">
+                    <h3 class="tlt fn"><i class="tb7 icon fl"></i>英雄攻略</h3>
+                    <a href="https://pvp.qq.com/raiders/" target="_blank" class="more" title="进入王者学院"><i class="tb8 icon fl"></i>更多</a>
+                </div>
+                <div class="strategy-box">
+                    
+                    <div class="video fl">
+                        <div class="video-info">
+                            <ul class="video-u1"><li class="li1"><a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=491866" title="【快速上手英雄技能】盘古" target="_blank"><img src="data:," width="172" height="104" alt="【快速上手英雄技能】盘古"><p class="p1">【快速上手英雄技能】盘古</p><div class="video-play"><p class="play-num fl"><i class="icon play"></i>1885.8万</p> <p class="play-time fl">4年以前</p></div></a></li><li><a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=832345" title="英雄玩法介绍——盘古品质升级：开天辟地，破晓之神。" target="_blank"><img src="data:," width="172" height="104" alt="英雄玩法介绍——盘古品质升级：开天辟地，破晓之神。"><p class="p1">英雄玩法介绍——盘古品质升级：开天辟地，破晓之神。</p><div class="video-play"><p class="play-num fl"><i class="icon play"></i>722万</p> <p class="play-time fl">11个月以前</p></div></a></li><li class="li1"><a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=491866" title="【快速上手英雄技能】盘古" target="_blank"><img src="data:," width="172" height="104" alt="【快速上手英雄技能】盘古"><p class="p1">【快速上手英雄技能】盘古</p><div class="video-play"><p class="play-num fl"><i class="icon play"></i>1885.8万</p> <p class="play-time fl">4年以前</p></div></a></li><li><a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&amp;tid=491872" title="【王者荣耀】新英雄介绍：盘古" target="_blank"><img src="data:," width="172" height="104" alt="【王者荣耀】新英雄介绍：盘古"><p class="p1">【王者荣耀】新英雄介绍：盘古</p><div class="video-play"><p class="play-num fl"><i class="icon play"></i>544.3万</p> <p class="play-time fl">4年以前</p></div></a></li></ul>
+                        </div>
+                    </div>
+                    <div class="strategy fl">
+                        <ul class="strategy-info"></ul>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- 英雄视频 E -->
+        </div>
+    </div>
+</div>
+<div class="pop-story" id="hero-story">
+    <div class="pop-hd">
+        英雄故事
+        <a href="javascript:void(0)" class="close"></a>
+    </div>
+    <div class="pop-bd">
+        <p>
+古神时代，大地魔种肆虐，尤以建木为多。神明们在建木建立起“温室”，如同一个巨大的培养仓，人类受诸神的培育和控制。当神明看到文明向错误的方向发展，便会不同程度修改文明进程。</p>
+<p>
+盘古是众神中武力最高的存在。祂以一柄众神合力打造的巨斧驱逐魔种，守护温室中的人类。每当祂来到温室，人们都将祂视为天神顶礼膜拜。直到有一天，匍匐的人群中，一个小女孩摆脱了父母的牵制，在盘古的掌心放下一只苹果。盘古最终接受了那只苹果。</p>
+<p>
+此后盘古经常偷偷造访“温室”，人们仍然惧怕祂，只有这个名叫曦姬的小女孩例外。通过曦姬，盘古有机会深入了解新人类。祂发现人类并非懵懂无知，他们早已发展出了自己的文明，而神明的控制与桎梏，才是痛苦的根源。</p>
+<p>
+盘古试图说服其他神明让人类自行发展自己的文明，但每次都不欢而散。人类最终无法忍耐，对温室发起了攻击，并炸毁了温室控制室。神明们认为人类与祂们想象中的背道而驰，要将一切推倒重来。盘古无法接受这样的结果，祂拿起祂的巨斧“温室之匙”从倒悬天一跃而下，在大火弥漫的人类家园，为人类开辟一条道路，就如祂千百年来一直做的那样。</p>
+
+<p>
+“人类啊，跟我来！”</p>
+<p>
+
+祂带领人类走向温室的边缘，一跃而起，手持巨斧猛然劈向了温室。然而温室内外时间流速并不相同，盘古让人类退后，自己身躯变大，站在人类前面独自抵挡洪流侵蚀。祂手中的巨斧碎成了一片又一片，被侵蚀的痛苦反而让祂爆发出惊人的能量，在这股能量的驱使下，祂不断用拳头一拳一拳将罩子彻底破开。然而，在时间洪流下，巍峨的身躯最终不断衰老枯竭，整个身体逐渐坍塌，最后化为一座山峰，仿佛凝固在了那个永恒的瞬间。</p>
+<p>
+
+盘古陨落了，祂用自己劈开了混沌的黑暗，却为人类带来了文明的破晓。</p>
+<p>
+
+而破晓之后便是黎明。</p><br><br><p><b><font color="#007ac0">曦姬的大朋友</font></b></p> <br><br><p>
+
+盘古一开始对新人类并没有倾注太多感情，对祂来说新人类更像是一个使命。每当祂来到温室，人们都将祂视为天神顶礼膜拜。祂也以神明应有的姿态，默然穿越跪拜于两侧的人群，内心毫无波澜。</p>
+<p>
+ 直到某天，匍匐的人群中，一个小女孩摆脱了父母的牵制，出现在祂面前。在众人的抽气声和女孩父母颤声呼喊声中，女孩奔向盘古。许是跑得太急，女孩被地上的石头绊了一下，向地面摔去。预期的疼痛却没有到来，巨大的手将她托起。盘古不知道自己是怎么了，在女孩摔倒的那一刻不由自主伸出了手，遥远的记忆被打开，好像在遥远过去的某一刻，他也做过相同的事情。女孩爬上盘古的手掌，掏出一个苹果，放在盘古的掌心。女孩的父母祈求天神饶恕，所有人都吓得发抖。女孩却恍然未觉，她甚至以为盘古嫌脏，将苹果在衣服上狠狠擦了擦。盘古经过良久的静默，最终小心接过了这只苹果。苹果对盘古的身躯而言实在太小，也毫无作用——祂早已失去包括味觉在内属于人类的“无用”感官，但小女孩的笑容让祂想起了古早前祂作为一个人类的感受。</p>
+<p>
+祂曾经是舰队国际的一名军人，在一次任务中从难民的洪流中救助过一个这样的小女孩，为了安抚小女孩祂递给了她一朵花，而饥饿至极的小女孩凶狠地吃掉了花朵，并且咬破了祂的手指。恍然间两个身影重叠，时光仿佛倒转回到了上万年前，一股莫名的情绪涌上心头。祂忽然想起，自己原本也是一个人类。</p>
+<p>
+盘古在这一刻，因为一个小女孩微不足道的一只苹果，对人类产生了情感。</p>
+<p>
+此后盘古经常偷偷造访“温室”，人们仍然惧怕祂，只有名叫曦姬的小女孩例外。曦姬是孩子王，在她的带领下，孩子们从畏惧变得大胆起来。在发现盘古并没有什么危险之后，越发肆无忌惮起来，有时甚至爬到盘古如山一般的肩上，给他戴上花环或者草冠。大人们每日提心吊胆，只有曦姬知道，盘古虽然一如往常的面无表情，但嘴角却微微扬起了一个微小的弧度。祂端坐如山，一动不敢动，是害怕小家伙们掉下去。祂令人无法忽视的身高，令新人类总是暗中观察祂，同时，祂也在观察人类。</p>
+<p>
+曦姬经常给这个大朋友讲故事，她的故事，她身边的故事，新人类的故事。盘古不说话，曦姬就自顾自地讲。而作为友情的见证，她也会给盘古带一些水果。这让盘古感觉很奇妙，渐渐地，他发现新人类对祂而言从一个抽象的使命，变为了更加具体的认知。每一个新人类都逐渐变得鲜活起来。他们会欢笑，会悲伤，会愤怒，虽然不用担心外敌侵扰，但人类也如同被豢养一般，严格遵从神明的旨意。他们重复着神明指定的劳作、饮食、祈祷、睡觉。日复一日，重复着出生、长大、生子、衰老、死亡。</p>
+<p>
+
+“今天有个人死了，大家埋葬了他。”曦姬神色低落，她知道盘古在听，这个大朋友不善言辞。比起语言，更喜欢付诸行动。而难得的，这次盘古回应了她。</p>
+<p>
+
+“这是生命的过程。”</p>
+<p>
+
+曦姬却摇了摇头。</p>
+<p>
+
+“我不是因为他的死而悲伤，我因为他的生而悲伤。活着，按照神明规定的方式活完一生，然后死了。这就是生命吗？”</p>
+<p>
+
+盘古有些惊讶，但他一时也不知如何作答。</p>
+<p>
+
+“我的哥哥，喜欢写诗。但神明只让他吟诵既定的文字。神明带领我们造出很高很高的楼阁，却禁止我们登楼远眺。”</p>
+<p>
+
+“因为神明掌握了知识与智慧，将带领人类诞生文明。”</p>
+<p>
+
+“文明是什么？神明的文明也是这么诞生的吗？”</p>
+<p>
+
+曦姬从没听过文明这个词汇，这引起了她的好奇。她对一切都是好奇且多思的，却令盘古陷入了更长久的沉默。</p>
+<p>
+
+盘古发现，自己回答不了这个问题，神明们试图创造出完美的文明，所以严格控制着人类发展的方向。但文明从来不是神明的馈赠，而是人类自己的选择。</p>
+<p>
+
+祂想，也许神明们犯了一个严重的错误。</p><br><br><p><b><font color="#007ac0"> 战友</font></b></p> <br><br><p>
+一</p>
+<p>
+
+女娲回忆起与盘古的相遇。山一样高大魁梧的汉子，却拥有一个过于温柔的名字，这是女娲对盘古的最初印象。所以当神明们因创世而成神时，女娲向祂提议了“盘古”这个名字。</p>
+<p>
+
+“好。”</p>
+<p>
+盘古很轻易接受了这个安排。女娲认为盘古是欣然接受的——这个称呼仿佛天然为盘古所准备，但在盘古看来，从踏出方舟的那一刻起，原本的他就已经死了，原本的名字也成为了没有意义的文字组合。盘古心中，再无姓名，只余使命。</p>
+<p>
+
+这里一片荒芜，魔种遍生。神明们并肩作战，配合无间。在女娲的建议下，众神为盘古打造了一柄永不会被损坏的巨斧，盘古用它为人类驱逐魔种，开天辟地。</p>
+<p>
+
+一开始很顺利。新人类被女娲创造出来，放入温室中培育。但神明无法忍受漫长的培育过程，于是尝试在温室中催化文明进程。结果令诸神感到恼火，催化出的文明总是朝着神明们认为错误的方向发展。神明们不停地开会讨论为什么人类文明没有按照预期朝着完美文明的方向前进。然而激烈的讨论没有得到有效的结论，神明们开始加强对人类的控制，祂们不断计算着人类文明发展的最优解。</p>
+<p>
+
+盘古厌恶开会，比起毫无结果的讨论和无休无止的争执，盘古更喜欢用行动解决问题。祂面无表情在装饰华丽的倒悬天的殿堂内坐得笔直，以致于帝俊一次睡醒后见到这样的盘古，忍不住用只有彼此能听见的声音调侃：</p>
+<p>
+
+“也许你也可以考虑在梦中养只……宠物？”</p>
+<p>
+
+盘古没有回答，但早已给出了自己的答案——祂永远坐得笔直。祂被视为女娲的拥护者，在一些重要的时刻，祂总站在女娲这边。</p>
+<p>
+
+神明们为人类的未来激烈争吵，总是以盘古对女娲的支持而终结。某次会后，女娲忍不住叫住了盘古。盘古从女娲眼中看到了些许疑惑，于是掂了掂手里的斧子：</p>
+<p>
+
+“我不懂如何培育人类，战斗更适合我。但我知道你对人类如同母亲。”</p>
+<p>
+“神爱世人，他们在我手中被创造。”</p>
+<p>
+
+盘古点点头：“纵使严厉，爱亦深沉。”</p>
+<p>
+
+女娲的声音充满憧憬：“我们将创造未曾实现过的世界，以证明命运的误判，证明我们是不应被毁灭的一族。”</p>
+<p>
+
+盘古沉默片刻，低声说道：“为了人类。”</p>
+<p>
+
+女娲则有些激动：“为了人类文明。”</p>
+
+<p><br>
+二</p>
+<p>
+
+首先发现盘古心思的也是女娲。盘古从温室回到倒悬天，女娲已经等候多时。</p>
+<p>
+
+“我知道你去了哪里，你不应该去。”</p>
+<p>
+
+新人类的处境令盘古心事重重，声音也比以往更沉重了些。</p>
+<p>
+
+“为新人类开天辟地，延续文明，是我们的职责。”</p>
+<p>
+
+女娲看着盘古的眼神有点意味深长：</p>
+<p>
+
+“延续人类文明，而不是执着于人类的意愿。人类如初生稚子，无法把握自己的命运，服从神明的旨意是最优法则。这才是神爱世人的方式。”</p>
+<p>
+
+女娲的想法代表了除盘古以外所有神明的想法，祂们曾是为了新人类的延续并肩作战的战友，但此刻，盘古觉得这战友有些陌生。女娲则认为盘古的行为不可理喻。习惯主宰一切的神明们逐渐忘却了，创世成神之前，祂们也是人类的一员。他们曾奋起反抗桎梏，而如今，却将这种桎梏一遍又一遍地加诸于新人类，以求得一个最优解。盘古试图解释向女娲解释祂所看到的一切：</p>
+<p>
+
+“人类不是没有意识的木偶，以爱为名的桎梏才是痛苦的根源。”</p>
+<p>
+
+女娲则不以为然。</p>
+<p>
+
+“在正确的道路上，阵痛在所难免！人类曾经犯过错误，我们都是亲历者。新的历史理应由我们创造。”</p>
+<p>
+
+“人类的命运从不来自神明的馈赠，而是人类自己的选择！”</p>
+<p>
+
+“你的无知会毁了这一切！”</p>
+<p>
+
+那天，盘古与女娲爆发了前所未有的激烈争吵，怒火充斥着祂们，仿佛把所有压抑的情绪爆发出来。而后是更长久的沉默。</p>
+<p>
+
+“那枚果子……“最后是女娲打破僵局：“除了腐坏在被改造过的身体中，对你没有任何好处，你应该知道你永远无法消化它。这是为了你好……”</p>
+<p>
+
+盘古沉默以对。</p>
+<p>
+
+“好吧，也许你并不这么认为。”</p>
+<p>
+
+女娲转头离开了盘古的住所，但祂们都知道一切还没结束。</p>
+
+
+<p><br>
+三</p>
+<p>
+
+盘古在温室中暂住了下来，他帮助人类向神明展示人类自身发展出的文明，展示人类已经具备了完整的文明要素。他相信经过漫长的努力，神明终究会想起文明的本质，想起曾经的人类也曾创造出辉煌的文明。然而结果总不尽如人意，高高在上的神明们无法理解盘古的行为。在盘古试图从中斡旋的时候，温室中的人类，某些思想也在萌芽。</p>
+<p>
+
+当人类终于不堪忍受，发起反抗的那一天，帝俊告诉盘古，新人类中有人认为人生是一场束缚，是一场囚禁，号召群众冲破牢笼获得自由。人类对温室控制室发起了攻击，他们炸毁了温室控制室。</p>
+<p>
+
+“时间在温室内外是不同的，你知道温室外面是什么。”</p>
+<p>
+
+帝俊静静地看着盘古，以毫无感情的语调对这件事下了定义：</p>
+<p>
+
+“这是在求死。”</p>
+<p>
+
+这个消息在倒悬天炸开了锅。</p>
+<p>
+
+“他们竟然认为生命没有意义！”</p>
+<p>
+
+“就算我们宽恕了他们这次的行为。这种思想也会在人类种群中带来极大的骚乱，最终让人类文明走向灭亡。“</p>
+<p>
+
+神明们七嘴八舌讨论着，没有人理会盘古，只有盘古心中充满了愤怒。祂从来不是一个能言善辩的神祗，祂明白导致一切的正是神明的控制，但神明们显然不这么认为。盘古孤独地愤怒着。</p>
+<p>
+
+最后，盘古劈开了温室，震撼了所有神明。</p>
+<p>
+
+整个倒悬天一片寂静，针落可闻。神明们看着盘古逆着时间行走，挡在新人类面前，斧子破碎成一块一块，最后自己坍缩成一座大山。祂们无法理解盘古的自杀行为，只有女娲明白，盘古在用死亡在向神明展示一种人类文明的可能性。</p>
+<p>
+
+人类的命运从不来自神明的馈赠，而是人类自己的选择。</p>
+<p>
+
+盘古死后，人类在神职者的帮助下在建木以外更旷阔的地方生根发芽，他们抵御魔种，在神职者的帮助下，发展出适应自身的生存方式，成立国家。他们坚信世界广阔，因此不断迁徙，寻找真正属于自己的家园。人类中只有很小一部分留在了建木，他们自称归山一族。</p>
+<p>
+
+“是我们错了吗？”</p>
+<p>
+
+女娲没有建立第二个温室，而是尝试如盘古一般观察人类，祂发现离开温室的人类虽然面临危险，也发展出了更多对抗的智慧。困境与智慧是一体两面，自由虽然带来了未知，也带来了文明发展的可能性。于是女娲也派出了自己的神职者，帮助新人类抵御魔种，发展属于自己的文明。</p>
+<p>
+
+祂看着盘古用生命铸就的“遗产”，声音庄严而沉重：</p>
+<p>
+
+“人类需要发展空间，神明也需要更多宽容。”</p>
+<p>
+
+帝俊罕见地赞同了女娲的话。</p>
+<p>
+
+“我们的战友，值得尊重。”</p><br><br><p><b><font color="#007ac0">归山                                                                                                                                  </font></b></p> <br><br><p>
+
+曦姬在人群中发出撕心裂肺的呼喊，盘古宽阔的背影在她眼中逐渐凝立成瘦如生铁的筋骨，坍塌成了一座大山。就算在最后时刻，祂的目光始终注释着人类。</p>
+<p>
+
+盘古就这样消隐了，祂的身躯屹立成建木最高的山峰，至今仍可见人形。曦姬从祂手心里捡起了巨斧“温室之匙”的一块碎片。她带着碎片，带领在那场浩劫中失去亲人的新人类小孩，离开了人类族群。从此人类中多了信奉破晓之神的归山一族。</p>
+<p>
+
+由于魔种活动频繁，大部分新人类最后选择离开建木，寻找更加安定而祥和的土地。只有归山一族例外。他们在建木深山中隐居，以“温室之匙”的力量锤炼自身，抵御魔种，发展繁衍。同时，寻找“温室之匙”的其他碎片的下落。</p>
+<p>
+
+他们相信，当巨斧被拼凑完成的那天，就是破晓武神重临之日。</p>
+
+<p>
+
+“哈哈哈，很精彩的故事，比海都那些吹牛家们的海怪故事有意思多了。”</p>
+<p>
+
+驰骋于云中漠地的商队有时候会捎带风尘仆仆的旅者一程，在赶车的途中，闲聊成了打发时间的手段。与商人一起坐在马车前部的是一个老者和一个少女，他们的身形掩藏斗篷中。</p>
+<p>
+
+“然后呢，他们集齐了吗？”</p>
+<p>
+
+少女笑了笑，眉眼如初生的晨阳，以一种充满温暖的声音回应道：</p>
+<p>
+
+“没有，他们收集了大部分。因为怀着不同目的的神祗们各自带走了一些……”随后，她仿佛自言自语：“但总会找到的。”</p>
+<p>
+
+马车来到一个岔路口，老者与少女下了车。赶车的商人似乎对盘古的故事意犹未尽。</p>
+<p>
+
+“我们要去参加今年的大巴扎，你们呢？”</p>
+<p>
+
+“听说玉城有关于魔神的传说，我们想去那里。”</p>
+<p>
+
+“那就在此分别了，愿圣火保佑你。”</p>
+<p>
+
+说罢，商人架着载满货物的马车缓缓离去。少女的声音则淹没在了风沙中。</p>
+<p>
+
+“也愿破晓之神保佑你。”</p><br><br><p><b><font color="#007ac0">创世之书二卷（出自《起源纪要》残卷）</font></b></p> <br><br><p>
+
+创世之书（起草人：盘古，女娲）</p><br><br><p>
+
+我们来自混沌，生于虚无。</p>
+<p>
+
+先祖和我们自身，在地球时代做尽恶事，毁坏自然，屠戮生灵，最终被宇宙抛弃到了这颗荒凉的星球。为了生存，我们在迁徙的方舟上改造了自己，过去的名字、身份、机体、感官都不再属于我们。</p><br><br><p>
+
+但记忆仍然属于我们。</p><br><br><p>
+
+我们将创造未曾出现过的世界，以证明我们种群的意义与价值，美德和格调；</p>
+<p>
+
+我们将创造未曾实现过的世界，以证明命运的误判，证明我们是不应该被毁灭的一族。</p>
+<p>
+
+我们将成为大陆之源泉，永不使大陆作我们之源泉。</p><br><br><p>
+
+创世之书（定稿）（拟定人：帝俊）</p><br><br><p>
+
+神诞生于辉煌的文明，是万物中的至高，神秘力量的代言。</p>
+<p>
+
+神来临此地，寄盼与大陆众生共享此地，创造王者大陆未曾领略的世界。</p><br><br><p>
+
+
+神召唤众生协力创世，承诺不因魔种野蛮而使之劳作，不因优劣而划分族群等级。</p>
+<p>
+
+助神创世者必得丰厚回馈。</p><br><br><p>
+
+神将向众生昭示力量与权威。</p>
+<p>
+
+以创世之名，神将永久以暴力手段消灭恶徒与愚人。</p>    </div>
+</div>
+<div class="pop-story" id="history">
+    <div class="pop-hd">
+        历史上的TA
+        <a href="javascript:void(0)" class="close"></a>
+    </div>
+    <div class="pop-bd">
+        <p></p>
+    </div>
+</div>
+
+
+
+<div class="ost_box ost_bg" id="ost_box" style="position:absolute"><ul class="ost_inner ost_lsn"><li class="ost_logo ost_h40 ost_fl ost_bg"><a rel="noopener" href="https://game.qq.com/?ADTAG=IED.InnerCop.gameWeb.topNav" target="_blank" class="ost_blnk ost_hdn" title="腾讯游戏logo">腾讯游戏logo</a></li><li id="ost_g" class="ost_ad ost_h40 ost_fl"><img class="ost_nb" id="ost_go" src="data:," alt></li><li class="ost_total ost_ml10 ost_fr"><h3 class="ost_czsh ost_h40"><a rel="noopener" target="_blank" href="https://game.qq.com/web201910/jiazhang.html?ADTAG=gamepcbanner">成长守护平台</a></h3><h3 class="ost_title ost_h40" id="ost_t">腾讯游戏热门推荐<sup class="ost_icon_reddot" id="ost_rank_v"></sup></h3><div class="ost_pop" id="ost_p"></div></li><li class="ost_fr ost_log ost_bg" id="ost_log"></li></ul><div id="ost_d" class="ost_big"></div></div>
+
+
+
+
+<!-- <script src="//pvp.qq.com/web201605/js/loudlinks.js"></script> -->
+
+<!-- <script src="//lol.qq.com/m/public/Activity_Comm.js"></script> -->
+
+
+
+<div><div class="down_detail" exposure-tag="down_detail,内页下载浮窗"><div class="d_open"><img class="d_qrcode" src="data:," width="107" height="107" alt="下载游戏"> </div></div> </div>
+
+<div id="loginDiv" style="height:368px;width:622px;border:0px;padding:0px;margin:0px;position:absolute;z-index:100002;top:20%;left:30%;display:none"></div></body></html>

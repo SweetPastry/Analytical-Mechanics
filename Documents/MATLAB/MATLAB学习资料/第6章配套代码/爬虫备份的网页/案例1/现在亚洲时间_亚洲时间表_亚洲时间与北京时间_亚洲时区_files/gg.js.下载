@@ -1,0 +1,212 @@
+var showtype=1;
+var windowData = {};
+(function () {
+    setWindowData();
+}());
+function setWindowData() {
+    windowData.baseurl = 'http://replog.tianqistatic.com/';
+    windowData.url = window.location.href;
+    windowData.ratio = "";
+    if (window.screen.width && window.screen.height) {
+        windowData.ratio = (window.screen.width + "x" + window.screen.height);
+    }
+    windowData.refer = document.referrer;
+    windowData.setCookie = false;
+    windowData.coordinate = "";
+    windowData.ExistScroll = false;
+    windowData.platform = "";
+    windowData.clicknum = 0;
+    windowData.scrollnum = 0;
+    windowData.isShowad = false;
+    var exdate = new Date(new Date().getTime() + 365 * 24 * 60 * 1000);
+    windowData.userid = getCookie('UserId') || "";
+    if (windowData.userid.length == 0) {
+        windowData.userid = getUserid();
+        exdate.setTime(exdate);
+        document.cookie = "UserId=" + windowData.userid + ";path=/;expires=" + exdate.toGMTString();
+    }
+    windowData.userAgent = navigator.userAgent;
+    windowData.isSpider = isSpider();
+    windowData.plugins = navigator.plugins.length;
+    windowData.setCookie = getCookie('UserId').length > 0 ? true : false;
+    var element = document.documentElement;
+    var hasScrollbar = element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;
+    if (window.screenY > 0 || hasScrollbar) {
+        windowData.ExistScroll = true
+    }
+    loadPageReport(windowData);
+    windowData.isShowad = isRefinfo();
+    document.addEventListener("click", function(e){
+        if (e.isTrusted && windowData.clicknum === 0) {
+            windowData.clicknum++;
+            windowData.coordinate = e.clientX + "x" + e.clientY;
+            clickReport(windowData,e.isTrusted);
+            document.removeEventListener('click',arguments.callee);
+        }
+    });
+    document.addEventListener("scroll", function(e){
+        if (e.isTrusted && windowData.scrollnum === 0) {
+            windowData.scrollnum++;
+            scrollReport(windowData,e.isTrusted);
+            document.removeEventListener('scroll',arguments.callee);
+        }
+    });
+}
+function getCookie(cookieName) {
+    var name = cookieName + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var cookieArray = decodedCookie.split(';');
+    for (var i = 0; i < cookieArray.length; i++) {
+        var cookie = cookieArray[i];
+        while (cookie.charAt(0) === ' ') {
+            cookie = cookie.substring(1);
+        }
+        if (cookie.indexOf(name) === 0) {
+            return cookie.substring(name.length, cookie.length);
+        }
+    }
+    return "";
+}
+function getUserid() {
+    return (+new Date() + Math.random().toString(10).substring(2, 6));
+}
+function isSpider() {
+    var ua = navigator.userAgent;
+    ua = ua.toLowerCase();
+    return /spider|googlebot|bingbot|gptbot|crawl|yahoo|msn|iaja|infogems|voyager/i.test(ua);
+}
+// 上报信息
+function loadPageReport(param) {
+    new Image().src = windowData.baseurl + "report/v1/?param=" + param.url + "|" + param.ratio + "|" + param.userAgent + "|" + param.refer + "|" + param.plugins + "|" + param.ExistScroll + "|" + param.userid;
+}
+//滑动上报
+function scrollReport(param,isTrusted) {
+    new Image().src = windowData.baseurl + "scroll/v1/?param=" + param.url + "|" + param.userid + "|" + isTrusted;
+}
+//点击上报
+function clickReport(param,isTrusted) {
+    new Image().src = windowData.baseurl + "click/v1/?param=" + param.url + "|" + param.coordinate + "|" + param.userid + "|" + isTrusted;
+}
+function isRefinfo(){
+    var b=false;
+    var a=document.referrer;
+    if(a!=""&&a!=null&&a!=undefined){
+        b=true
+    }
+    windowData.isRefinfo = b;
+    return b
+}
+function showag(){
+    if (windowData.refer && windowData.refer != "" && windowData.ratio != "" && windowData.setCookie && !windowData.isSpider) {
+        return true;
+    }
+    return false;
+}
+
+function bwRedirect() {
+    var sUserAgent = navigator.userAgent.toLowerCase();
+    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+    var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+    var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+    var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+    var bIsAndroid = sUserAgent.match(/android/i) == "android";
+    var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+    var mobileConfirm = false;
+    if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM){
+        mobileConfirm = true
+    }else{
+        mobileConfirm = false
+    }
+
+    var useragent=navigator.userAgent.toLowerCase();
+    var localPC = 111;
+    var platform=window.navigator.platform
+    if(platform == 'Win32' || platform == 'Win64' || platform =='MacIntel'){
+        localPC = true;
+    }else{
+        localPC = false;
+    }
+    return localPC;
+}
+function time_730_01(){
+    if (!showag()){
+        return false;
+    }
+    /*【tianqi】pc-730*120 多图 创建于 2019/3/21 var cpro_id = "u3707214"; */
+    document.writeln("<script type=\'text/javascript\' src=\'//yptqys.tianqistatic.com/production/js/api/3s04.js?cxpyd=ymgt\'></script>");
+}
+
+function time_250_300(){
+    if (!showag()){
+        return false;
+    }
+    /*【tianqi】pc-250*300 多图 创建于 2019/3/21 var cpro_id = "u3707222"; */
+    document.writeln("<script type=\'text/javascript\' src=\'//yptqys.tianqistatic.com/production/js/resource/fb9a1.js?bwo=xcxlll\'></script>");
+}
+
+function time_01(num=0){
+    if (!showag()){
+        return false;
+    }
+    if (isRefinfo()) {
+        if (showtype == 2) {
+            var gnum = 2970750+num;
+            document.writeln("<script type=\"text/javascript\">");
+            document.writeln("    var mediav_ad_pub = \'yuHZW0_"+gnum+"\';");
+            document.writeln("    var mediav_ad_width = \'1024\';");
+            document.writeln("    var mediav_ad_height = \'130\';");
+            document.writeln("</script>");
+            document.writeln("<script type=\"text/javascript\" language=\"javascript\" charset=\"utf-8\"  src=\"//static.mediav.com/js/mvf_g2.js\"></script>");
+        } else {
+            /*【time】pc-1024*130 创建于 2019/11/04 var cpro_id = "u5213676"; */
+            document.writeln("<script type=\'text/javascript\' src=\'//yptqys.tianqistatic.com/site/id_asm/v/common/ce/c.js\'></script>");
+        }
+    }
+}
+
+function time_300_01(){
+    if (!showag()){
+        return false;
+    }
+    /*【time】pc-300*300 创建于 2019/11/04 var cpro_id = "u5214430"; */
+    document.writeln("<script type=\'text/javascript\' src=\'//yptqys.tianqistatic.com/source/w_ro_ga/production/nnj_x.js\'></script>");
+}
+
+function time_300_001(){
+    if (!showag()){
+        return false;
+    }
+    /*【pc-tianqi】右侧300*300橱窗 创建于 2022-07-22 东方广告;*/
+    var Referer = document.referrer;
+    Referer = Referer.toLowerCase();
+    if(Referer.indexOf('gov.cn') <=0  && document.getElementById("dsp_box")) {
+        /*显示东方的广告*/
+        document.writeln("<script src=\"https://dsp01.admama.com/v11.min.js\"></script>");
+        document.writeln("			<script>");
+        document.writeln("				(window.slotbytjdsp = window.slotbytjdsp || []).push({");
+        document.writeln("					qid: \'04478\',");
+        document.writeln("					id: 102298,");
+        document.writeln("					element: \'dsp_box\',");
+        // document.writeln("					istest: true // 测试环境时有此字段，线上环境为 false 或者删除此字段");
+        document.writeln("				});");
+        document.writeln("		</script>");
+    }
+}
+
+function time_760_01(){
+    if (!showag()){
+        return false;
+    }
+    /*【time】pc-760 创建于 2019/11/04 var cpro_id = "u5214896"; */
+    document.writeln("<script type=\'text/javascript\' src=\'//yptqys.tianqistatic.com/production/n-i/resource/fxre/k/production/qh.js\'></script>");
+}
+
+function time_760_02(){
+    if (!showag()){
+        return false;
+    }
+    /*【time】pc-760*300 创建于 2019/11/04 var cpro_id = "u5215096"; */
+    document.writeln("<script type=\'text/javascript\' src=\'//yptqys.tianqistatic.com/common/gby/static/qky/openjs/h-j-a.js\'></script>");
+}

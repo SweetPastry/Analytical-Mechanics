@@ -1,0 +1,50 @@
+p { 
+    text-align: justify; 
+    hyphens: auto;
+}
+
+table {
+    display: table;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+figure {
+    margin: 0.5em auto;
+}
+figure > img {
+    display: block;
+    margin: 0 auto;
+    page-break-inside: avoid;
+    text-align: center;
+}
+figcaption { 
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+aside {
+  font-size: 0.9em;
+  max-width: 300px;
+  padding: 0 0 0 1em;
+  margin: 0 0 0 1em;
+  float: right;
+}
+
+aside > *:first-child {
+  margin-top: 0;
+}
+aside > *:last-child {
+  margin-bottom: 0;
+}

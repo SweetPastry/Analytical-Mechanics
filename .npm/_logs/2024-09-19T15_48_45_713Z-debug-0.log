@@ -1,0 +1,16 @@
+0 verbose cli /opt/homebrew/Cellar/node/22.8.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@10.8.2
+2 info using node@v22.8.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/pastrysweet/.npmrc
+5 silly config load:file:/opt/homebrew/etc/npmrc
+6 verbose title npm prefix
+7 verbose argv "prefix" "--global"
+8 verbose logfile logs-max:10 dir:/Users/pastrysweet/.npm/_logs/2024-09-19T15_48_45_713Z-
+9 verbose logfile /Users/pastrysweet/.npm/_logs/2024-09-19T15_48_45_713Z-debug-0.log
+10 verbose cwd /
+11 verbose os Darwin 23.6.0
+12 verbose node v22.8.0
+13 verbose npm  v10.8.2
+14 verbose exit 0
+15 info ok

@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "Exporter": {
+    "extra_template_paths": [
+      ".",
+      "/opt/anaconda3/envs/MyEnv/lib/python3.12/site-packages/jupyter_contrib_nbextensions/templates",
+      "/opt/anaconda3/envs/ManimPy3.8/lib/python3.8/site-packages/jupyter_contrib_nbextensions/templates"
+    ],
+    "preprocessors": [
+      "jupyter_contrib_nbextensions.nbconvert_support.CodeFoldingPreprocessor",
+      "jupyter_contrib_nbextensions.nbconvert_support.PyMarkdownPreprocessor"
+    ]
+  }
+}
