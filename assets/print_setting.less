@@ -1,0 +1,91 @@
+//  打印属性设定，默认纸张大小为A4。
+
+
+// *************
+// !打印样式设定
+// !只列出有更改的样式,
+// !如果有其他样式需要更改,
+// !从显示样式处粘贴至下方并进行修改既可
+// *************
+
+@media print {
+
+    :root {
+        --color-text: #000;
+        --color-em: #000;
+
+        --color-text: var(--color-text);
+        --color-title1: var(--color-em);
+        --text-shadow: none;
+        --text-shadow-strong: none;
+
+        --bg-body: #fff;
+
+        --bg-quota: var(--theme-color-light);
+        --bg-codeblock: var(--theme-color-light);
+
+        --shadow-weak: none;
+        --shadow-base: none;
+
+        --margin-block: 1rem auto;
+        --margin-text: 0rem;
+        --margin-h1: 10rem auto 5rem;
+
+        .markdown-preview.markdown-preview {
+            --font-weight: 300;
+            --font-weight-medium: 400;
+            --font-weight-bold: 800;
+            --font-size: 11pt;
+            --font-table-size: 9.5pt;
+            --font-kai-size: 11.5pt;
+            --line-height: 18pt;
+
+            --font-title-cn: var(--fong-song-cn-print);
+            --font-title-jp: var(--fong-song-jp-print);
+
+            --font-text-cn: var(--fong-song-cn-print);
+            --font-text-jp: var(--fong-song-jp-print);
+            --font-table-cn: var(--font-text-cn);
+            --font-table-jp: var(--font-text-jp);
+
+            --font-sem-cn: var(--font-hei-cn);
+            --font-sem-jp: var(--font-hei-jp);
+            --font-em-jp: var(--font-text-jp);
+
+            --font-title1: 800 20pt/2.50rem var(--font-title-cn);
+            --font-title2: 800 16pt/1.75rem var(--font-title-cn);
+            --font-title3: 600 16pt/1.50rem var(--font-hei-cn);
+            --font-title4: 600 14pt/1.50rem var(--font-kai-cn);
+            --font-title5: 500 14pt/1.25rem var(--font-fangsong);
+            --font-title6: 500 12pt/1.25rem var(--font-fangsong);
+
+            --font-quota: 400 11.5pt/18pt var(--font-quota-cn);
+        }
+    }
+
+    @page {
+        //通过size来控制打印大小，可选值为任意的尺寸组合或者固定的页面尺寸。例如，size:8in 11in(width*height);size:a4 landscape;size:a4 portrait
+
+        // for a4
+        // 此處 page 控制所有頁面的樣式
+        size: A4;
+        counter-reset: footnote;
+
+        // 水印设定
+        @prince-overlay {
+            color: rgba(0, 0, 0, 0.02);
+            content: "商无辛";
+            font-size: 10pt;
+            font-family: var(--font-hei-cn);
+            vertical-align: top;
+        }
+
+        // 脚注设定
+        @footnotes {
+            padding-top: 10pt;
+            border-clip: 10rem;
+            border-top: 0.6pt solid var(--theme-color-4-weak);
+            margin: .5rem 1rem;
+        }
+    }
+}
