@@ -8,5 +8,6 @@
     "markdown-preview-enhanced.HTML5EmbedIsAllowedHttp": true,
     "markdown-preview-enhanced.HTML5EmbedUseLinkSyntax": true,
     "markdown-preview-enhanced.printBackground": true,
-    "markdown-preview-enhanced.usePandocParser": true
+    "markdown-preview-enhanced.usePandocParser": true,
+    "iis.configDir": ""
 }
