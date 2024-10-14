@@ -97,3 +97,69 @@ $$
 $$
 \dot{x}=\frac{\sqrt{3}}{2}\sqrt{gl}.
 $$
+
+## L03.05
+设 $\dot{\varphi}=\omega$, 系统的 Lagrange 量为
+$$
+L=T-V=\frac{1}{2}I\dot{\varphi}^2+\frac{1}{2}m\left[ \left( R\dot{\theta} \right) ^2+\left( R\sin \theta \dot{\varphi} \right) ^2 \right] -mgR\cos \theta ,
+$$
+注意到表达式内不显含时间, 则 Hamilton 量是关于时间守恒的,
+$$
+H=\frac{\partial L}{\partial \dot{\varphi}}\dot{\varphi}+\frac{\partial L}{\partial \dot{\theta}}\dot{\theta}-L=\frac{1}{2}I\dot{\varphi}^2+\frac{1}{2}mR^2\dot{\theta}^2+\frac{1}{2}mR^2\sin ^2\theta \dot{\varphi}^2+mgR\cos \theta =\frac{1}{2}I\omega _{0}^{2}+mgR,
+$$
+同时又注意到表达式内不显含 $\varphi$, 所以这是一个可遗坐标, 有
+$$
+\frac{\partial L}{\partial \dot{\varphi}}=\left( I+mR^2\sin ^2\theta \right) \dot{\varphi}=I\omega _0,
+$$
+分别代入 $\theta =\frac{\pi}{2}, \pi$ 得到两个方程组
+$$
+\begin{align*}
+&\begin{cases}
+	\dfrac{1}{2}I\dot{\varphi}_{B}^{2}+\dfrac{1}{2}mR^2\dot{\theta}_{B}^{2}+\dfrac{1}{2}mR^2\dot{\varphi}_{B}^{2}=\dfrac{1}{2}I\omega _{0}^{2}+mgR,\\\\
+	\left( I+mR^2 \right) \dot{\varphi}_B=I\omega _0,\\
+\end{cases}
+\\\\
+&\begin{cases}
+	\dfrac{1}{2}I\dot{\varphi}_{C}^{2}+\dfrac{1}{2}mR^2\dot{\theta}_{C}^{2}-mgR=\dfrac{1}{2}I\omega _{0}^{2}+mgR,\\\\
+	I \dot{\varphi}_C=I\omega _0.\\
+\end{cases}
+\end{align*}
+$$
+解得
+$$
+\begin{align*}
+&\begin{cases}
+	\dot{\varphi}_B=\dfrac{I\omega _0}{I+mR^2},\\\\
+	v_B=\sqrt{\left( R\dot{\theta}_B \right) ^2+\left( R\dot{\varphi}_B \right) ^2}=R\sqrt{\dfrac{2g}{R}+\dfrac{I\omega _{0}^{2}}{I+mR^2}+\dfrac{I^2\omega _{0}^{2}}{\left( I+mR^2 \right) ^2}},\\
+\end{cases}
+\\\\
+&\begin{cases}
+	\dot{\varphi}_C=\omega _0,\\\\
+	v_C=R\dot{\theta}_C=2\sqrt{gR}.\\
+\end{cases}
+\end{align*}
+$$
+
+> 为什么 $v_B>\sqrt{2gR}$ ?
+
+圆环还要被轨道拽这走, 获得了一个横向的速度, 也就是轨道的侧面都圆环有正功.
+
+## L03.14
+用球坐标表示, 但是天顶角的极轴改为朝下, 得到
+$$
+L=\frac{1}{2}mR^2\dot{\varphi}^2+\frac{1}{2}mR^2\sin ^2\varphi \dot{\theta}^2+mgR\cos \varphi ,
+$$
+注意到表达式中不显含时间, 则关于 Hamilton 量守恒, 又注意到表达式中不显含 $\theta$, 则关于该坐标的广义动量守恒,
+$$
+\begin{cases}
+	H=\dfrac{1}{2}mR^2\dot{\varphi}^2+\dfrac{1}{2}mR^2\sin ^2\varphi \dot{\theta}^2-mgR\cos \varphi ,\\\\
+	J=\dfrac{\partial L}{\partial \dot{\theta}}=mR^2\sin ^2\varphi \dot{\theta},\\
+\end{cases}
+$$
+联立两式可以消除 $\dot{\theta}$, 得到
+$$
+t=\int_0^t{\mathrm{d}t}=\int_{\varphi _0}^{\varphi}{\sqrt{\frac{m^2R^4\left( 1-\cos ^2\varphi \right)}{2m^2gR^3\cos ^3\varphi +2mR^2H\cos ^2\varphi -2m^2gR^3\cos \varphi -2mR^2H+J}}}\mathrm{d}\varphi,
+$$
+$$
+\theta =\theta _0+\int_0^t{\frac{J}{mR^2\sin ^2\varphi}\mathrm{d}t}.
+$$
