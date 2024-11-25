@@ -365,7 +365,7 @@ $$
 \end{array} \right. 
 $$
 
-But if subsetute variables with constraint advant $\tilde{L}=\frac{1}{2}m\left( \dot{\theta}^2+\sin ^2\theta \dot{\phi}^2 \right) a^2-mga\cos \theta$, we derive reduced Lagrangian,
+But if subsetute variables with constraint advant $\tilde{L}= \dfrac{1}{2}m\left( \dot{\theta}^2+\sin ^2\theta \dot{\phi}^2 \right) a^2-mga\cos \theta$, we derive reduced Lagrangian,
 $$
 \left\{ \begin{array}{c}
 		\dfrac{\mathrm{d}}{\mathrm{d}t}\dfrac{\partial \tilde{L}}{\partial \dot{\theta}}-\dfrac{\partial \tilde{L}}{\partial \theta}=0,\\
@@ -381,13 +381,13 @@ $$
 
 ### (c)
 $$
-\tilde{H}_q=\frac{1}{2}m\left( \dot{\theta}^2+\sin ^2\theta \dot{\phi}^2 \right) a^2+mg\mathrm{a}\cos \theta .
+\tilde{H}_q= \dfrac{1}{2}m\left( \dot{\theta}^2+\sin ^2\theta \dot{\phi}^2 \right) a^2+mg\mathrm{a}\cos \theta .
 $$
 
 ### (d)
-For the reason $\frac{\mathrm{d}}{\mathrm{d}t}\tilde{H}_q=\frac{\partial}{\partial t}\tilde{L}=0$ we have
+For the reason $ \dfrac{\mathrm{d}}{\mathrm{d}t}\tilde{H}_q= \dfrac{\partial}{\partial t}\tilde{L}=0$ we have
 $$
-\frac{1}{2}m\left( \dot{\theta}^2+\sin ^2\theta \dot{\phi}^2 \right) a^2+mg\mathrm{a}\cos \theta =\frac{1}{2}ma^2\sin ^2\theta _0\dot{\phi}_{0}^{2}+mga\cos \theta _0.
+ \dfrac{1}{2}m\left( \dot{\theta}^2+\sin ^2\theta \dot{\phi}^2 \right) a^2+mg\mathrm{a}\cos \theta = \dfrac{1}{2}ma^2\sin ^2\theta _0\dot{\phi}_{0}^{2}+mga\cos \theta _0.
 $$
 Delete $\dot{\phi^2}$ we get
 $$
@@ -395,27 +395,27 @@ Q_{r}^{\left( \mathrm{cons} \right)}=\lambda =-3mg\cos \theta +2mg\cos \theta _0
 $$
 and
 $$
-\theta _{\max}=\mathrm{arc}\cos \frac{2g\cos \theta _0+a\dot{\phi}_{0}^{2}\sin ^2\theta _0}{3g}.
+\theta _{\max}=\mathrm{arc}\cos  \dfrac{2g\cos \theta _0+a\dot{\phi}_{0}^{2}\sin ^2\theta _0}{3g}.
 $$
 
 
 ### (e)
 We have
 $$
-\theta _{\max}=\mathrm{arc}\cos \frac{2\cos \theta _0+\gamma \sin ^2\theta _0}{3}.
+\theta _{\max}=\mathrm{arc}\cos  \dfrac{2\cos \theta _0+\gamma \sin ^2\theta _0}{3}.
 $$
 Let $\gamma=0$,
 $$
-\theta _{\max}=\mathrm{arc}\cos \frac{2\cos \theta _0}{3},
+\theta _{\max}=\mathrm{arc}\cos  \dfrac{2\cos \theta _0}{3},
 $$
 and 
 $$
-\theta _{\max}=\mathrm{arc}\cos \frac{2}{3}.\qquad (\theta_0\to0^+)
+\theta _{\max}=\mathrm{arc}\cos  \dfrac{2}{3}.\qquad (\theta_0\to0^+)
 $$
 
 ### (f)
 $$
-\frac{1}{\sqrt{2}}=\frac{2\cos 10°+\gamma \sin ^210°}{3},
+ \dfrac{1}{\sqrt{2}}= \dfrac{2\cos 10°+\gamma \sin ^210°}{3},
 $$
 so $\gamma=5.03°$.
 
@@ -424,9 +424,9 @@ so $\gamma=5.03°$.
 ### Rayleigh 耗散势
 > 质点受到正比于速度的阻尼力 \( \vec{F}_i = -k_i \vec{v}_i \) (常数 \( k_i \geq 0 \)),其中 \( \vec{v}_i \) 为相对于阻尼背景的速度. 
 > 
-> 这种力可视为非保守力写在拉格朗日方程的右边,也可以引入瑞利耗散势 \( \mathcal{F}_i = \frac{1}{2} k_i v_i^2 \) 描述. 
+> 这种力可视为非保守力写在拉格朗日方程的右边,也可以引入瑞利耗散势 \( \mathcal{F}_i =  \dfrac{1}{2} k_i v_i^2 \) 描述. 
 > 
-> 阻尼力 \( \vec{F}_i = - \nabla_{v_i} \mathcal{F} = -\frac{\partial \mathcal{F}}{\partial v_{ix}} \hat{e}_x - \frac{\partial \mathcal{F}}{\partial v_{iy}} \hat{e}_y - \frac{\partial \mathcal{F}}{\partial v_{iz}} \hat{e}_z \). 此外质点还受到势为 \( V(r) \) 的保守力的作用. 
+> 阻尼力 \( \vec{F}_i = - \nabla_{v_i} \mathcal{F} = - \dfrac{\partial \mathcal{F}}{\partial v_{ix}} \hat{e}_x -  \dfrac{\partial \mathcal{F}}{\partial v_{iy}} \hat{e}_y -  \dfrac{\partial \mathcal{F}}{\partial v_{iz}} \hat{e}_z \). 此外质点还受到势为 \( V(r) \) 的保守力的作用. 
 > 
 > **(a)** 试在 \( s \)-系中写出以非保守力形式呈现的拉格朗日方程：
 > 
@@ -434,7 +434,7 @@ so $\gamma=5.03°$.
 > 
 > **(c)** 试证明在任意广义坐标 \( q_i \)-系中,修正的拉格朗日方程为 
 > \[
-> \frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}_a} \right) - \frac{\partial L}{\partial q_a} + \frac{\partial \mathcal{F}}{\partial \dot{q}_a} = 0,
+>  \dfrac{d}{dt} \left(  \dfrac{\partial L}{\partial \dot{q}_a} \right) -  \dfrac{\partial L}{\partial q_a} +  \dfrac{\partial \mathcal{F}}{\partial \dot{q}_a} = 0,
 > \]
 > 注意耗散势并未进入拉格朗日量,只是在拉格朗日方程中多出一项. 
 > 
@@ -443,40 +443,40 @@ so $\gamma=5.03°$.
 ### (a)
 一般地, Lagrange 量写作
 $$
-L=\frac{1}{2}m\left( \dot{x}^2+\dot{y}^2+\dot{z}^2 \right) -V\left( \boldsymbol{r} \right) ,
+L= \dfrac{1}{2}m\left( \dot{x}^2+\dot{y}^2+\dot{z}^2 \right) -V\left( \boldsymbol{r} \right) ,
 $$
 那么
 $$
-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{\boldsymbol{r}}}-\frac{\partial L}{\partial \boldsymbol{r}}=\boldsymbol{F}.
+ \dfrac{\mathrm{d}}{\mathrm{d}t} \dfrac{\partial L}{\partial \dot{\boldsymbol{r}}}- \dfrac{\partial L}{\partial \boldsymbol{r}}=\boldsymbol{F}.
 $$
 
 ### (b)
 改写右侧的 Rayleigh 阻尼力,
 $$
-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{\boldsymbol{r}}}-\frac{\partial L}{\partial \boldsymbol{r}}=-\frac{\partial \mathcal{F}}{\partial \dot{\boldsymbol{r}}}.
+ \dfrac{\mathrm{d}}{\mathrm{d}t} \dfrac{\partial L}{\partial \dot{\boldsymbol{r}}}- \dfrac{\partial L}{\partial \boldsymbol{r}}=- \dfrac{\partial \mathcal{F}}{\partial \dot{\boldsymbol{r}}}.
 $$
 
 ### (c)
 将 Lagrange 方程同时乘以坐标变换算符,
 $$
-\sum_{\beta =1}^d{\left( \frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{r}_{\beta}} \right) \frac{\partial r_{\beta}}{\partial \boldsymbol{q}}}-\sum_{\beta =1}^d{\frac{\partial L}{\partial r_{\beta}}\frac{\partial r_{\beta}}{\partial \boldsymbol{q}}}=-\sum_{\beta =1}^d{\frac{\partial \mathcal{F}}{\partial \dot{r}_{\beta}}\frac{\partial r_{\beta}}{\partial \boldsymbol{q}}},
+\sum_{\beta =1}^d{\left(  \dfrac{\mathrm{d}}{\mathrm{d}t} \dfrac{\partial L}{\partial \dot{r}_{\beta}} \right)  \dfrac{\partial r_{\beta}}{\partial \boldsymbol{q}}}-\sum_{\beta =1}^d{ \dfrac{\partial L}{\partial r_{\beta}} \dfrac{\partial r_{\beta}}{\partial \boldsymbol{q}}}=-\sum_{\beta =1}^d{ \dfrac{\partial \mathcal{F}}{\partial \dot{r}_{\beta}} \dfrac{\partial r_{\beta}}{\partial \boldsymbol{q}}},
 $$
 然后对于第一项的求导运算做调整,
 $$
-\frac{\mathrm{d}}{\mathrm{d}t}\sum_{\beta =1}^d{\left( \frac{\partial L}{\partial \dot{r}_{\beta}}\frac{\partial r_{\beta}}{\partial \boldsymbol{q}} \right)}-\sum_{\beta =1}^d{\left( \frac{\partial L}{\partial \dot{r}_{\beta}}\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial r_{\beta}}{\partial \boldsymbol{q}}+\frac{\partial L}{\partial r_{\beta}}\frac{\partial r_{\beta}}{\partial \boldsymbol{q}} \right)}=-\sum_{\beta =1}^d{\frac{\partial \mathcal{F}}{\partial \dot{r}_{\beta}}\frac{\partial r_{\beta}}{\partial \boldsymbol{q}}},
+ \dfrac{\mathrm{d}}{\mathrm{d}t}\sum_{\beta =1}^d{\left(  \dfrac{\partial L}{\partial \dot{r}_{\beta}} \dfrac{\partial r_{\beta}}{\partial \boldsymbol{q}} \right)}-\sum_{\beta =1}^d{\left(  \dfrac{\partial L}{\partial \dot{r}_{\beta}} \dfrac{\mathrm{d}}{\mathrm{d}t} \dfrac{\partial r_{\beta}}{\partial \boldsymbol{q}}+ \dfrac{\partial L}{\partial r_{\beta}} \dfrac{\partial r_{\beta}}{\partial \boldsymbol{q}} \right)}=-\sum_{\beta =1}^d{ \dfrac{\partial \mathcal{F}}{\partial \dot{r}_{\beta}} \dfrac{\partial r_{\beta}}{\partial \boldsymbol{q}}},
 $$
 利用点点消去以及对位置的偏导数与对时间的全导数可以交换顺序, 得到
 $$
-\frac{\mathrm{d}}{\mathrm{d}t}\sum_{\beta =1}^d{\left( \frac{\partial L}{\partial \dot{r}_{\beta}}\frac{\partial \dot{r}_{\beta}}{\partial \dot{\boldsymbol{q}}} \right)}-\sum_{\beta =1}^d{\left( \frac{\partial L}{\partial \dot{r}_{\beta}}\frac{\partial \dot{r}_{\beta}}{\partial \boldsymbol{q}}+\frac{\partial L}{\partial r_{\beta}}\frac{\partial r_{\beta}}{\partial \boldsymbol{q}} \right)}=-\sum_{\beta =1}^d{\frac{\partial \mathcal{F}}{\partial \dot{r}_{\beta}}\frac{\partial \dot{r}_{\beta}}{\partial \dot{\boldsymbol{q}}}},
+ \dfrac{\mathrm{d}}{\mathrm{d}t}\sum_{\beta =1}^d{\left(  \dfrac{\partial L}{\partial \dot{r}_{\beta}} \dfrac{\partial \dot{r}_{\beta}}{\partial \dot{\boldsymbol{q}}} \right)}-\sum_{\beta =1}^d{\left(  \dfrac{\partial L}{\partial \dot{r}_{\beta}} \dfrac{\partial \dot{r}_{\beta}}{\partial \boldsymbol{q}}+ \dfrac{\partial L}{\partial r_{\beta}} \dfrac{\partial r_{\beta}}{\partial \boldsymbol{q}} \right)}=-\sum_{\beta =1}^d{ \dfrac{\partial \mathcal{F}}{\partial \dot{r}_{\beta}} \dfrac{\partial \dot{r}_{\beta}}{\partial \dot{\boldsymbol{q}}}},
 $$
 这就是
 $$
-\frac{\partial L}{\partial \dot{\boldsymbol{q}}}-\frac{\partial L}{\partial \boldsymbol{q}}=-\frac{\partial \mathcal{F}}{\partial \dot{\boldsymbol{q}}}.
+ \dfrac{\partial L}{\partial \dot{\boldsymbol{q}}}- \dfrac{\partial L}{\partial \boldsymbol{q}}=- \dfrac{\partial \mathcal{F}}{\partial \dot{\boldsymbol{q}}}.
 $$
 
 
 ### (d)
-系统的 Lagrange 量为 $L=\frac{1}{2}ml^2\dot{\theta}^2+mgl\cos \theta$, Rayleigh 散射势为 $F=\frac{1}{2}kl^2\dot{\theta}^2$, 代入方程得到
+系统的 Lagrange 量为 $L= \dfrac{1}{2}ml^2\dot{\theta}^2+mgl\cos \theta$, Rayleigh 散射势为 $F= \dfrac{1}{2}kl^2\dot{\theta}^2$, 代入方程得到
 $$
 ml^2\ddot{\theta}+kl^2\dot{\theta}+mgl\sin \theta =0.
 $$

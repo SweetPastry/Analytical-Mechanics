@@ -5,7 +5,7 @@
 
 
 ## J02.05
-> Suppose that two masses have a motion defined by a Lagrangian function $$L=\frac{1}{2}m_1{\vec{\boldsymbol{v}}_1}^2+\frac{1}{2}m_2{\vec{\boldsymbol{v}}_2}^2-U\left( \left| \vec{\boldsymbol{r}}_1-\vec{\boldsymbol{r}}_2 \right| \right) $$ where $\vec{\boldsymbol{r}}_1$ and $\vec{\boldsymbol{r}}_1$ denote the position vectors of masses 1 and 2, respectivley, $$\vec{\boldsymbol{v}}_1=\frac{\mathrm{d}\vec{\boldsymbol{r}}_1}{\mathrm{d}t},\qquad \vec{\boldsymbol{v}}_2=\frac{\mathrm{d}\vec{\boldsymbol{r}}_2}{\mathrm{d}t},\qquad \vec{\boldsymbol{v}}_{1}^{2}=\vec{\boldsymbol{v}}_1\cdot \vec{\boldsymbol{v}}_1,\qquad \vec{\boldsymbol{v}}_{2}^{2}=\vec{\boldsymbol{v}}_2\cdot \vec{\boldsymbol{v}}_2.$$ Let $\vec{\boldsymbol{r}}=\vec{\boldsymbol{r}}_2-\vec{\boldsymbol{r}}_1,\quad \vec{\boldsymbol{R}}=\dfrac{m_2\vec{\boldsymbol{r}}_2-m_1\vec{\boldsymbol{r}}_1}{m_1+m_2}$
+> Suppose that two masses have a motion defined by a Lagrangian function $$L= \dfrac{1}{2}m_1{\vec{\boldsymbol{v}}_1}^2+ \dfrac{1}{2}m_2{\vec{\boldsymbol{v}}_2}^2-U\left( \left| \vec{\boldsymbol{r}}_1-\vec{\boldsymbol{r}}_2 \right| \right) $$ where $\vec{\boldsymbol{r}}_1$ and $\vec{\boldsymbol{r}}_1$ denote the position vectors of masses 1 and 2, respectivley, $$\vec{\boldsymbol{v}}_1= \dfrac{\mathrm{d}\vec{\boldsymbol{r}}_1}{\mathrm{d}t},\qquad \vec{\boldsymbol{v}}_2= \dfrac{\mathrm{d}\vec{\boldsymbol{r}}_2}{\mathrm{d}t},\qquad \vec{\boldsymbol{v}}_{1}^{2}=\vec{\boldsymbol{v}}_1\cdot \vec{\boldsymbol{v}}_1,\qquad \vec{\boldsymbol{v}}_{2}^{2}=\vec{\boldsymbol{v}}_2\cdot \vec{\boldsymbol{v}}_2.$$ Let $\vec{\boldsymbol{r}}=\vec{\boldsymbol{r}}_2-\vec{\boldsymbol{r}}_1,\quad \vec{\boldsymbol{R}}=\dfrac{m_2\vec{\boldsymbol{r}}_2-m_1\vec{\boldsymbol{r}}_1}{m_1+m_2}$
 > 
 > (a) Rewrite the Lagrangian in terms of the variables  $ \vec{r}  $ and  $ \vec{R}  $ and their time derivatives. Show the Lagrangian can be written as two terms, one of which depends only on  $ \vec{R}  $ and its time derivative and the other only on  $ \vec{r}  $ and its time derivative. Such Lagrangian systems are called separable.
 > (b) Show that three components of  $ \vec{R}  $ are ignorable coordinates and that the total momentum of the system is conserved.
@@ -33,9 +33,9 @@ Subtitude the expressions above into ***Lagrangian***.
 
 $$
 \begin{align*}
-L&=\frac{1}{2}m_1\left( \dot{\vec{\boldsymbol{R}}}-\frac{m_2}{m_1+m_2}\dot{\vec{\boldsymbol{r}}} \right) ^2+\frac{1}{2}m_2\left( \dot{\vec{\boldsymbol{R}}}+\frac{m_1}{m_1+m_2}\dot{\vec{\boldsymbol{r}}} \right) ^2-U\left( \left| \vec{\boldsymbol{r}} \right| \right)
+L&= \dfrac{1}{2}m_1\left( \dot{\vec{\boldsymbol{R}}}- \dfrac{m_2}{m_1+m_2}\dot{\vec{\boldsymbol{r}}} \right) ^2+ \dfrac{1}{2}m_2\left( \dot{\vec{\boldsymbol{R}}}+ \dfrac{m_1}{m_1+m_2}\dot{\vec{\boldsymbol{r}}} \right) ^2-U\left( \left| \vec{\boldsymbol{r}} \right| \right)
 \\\\
-&=\frac{1}{2}\left( m_1+m_2 \right) \dot{\vec{\boldsymbol{R}}}^2+\frac{1}{2}\frac{m_1m_2}{m_1+m_2}\dot{\vec{\boldsymbol{r}}}^2-U\left( \left| \vec{\boldsymbol{r}} \right| \right) .
+&= \dfrac{1}{2}\left( m_1+m_2 \right) \dot{\vec{\boldsymbol{R}}}^2+ \dfrac{1}{2} \dfrac{m_1m_2}{m_1+m_2}\dot{\vec{\boldsymbol{r}}}^2-U\left( \left| \vec{\boldsymbol{r}} \right| \right) .
 \end{align*}
 $$
 
@@ -43,7 +43,7 @@ $$
 Note that
 
 $$
-\frac{\partial L}{\partial \vec{\boldsymbol{R}}}=0,
+ \dfrac{\partial L}{\partial \vec{\boldsymbol{R}}}=0,
 $$
 
 and there is no $\vec{\boldsymbol{Q}}^{\mathrm{curl}}$ in the system,
@@ -55,19 +55,19 @@ $$
 according to the defination of ***ignorable coordinates***, we can conclude that $\vec{\boldsymbol{R}}$ is definitely a ignorable vector and the three components of it are all ignorable coordinates. Subsitude it into ***Lagrange's equation***,
 
 $$
-0=\vec{\boldsymbol{Q}}^{\mathrm{curl}}=\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{\vec{\boldsymbol{R}}}}-\frac{\partial L}{\partial \vec{\boldsymbol{R}}}=\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{\vec{\boldsymbol{R}}}}=\frac{\mathrm{d}}{\mathrm{d}t}\left( m_1+m_2 \right) \dot{\vec{\boldsymbol{R}}}.
+0=\vec{\boldsymbol{Q}}^{\mathrm{curl}}= \dfrac{\mathrm{d}}{\mathrm{d}t} \dfrac{\partial L}{\partial \dot{\vec{\boldsymbol{R}}}}- \dfrac{\partial L}{\partial \vec{\boldsymbol{R}}}= \dfrac{\mathrm{d}}{\mathrm{d}t} \dfrac{\partial L}{\partial \dot{\vec{\boldsymbol{R}}}}= \dfrac{\mathrm{d}}{\mathrm{d}t}\left( m_1+m_2 \right) \dot{\vec{\boldsymbol{R}}}.
 $$
 
 And we write down the total momentum of the whole system,
 
 $$
-\vec{\boldsymbol{P}}=\frac{\partial L}{\partial \vec{\boldsymbol{v}}_1}+\frac{\partial L}{\partial \vec{\boldsymbol{v}}_2}=\left( m_1+m_2 \right) \dot{\vec{\boldsymbol{R}}}
+\vec{\boldsymbol{P}}= \dfrac{\partial L}{\partial \vec{\boldsymbol{v}}_1}+ \dfrac{\partial L}{\partial \vec{\boldsymbol{v}}_2}=\left( m_1+m_2 \right) \dot{\vec{\boldsymbol{R}}}
 $$
 
 So
 
 $$
-\frac{\mathrm{d}}{\mathrm{d}t}\vec{\boldsymbol{P}}=\frac{\partial L}{\partial \vec{\boldsymbol{v}}_1}+\frac{\partial L}{\partial \vec{\boldsymbol{v}}_2}=\frac{\mathrm{d}}{\mathrm{d}t}\left( m_1+m_2 \right) \dot{\vec{\boldsymbol{R}}}=0.
+ \dfrac{\mathrm{d}}{\mathrm{d}t}\vec{\boldsymbol{P}}= \dfrac{\partial L}{\partial \vec{\boldsymbol{v}}_1}+ \dfrac{\partial L}{\partial \vec{\boldsymbol{v}}_2}= \dfrac{\mathrm{d}}{\mathrm{d}t}\left( m_1+m_2 \right) \dot{\vec{\boldsymbol{R}}}=0.
 $$
 
 We can definitely assert that the total momentum of the system is conserved.
@@ -92,32 +92,32 @@ $$
 The spherical symmetry is reflected in
 
 $$
-\frac{\partial V\left( r \right)}{\partial x}=-\frac{x}{r}\frac{\mathrm{d}V\left( r \right)}{\mathrm{d}r},\quad \frac{\partial V\left( r \right)}{\partial y}=-\frac{y}{r}\frac{\mathrm{d}V\left( r \right)}{\mathrm{d}r},\quad \frac{\partial V\left( r \right)}{\partial z}=-\frac{z}{r}\frac{\mathrm{d}V\left( r \right)}{\mathrm{d}r}.
+ \dfrac{\partial V\left( r \right)}{\partial x}=- \dfrac{x}{r} \dfrac{\mathrm{d}V\left( r \right)}{\mathrm{d}r},\quad  \dfrac{\partial V\left( r \right)}{\partial y}=- \dfrac{y}{r} \dfrac{\mathrm{d}V\left( r \right)}{\mathrm{d}r},\quad  \dfrac{\partial V\left( r \right)}{\partial z}=- \dfrac{z}{r} \dfrac{\mathrm{d}V\left( r \right)}{\mathrm{d}r}.
 $$
 
 and in $\vec{\boldsymbol{\sigma}}\cdot \vec{\boldsymbol{L}}$ the $x$ and $-y$ play the totally same role, as a result, if I write $F_x$,
 
 $$
-F_x=\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial U^{\left( \mathrm{vel} \right)}}{\partial \dot{x}}-\frac{\partial U^{\left( \mathrm{vel} \right)}}{\partial x}=-\frac{x}{r}\frac{\mathrm{d}V\left( r \right)}{\mathrm{d}r}-2\sigma m\dot{y},
+F_x= \dfrac{\mathrm{d}}{\mathrm{d}t} \dfrac{\partial U^{\left( \mathrm{vel} \right)}}{\partial \dot{x}}- \dfrac{\partial U^{\left( \mathrm{vel} \right)}}{\partial x}=- \dfrac{x}{r} \dfrac{\mathrm{d}V\left( r \right)}{\mathrm{d}r}-2\sigma m\dot{y},
 $$
 
 I can immediately write $F_y$ with $x$ be subsitituted by $-y$,
 
 $$
-F_y=-\frac{y}{r}\frac{\mathrm{d}V\left( r \right)}{\mathrm{d}r}+2\sigma m\dot{x}.
+F_y=- \dfrac{y}{r} \dfrac{\mathrm{d}V\left( r \right)}{\mathrm{d}r}+2\sigma m\dot{x}.
 $$
 
 And 
 
 $$
-F_z=\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial U^{\left( \mathrm{vel} \right)}}{\partial \dot{z}}-\frac{\partial U^{\left( \mathrm{vel} \right)}}{\partial z}=-\frac{z}{r}\frac{\mathrm{d}V\left( r \right)}{\mathrm{d}r}.
+F_z= \dfrac{\mathrm{d}}{\mathrm{d}t} \dfrac{\partial U^{\left( \mathrm{vel} \right)}}{\partial \dot{z}}- \dfrac{\partial U^{\left( \mathrm{vel} \right)}}{\partial z}=- \dfrac{z}{r} \dfrac{\mathrm{d}V\left( r \right)}{\mathrm{d}r}.
 $$
 
 ### (b)
 Here is a trick in mathetatics when simplify $x\dot{y}-\dot{x}y$ in spherical polar coordinates,
 
 $$
-x\dot{y}-\dot{x}y=x^2\frac{\mathrm{d}}{\mathrm{d}t}\frac{y}{x}=r^2\sin ^2\theta \cos ^2\phi \frac{\mathrm{d}}{\mathrm{d}t}\tan \phi =r^2\sin ^2\theta \dot{\phi}.
+x\dot{y}-\dot{x}y=x^2 \dfrac{\mathrm{d}}{\mathrm{d}t} \dfrac{y}{x}=r^2\sin ^2\theta \cos ^2\phi  \dfrac{\mathrm{d}}{\mathrm{d}t}\tan \phi =r^2\sin ^2\theta \dot{\phi}.
 $$
 
 So it is very tidy and we can write down the expression of $U^{\left( \mathrm{vel} \right)}$ in spherical polar coordinate smoothly,
@@ -130,11 +130,11 @@ As a result,
 
 $$
 \begin{align*}
-Q_r&=\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial U^{\left( \mathrm{vel} \right)}}{\partial \dot{r}}-\frac{\partial U^{\left( \mathrm{vel} \right)}}{\partial r}=-\frac{\mathrm{d}V\left( r \right)}{\mathrm{d}r}-2m\sigma r\sin ^2\theta \dot{\phi},
+Q_r&= \dfrac{\mathrm{d}}{\mathrm{d}t} \dfrac{\partial U^{\left( \mathrm{vel} \right)}}{\partial \dot{r}}- \dfrac{\partial U^{\left( \mathrm{vel} \right)}}{\partial r}=- \dfrac{\mathrm{d}V\left( r \right)}{\mathrm{d}r}-2m\sigma r\sin ^2\theta \dot{\phi},
 \\
-Q_{\theta}&=\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial U^{\left( \mathrm{vel} \right)}}{\partial \dot{\theta}}-\frac{\partial U^{\left( \mathrm{vel} \right)}}{\partial \theta}=-m\sigma r^2\sin 2\theta \dot{\phi},
+Q_{\theta}&= \dfrac{\mathrm{d}}{\mathrm{d}t} \dfrac{\partial U^{\left( \mathrm{vel} \right)}}{\partial \dot{\theta}}- \dfrac{\partial U^{\left( \mathrm{vel} \right)}}{\partial \theta}=-m\sigma r^2\sin 2\theta \dot{\phi},
 \\
-Q_{\phi}&=\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial U^{\left( \mathrm{vel} \right)}}{\partial \dot{\phi}}-\frac{\partial U^{\left( \mathrm{vel} \right)}}{\partial \phi}=2m\sigma r\sin \theta \left( \dot{r}\sin \theta +r\cos \theta \dot{\theta} \right) .
+Q_{\phi}&= \dfrac{\mathrm{d}}{\mathrm{d}t} \dfrac{\partial U^{\left( \mathrm{vel} \right)}}{\partial \dot{\phi}}- \dfrac{\partial U^{\left( \mathrm{vel} \right)}}{\partial \phi}=2m\sigma r\sin \theta \left( \dot{r}\sin \theta +r\cos \theta \dot{\theta} \right) .
 \end{align*}
 $$
 
@@ -142,29 +142,29 @@ $$
 We konw that in *Cartesion coordinates* we have
 
 $$
-\vec{\boldsymbol{F}}=\left( -\frac{x}{r}\frac{\mathrm{d}V\left( r \right)}{\mathrm{d}r}-2\sigma m\dot{y} \right) \vec{\boldsymbol{e}}_x+\left( -\frac{y}{r}\frac{\mathrm{d}V\left( r \right)}{\mathrm{d}r}+2\sigma m\dot{x} \right) \vec{\boldsymbol{e}}_y+\left( -\frac{z}{r}\frac{\mathrm{d}V\left( r \right)}{\mathrm{d}r} \right) \vec{\boldsymbol{e}}_z.
+\vec{\boldsymbol{F}}=\left( - \dfrac{x}{r} \dfrac{\mathrm{d}V\left( r \right)}{\mathrm{d}r}-2\sigma m\dot{y} \right) \vec{\boldsymbol{e}}_x+\left( - \dfrac{y}{r} \dfrac{\mathrm{d}V\left( r \right)}{\mathrm{d}r}+2\sigma m\dot{x} \right) \vec{\boldsymbol{e}}_y+\left( - \dfrac{z}{r} \dfrac{\mathrm{d}V\left( r \right)}{\mathrm{d}r} \right) \vec{\boldsymbol{e}}_z.
 $$
 
 And we know some relationship between $\vec{\boldsymbol{e}}_r$ and $x, y, z$,
 
 $$
-\vec{\boldsymbol{e}}_r=\frac{x\vec{\boldsymbol{e}}_x+y\vec{\boldsymbol{e}}_y+z\vec{\boldsymbol{e}}_z}{r}.
+\vec{\boldsymbol{e}}_r= \dfrac{x\vec{\boldsymbol{e}}_x+y\vec{\boldsymbol{e}}_y+z\vec{\boldsymbol{e}}_z}{r}.
 $$
 
 Some we combine the two expressions and have
 
 $$
 \begin{align*}
-F_r&=\vec{\boldsymbol{e}}_r\cdot \vec{\boldsymbol{F}}=\frac{x}{r}\left( -\frac{x}{r}\frac{\mathrm{d}V\left( r \right)}{\mathrm{d}r}-2\sigma m\dot{y} \right) +\frac{y}{r}\left( -\frac{y}{r}\frac{\mathrm{d}V\left( r \right)}{\mathrm{d}r}+2\sigma m\dot{x} \right) +\frac{z}{r}\left( -\frac{z}{r}\frac{\mathrm{d}V\left( r \right)}{\mathrm{d}r} \right) 
+F_r&=\vec{\boldsymbol{e}}_r\cdot \vec{\boldsymbol{F}}= \dfrac{x}{r}\left( - \dfrac{x}{r} \dfrac{\mathrm{d}V\left( r \right)}{\mathrm{d}r}-2\sigma m\dot{y} \right) + \dfrac{y}{r}\left( - \dfrac{y}{r} \dfrac{\mathrm{d}V\left( r \right)}{\mathrm{d}r}+2\sigma m\dot{x} \right) + \dfrac{z}{r}\left( - \dfrac{z}{r} \dfrac{\mathrm{d}V\left( r \right)}{\mathrm{d}r} \right) 
 \\
-&=-\frac{\mathrm{d}V\left( r \right)}{\mathrm{d}t}-2m\sigma \frac{x\dot{y}-\dot{x}y}{r}.
+&=- \dfrac{\mathrm{d}V\left( r \right)}{\mathrm{d}t}-2m\sigma  \dfrac{x\dot{y}-\dot{x}y}{r}.
 \end{align*}
 $$
 
 Remenber we have prove $x\dot{y}-\dot{x}y=r^2\sin ^2\theta \dot{\phi}$, take it into above expression,
 
 $$
-F_r=-\frac{\mathrm{d}V\left( r \right)}{\mathrm{d}t}-2m\sigma r\sin ^2\theta \dot{\phi}=Q_r.
+F_r=- \dfrac{\mathrm{d}V\left( r \right)}{\mathrm{d}t}-2m\sigma r\sin ^2\theta \dot{\phi}=Q_r.
 $$
 
 ### (d)
@@ -172,7 +172,7 @@ We need to perform an identity transformation on the expression of $Q_\phi$, so 
 
 $$
 \begin{align*}
-Q_{\phi}&=2m\sigma r\sin \theta \left( \dot{r}\sin \theta +r\cos \theta \dot{\theta} \right) =m\sigma \frac{\mathrm{d}}{\mathrm{d}t}\left( r\sin \theta \right) ^2=m\sigma \frac{\mathrm{d}}{\mathrm{d}t}\left( x^2+y^2 \right) =m\sigma \left( 2x\dot{x}+2y\dot{y} \right) 
+Q_{\phi}&=2m\sigma r\sin \theta \left( \dot{r}\sin \theta +r\cos \theta \dot{\theta} \right) =m\sigma  \dfrac{\mathrm{d}}{\mathrm{d}t}\left( r\sin \theta \right) ^2=m\sigma  \dfrac{\mathrm{d}}{\mathrm{d}t}\left( x^2+y^2 \right) =m\sigma \left( 2x\dot{x}+2y\dot{y} \right) 
 \\
 &=xF_y-yF_x.
 \end{align*}
@@ -225,13 +225,13 @@ $$
 In the $s$-system, it is classic Newtom mechanics inertial Cartesian coordinates and so we can use $L=T-K$ to swiftly wrirte Lagrangian
 
 $$
-L\left( s,\dot{s},t \right) =\frac{1}{2}m\left( \dot{x}^2+\dot{y}^2 \right) -\frac{1}{2}k\left[ \left( x-a\cos \omega _0t \right) ^2+\left( y-a\sin \omega _0t \right) ^2 \right] .
+L\left( s,\dot{s},t \right) = \dfrac{1}{2}m\left( \dot{x}^2+\dot{y}^2 \right) - \dfrac{1}{2}k\left[ \left( x-a\cos \omega _0t \right) ^2+\left( y-a\sin \omega _0t \right) ^2 \right] .
 $$
 
 In $q$-system it is easy to write the mechanical potential energy,
 
 $$
-U\left( q,t \right) =\frac{1}{2}k\left[ \left( x^{\prime}-a \right) ^2+{y^{\prime}}^2 \right] .
+U\left( q,t \right) = \dfrac{1}{2}k\left[ \left( x^{\prime}-a \right) ^2+{y^{\prime}}^2 \right] .
 $$
 
 Here I perform a mathmatical trick to find kinetic. We can write position vector as
@@ -284,49 +284,49 @@ $$
 So
 
 $$
-T\left( s,\dot{s},t \right) =\frac{1}{2}m\left( \dot{x}^2+\dot{y}^2 \right) =\frac{1}{2}m\left[ \omega _{0}^{2}\left( {x^{\prime}}^2+{y^{\prime}}^2 \right) +2\omega _0\left( x^{\prime}\dot{y}^{\prime}-\dot{x}^{\prime}y^{\prime} \right) +\left( {\dot{x}^{\prime}}^2+{\dot{y}^{\prime}}^2 \right) \right] ,
+T\left( s,\dot{s},t \right) = \dfrac{1}{2}m\left( \dot{x}^2+\dot{y}^2 \right) = \dfrac{1}{2}m\left[ \omega _{0}^{2}\left( {x^{\prime}}^2+{y^{\prime}}^2 \right) +2\omega _0\left( x^{\prime}\dot{y}^{\prime}-\dot{x}^{\prime}y^{\prime} \right) +\left( {\dot{x}^{\prime}}^2+{\dot{y}^{\prime}}^2 \right) \right] ,
 $$
 
 $$
-L\left( q,\dot{q},t \right) =L\left[ s\left( q,t \right) ,\dot{s}\left( q,\dot{q},t \right) ,t \right] =\frac{1}{2}m\left[ \omega _{0}^{2}\left( {x^{\prime}}^2+{y^{\prime}}^2 \right) +2\omega _0\left( x^{\prime}\dot{y}^{\prime}-\dot{x}^{\prime}y^{\prime} \right) +\left( {\dot{x}^{\prime}}^2+{\dot{y}^{\prime}}^2 \right) \right] -\frac{1}{2}k\left[ \left( x^{\prime}-a \right) ^2+{y^{\prime}}^2 \right] .
+L\left( q,\dot{q},t \right) =L\left[ s\left( q,t \right) ,\dot{s}\left( q,\dot{q},t \right) ,t \right] = \dfrac{1}{2}m\left[ \omega _{0}^{2}\left( {x^{\prime}}^2+{y^{\prime}}^2 \right) +2\omega _0\left( x^{\prime}\dot{y}^{\prime}-\dot{x}^{\prime}y^{\prime} \right) +\left( {\dot{x}^{\prime}}^2+{\dot{y}^{\prime}}^2 \right) \right] - \dfrac{1}{2}k\left[ \left( x^{\prime}-a \right) ^2+{y^{\prime}}^2 \right] .
 $$
 
 ### (b)
 We can use the formula.
 
 $$
-H_s=\sum_{\alpha}{\frac{\partial L}{\partial \dot{s}_{\alpha}}\dot{s}_{\alpha}-L=}\frac{1}{2}m\left( \dot{x}^2+\dot{y}^2 \right) +\frac{1}{2}k\left[ \left( x-a\cos \omega _0t \right) ^2+\left( y-a\sin \omega _0t \right) ^2 \right] =T_s+U_s.
+H_s=\sum_{\alpha}{ \dfrac{\partial L}{\partial \dot{s}_{\alpha}}\dot{s}_{\alpha}-L=} \dfrac{1}{2}m\left( \dot{x}^2+\dot{y}^2 \right) + \dfrac{1}{2}k\left[ \left( x-a\cos \omega _0t \right) ^2+\left( y-a\sin \omega _0t \right) ^2 \right] =T_s+U_s.
 $$
 
 At the same time, in order to consider whether the $H_s$ is conserved or not, we need to consider the below formula
 
 $$
-\dot{H}_s=\sum_{\alpha}{Q_{\alpha}^{\mathrm{curl}}\dot{s}_{\alpha}-\frac{\partial L}{\partial t}}.
+\dot{H}_s=\sum_{\alpha}{Q_{\alpha}^{\mathrm{curl}}\dot{s}_{\alpha}- \dfrac{\partial L}{\partial t}}.
 $$
 
 According to the Lagrange's equayion
 
 $$
-Q_{s}^{\mathrm{curl}}=\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{s}}-\frac{\partial L}{\partial s}.
+Q_{s}^{\mathrm{curl}}= \dfrac{\mathrm{d}}{\mathrm{d}t} \dfrac{\partial L}{\partial \dot{s}}- \dfrac{\partial L}{\partial s}.
 $$
 
 So
 
 $$
-Q_{x}^{\mathrm{curl}}=\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{x}}-\frac{\partial L}{\partial x}=m\ddot{x}+k\left( x-a\cos \omega _0t \right) ,
+Q_{x}^{\mathrm{curl}}= \dfrac{\mathrm{d}}{\mathrm{d}t} \dfrac{\partial L}{\partial \dot{x}}- \dfrac{\partial L}{\partial x}=m\ddot{x}+k\left( x-a\cos \omega _0t \right) ,
 $$
 
 $$
-Q_{y}^{\mathrm{curl}}=\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial L}{\partial \dot{y}}-\frac{\partial L}{\partial y}=m\ddot{y}+k\left( y-a\sin \omega _0t \right) .
+Q_{y}^{\mathrm{curl}}= \dfrac{\mathrm{d}}{\mathrm{d}t} \dfrac{\partial L}{\partial \dot{y}}- \dfrac{\partial L}{\partial y}=m\ddot{y}+k\left( y-a\sin \omega _0t \right) .
 $$
 
 As a result
 
 $$
 \begin{align*}
-\dot{H}_s&=\sum_{\alpha}{Q_{\alpha}^{\mathrm{curl}}\dot{s}_{\alpha}-\frac{\partial L}{\partial t}}
+\dot{H}_s&=\sum_{\alpha}{Q_{\alpha}^{\mathrm{curl}}\dot{s}_{\alpha}- \dfrac{\partial L}{\partial t}}
 \\
-&=\left[ m\ddot{x}+k\left( x-a\cos \omega _0t \right) \right] \dot{x}+\left[ m\ddot{y}+k\left( y-a\sin \omega _0t \right) \right] \dot{y}+\frac{1}{2}k\left[ 2\left( x-a\cos \omega _0t \right) a\omega _0\sin \omega _0t-2\left( y-a\sin \omega _0t \right) a\omega _0\sin \omega _0t \right] 
+&=\left[ m\ddot{x}+k\left( x-a\cos \omega _0t \right) \right] \dot{x}+\left[ m\ddot{y}+k\left( y-a\sin \omega _0t \right) \right] \dot{y}+ \dfrac{1}{2}k\left[ 2\left( x-a\cos \omega _0t \right) a\omega _0\sin \omega _0t-2\left( y-a\sin \omega _0t \right) a\omega _0\sin \omega _0t \right] 
 \\
 &=m\left[ \ddot{x}\dot{x}+\ddot{y}\dot{y} \right] +k\left[ \left( x-a\cos \omega _0t \right) \left( \dot{x}-a\omega _0\sin \omega _0t \right) +\left( y-a\sin \omega _0t \right) \left( \dot{y}-a\omega _0\sin \omega _0t \right) \right] \ne 0.
 \end{align*}
@@ -338,13 +338,13 @@ We can assert that the $H_s$ is not conserved.
 Do the same thing as above.
 
 $$
-H_q=\sum_{\alpha}{\frac{\partial L}{\partial \dot{q}_{\alpha}}\dot{q}_{\alpha}-L=}\frac{1}{2}m\left( {\dot{x}^{\prime}}^2+{\dot{y}^{\prime}}^2 \right) -m\omega _{0}^{2}\left( {x^{\prime}}^2+{y^{\prime}}^2 \right) +\frac{1}{2}k\left[ \left( x^{\prime}-a \right) ^2+{y^{\prime}}^2 \right] \ne T_q+U_q.
+H_q=\sum_{\alpha}{ \dfrac{\partial L}{\partial \dot{q}_{\alpha}}\dot{q}_{\alpha}-L=} \dfrac{1}{2}m\left( {\dot{x}^{\prime}}^2+{\dot{y}^{\prime}}^2 \right) -m\omega _{0}^{2}\left( {x^{\prime}}^2+{y^{\prime}}^2 \right) + \dfrac{1}{2}k\left[ \left( x^{\prime}-a \right) ^2+{y^{\prime}}^2 \right] \ne T_q+U_q.
 $$
 
 And we know there was no force corresponding curl field and dissipatice force, so as to
 
 $$
-\dot{H}_q=\sum_{\alpha}{Q_{\alpha}^{\mathrm{curl}}\dot{q}_{\alpha}-\frac{\partial L}{\partial t}=}-\frac{\partial L}{\partial t}=0,
+\dot{H}_q=\sum_{\alpha}{Q_{\alpha}^{\mathrm{curl}}\dot{q}_{\alpha}- \dfrac{\partial L}{\partial t}=}- \dfrac{\partial L}{\partial t}=0,
 $$
 
 cus there is no explicit $t$ in $L$. As a result, the $H_q$ is conserved in $q$-system.
@@ -355,7 +355,7 @@ In $s$-system, the $H_s$ is just mechanical energy and if there is no outer forc
 The generalized energy function is in add to extra condion that no curl force and dissipative force can tell as whether the $H_q$ is conserved ot not depends on if there is explicit $t$ in $L$, in another expression, is the transformation between the two coordinates system involves explicit $t$.
 
 $$
-\dot{H}_q=\sum_{\alpha}{Q_{\alpha}^{\mathrm{curl}}\dot{q}_{\alpha}-\frac{\partial L}{\partial t}=}-\frac{\partial L}{\partial t}=0\quad \Longleftrightarrow \quad \frac{\partial q}{\partial t}=0.
+\dot{H}_q=\sum_{\alpha}{Q_{\alpha}^{\mathrm{curl}}\dot{q}_{\alpha}- \dfrac{\partial L}{\partial t}=}- \dfrac{\partial L}{\partial t}=0\quad \Longleftrightarrow \quad  \dfrac{\partial q}{\partial t}=0.
 $$
 
 ## 补充题 1.01
@@ -366,7 +366,7 @@ $$
 直接根据定义可以写出地面坐标系的拉式量.
 
 $$
-L\left( x,\dot{x},t \right) =\frac{1}{2}m\dot{x}^2-\frac{1}{2}k\left( x-v_0t-l \right) ^2.
+L\left( x,\dot{x},t \right) = \dfrac{1}{2}m\dot{x}^2- \dfrac{1}{2}k\left( x-v_0t-l \right) ^2.
 $$
 
 广义坐标变换为
@@ -378,39 +378,39 @@ $$
 因此
 
 $$
-L^{\prime}\left( x^{\prime},\dot{x}^{\prime},t \right) =\frac{1}{2}m\left( \dot{x}^{\prime}+v_0 \right) ^2-\frac{1}{2}k\left( x^{\prime}-l \right) ^2.
+L^{\prime}\left( x^{\prime},\dot{x}^{\prime},t \right) = \dfrac{1}{2}m\left( \dot{x}^{\prime}+v_0 \right) ^2- \dfrac{1}{2}k\left( x^{\prime}-l \right) ^2.
 $$
 
 直接在 $\Sigma^\prime$ 系中写出拉式量同样式根据定义,
 
 $$
-L^{\prime\prime}=\frac{1}{2}m\dot{x}^{\prime2}-\frac{1}{2}\left( x^{\prime}-l \right) ^2.
+L^{\prime\prime}= \dfrac{1}{2}m\dot{x}^{\prime2}- \dfrac{1}{2}\left( x^{\prime}-l \right) ^2.
 $$
 
 很显然 $L^{\prime}\ne L^{\prime\prime}$.
 
 $$
-L^{\prime\prime}-L^{\prime}=\frac{1}{2}m\dot{x}^{\prime2}-\frac{1}{2}m\left( \dot{x}^{\prime}+v_0 \right) ^2.
+L^{\prime\prime}-L^{\prime}= \dfrac{1}{2}m\dot{x}^{\prime2}- \dfrac{1}{2}m\left( \dot{x}^{\prime}+v_0 \right) ^2.
 $$
 
 两者对应运动方程的解实际上是不一样的, 因为在参考系变换的时候丢失了一个牵连速度, 即两个解之间也相差了牵连速度的修正. 根据
 
 $$
-H_q=\sum_{\alpha}{\frac{\partial L}{\partial \dot{q}_{\alpha}}\dot{q}_{\alpha}-L},
+H_q=\sum_{\alpha}{ \dfrac{\partial L}{\partial \dot{q}_{\alpha}}\dot{q}_{\alpha}-L},
 $$
 
 可以快速写出三者对应的广义能量看,
 
 $$
-H=\frac{1}{2}m\dot{x}^2+\frac{1}{2}k\left( x-v_0t-l \right) ^2,
+H= \dfrac{1}{2}m\dot{x}^2+ \dfrac{1}{2}k\left( x-v_0t-l \right) ^2,
 $$
 
 $$
-H'=\frac{1}{2}m\dot{x}^{\prime2} +\frac{1}{2}k\left( x^{\prime}-l \right) ^2-\frac{1}{2}mv_0^2,
+H'= \dfrac{1}{2}m\dot{x}^{\prime2} + \dfrac{1}{2}k\left( x^{\prime}-l \right) ^2- \dfrac{1}{2}mv_0^2,
 $$
 
 $$
-H''=\frac{1}{2}m\dot{x}^{\prime2}-\frac{1}{2}\left( x^{\prime}-l \right) ^2.
+H''= \dfrac{1}{2}m\dot{x}^{\prime2}- \dfrac{1}{2}\left( x^{\prime}-l \right) ^2.
 $$
 
 

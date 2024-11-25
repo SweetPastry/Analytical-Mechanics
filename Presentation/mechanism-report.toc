@@ -1,0 +1,5 @@
+\babel@toc {english}{}\relax 
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Generalized Friction Protential}{22}{0}{2}
+\beamer@subsectionintoc {2}{1}{Derivation Process}{23}{0}{2}
+\beamer@subsectionintoc {2}{2}{Application}{39}{0}{2}
