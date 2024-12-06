@@ -54,13 +54,13 @@
                 \frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial T}{\partial \dot{q}^k}-\frac{\partial T}{\partial q^k}+\frac{\partial V}{\partial q^k}=Q_{k}^{\left( \mathrm{nc} \right)}.
             \end{equation}}}
             \only<3>{\begin{equation}
-                \frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial T}{\partial \dot{q}^{\tikzmarknode{k}{\hlmath{red}{k}}}}-\frac{\partial T}{\partial q^k}+\frac{\partial V}{\partial q^k}=Q_{k}^{\left( \mathrm{nc} \right)}.
+                \frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial T}{\partial \dot{q}^{\tikzmarknode{k}{\hlmath{red}{\scriptstyle k}}}}-\frac{\partial T}{\partial q^k}+\frac{\partial V}{\partial q^k}=Q_{k}^{\left( \mathrm{nc} \right)}.
             \end{equation}\begin{tikzpicture}[overlay, remember picture, >=stealth, nodes={align=left, inner ysep=2pt}, <-]
                 \path (k.south) ++ (0,-0.8em) node[anchor=north west, color=red!67] (k node){Superscript, not exponent};
                 \draw [color=red!57](k.south) |- ([xshift=+0.3ex, color=red]k node.south east);
             \end{tikzpicture}}
             \only<4>{\begin{equation}
-                \frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial T}{\partial \dot{q}^k}-\frac{\partial T}{\partial q^k}+\frac{\partial V}{\partial q^k}=Q_{k}^{\left(\tikzmarknode{nc}{\hlmath{red}{ \mathrm{nc}}} \right)}.
+                \frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial T}{\partial \dot{q}^k}-\frac{\partial T}{\partial q^k}+\frac{\partial V}{\partial q^k}=Q_{k}^{\left(\tikzmarknode{nc}{\hlmath{red}{\scriptstyle \mathrm{nc}}} \right)}.
             \end{equation}\begin{tikzpicture}[overlay, remember picture, >=stealth, nodes={align=left, inner ysep=2pt}, <-]
                 \path (nc.south) ++ (0,-1.8em) node[anchor=north east, color=red!67] (nc node){means non-conservative};
                 \draw [color=red!57](nc.south) |- ([xshift=-0.3ex, color=red]nc node.south west);
@@ -76,7 +76,7 @@
             \end{equation}}}
 
             \only<3>{\begin{equation}
-                F_{ai}=-K_{i \tikzmarknode{j1}{\hlmath{red}{j}}}v_{a}^{\tikzmarknode{j2}{\hlmath{red}{j}}},
+                F_{ai}=-K_{i \tikzmarknode{j1}{\hlmath{red}{\scriptstyle j}}}v_{a}^{\tikzmarknode{j2}{\hlmath{red}{\scriptstyle j}}},
             \end{equation}\begin{tikzpicture}[overlay,remember picture,>=stealth,nodes={align=left,inner ysep=1pt},<-]
             \node[anchor=north,color=red!67, yshift=-2em] (jtext) at ($(j1.south)!0.5!(j2.south)$) {Einstein Summation Convention};
             \draw[<->,color=red!57] (j1.south) |- (jtext.north) -| (j2.south);
@@ -113,7 +113,7 @@
             \end{tikzpicture}}
 
             \only<3>{\begin{equation}
-                \frac{\mathrm{d}}{\mathrm{d}t} \frac{\partial T}{\partial \dot{q}^k}-\frac{\partial T}{\partial q^k}+\frac{\partial V}{\partial q^k}=-\frac{\partial R}{\partial \dot{q}^k}+Q_{k}^{\left( \tikzmarknode{nc}{\hlmath{red}{\mathrm{nc'}}}  \right)}.
+                \frac{\mathrm{d}}{\mathrm{d}t} \frac{\partial T}{\partial \dot{q}^k}-\frac{\partial T}{\partial q^k}+\frac{\partial V}{\partial q^k}=-\frac{\partial R}{\partial \dot{q}^k}+Q_{k}^{\left( \tikzmarknode{nc}{\hlmath{red}{\scriptstyle\mathrm{nc'}}}  \right)}.
             \end{equation}\begin{tikzpicture}[overlay, remember picture, >=stealth, nodes={align=left, inner ysep=2pt}, <-]
                 \path (nc.south) ++ (0,-2.0em) node[anchor=north east, color=red!67] (nc node){non-conservative force except Rayleigh Linear Force};
                 \draw [color=red!57](nc.south) |- ([xshift=-0.3ex, color=red]nc node.south west);
@@ -143,11 +143,11 @@
         \vspace{-0.8\baselineskip}
 
         \uncover<+->{\only<1, 2, 3>{and let $\mathbf{v}_{a}^{\left( \mathrm{r} \right)}=\mathbf{v}_a-\mathbf{v}_b$. Here we allow the 2 surfaces move respectively, with consistent the same normal.}
-        \only<4>{and let $\mathbf{v}_{a}^{\left( \mathrm{r} \right)}=\mathbf{v}_{\tikzmarknode{a}{\hlmath{red}{a}}}-\mathbf{v}_b$. Here we allow the 2 surfaces move respectively, with consistent the same normal.\begin{tikzpicture}[overlay, remember picture, >=stealth, nodes={align=left, inner ysep=2pt}, <-]
+        \only<4>{and let $\mathbf{v}_{a}^{\left( \mathrm{r} \right)}=\mathbf{v}_{\tikzmarknode{a}{\hlmath{red}{\scriptstyle a}}}-\mathbf{v}_b$. Here we allow the 2 surfaces move respectively, with consistent the same normal.\begin{tikzpicture}[overlay, remember picture, >=stealth, nodes={align=left, inner ysep=2pt}, <-]
         \path (a.south) ++ (0,-2.0em) node[anchor=north west, color=red!67] (a node){Denote $S_1$ is the surface we concern and \\ $a$ is a point above it};
         \draw [color=red!57](a.south) |- ([xshift=+0.3ex, color=red]a node.south east);
         \end{tikzpicture}}
-        \only<5>{and let $\mathbf{v}_{a}^{\left( \mathrm{r} \right)}=\mathbf{v}_a-\mathbf{v}_{\tikzmarknode{b}{\hlmath{red}{b}}}$. Here we allow the 2 surfaces move respectively, with consistent the same normal.\begin{tikzpicture}[overlay, remember picture, >=stealth, nodes={align=left, inner ysep=2pt}, <-]
+        \only<5>{and let $\mathbf{v}_{a}^{\left( \mathrm{r} \right)}=\mathbf{v}_a-\mathbf{v}_{\tikzmarknode{b}{\hlmath{red}{\scriptstyle b}}}$. Here we allow the 2 surfaces move respectively, with consistent the same normal.\begin{tikzpicture}[overlay, remember picture, >=stealth, nodes={align=left, inner ysep=2pt}, <-]
             \path (b.south) ++ (0,-2.0em) node[anchor=north west, color=red!67] (b node){Denote $S_2$ is reference surface \\ and $b$ is the contact point with $a$};
             \draw [color=red!57](b.south) |- ([xshift=+0.3ex, color=red]b node.south east);
         \end{tikzpicture}}
@@ -172,7 +172,8 @@
             \end{equation}}
         \end{theorem}}
     \end{frame}
-
+	
+	\setcounter{equation}{6}
     \begin{frame}{Generalized Rayleigh Protential}
         \addtocounter{framenumber}{-1}
 
@@ -180,7 +181,7 @@
         \begin{equation}
         \mathbf{F}_{a}^{\left( \mathrm{nc} \right)}=-p_a\Delta A\mu \left( v_{a}^{\left( \mathrm{r} \right)} \right) {\hat{\mathbf{v}}_a}^{\left( \mathrm{r} \right)}.
         \end{equation}
-
+		
         \begin{theorem}
             If we define $R$ as
             \begin{equation}
